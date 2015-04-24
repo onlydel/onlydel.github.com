@@ -10,9 +10,8 @@ You can find the source code for the Jekyll new theme at: [github.com/jglovier/j
 
 You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
 
-<<<<<<< Updated upstream
 페이지를 여기서 바로 수정하면 반영되는가?
-=======
+시간이 좀 걸려서 그렇지 반영은 바로 되는게 맞는것 같다.
 
 # LocalDataProvider
 
@@ -39,8 +38,8 @@ You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://gi
 
 <http://example.com/>
 
-
+'''
     var options = {};
     options.style = "exclusive";
     grdMain.sortingOptions(options);
->>>>>>> Stashed changes
+'''
