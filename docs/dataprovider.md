@@ -15,7 +15,7 @@ categories: asp.net
 
 RequiredAttribute
 
-모델의 속성을 no-nullable, 즉 테이블의 필드를 not null로 설정하고 싶다면 [Required](#)Annotation을 사용하면 됩니다. 하지만, 데이터타입이 string이 아닌 int타입이나 DateTime타입과 같이 조금 특별한 타입의 경우에는 기본적으로 not-null로 설정됩니다. int, DateTime타입의 속성을 강제로 nullable로 설정하기 위해서는 아래 예와 같이 클래스 속성의 타입에 ?를 붙여서 nullable로 만들어 주면 됩니다.
+모델의 속성을 no-nullable, 즉 테이블의 필드를 not null로 설정하고 싶다면 'Required Annotation'을 사용하면 됩니다. 하지만, 데이터타입이 string이 아닌 int타입이나 DateTime타입과 같이 조금 특별한 타입의 경우에는 기본적으로 not-null로 설정됩니다. int, DateTime타입의 속성을 강제로 nullable로 설정하기 위해서는 아래 예와 같이 클래스 속성의 타입에 ?를 붙여서 nullable로 만들어 주면 됩니다.
 
 	   public DateTime? OriginalDate { get; set; }
 

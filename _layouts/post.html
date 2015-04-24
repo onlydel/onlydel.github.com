@@ -12,4 +12,7 @@ layout: default
     {{ content }}
   </article>
 
+  <p>Tags: 
+  {{ page.tags | array_to_sentence_string }}
+  </p>
 </div>
