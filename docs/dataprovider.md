@@ -5,7 +5,7 @@ date:   2015-04-23 15:47:54
 categories: asp.net
 ---
 
-## (작성중) (번역) (EF) Data Annotation Attributes
+### 들어가며
 
 다음 링크를 참조해서 EF에서 사용 할 수 있는 Data Annotation Attribute에 대해 정리해 봅시다.
 
