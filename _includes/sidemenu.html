@@ -6,12 +6,4 @@
     		<a class="page-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       	</li>
     {% endfor %}
-
-	{% for page in site.pages %}
-	  {% if page.title %}
-	  	<li>
-	  		<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-	  	</li>
-	  {% endif %}
-	{% endfor %}
 </ul>
