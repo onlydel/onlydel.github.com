@@ -3,8 +3,8 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
+    border-top: 5px solid #999;
+    border-bottom: 1px solid #ccc;
     min-height: 56px;
 
     // Positioning context for the mobile navigation icon
@@ -13,14 +13,16 @@
 
 .site-title {
     font-size: 26px;
+    font-family: "Myriad Set Pro","Lucida Grande","Helvetica Neue","Helvetica","Arial","Verdana","sans-serif";
     line-height: 56px;
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
+    font-weight: bold;
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: #000;
     }
 }
 
@@ -94,7 +96,7 @@
  */
 .site-footer {
     border-top: 1px solid $grey-color-light;
-    padding: $spacing-unit 0;
+    padding: 15px 0;
 }
 
 .footer-heading {
@@ -173,10 +175,30 @@
 .post-list {
     margin-left: 0;
     list-style: none;
-    font-size: $middle-font-size;
+    font-size: $small-font-size;
 
     > li {
         margin-bottom: $spacing-unit;
+    }
+}
+
+.post-api-list {
+    margin-left: 0;
+    list-style: none;
+    font-size: $small-font-size;
+
+    > li {
+        margin-bottom: 0;
+    }
+}
+
+.post-release-list {
+    margin-left: 0;
+    list-style: none;
+    font-size: $small-font-size;
+
+    > li {
+        margin-bottom: 0;
     }
 }
 
@@ -187,7 +209,8 @@
 
 .post-link {
     display: block;
-    font-size: 24px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 
@@ -199,13 +222,23 @@
     margin-bottom: $spacing-unit;
 }
 
-.post-title {
-    font-size: 34px;
-    letter-spacing: -1px;
-    line-height: 1;
-    font-weight: bold;
-    margin: 10px 0;
+.post-bigfont {
+    font-size: 18px;
+}
 
+.post-smallfont {
+    font-size: 14px;
+}
+
+.post-title {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    margin-top: 19px;
+    margin-bottom: 10px;
+    padding: 0 0px 5px;
+    color: #555555;
+    
     @include media-query($on-laptop) {
         font-size: 36px;
     }
@@ -215,7 +248,7 @@
     margin-bottom: $spacing-unit;
 
     h2 {
-        font-size: 32px;
+        font-size: 20px;
         font-weight: bold;
 
         @include media-query($on-laptop) {
@@ -224,7 +257,7 @@
     }
 
     h3 {
-        font-size: 22px;
+        font-size: 18px;
         font-weight: bold;
 
         @include media-query($on-laptop) {
@@ -233,10 +266,38 @@
     }
 
     h4 {
-        font-size: 20px;
+        font-size: 22px;
+        font-weight: bold;
 
         @include media-query($on-laptop) {
             font-size: 18px;
         }
     }
+
+    h5 {
+        font-size: 18px;
+        font-weight: bold;
+
+        @include media-query($on-laptop) {
+            font-size: 18px;
+        }
+    }
+
+    h6 {
+        font-size: 14px;
+
+        @include media-query($on-laptop) {
+            font-size: 18px;
+        }
+    }
+
+}
+
+
+/**
+ * Apis
+ */
+
+.api-deprecated {
+    color: #8B0000;
 }
