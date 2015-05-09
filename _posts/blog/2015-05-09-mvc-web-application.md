@@ -1,9 +1,9 @@
 ---
 layout: post
-title: (작성중) (Identity) MVC Web Application에서 재사용 가능한 Authentication라이브러리 만들기
+title: MVC Web Application에서 재사용 가능한 Authentication라이브러리 만들기
 date:   2015-05-09 21:13:31 +9:00 GMT
 categories: asp.net
-tags: mvc authentication
+tags: mvc authentication Identity
 ---
 
 ### 기술

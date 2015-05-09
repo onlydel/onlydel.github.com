@@ -1,6 +1,6 @@
-
-{% for tag in site.categories %}{% if page.categories contains tag[0] %}
-  <h4 id="{{ tag[0] }}">{{ tag[0] | capitalize }}</h4>
+  <div class="menu-blank"></div>
+{% for tag in site.categories %}{% unless tag[0] == 'help' %}
+  <h3 class="menu-title" id="{{ tag[0] }}">{{ tag[0] | upcase }}</h3>
   <ul class="post-api-list">
     {% assign pages_list = tag[1] %}
     {% for post in pages_list %}
@@ -15,4 +15,4 @@
     {% assign pages_list = nil %}
     {% assign group = nil %}
   </ul>
-{% endif %}{% endfor %}
+{% endunless %}{% endfor %}

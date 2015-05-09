@@ -149,7 +149,7 @@ blockquote {
  */
  pre,
 code {
-    font-size: 13px;
+    font-size: 12px;
     border: 1px dashed $grey-color;
     border-radius: 3px;
     background-color: $grey-color-light;
@@ -168,6 +168,7 @@ code {
 pre {
     padding: 8px 12px;
     overflow-x: scroll !important;
+    word-wrap: normal;
 
     > code {
         padding: 5px;

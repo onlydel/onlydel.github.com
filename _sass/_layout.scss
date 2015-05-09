@@ -89,6 +89,29 @@
     }
 }
 
+/**
+ * Side menu
+ */
+.menu-blank {
+    margin-bottom: 15px;
+    padding: 0 0px 5px;
+    
+    @include media-query($on-laptop) {
+        font-size: 36px;
+    }
+}
+
+.menu-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    font-weight: bold;
+    margin-bottom: 5px;
+    
+    @include media-query($on-laptop) {
+        font-size: 36px;
+    }
+}
 
 
 /**
@@ -188,7 +211,10 @@
     font-size: $small-font-size;
 
     > li {
-        margin-bottom: 0;
+        margin-bottom: 0px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
     }
 }
 
@@ -218,6 +244,11 @@
 /**
  * Posts
  */
+
+.post-box {
+     border-right: 1px solid $grey-color-light;
+ }
+
 .post-header {
     margin-bottom: $spacing-unit;
 }
