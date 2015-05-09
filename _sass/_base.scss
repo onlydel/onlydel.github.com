@@ -108,37 +108,16 @@ a {
  * Blockquotes
  */
 blockquote {
-    
+    color: $grey-color;
+    border-left: 4px solid $grey-color-light;
     padding-left: $spacing-unit / 2;
     font-size: 18px;
-    padding: 20px 30px;
-    margin: 15px 0;
-    background-color: $grey-color-light;
-    border-left: 4px solid $grey-color;
-    
-    > pre {
-        border: none;
-    }
-
-    > p {
-        font-family: Monaco, monospace !important;
-        font-size: 14px;
-        line-height: 1.5;
-
-        > strong {
-            font-size: 16px;
-            color: #0a0;
-        }
-    }
+    letter-spacing: -1px;
+    font-style: italic;
 
     > :last-child {
         margin-bottom: 0;
     }
-}
-
-.quote-from {
-    border-left: 2px solid #ffeb8e !important;
-    background-color: #fff9e3 !important;
 }
 
 
@@ -149,24 +128,20 @@ blockquote {
  pre,
 code {
     font-size: 13px;
-    border: 1px dashed $grey-color;
+    border: 1px dashed #ccc;
     border-radius: 3px;
-    background-color: $grey-color-light;
+    background-color: #f3f3f3;
 }
 
 code {
+    padding: 1px 5px;
     padding: 0px 5px 2px;
     border: 1px solid #ddd;
-    border-radius: 3px;
-    background-clip: padding-box;
-    font-family: Monaco,"DejaVu Sans Mono","Courier New",monospace;
-    font-size: 13px;
-    color: #c7254e;
 }
 
 pre {
     padding: 8px 12px;
-    overflow-x: scroll !important;
+    overflow-x: scroll;
 
     > code {
         padding: 5px;
@@ -174,7 +149,7 @@ pre {
         font-family: Monaco, monospace !important;
         display: block;
         white-space: pre;
-        background-color: $grey-color-light;;
+        background-color: #f3f3f3;
     }
 }
 
@@ -231,13 +206,4 @@ pre {
             fill: $grey-color;
         }
     }
-}
-
-.octicon-rss {
-        color: #ff6600;
-}
-
-.octicon-footer {
-        color: #000000;
-        font-size: 13px;
 }
