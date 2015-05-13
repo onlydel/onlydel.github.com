@@ -12,10 +12,3 @@ github_username:  onlydel
 
 # Build settings
 markdown: kramdown
-
-category_list:
-  - ASP.NET
-  - EF
-  - Visual Studio
-  - RealGrid
-  - Another Code
