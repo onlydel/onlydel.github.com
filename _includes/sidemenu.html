@@ -1,0 +1,82 @@
+
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+<script>
+  $(document).ready( function() {
+
+    $('input[type="text"]').keyup(function(){
+
+      var that = this, $allListElements = $('ul[class="post-api-list"] > li');
+
+      var $matchingListElements = $allListElements.filter(function(i, li){
+          var listItemText = $(li).text().toUpperCase(), 
+              searchText = that.value.toUpperCase();
+          return ~listItemText.indexOf(searchText);
+      });
+
+      $allListElements.hide();
+      $matchingListElements.show();
+
+  });
+});
+</script>
+
+  <div class="form-group has-success">
+    <input type="text" class="form-control input-sm" placeholder="Filter">
+  </div>
+
+{% for cat in site.category_list %}
+  <h3 class="menu-title">{{ cat }}</h3>
+  <ul class="post-api-list">
+  {% assign down_cat = cat | downcase %}
+
+  {% for post in site.posts  %}
+    {% if post.categories contains down_cat %}
+        <li>
+          <a class="page-link" href="{{ post.url | prepend: site.baseurl }}">
+
+            {% if post.categories contains "news" %}
+            <span class="octicon octicon-radio-tower">&nbsp;</span>
+            {% endif %}
+
+            {% if post.categories contains "tip" %}
+            <span class="octicon octicon-bookmark">&nbsp;</span>
+            {% endif %}
+
+            {% if post.categories contains "draft" %}
+            <span class="octicon octicon-microscope">&nbsp;</span>
+            {% endif %}
+
+            {% if post.categories contains "idea" %}
+            <span class="octicon octicon-light-bulb">&nbsp;</span>
+            {% endif %}
+
+            {{ post.title }}
+          </a>
+          <sapn style="display: none;">
+          {% for tag in post.tags %}
+            {{ tag }}&nbsp;
+          {% endfor %}
+          </span>
+        </li>
+    {% endif %}
+  
+  {% endfor %}
+ 
+  </ul>
+{% endfor %}
+
+<hr/>
+
+<!--<h4 class="menu-title">Tag Cloud</h4>-->
+{% for category in site.tags %}
+    <span style="font-size: {{ category | last | size | times: 500 | divided_by: site.categories.size }}%">
+        <a href="/{{ category | first | slugize }}/">
+            {{ category | first }}
+        </a>
+    </span>
+{% endfor %}
+=======
+>>>>>>> origin/master
+>>>>>>> Stashed changes
