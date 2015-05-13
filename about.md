@@ -45,7 +45,7 @@ permalink: /about/
           * VS
           * VisualStudio
         ---
-* 지킬에서 사이드메뉴 나 포스팅 내에 `ul` tag내에 있는 문자열로 목록을 필터링 하는 방법: 
+* 지킬에서 사이드메뉴 나 포스팅 내에 `ul` tag내에 있는 문자열로 목록을 필터링 하는 방법: [관련포스팅]({% post_url /feed/ %})
 * 목록에서 `pre` tag를 사용하는 방법: `pre` tag를 문단의 맨 앞 컬럼에서 시작할 경우 목록을 벗어나게 된다. 이 경우 `pre` tag 부분을 모두 선택한 다음 `tab`키를 눌러 앞쪽에 `tab`문자 하나를 넣어 주면 된다.
     
     <pre class="prettyprint">
