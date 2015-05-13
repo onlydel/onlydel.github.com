@@ -1,21 +1,14 @@
 # Site settings
 title: ONLYDEL
 email: onlydel@wrw.kr
-description: 
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://onlydel.github.io" # the base hostname & protocol for your site
-homeurl: "http://www.realgrid.com"
-demourl: "http://demo.realgrid.com"
+url: "http://www.realgrid.com" # the base hostname & protocol for your site
 twitter_username: 
-github_username: onlydel
+github_username:  onlydel
 
 # Build settings
 markdown: kramdown
-
-# Collections
-category_list:
-  - ASP.NET
-  - EF
-  - Visual Studio
-  - RealGrid
-  - Another Code

@@ -13,13 +13,10 @@ layout: default
   </article>
 
   <p>Tags:
-    {% for tag in page.tags %}
-      {{ tag }}&nbsp;
-    {% endfor %}
+  {{ page.tags | array_to_sentence_string }}
   </p>
 
 </div>
-
 
 <div class="col-md-3">
   {% include sidemenu.html %}
