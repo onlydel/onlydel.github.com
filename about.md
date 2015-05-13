@@ -3,29 +3,6 @@ layout: page
 title: About
 permalink: /about/
 ---
-<script>
-  $(document).ready( function() {
-
-    $('input[type="text"]').keyup(function(){
-
-      var that = this, $allListElements = $('ul > li');
-
-      var $matchingListElements = $allListElements.filter(function(i, li){
-          var listItemText = $(li).text().toUpperCase(), 
-              searchText = that.value.toUpperCase();
-          return ~listItemText.indexOf(searchText);
-      });
-
-      $allListElements.hide();
-      $matchingListElements.show();
-
-  });
-});
-</script>
-
-<div class="form-group has-success">
-<input type="text" class="form-control input-sm" placeholder="Filter">
-</div>
 
 
 ### jekyll
