@@ -2,13 +2,8 @@
 layout: post
 title: MVC Web Application에서 재사용 가능한 Authentication라이브러리 만들기
 date:   2015-05-09 21:13:31 +9:00 GMT
-categories:
-  - ASP.NET
-  - draft
-tags: 
-  - MVC
-  - Authentication
-  - Identity
+categories: asp.net
+tags: mvc authentication Identity
 ---
 
 ### 기술
@@ -19,7 +14,6 @@ tags:
 * Microsoft.Owin 3.0.1
 * Owin 1.0
 * Visual Studio Community 2013
-
 ### 목적
 ASP.NET MVC Web Application(MVC앱)개발시 인증 처리를 위한 재사용 가능한 라이브러리를 만드는 방법을 정리해 보겠습니다. Visual Studio(VS)에서 새로운 MVC앱 프로젝트를 생성하면서 Individual User Authentication 옵션을 선택하면 완전한 사용자 인증관리 모듈을 구현해 줍니다. 이 모듈을 라이브러리로 분리하는 방법으로 작업해 보겠습니다.
 
