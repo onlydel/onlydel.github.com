@@ -12,3 +12,11 @@ github_username:  onlydel
 
 # Build settings
 markdown: kramdown
+
+# Collections
+category_list:
+  - ASP.NET
+  - EF
+  - Visual Studio
+  - RealGrid
+  - Another Code
