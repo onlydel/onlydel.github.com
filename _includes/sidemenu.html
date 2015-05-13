@@ -20,10 +20,12 @@
       <input type="text" class="form-control input-sm" placeholder="Filter">
     </div>
 
-{% for tag in site.categories %}{% unless tag[0] == 'help' %}
+{% for tag in site.categories %}
+
   <h3 class="menu-title" id="{{ tag[0] }}">{{ tag[0] | upcase }}</h3>
   <ul class="post-api-list">
     {% assign pages_list = tag[1] %}
+
     {% for post in pages_list %}
       {% if post.title != null %}
       {% if group == null or group == post.group %}
@@ -32,8 +34,11 @@
       </li>
       {% endif %}
       {% endif %}
+
     {% endfor %}
+
     {% assign pages_list = nil %}
     {% assign group = nil %}
   </ul>
-{% endunless %}{% endfor %}
+
+{% endfor %}
