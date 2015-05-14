@@ -240,6 +240,7 @@
 }
 
 .post-tags {
+    margin-bottom: $spacing-unit;
     font-size: 12px;
 }
 
@@ -252,7 +253,6 @@
  }
 
 .post-header {
-    margin-bottom: $spacing-unit;
 
     .page-title {
         font-size: 26px;
