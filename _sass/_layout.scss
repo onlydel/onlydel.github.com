@@ -251,6 +251,12 @@
 
 .post-header {
     margin-bottom: $spacing-unit;
+
+    .page-title {
+        font-size: 26px;
+        font-weight: normal;
+        color: $text-color;
+    }
 }
 
 .post-bigfont {

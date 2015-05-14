@@ -3,12 +3,43 @@ layout: default
 ---
 <div class="post col-md-12">
 
-  <header class="post-header">
-    <h2 class="post-title">{{ page.title }}</h2>
-  </header>
 
-  <article class="post-content">
-    {{ content }}
-  </article>
+	<script>
+	  $(document).ready( function() {
 
+	    $('input[type="text"]').keyup(function(){
+
+	      var that = this, $allListElements = $('ul > li');
+
+	      var $matchingListElements = $allListElements.filter(function(i, li){
+	          var listItemText = $(li).text().toUpperCase(), 
+	              searchText = that.value.toUpperCase();
+	          return ~listItemText.indexOf(searchText);
+	      });
+
+	      $allListElements.hide();
+	      $matchingListElements.show();
+
+	  });
+	});
+	</script>
+	<div class="row">
+		<div class="col-md-1"></div>
+
+		<div class="col-md-10">
+			<header class="post-header">
+				<h2 class="page-title">{{ page.title }}</h2>
+			</header>
+
+			<div class="form-group has-success">
+			<input type="text" class="form-control input-sm" placeholder="Filter">
+			</div>
+
+			<article class="post-content">
+				{{ content }}
+			</article>
+		</div>
+
+		<div class="col-md-1"></div>
+	</div>
 </div>
