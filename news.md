@@ -4,6 +4,11 @@ title: News
 permalink: /news/
 ---
 
+### May 2015
+* 2, [**Visual Studio Code 발표**](https://code.visualstudio.com/){:target="_blank"}   
+    Visual Studio Code라는 이름의 개발자용 편집기가 Build 2015를 통해 발표되었습니다. 단순 편집기라기보다는 개발도구입니다. 크로스플랫폼(Linux, Mac OSX, and Windows) 동작이 가능한 Code는 ASP.NET 5 등 클라우드 애플리케이션 빌드, 디버깅이 가능하다고 합니다. 현재 0.1.0버전인데 한글입력에 문제가 있어 메일로 문의하니 인코딩 이슈가 있다는 답변 입니다.   
+    자체 Git 호환기능이 포함되어 있어 개인적으로 무척 기대하고 있습니다.
+
 ### April 2015
 * 29, [**Build 2015 컨퍼런스**](http://www.buildwindows.com/){:target="_blank"}   
     4월 29일 ~ 5월 1일까지 사흘간 센프란시스코에서 Build 2015행사가 개최되었습니다. 행사에 대한 키노트는 Korea Evangelist 블로그에 정리된 내용이 있습니다.    

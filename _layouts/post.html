@@ -12,11 +12,15 @@ layout: default
     {{ content }}
   </article>
 
-  <p>Tags:
-    {% for tag in page.tags %}
-      {{ tag }}&nbsp;
-    {% endfor %}
-  </p>
+  <div class="post-tags">
+    <p><span class="octicon octicon-tag"></span>
+      {% for tag in page.tags %}
+        <span class="label label-default">{{ tag }}&nbsp;</span>
+      {% endfor %}
+    </p>
+  </div>
+
+  {% include disqus.html %}
 
 </div>
 
