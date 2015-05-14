@@ -66,8 +66,16 @@ permalink: /about/
 
 ### IoT
 * [ms-iot GitHub](https://github.com/ms-iot)
-* Aduino
+* Arduino
     * [http://www.arduino.cc/en/Guide/HomePage](http://www.arduino.cc/en/Guide/HomePage)
+    * [아두이노 콥터](http://copter.ardupilot.com/)
+    * [아두이노 카페 강좌 pdf](http://cafe.naver.com/CafeMemberNetworkView.nhn?m=view&clubid=17467872&memberid=hgycap#)
+    * [위 강좌쓴 사람의 카페](http://cafe.naver.com/sketchurimagination)
+    * [MPU카페](http://cafe.naver.com/mpucafe)
+    * [아두이노 블루투스 통신 카페](http://cafe.naver.com/convergencekorea)
+    * 필요한 기본 부품
+        * [MPU 스타터 키트: 15,500 + 2,600](http://cafe.naver.com/mpucafe/4821)
+        * [아두이노 우노 호환보드 + 적외선거리센서: 20,000 + 2,500](http://www.gmarket.co.kr/pay/Basket.asp)
 
 ### ASP.NET
 * [docs.asp.net](http://docs.asp.net)
