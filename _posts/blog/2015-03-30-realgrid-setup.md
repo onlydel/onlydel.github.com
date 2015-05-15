@@ -82,29 +82,9 @@ $(document).ready( function() {
     &lt;div id=&quot;realgrid&quot; style=&quot;width: 100%; height: 200px;&quot;&gt;&lt;/div&gt;</pre>
 
 
-### 전체코드
-<pre class="prettyprint linenums">
-&lt;script type=&quot;text/javascript&quot; src=&quot;/script/dlgrids_eval.js&quot;&gt;&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot; src=&quot;/script/realgridjs.js&quot;&gt;&lt;/script&gt;
- 
-&lt;script&gt;
-//아래 코드 한 줄은 JQuery 라이브러리가 필요합니다.
-$(document).ready( function() {
-    var gridView;
-    var dataProvider;
-    
-    RealGridJS.setTrace(false);
-    RealGridJS.setRootContext(&quot;/script&quot;);
-    
-    dataProvider = new RealGridJS.LocalDataProvider();
-    gridView = new RealGridJS.GridView(&quot;realgrid&quot;);
-    gridView.setDataSource(dataProvider);
-});
-&lt;/script&gt;
- 
-&lt;div id=&quot;realgrid&quot; style=&quot;width: 100%; height: 200px;&quot;&gt;&lt;/div&gt;
-</pre>
+### 전체코드 (Gist)
 
+{% gist onlydel/f0c3a94199bbb3c412a4 %}
 
 ### Hello, RealGrid!
 
