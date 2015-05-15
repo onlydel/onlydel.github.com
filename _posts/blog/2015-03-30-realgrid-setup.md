@@ -4,7 +4,6 @@ title: Hello, RealGridJS!
 date:   2015-03-30 21:13:31 +9:00 GMT
 categories: 
   - RealGrid
-  - draft
   - setup
 tags: 
   - RealGridJS
