@@ -86,7 +86,8 @@ permalink: /about/
 * iTextSharp
     - [Open Source PDF Library](https://github.com/itext/itextsharp/releases) - not free
 
-### .NET 블로거
+### 블로그
 * [http://leastprivilege.com](http://leastprivilege.com)
 * [https://justhackem.wordpress.com/](https://justhackem.wordpress.com/)
+* [이상한모임](http://blog.weirdx.io/)
 
