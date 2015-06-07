@@ -88,4 +88,5 @@ permalink: /about/
 
 ### .NET 블로거
 * [http://leastprivilege.com](http://leastprivilege.com)
+* [https://justhackem.wordpress.com/](https://justhackem.wordpress.com/)
 
