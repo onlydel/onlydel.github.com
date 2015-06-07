@@ -90,4 +90,5 @@ permalink: /about/
 * [http://leastprivilege.com](http://leastprivilege.com)
 * [https://justhackem.wordpress.com/](https://justhackem.wordpress.com/)
 * [이상한모임](http://blog.weirdx.io/)
+* [http://blog.outsider.ne.kr/](http://blog.outsider.ne.kr/)
 
