@@ -64,6 +64,11 @@ permalink: /about/
 ### Visual Studio
 * [Visual Studio Code & 2015 소개글](http://blogs.msdn.com/b/eva/archive/2015/05/08/visual-studio-2015.aspx)
 
+### Visual Studio Code (Mac)
+* Settings
+    - 줄바꿈 컬럼(0이면 자동줄바꿈): "editor.wrappingColumn": 0
+    - 행 번호: "editor.lineNumbers": true
+    
 ### IoT
 * [ms-iot GitHub](https://github.com/ms-iot)
 * Arduino
