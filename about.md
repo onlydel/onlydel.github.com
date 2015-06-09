@@ -86,6 +86,11 @@ permalink: /about/
 * iTextSharp
     - [Open Source PDF Library](https://github.com/itext/itextsharp/releases) - not free
 
+### SaaS with Azure
+* [Windows Azure IaaS vs. PaaS vs. SaaS](http://robertgreiner.com/2014/03/windows-azure-iaas-paas-saas-overview/)
+* [Building SaaS products with Windows Azure](http://www.slideshare.net/8KMiles/building-saas-products-with-windows-azure)
+* [Building SaaS Applications on Windows AZURE](http://www.davidchappell.com/writing/white_papers/Building_SaaS_Apps_on_Windows_Azure-Chappell_v1_0.pdf)
+
 ### 블로그
 * [http://leastprivilege.com](http://leastprivilege.com)
 * [https://justhackem.wordpress.com/](https://justhackem.wordpress.com/)
