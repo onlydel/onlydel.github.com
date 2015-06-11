@@ -91,6 +91,9 @@ permalink: /about/
 * iTextSharp
     - [Open Source PDF Library](https://github.com/itext/itextsharp/releases) - not free
 
+### Apache Cordova™
+* [Apache Cordova™](https://cordova.apache.org)
+
 ### SaaS with Azure
 * [Windows Azure IaaS vs. PaaS vs. SaaS](http://robertgreiner.com/2014/03/windows-azure-iaas-paas-saas-overview/)
 * [Building SaaS products with Windows Azure](http://www.slideshare.net/8KMiles/building-saas-products-with-windows-azure)
