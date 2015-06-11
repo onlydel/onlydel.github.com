@@ -91,8 +91,9 @@ permalink: /about/
 * iTextSharp
     - [Open Source PDF Library](https://github.com/itext/itextsharp/releases) - not free
 
-### Apache Cordova™
+### Developing hybrid mobile apps
 * [Apache Cordova™](https://cordova.apache.org)
+* [Ionic](http://ionicframework.com/)
 
 ### SaaS with Azure
 * [Windows Azure IaaS vs. PaaS vs. SaaS](http://robertgreiner.com/2014/03/windows-azure-iaas-paas-saas-overview/)
