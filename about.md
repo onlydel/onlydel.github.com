@@ -53,6 +53,7 @@ permalink: /about/
     - 한국 디지털 노마드 선구자?: [도유진](http://dareyourself.net)
     - 비석세스의 디노마드 관련 기사: [beSeccuss](http://besuccess.com/author/doyoujin/)
     - 디노마드의 핵심은 역시 원격근무: [http://spoqa.github.io/2014/08/03/remote.html](http://spoqa.github.io/2014/08/03/remote.html)
+    - 스마트 워크: [http://www.bloter.net/archives/229923](http://www.bloter.net/archives/229923)
 
 ### 읽고 싶은 책
 * [바지 벗고 일하면 안되나요?](http://www.aladin.co.kr/shop/wproduct.aspx?ISBN=8994506985&ttbkey=ttboutsideris1727002&COPYPaper=1)
@@ -90,6 +91,9 @@ permalink: /about/
     - [관계데이터 가져오기](http://www.asp.net/mvc/overview/getting-started/getting-started-with-ef-using-mvc/reading-related-data-with-the-entity-framework-in-an-asp-net-mvc-application)
 * iTextSharp
     - [Open Source PDF Library](https://github.com/itext/itextsharp/releases) - not free
+
+### Front-End Development
+* [CodeAcademy](http://www.codecademy.com/)
 
 ### Developing hybrid mobile apps
 * [Apache Cordova™](https://cordova.apache.org)
