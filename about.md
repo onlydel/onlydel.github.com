@@ -85,6 +85,8 @@ permalink: /about/
 
 ### ASP.NET
 * [docs.asp.net](http://docs.asp.net)
+* [Repository, Unit of Work Pattern](http://www.asp.net/mvc/overview/older-versions/getting-started-with-ef-5-using-mvc-4/implementing-the-repository-and-unit-of-work-patterns-in-an-asp-net-mvc-application)
+    * [Unit of Work](http://aspnetboilerplate.com/Pages/Documents/Unit-Of-Work)
 * EntityFramework
     - [기본](http://www.asp.net/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)
     - [복잡](http://www.asp.net/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-a-more-complex-data-model-for-an-asp-net-mvc-application)
@@ -104,6 +106,8 @@ permalink: /about/
 * [Building SaaS products with Windows Azure](http://www.slideshare.net/8KMiles/building-saas-products-with-windows-azure)
 * [Building SaaS Applications on Windows AZURE](http://www.davidchappell.com/writing/white_papers/Building_SaaS_Apps_on_Windows_Azure-Chappell_v1_0.pdf)
 * [Building Highly Scalable and Available SaaS Applications with Azure SQL Database](http://channel9.msdn.com/Events/Build/2015/2-678)
+* Multi-Tentant
+    * [https://msdn.microsoft.com/en-us/library/ff966499.aspx](https://msdn.microsoft.com/en-us/library/ff966499.aspx)
 
 ### 블로그
 * [http://leastprivilege.com](http://leastprivilege.com)

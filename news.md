@@ -4,7 +4,12 @@ title: News
 permalink: /news/
 ---
 
+### June 2015
+* 9, [Visual Studio Code v0.3.0 업데이트](https://code.visualstudio.com/updates){:target="_blank"}
+    한글 관련 버그들이 아직도 약간 남아 있지만 입력은 가능합니다.
+
 ### May 2015
+* 18, 어처구니 없는 사건 발생
 * 2, [**Visual Studio 2015 RC 버전 발표**](http://blogs.msdn.com/b/visualstudio/archive/2015/04/29/build-2015-news-visual-studio-code-visual-studio-2015-rc-team-foundation-server-2015-rc-visual-studio-2013-update-5.aspx){:target="_blank"}   
     4월 29일자로 Visual Studio 2015 RC 버전이 발표되었습니다. 기존 VS버전 중 Premium, Ultimate사용자는 Enterprise로 무상 업그레이드 할 수 있는 프로모션도 진행한다고 합니다.   
     에디션은 Community, Professional, Enterprise로 구분되어 있으며 [제품 비교 사이트](https://www.visualstudio.com/products/compare-visual-studio-2015-products-vs){:target="_blank"}에서 기능을 비교할 수 있습니다. 제품 평가를 위해 [다운로드 페이지](https://www.visualstudio.com/en-us/downloads/visual-studio-2015-downloads-vs){:target="_blank"}에서 Community와 Enterprise버전을 다운받을 수 있습니다.  
