@@ -68,9 +68,9 @@
 
 <!--<h4 class="menu-title">Tag Cloud</h4>-->
 {% for category in site.tags %}
-    <span style="font-size: {{ category | last | size | times: 500 | divided_by: site.categories.size }}%">
+    <!--span style="font-size: {{ category | last | size | times: 500 | divided_by: site.categories.size }}%"-->
         <a href="/{{ category | first | slugize }}/">
-            {{ category | first }}
+            {{ category | first }}({{ category | last | size }})
         </a>
     </span>
 {% endfor %}

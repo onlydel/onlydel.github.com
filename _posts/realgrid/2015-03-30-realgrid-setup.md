@@ -4,10 +4,10 @@ title: Hello, RealGridJS!
 date:   2015-03-30 21:13:31 +9:00 GMT
 categories: 
   - RealGrid
-  - setup
 tags: 
   - RealGridJS
   - RealGrid
+  - Setup
 ---
 
 <script type="text/javascript" src="/script/dlgrids_eval.js"></script>
