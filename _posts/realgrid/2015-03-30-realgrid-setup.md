@@ -1,7 +1,9 @@
 ---
 layout: post
-title: Hello, RealGridJS!
+title: RealGridJS 설치하기  
 date:   2015-03-30 21:13:31 +9:00 GMT
+permalink: /realgrid/realgridjs-setup
+course: basic
 categories: 
   - RealGrid
 tags: 
@@ -14,19 +16,17 @@ tags:
 <script type="text/javascript" src="/script/realgridjs.js"></script>
 
 <script>
-$(document).ready( function() {
+var gridView;
+var dataProvider;
 
-    var gridView;
-    var dataProvider;
-    
+$(document).ready( function(){
     RealGridJS.setTrace(false);
     RealGridJS.setRootContext("/script");
     
     dataProvider = new RealGridJS.LocalDataProvider();
     gridView = new RealGridJS.GridView("realgrid");
-    gridView.setDataSource(dataProvider);
-   
-});
+    gridView.setDataSource(dataProvider);    
+});   
 </script>
 
 ### 들어가며
@@ -44,7 +44,8 @@ $(document).ready( function() {
         /assets/
 
 
-### 코드작성
+### 실습
+
 이제 RealGridJS를 웹 화면에 올려 보겠습니다.   
 
 1. 두 개의 스크립트파일을 순서대로 include합니다. 반드시 `dlgrigs_eval.js`파일이 먼저 와야 합니다.
@@ -79,16 +80,34 @@ $(document).ready( function() {
 
     <pre class="prettyprint">
     &lt;div id=&quot;realgrid&quot; style=&quot;width: 100%; height: 200px;&quot;&gt;&lt;/div&gt;</pre>
+    
+### 전체 소스 코드
 
+<pre class="prettyprint">
 
-### 전체코드 (Gist)
+&lt;!--RealGrid&#xb294; Jquery&#xc5c6;&#xc774;&#xb3c4; &#xc0ac;&#xc6a9;&#xd560; &#xc218; &#xc788;&#xc2b5;&#xb2c8;&#xb2e4;.--&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/script/jquery-1.112.min.js&quot;&gt;&lt;/script&gt;
+&lt;!--realgrid--&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/script/dlgrids_eval.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/script/realgridjs.js&quot;&gt;&lt;/script&gt;
 
-{% gist onlydel/f0c3a94199bbb3c412a4 %}
+&lt;script&gt;
+var gridView;
+var dataProvider;
 
-### Hello, RealGrid!
+$(document).ready( function(){
+    RealGridJS.setTrace(false);
+    RealGridJS.setRootContext(&quot;/script&quot;);
+    
+    dataProvider = new RealGridJS.LocalDataProvider();
+    gridView = new RealGridJS.GridView(&quot;realgrid&quot;);
+    gridView.setDataSource(dataProvider);    
+});   
+&lt;/script&gt;
+
+&lt;div id=&quot;realgrid&quot; style=&quot;width: 100%; height: 200px;&quot;&gt;&lt;/div&gt;</pre>
 
 <div id="realgrid" style="width: 100%; height: 200px;"></div>
-
 
 ---
 **참조**
