@@ -115,3 +115,6 @@ permalink: /about/
 * [이상한모임](http://blog.weirdx.io/)
 * [http://blog.outsider.ne.kr/](http://blog.outsider.ne.kr/)
 
+### 소프트웨어 디자인
+* [UML Diagram](http://www.uml-diagrams.org/){:target="_blank"}
+* [Star UML](http://staruml.io/){:target="_blank"}
