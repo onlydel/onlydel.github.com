@@ -2,7 +2,7 @@
 layout: post
 title: RealGridJS 설치하기  
 date:   2015-03-30 21:13:31 +9:00 GMT
-permalink: /realgrid/realgridjs-setup
+permalink: /realgrid/a1
 course: basic
 categories: 
   - RealGrid

@@ -69,6 +69,11 @@ permalink: /about/
 * Settings
     - 줄바꿈 컬럼(0이면 자동줄바꿈): "editor.wrappingColumn": 0
     - 행 번호: "editor.lineNumbers": true
+
+### 소프트웨어 기술
+* [도커](http://navercast.naver.com/contents.nhn?rid=122&rid=&contents_id=66402)
+* [OCP - Open Container Project](http://www.opencontainers.org/)
+
     
 ### IoT
 * [ms-iot GitHub](https://github.com/ms-iot)
@@ -114,7 +119,11 @@ permalink: /about/
 * [https://justhackem.wordpress.com/](https://justhackem.wordpress.com/)
 * [이상한모임](http://blog.weirdx.io/)
 * [http://blog.outsider.ne.kr/](http://blog.outsider.ne.kr/)
+* [dogfeet](http://dogfeet.github.io/)
+* [정보시각화 스터디](http://infovis.kr)
+* [https://github.com/pismute](https://github.com/pismute)
 
 ### 소프트웨어 디자인
 * [UML Diagram](http://www.uml-diagrams.org/){:target="_blank"}
 * [Star UML](http://staruml.io/){:target="_blank"}
+* [UML Example - ASP.NET](http://www.mandanemedia.com/archives/917)
