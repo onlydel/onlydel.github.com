@@ -98,6 +98,8 @@ permalink: /about/
     - [관계데이터 가져오기](http://www.asp.net/mvc/overview/getting-started/getting-started-with-ef-using-mvc/reading-related-data-with-the-entity-framework-in-an-asp-net-mvc-application)
 * iTextSharp
     - [Open Source PDF Library](https://github.com/itext/itextsharp/releases) - not free
+* Angula.js
+    - [CookBook: samples](https://github.com/Wintellect/Angular-MVC-Cookbook)
 
 ### Front-End Development
 * [CodeAcademy](http://www.codecademy.com/)
