@@ -50,10 +50,11 @@ permalink: /about/
 
 ### 읽을거리
 * 리모트 근무 환경에 대해(디지털 노마드)
-    - 한국 디지털 노마드 선구자?: [도유진](http://dareyourself.net)
-    - 비석세스의 디노마드 관련 기사: [beSeccuss](http://besuccess.com/author/doyoujin/)
-    - 디노마드의 핵심은 역시 원격근무: [http://spoqa.github.io/2014/08/03/remote.html](http://spoqa.github.io/2014/08/03/remote.html)
-    - 스마트 워크: [http://www.bloter.net/archives/229923](http://www.bloter.net/archives/229923)
+    - 한국 디지털 노마드 선구자?: [도유진](http://dareyourself.net){:target="_blank"}
+    - 비석세스의 디노마드 관련 기사: [beSeccuss](http://besuccess.com/author/doyoujin/){:target="_blank"}
+    - 디노마드의 핵심은 역시 원격근무: [http://spoqa.github.io/2014/08/03/remote.html](http://spoqa.github.io/2014/08/03/remote.html){:target="_blank"}
+    - 스마트 워크: [http://www.bloter.net/archives/229923](http://www.bloter.net/archives/229923){:target="_blank"}
+* [올바른 띄어쓰기 규칙 “자신의 호흡에 맞게”](http://ppss.kr/archives/24576){:target="_blank"}
 
 ### 읽고 싶은 책
 * [바지 벗고 일하면 안되나요?](http://www.aladin.co.kr/shop/wproduct.aspx?ISBN=8994506985&ttbkey=ttboutsideris1727002&COPYPaper=1)
