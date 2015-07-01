@@ -55,8 +55,6 @@ permalink: /about/
     - 디노마드의 핵심은 역시 원격근무: [http://spoqa.github.io/2014/08/03/remote.html](http://spoqa.github.io/2014/08/03/remote.html){:target="_blank"}
     - 스마트 워크: [http://www.bloter.net/archives/229923](http://www.bloter.net/archives/229923){:target="_blank"}
 * [올바른 띄어쓰기 규칙 “자신의 호흡에 맞게”](http://ppss.kr/archives/24576){:target="_blank"}
-
-### 읽고 싶은 책
 * [바지 벗고 일하면 안되나요?](http://www.aladin.co.kr/shop/wproduct.aspx?ISBN=8994506985&ttbkey=ttboutsideris1727002&COPYPaper=1)
 
 ### 웹사이트 템플릿 Template , 테마 Theme
@@ -101,6 +99,7 @@ permalink: /about/
     - [Open Source PDF Library](https://github.com/itext/itextsharp/releases) - not free
 * Angula.js
     - [CookBook: samples](https://github.com/Wintellect/Angular-MVC-Cookbook)
+    - [codecademy online learn](http://www.codecademy.com/learn/learn-angularjs)
 
 ### Front-End Development
 * [CodeAcademy](http://www.codecademy.com/)

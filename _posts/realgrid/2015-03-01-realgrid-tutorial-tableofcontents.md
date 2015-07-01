@@ -14,15 +14,15 @@ tags:
 ### RealGrid 코스
 
 0. [RealGrid 평가판 받는 방법](/realgrid/evaluation)
-1. 기초코스(A course): 기초코스는 그리드의 기본 개념을 배운다. 
+1. 기초코스(A Class): 기초코스는 그리드의 기본 개념을 배운다. 
     * [RealGridJS 설치하기](/realgrid/a1)
     * [컬럼 만들기](/realgrid/a2)
     * [필드 만들기](/realgrid/a3)
     * [컬럼 수정하기](/realgrid/a4)
     * [컬럼 필드 연결하기](/realgrid/a5)
-2. 중급코스(B course)
+2. 중급코스(B Class)
     
-3. 고급코스(C course)
+3. 고급코스(C Class)
 
 ### 작성 방법 및 참조
 * 문법이나 용어, 영문사용법 등에 통일성을 유지해야 한다. - 계속 해서 좋은 표현 방법을 찾을때 까지 수정해야 한다.
