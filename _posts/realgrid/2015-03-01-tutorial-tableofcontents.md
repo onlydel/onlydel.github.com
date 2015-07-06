@@ -20,6 +20,11 @@ tags:
     * [필드 만들기](/realgrid/a3)
     * [컬럼 수정하기](/realgrid/a4)
     * [컬럼 필드 연결하기](/realgrid/a5)
+    * 데이터 넣기 
+    * 필드하나에 컬럼 두개 연결 하기
+    * 여러행 데이터와 DataRow
+    * RowIndex
+    * ItemIndex
 2. 중급코스(B Class)
     
 3. 고급코스(C Class)
