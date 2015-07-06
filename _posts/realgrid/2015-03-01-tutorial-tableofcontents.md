@@ -22,9 +22,13 @@ tags:
     * [컬럼 필드 연결하기](/realgrid/a5)
     * 데이터 넣기 
     * 필드하나에 컬럼 두개 연결 하기
+    * 포커스셀
     * 여러행 데이터와 DataRow
     * RowIndex
     * ItemIndex
+    * 선택셀(Selected Cell)
+    * 포커스셀과 선택셀의 차이
+    * 범위선택, 다중선택
 2. 중급코스(B Class)
     
 3. 고급코스(C Class)
