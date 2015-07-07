@@ -4,6 +4,9 @@ title: News
 permalink: /news/
 ---
 
+### July 2015
+* 7, [Visual Studio Code v0.5.0 업데이트](https://code.visualstudio.com/updates){:target="_blank"}
+
 ### June 2015
 * 9, [Visual Studio Code v0.3.0 업데이트](https://code.visualstudio.com/updates){:target="_blank"}
     한글 관련 버그들이 아직도 약간 남아 있지만 입력은 가능합니다.
