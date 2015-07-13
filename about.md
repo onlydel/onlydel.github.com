@@ -86,6 +86,13 @@ permalink: /about/
     * 필요한 기본 부품
         * [MPU 스타터 키트: 15,500 + 2,600](http://cafe.naver.com/mpucafe/4821)
         * [아두이노 우노 호환보드 + 적외선거리센서: 20,000 + 2,500](http://www.gmarket.co.kr/pay/Basket.asp)
+        * 부품판매
+            * http://www.eleparts.co.kr/main/main.php
+            * http://www.ic114.com/ajaxwww/theme/001/default.aspx
+            * http://www.devicemart.co.kr/
+            * http://www.funnykit.co.kr/shop/main/index.php
+            * http://www.robot.co.kr/front/php/category.php?cate_no=24
+            * http://e홈메이드클럽.com/
 
 ### ASP.NET
 * [docs.asp.net](http://docs.asp.net)
