@@ -107,6 +107,8 @@ permalink: /about/
 * Angula.js
     - [CookBook: samples](https://github.com/Wintellect/Angular-MVC-Cookbook)
     - [codecademy online learn](http://www.codecademy.com/learn/learn-angularjs)
+* Session
+    - `eng`[Session in ASP.NET 5](http://www.exceptionnotfound.net/session-in-asp-net-5/)
 
 ### Front-End Development
 * [CodeAcademy](http://www.codecademy.com/)
