@@ -76,6 +76,8 @@ permalink: /about/
     
 ### IoT
 * [ms-iot GitHub](https://github.com/ms-iot)
+* 비콘 (Beacon)
+    * [ETRI 비콘 연구실](http://beacon.smartcontent.kr/introduce)
 * Arduino
     * [http://www.arduino.cc/en/Guide/HomePage](http://www.arduino.cc/en/Guide/HomePage)
     * [아두이노 콥터](http://copter.ardupilot.com/)
@@ -83,9 +85,13 @@ permalink: /about/
     * [위 강좌쓴 사람의 카페](http://cafe.naver.com/sketchurimagination)
     * [MPU카페](http://cafe.naver.com/mpucafe)
     * [아두이노 블루투스 통신 카페](http://cafe.naver.com/convergencekorea)
+    * 온라인 강좌
+        * [http://wiki.vctec.co.kr/opensource/arduino](http://wiki.vctec.co.kr/opensource/arduino)
+        * [하드카피 월드](http://www.hardcopyworld.com/)
     * 필요한 기본 부품
         * [MPU 스타터 키트: 15,500 + 2,600](http://cafe.naver.com/mpucafe/4821)
         * [아두이노 우노 호환보드 + 적외선거리센서: 20,000 + 2,500](http://www.gmarket.co.kr/pay/Basket.asp)
+        * [아트로봇](http://artrobot.co.kr/)
         * 부품판매
             * http://www.eleparts.co.kr/main/main.php
             * http://www.ic114.com/ajaxwww/theme/001/default.aspx
