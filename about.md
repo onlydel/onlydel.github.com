@@ -78,6 +78,7 @@ permalink: /about/
 * [ms-iot GitHub](https://github.com/ms-iot)
 * 비콘 (Beacon)
     * [ETRI 비콘 연구실](http://beacon.smartcontent.kr/introduce)
+    * [대박 Dron Apps Gall.](http://flyver.co/drone-apps/)
 * Arduino
     * [http://www.arduino.cc/en/Guide/HomePage](http://www.arduino.cc/en/Guide/HomePage)
     * [아두이노 콥터](http://copter.ardupilot.com/)
@@ -85,6 +86,8 @@ permalink: /about/
     * [위 강좌쓴 사람의 카페](http://cafe.naver.com/sketchurimagination)
     * [MPU카페](http://cafe.naver.com/mpucafe)
     * [아두이노 블루투스 통신 카페](http://cafe.naver.com/convergencekorea)
+    * [핀잇](https://www.pinterest.com/pin/416864509234161587/)
+    * [아두이노 콥터](http://blog.naver.com/sb1214/30183380948)
     * 온라인 강좌
         * [http://wiki.vctec.co.kr/opensource/arduino](http://wiki.vctec.co.kr/opensource/arduino)
         * [하드카피 월드](http://www.hardcopyworld.com/)
@@ -95,7 +98,8 @@ permalink: /about/
         * 부품판매
             * http://www.eleparts.co.kr/main/main.php
             * http://www.ic114.com/ajaxwww/theme/001/default.aspx
-            * http://www.devicemart.co.kr/
+            * [디바이스마트](http://www.devicemart.co.kr/)
+            * [디바이스마트 블로그](http://www.ntrexgo.com/)
             * http://www.funnykit.co.kr/shop/main/index.php
             * http://www.robot.co.kr/front/php/category.php?cate_no=24
             * http://e홈메이드클럽.com/
@@ -131,6 +135,10 @@ permalink: /about/
 * Multi-Tentant
     * [https://msdn.microsoft.com/en-us/library/ff966499.aspx](https://msdn.microsoft.com/en-us/library/ff966499.aspx)
 
+### 맥에서 자바개발
+* [http://mirwebma.tistory.com/27](http://mirwebma.tistory.com/27)
+* [http://devist.tistory.com/97](http://devist.tistory.com/97)
+
 ### 블로그
 * [http://leastprivilege.com](http://leastprivilege.com)
 * [https://justhackem.wordpress.com/](https://justhackem.wordpress.com/)
@@ -139,6 +147,7 @@ permalink: /about/
 * [dogfeet](http://dogfeet.github.io/)
 * [정보시각화 스터디](http://infovis.kr)
 * [https://github.com/pismute](https://github.com/pismute)
+* [김태곤 javascript](http://taegon.kim)
 
 ### 소프트웨어 디자인
 * [UML Diagram](http://www.uml-diagrams.org/){:target="_blank"}
