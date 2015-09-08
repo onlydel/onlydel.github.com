@@ -6,6 +6,41 @@ permalink: /about/
 ### Javascript
 * [Javascript Library design tutorial](http://code.tutsplus.com/tutorials/build-your-first-javascript-library--net-26796)
 * [MDN](https://developer.mozilla.org/ko/)
+    - [객체지향 자바스크립트](https://developer.mozilla.org/ko/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)
+    - 문서
+        + [Reference](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference)
+    - [클로져](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Closures)
+        아래 두 함수가 어떤 차이가 있는지 설명 할 수 있겠는가?
+
+        <pre class="prettyprint">
+        function MyObject(name, message) {
+          this.name = name.toString();
+          this.message = message.toString();
+          this.getName = function() {
+            return this.name;
+          };
+
+          this.getMessage = function() {
+            return this.message;
+          };
+        }
+
+        function MyObject(name, message) {
+          this.name = name.toString();
+          this.message = message.toString();
+        }
+        MyObject.prototype = {
+          getName: function() {
+            return this.name;
+          },
+          getMessage: function() {
+            return this.message;
+          }
+        };
+        </pre>
+
+    - [클로져를 활용한 모듈패턴 이해](http://blog.javarouka.me/2012/02/javascripts-pattern-2-module-pattern.html)
+    - [모듈패턴 또다른 이해](http://leejiheg.tistory.com/24)
 
 ### 스위프트
 * [The Swift Programming Language](https://developer.apple.com/swift/resources/)
@@ -125,6 +160,7 @@ permalink: /about/
 ### 맥에서 자바개발
 * [http://mirwebma.tistory.com/27](http://mirwebma.tistory.com/27)
 * [http://devist.tistory.com/97](http://devist.tistory.com/97)
+* [맥에서 개발용 웹서버 구축 가이드](https://mallinson.ca/osx-web-development/) : 다른 어떤것 보다 이게 제일 완벽함.
 
 ### 개발자 블로그, 커뮤니티
 * [http://leastprivilege.com](http://leastprivilege.com)
@@ -135,7 +171,10 @@ permalink: /about/
 * [정보시각화 스터디](http://infovis.kr)
 * [https://github.com/pismute](https://github.com/pismute)
 * [김태곤 javascript](http://taegon.kim)
-* [naver D2]http://d2.naver.com/
+* [naver D2](http://d2.naver.com/)
+* 자비스크립트
+    - [Nonblock](http://blog.javarouka.me)
+    - [지똥이](http://leejiheg.tistory.com)
 
 ### 소프트웨어 디자인
 * [UML Diagram](http://www.uml-diagrams.org/){:target="_blank"}
