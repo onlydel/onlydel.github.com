@@ -3,7 +3,7 @@ layout: post
 title: Jekyll - GitHub Pages 개발환경 Atom으로 변경
 date: 2015-09-08 15:30:31 +9:00 GMT
 categories:
-  - AnotherCode
+  - Another Code
 tags:
   - atom
   - GitHub
