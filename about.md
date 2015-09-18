@@ -144,6 +144,12 @@ permalink: /about/
     - [codecademy online learn](http://www.codecademy.com/learn/learn-angularjs)
 * Session
     - `eng`[Session in ASP.NET 5](http://www.exceptionnotfound.net/session-in-asp-net-5/)
+* ASP.NET + Angula.js + MongoDB
+    - [Goolge Search](https://www.google.co.kr/search?q=asp.net+entity+framework+mongodb&oq=asp.net+entity+framework+mongodb&aqs=chrome..69i57.9087j0j7&sourceid=chrome&es_sm=91&ie=UTF-8#newwindow=1&q=asp+net+web+api+mongodb)
+    - [blog article](http://blogs.msdn.com/b/henrikn/archive/2012/02/19/using-web-api-with-mongodb.aspx)
+    - [MongoDB c# API](http://api.mongodb.org/csharp/)
+    - [CodePlex sample](http://aspnet.codeplex.com/sourcecontrol/latest#Samples/WebApi/MongoSample/ReadMe.txt)
+    - [GitHub sample](https://github.com/jacqinthebox/AddressBook/tree/master/AddressBook)
 
 ### Developing hybrid mobile apps
 * [Apache Cordova™](https://cordova.apache.org)
@@ -160,7 +166,19 @@ permalink: /about/
 ### 맥에서 자바개발
 * [http://mirwebma.tistory.com/27](http://mirwebma.tistory.com/27)
 * [http://devist.tistory.com/97](http://devist.tistory.com/97)
-* [맥에서 개발용 웹서버 구축 가이드](https://mallinson.ca/osx-web-development/) : 다른 어떤것 보다 이게 제일 완벽함.
+* [맥에서 개발용 웹서버 구축 가이드](https://mallinson.ca/osx-web-development/) : 다른 어떤것 보다 이게 제일 완벽함.(virtualhost)
+    - 여기에 추가로 custom port를 쓰려면 : httpd.conf에서 
+    
+      <pre class="prettyprint">
+      Listen 80
+      <mark>Listen 8080 <-- 추가</mark>
+      ....
+      ServerName localhost:80
+      <mark>ServerName localhost:8080 <-- 추가</mark>
+      </pre>
+* 클라우드 서버 구축
+    - [PaaS Cloud](https://www.openshift.com/products)
+    - [MongoDB](https://mongolab.com)
 
 ### 개발자 블로그, 커뮤니티
 * [http://leastprivilege.com](http://leastprivilege.com)
