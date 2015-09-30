@@ -1,0 +1,170 @@
+---
+layout: post
+title: 요세미티(OS X 10.10) - SVN(Subversion)
+date: 2015-09-25 09:30:31 +9:00 GMT
+categories:
+  - Another Code
+tags:
+  - OSX
+  - yosemite
+  - 아파치
+  - svn
+  - subversion
+---
+
+## 들어가며
+
+Mac OS X 에서 subversion의 기본적인 기능을 사용하는 것은 어렵지 않다. 처음에는 클라이언트용 GUI가 없으면 사용하기 힘들것이라는 생각에 freeware 앱을 찾아 다녔지만 맘에 드는 것을 찾지 못해 직접 콘솔에서 사용하는 법을 배워보기로 한다.
+
+> 그냥 [Version](http://versionsapp.com) 같은 앱을 하나 사면 될것 아닌가? 라는 생각도 있지만 59$면 싼 가격도 아니고 Subversion보다 GitHub을 주로 사용하기 때문에 ...
+
+## 설치
+
+요세미티(OS X 10.10)에는 svn이 기본 설치되어 있다. 버전은 1.7.xx정도 되었던것 같다. 2015년 9월 최신 버전은 1.8.13이다. 이 버전으로 업데이트해 본다.
+[Homebrew](http://brew.sh/)와 Command Line Tools for XCode가 설치되어 있어야한다.
+
+1. 우선 현재 설치된 버전을 확인해 본다.(나는 1.8.9)
+
+    <pre>
+    $ svn --version
+    svn, version 1.8.9 (r1591380)
+       compiled Sep 25 2015, 19:08:52 on x86_64-apple-darwin14.5.0
+
+    Copyright (C) 2014 The Apache Software Foundation.
+    This software consists of contributions made by many people;
+    see the NOTICE file for more information.
+    Subversion is open source software, see http://subversion.apache.org/
+
+    The following repository access (RA) modules are available:
+
+    - ra_svn : Module for accessing a repository using the svn network protocol.
+      + with Cyrus SASL authentication
+      + handles 'svn' scheme
+    - ra_local : Module for accessing a repository on local disk.
+      + handles 'file' scheme
+    - ra_serf : Module for accessing a repository via WebDAV protocol using serf.
+      + using serf 1.2.1
+      + handles 'http' scheme
+      + handles 'https' scheme
+    </pre>
+
+2. 어디에 설치되어 있는지 확인 한다.
+    <pre>
+    $ whereis svn
+    /usr/bin/svn</pre>
+
+3. 설치된 이전 버전을 지운다.
+
+    <pre>
+    $ sudo rm /usr/bin/svn</pre>
+
+4. brew로 설치하고 link한다.(지우지 않고 했더니 아래처럼 에러가...)
+
+    <pre>
+    $ brew install svn
+    ==> Installing dependencies for subversion: sqlite
+    ==> Installing subversion dependency: sqlite
+    ==> Downloading https://homebrew.bintray.com/bottles/sqlite-3.8.11.1.yosemite.bottle.tar.gz
+    ######################################################################## 100.0%
+    ==> Pouring sqlite-3.8.11.1.yosemite.bottle.tar.gz
+    ==> Caveats
+    This formula is keg-only, which means it was not symlinked into /usr/local.
+
+    OS X provides an older sqlite3.
+
+    Generally there are no consequences of this for you. If you build your
+    own software and it requires this formula, you'll need to add to your
+    build variables:
+
+        LDFLAGS:  -L/usr/local/opt/sqlite/lib
+        CPPFLAGS: -I/usr/local/opt/sqlite/include
+
+    ==> Summary
+    🍺  /usr/local/Cellar/sqlite/3.8.11.1: 9 files, 2.8M
+    ==> Installing subversion
+    ==> Downloading https://homebrew.bintray.com/bottles/subversion-1.8.13.yosemite.bottle.1.tar.gz
+    ######################################################################## 100.0%
+    ==> Pouring subversion-1.8.13.yosemite.bottle.1.tar.gz
+    Error: The `brew link` step did not complete successfully
+    The formula built, but is not symlinked into /usr/local
+    Could not symlink bin/svn
+    Target /usr/local/bin/svn
+    already exists. You may want to remove it:
+      rm '/usr/local/bin/svn'
+    ...</pre>
+
+    <pre>
+    $ brew link --overwrite svn
+    Linking /usr/local/Cellar/subversion/1.8.13... 60 symlinks created</pre>
+
+5. 혹시 link시 permission오류가 나면 해당 폴더에 write권한을 풀어주고 다시 `link`를 실행한다.
+
+6. 설치되었는지 확인
+
+    <pre>
+    $ svn --version
+    svn, version 1.8.13 (r1667537)
+       compiled Jun  5 2015, 19:21:21 on x86_64-apple-darwin14.3.0
+
+    Copyright (C) 2014 The Apache Software Foundation.
+    This software consists of contributions made by many people;
+    see the NOTICE file for more information.
+    Subversion is open source software, see http://subversion.apache.org/
+
+    The following repository access (RA) modules are available:
+
+    - ra_svn : Module for accessing a repository using the svn network protocol.
+      + with Cyrus SASL authentication
+      + handles 'svn' scheme
+    - ra_local : Module for accessing a repository on local disk.
+      + handles 'file' scheme
+    - ra_serf : Module for accessing a repository via WebDAV protocol using serf.
+      + using serf 1.3.8
+      + handles 'http' scheme
+      + handles 'https' scheme
+    </pre>
+
+
+## 실행: Checkout
+
+[checkout](http://svnbook.red-bean.com/en/1.7/svn.ref.svn.c.checkout.html)은 repository에서 로컬로 파일을 복사하기 위한 명령이다.
+
+<pre>
+$ svn help checkout
+checkout (co): Check out a working copy from a repository.
+usage: checkout URL[@REV]... [PATH]</pre>
+
+실행해 보면 해당 저장소의 사용자 인증을 거쳐 파일을 내려받게 된다.
+
+<pre>
+$ svn checkout svn://dev.ilabs.co.kr/ilab/WebApplications webapps
+Authentication realm: <svn://dev.ilabs.co.kr:3690> iLab Repository
+Password for 'onlydel': ********
+A    webapps/doc.realgrid.net
+A    webapps/doc.realgrid.net/google8707d4b082219f1c.html
+A    webapps/doc.realgrid.net/Web.config
+A    webapps/doc.realgrid.net/packages.config
+A    webapps/doc.realgrid.net/_SiteLayout_bak150303.cshtml
+A    webapps/doc.realgrid.net/_SiteLayout_bak140331.cshtml
+A    webapps/doc.realgrid.net/_SiteLayout_bak150115.cshtml
+A    webapps/doc.realgrid.net/Contact.cshtml
+A    webapps/doc.realgrid.net/_AppStart.cshtml
+A    webapps/doc.realgrid.net/Scripts
+A    webapps/doc.realgrid.net/Scripts/jquery.unobtrusive-ajax.min.js
+A    webapps/doc.realgrid.net/Scripts/jquery.validate.js
+A    webapps/doc.realgrid.net/Scripts/oemReplace.js
+A    webapps/doc.realgrid.net/Scripts/modernizr-2.5.3.js
+A    webapps/doc.realgrid.net/Scripts/jquery.validate.unobtrusive.min.js
+A    webapps/doc.realgrid.net/Scripts/jquery-1.10.1.min.js
+...
+A    webapps/DataViewProjects/DataViewServer.Tests/Properties/AssemblyInfo.cs
+A    webapps/DataViewProjects/TraceAndTestImpact.testsettings
+Checked out revision 12417.</pre>
+
+
+
+
+## 참조
+
+* [subversion.apache.org](http://subversion.apache.org/)
+* [tutorial](http://rubyrobot.org/tutorial/subversion-with-mac-os-x)

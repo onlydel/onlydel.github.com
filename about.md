@@ -3,6 +3,29 @@ layout: page
 title: About
 permalink: /about/
 ---
+
+### Maven
+* Java Build Tool
+* [Maven Book : Maven by Example](http://books.sonatype.com/mvnex-book/reference/index.html)
+* [MKyong's Blog](http://www.mkyong.com/maven/)
+* Eclipse를 사용할 수도 있겠지만 설치하면서부터 나타나는 오류를 감당하기 힘들어서 Console + SublimeText3으로 간다.
+* HSQL
+    - [Hyper SQL](http://hsqldb.org) : HSQLDB - 100% Java Database 라고 광고한다.
+    - OpenSource RDBMS, java 개발시 테스트용 DB로 주로 사용
+    - [설치방법](http://vinant.blogspot.kr/2012/08/setup-hsqldb-on-mac.html)
+    - maven에서는 이렇게??    
+        <pre class="prettyprint">
+        $ mvn hibernate3:hbm2ddl</pre>
+        하면... 안되는데?
+        + [ERROR] Failed to execute goal org.codehaus.mojo:hibernate3-maven-plugin:2.1:hbm2ddl (default-cli) on project simple-webapp: Could not get ConfigurationTask. -> [Help 1]
+        + 해결: hibernate3-maven-plugin 버전을 2.1이 아닌 2.2로 수정    
+            <pre class="prettyprint">
+            &lt;groupId&gt;org.codehaus.mojo&lt;/groupId&gt;
+            &lt;artifactId&gt;hibernate3-maven-plugin&lt;/artifactId&gt;
+            &lt;!-- insted of 2.1 as documented inside the Maven by example guide --&gt;
+            &lt;version&gt;2.2&lt;/version&gt;  
+            ....  </pre>
+
 ### Javascript
 * [Javascript Library design tutorial](http://code.tutsplus.com/tutorials/build-your-first-javascript-library--net-26796)
 * [MDN](https://developer.mozilla.org/ko/)
