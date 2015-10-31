@@ -1,18 +1,21 @@
 ---
 layout: post
-title: 요세미티(OS X 10.10) - 아파치웹서버 구동하기 (Virtual Hosting 구현)
+title: OS X(10.11)에서 아파치웹서버 구동하기 (Virtual Hosting 구현)
 date: 2015-09-25 09:30:31 +9:00 GMT
 categories:
   - Another Code
 tags:
   - OSX
-  - yosemite
   - 아파치
   - apache
   - webserver
   - 웹서버
   - virtualhost
 ---
+
+#### 업데이트 2015-10-01
+* OS X를 11(엘 캐피탄)으로 업데이트 했더니 기존에 설정했던 `httpd.conf`파일이 초기화 되어 버렸다.
+* `httpd-vhosts.conf`파일은 유지 되는게 이상하다.
 
 ## 들어가며
 
@@ -60,7 +63,7 @@ Then to load dnsmasq now:
 이제 아래 명령들을 아무생각없이 순서대로 실행해 준다. dnsmasq를 위한 설정 작업이며, 기본적으로 .dev로 마무리되는 도메인을 사용하도록 설정한다.
 
 <pre>
-$ echo 'address=/.dev/127.0.0.1' > etc/dnsmasq.conf
+$ echo 'address=/.dev/127.0.0.1' > /etc/dnsmasq.conf
 
 $ sudo cp -v $(brew --prefix dnsmasq)/homebrew.mxcl.dnsmasq.plist /Library/LaunchDaemons
 
