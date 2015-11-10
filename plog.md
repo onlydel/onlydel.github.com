@@ -4,6 +4,29 @@ title: Plog
 permalink: /plog/
 ---
 
+### AWS
+* Nov 01 15: 윈도우 애저는 1년넘게 아직도 계정 가입도 못하고 있는데(결제정보 입력 화면에서 다음으로 넘어가지 않아...), AWS는 약 15분 만에 뚝딱 가입하고 Windows Server 2012인스턴스까지 만들어 로그인까지 성공했다.
+  ![](/images/plog/nov0115.png)
+
+### 핫모듈 대체
+
+### 웹팩(webpack)
+* node에서 다른 파일을 include하는 방법으로 require사용. - 이건 웹팩과 별 관계가 없지만...
+* [https://github.com/webpack/webpack](https://github.com/webpack/webpack)
+
+### React
+* Angular.js의 대안이 될 수 있는가?
+* [https://facebook.github.io/react/index.html](https://facebook.github.io/react/index.html)
+* React Native를 통해 모바일용 앱을 개발한다. 이 앱은 하이브리드가 아닌 네이티브 앱이다.
+* [http://taegon.kim/](http://taegon.kim/)
+* [DeView에서 소개](http://serviceapi.rmcnmv.naver.com/flash/outKeyPlayer.nhn?vid=BAA1FFA4240788DDA9D4174FC5C8BA8DCF46&outKey=V1289ef936c3d32277873bd84a5ea14d93e0287a8c7a4eda4905fbd84a5ea14d93e02&controlBarMovable=true&jsCallable=true&skinName=tvcast_white)
+* [https://spoqa.github.io/2015/09/09/react-guide-01.html](https://spoqa.github.io/2015/09/09/react-guide-01.html)
+* React Examples
+    - [http://react.rocks/?show=40](http://react.rocks/?show=40)
+    - [http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html](http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html)
+    - [http://react.rocks/tag/FullStack](http://react.rocks/tag/FullStack)
+    - [http://helmetrex.com](http://helmetrex.com)
+
 ### Mac Tip
 * Finder에서 hidden folder & file 보기 : defaults write com.apple.finder AppleShowAllFiles YES
 
@@ -13,6 +36,12 @@ permalink: /plog/
     Onlydel-MacBook-Pro:apache2 gotodo$ defaults write com.apple.finder AppleShowAllFiles NO
     Onlydel-MacBook-Pro:apache2 gotodo$ killall Finder
   </pre>
+
+### Node.js
+* Setup
+    - [http://makerlog.org/posts/js-development-environment/](http://makerlog.org/posts/js-development-environment/)
+* Examples
+    - [http://www.codemag.com/article/1210041](http://www.codemag.com/article/1210041)
 
 ### Maven
 * Java Build Tool
@@ -75,7 +104,7 @@ permalink: /plog/
     - [클로져를 활용한 모듈패턴 이해](http://blog.javarouka.me/2012/02/javascripts-pattern-2-module-pattern.html)
     - [모듈패턴 또다른 이해](http://leejiheg.tistory.com/24)
 
-### 스위프트
+### 스위프트(Swift)
 * [The Swift Programming Language](https://developer.apple.com/swift/resources/)
 * [(한글)The ft Programming Language 한글 번역](http://swift.leantra.kr/)
 * [Using Swift with Cocoa and Objective-C](https://developer.apple.com/library/ios/documentation/Swift/Conceptual/BuildingCocoaApps/)
