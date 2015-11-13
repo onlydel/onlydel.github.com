@@ -51,6 +51,7 @@ document.getElementById("demo").innerHTML = "Hello JavaScript";
 This example changes an HTML image, by changing the src attribute of an <img> tag:
 
 이 예시는 HTML 이미지를 이미지 태그의 src속성에 의해서 바뀝니다.
+[링크](http://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb)
 
 ![](http://www.w3schools.com/js/pic_bulboff.gif)
 
@@ -82,6 +83,7 @@ Please input a number between 1 and 10
   
 자바스크립트는 흔이 입력을 인증하는데 사용합니다.  
 1부터10사이에 숫자를 넣어보세요.
+[링크](http://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_validate)
 
 ---
 
