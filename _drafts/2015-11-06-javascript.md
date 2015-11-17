@@ -399,7 +399,7 @@ document.write() 방법은 테스트용으로만 사용 되어야 합니다.
 To access an HTML element, JavaScript can use the document.getElementById(id) method.  
 The id attribute defines the HTML element. The innerHTML property defines the HTML content:
 
-HTML요소에 들어가려면, 자바스크립트의 document.getElimentById(id)방법을 사용해야 합니다.  
+HTML요소에 들어가려면, 자바스크립트의 document.getElementById(id)방법을 사용해야 합니다.  
 그 아이디속성은 HTML의 요소를 정의합니다. innerHTML속성 정의는 HTML내용의 입니다.
 
 <pre class="prettyprint">
@@ -413,7 +413,7 @@ HTML요소에 들어가려면, 자바스크립트의 document.getElimentById(id)
 &lt;p id="demo"&gt;&lt;/p&gt;
 
 &lt;script&gt;
-documnet.getElementById("demo").innerHTML = 5 + 6;
+document.getElementById("demo").innerHTML = 5 + 6;
 &lt;/script&gt;
 
 &lt;/body&gt;
@@ -521,7 +521,7 @@ The most important rules for writing fixed values are:
 Numbers are written with or without decimals:
 
 고정된 값을 쓸때 가장 중요한 점은:  
-숫자를 소수점이 없이 쓰거나 같이 쓰일경우: 
+숫자를 소수점이 없이 쓰일경우: 
 <pre class="prettyprint">
 10.50
 
@@ -625,7 +625,7 @@ Code after double slashes // or between /* and */ is treated as a comment.
 Comments are ignored, and will not be executed: 
 
 모든 자바스크립트는 "실행"되는것이 아닙니다.
-주석은 2개의 슬레쉬// 다음에 아니면 /*와*/ 사이에 코드의 내용을 취급합니다.
+주석은 2개의 슬레쉬// 다음에 아니면 /* 와 */ 사이에 코드의 내용을 취급합니다.
 주석은 무시됩니다, 그리고 실행되지 않습니다.
 <pre class="prettyprint">
 var x = 5;   // I will be executed
@@ -650,7 +650,7 @@ This way JavaScript can easily distinguish identifiers from numbers.
 식별자의 이름들입니다.
 자바스크립트안에는, 변수에 식별자의 이름을 사용합니다(키워드나 함수나 라벨).   
 법적인 이름에대한 규칙은 대부분의 프로그래밍 언어들이 같다.  
-식별자를 구성하는 첫번째 글자는 반드시'문자'나'밑줄_'이나 '달러$'로 시작되어야 합니다. 
+식별자를 구성하는 첫번째 글자는 반드시'문자'나'밑줄_'이나 '달러$'로 시작되어야 합니다.   
 첫글자 다음 문자로는 '문자' '숫자' '밑줄_' 또는 '달러$' 표시를 할 수 있습니다.  
 숫자는 문자의 첫번째로 오는것은 허용하지 않습니다.  
 자바스크립트는 숫자로 식별자를 쉽게 구별할 수 있습니다.  
@@ -716,4 +716,187 @@ For a closer look, please study our Complete Unicode Reference.
 유니코드는 (거의)세상의 모든 문자,문장 부호 및 기호를 포함 합니다.  
 끝내기전에 잠깐 들여다 보실려면, 유니코드에 대해서 부가적으로 공부하시려면 여기에 있습니다.
 
+---
+
+# JavaScript Statements
+
+# 자바스크립트 문 
+
+---
+
+In HTML, JavaScript statements are "instructions" to be "executed" by the web browser.
+
+HTML안에는 자바스크립트 문은 웹브라우저의 지시와 지침 입니다.
+
+---
+
+### JavaScript Statements
+
+### 자바스크립트 문
+
+This statement tells the browser to write "Hello Dolly." inside an HTML element with id="demo":
+
+이 문장은 브라우저에 Hello Dolly를 쓸수있는 것을 말합니다. HTML 요소 안에 id를 demo로 함께 사용합니다.
+
+Example
+<pre class="prettyprint">
+document.getElementById("demo").innerHTML = "Hello Dolly.";
+</pre>
+
+---
+
+### JavaScript Programs
+
+### 자바스크립트 프로그램
+
+Most JavaScript programs contain many JavaScript statements.   
+The statements are executed, one by one, in the same order as they are written.   
+In this example, x, y, and z is given values, and finally z is displayed:
+
+최고의 자바스크립트 프로그램은 많은 자바스크립트 문이 들어 있습니다.  
+그 문은 입력한 순서와 동일한 순서로 하나하나씩 순차적으로 실행 됩니다.
+이 에제는 x,y와z 에 값을 주고 마지막으로 표시합니다:
+
+Example
+<pre class="prettyprint">
+var x = 5;
+var y = 6;
+var z = x + y;
+document.getElementById("demo").innerHTML = z;
+</pre>
+JavaScript programs (and JavaScript statements) are often called JavaScript code.
+
+---
+
+### Semicolons ;
+
+### 세미콜론;
+
+Semicolons separate JavaScript statements.   
+Add a semicolon at the end of each executable statement:
+
+세미콜론은 자바스크립트 문을 분리합니다.
+각 실행 문장 끝에 세미콜론을 추가합니다.:
+
+<pre class="prettyprint">
+a = 5;
+b = 6;
+c = a + b;
+</pre>
+When separated by semicolons, multiple statements on one line are allowed:  
+세미콜론으로 많은 문장을 한줄로 구역을 나누어 사용할 수 있습니다.:
+
+<pre class="prettyprint">
+a = 5; b = 6; c = a + b;
+</pre>
+On the web, you might see examples without semicolons. 
+Ending statements with semicolon is not required, but highly recommended.
+
+웹에는 당신의 세미콜론이 없는 예가 보일 것 입니다.   
+끝에 세미콜론을 붙이는거는 필수는 아니지만, 세미콜론을 붙이는 것을 매우 권장한다.
+
+---
+
+### JavaScript White Space
+
+### 자바스크립트 여백
+
+JavaScript ignores multiple spaces. You can add white space to your script to make it more readable.  
+The following lines are equivalent:
+
+자바스크립트는 다수의 공백을 제외합니다. 당신이 잘 읽을수 있도록 여백을 추가할 수 있습니다.  
+다음에 나오는 줄의 의미는 같습니다:
+
+<pre class="prettyprint">
+var person = "Hege";
+var person="Hege";
+</pre>
+A good practice is to put spaces around operators ( = + - * / ):  
+좋은 방법은 연산자의 주위를 공백을 넣는 것 입니다.
+
+var x = y + z;
+
+---
+
+### JavaScript Line Length and Line Breaks
+
+### 자바스크립트 줄 길이와 줄바꿈
+
+For best readability, programmers often like to avoid code lines longer than 80 characters.   
+If a JavaScript statement does not fit on one line, the best place to break it, is after an operator:
+
+최고의 가독성을 위해서, 프로그램 라인의 길이가 80자인 코드를 피하는 것입니다.  
+만약 자바스크립트 문이 한줄에 끝나지 않는경우에, 더좋은 방법은 연산자에서 줄바꿈 입니다.
+
+Example
+<pre class="prettyprint">
+document.getElementById("demo").innerHTML = 
+"Hello Dolly.";
+</pre>
+
+---
+
+### JavaScript Code Blocks
+
+### 자바스크립트 코드묶음
+
+JavaScript statements can be grouped together in code blocks, inside curly brackets {...}.   
+The purpose of code blocks is to define statements to be executed together.   
+One place you will find statements grouped together in blocks, are in JavaScript functions:
+
+자바스크립트문은 {...}내부 코드로 묶어 그룹화 할 수 있습니다.  
+코드 묶음의 목적은 문장이 같이 실행되는 것을 정의합니다.  
+자바스크립트 함수 장소 안에서 당신이 그룹화한 문장을 찾을수 있습니다.
+
+Example
+<pre class="prettyprint">
+function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello Dolly.";
+    document.getElementById("myDIV").innerHTML = "How are you?";
+}
+</pre>
+In this tutorial we use 4 spaces of indentation for code blocks.
+You will learn more about functions later in this tutorial.
+
+이 튜토리얼에서 우리는 코드불록 들여 쓰기 4공간을 사용했습니다.
+우리는 더 많은 함수의 기능을 다음에 자세하게 배울 것 입니다.
+
+---
+
+### JavaScript Keywords
+
+### 자바스크립트 핵심
+
+JavaScript statements often start with a keyword to identify the JavaScript action to be performed.   
+Here is a list of some of the keywords you will learn about in this tutorial:  
+ 
+자바스크립트에서 자주 쓰이는 핵심적인 자바스크립트의 실행방법을 확인해 봅시다.
+다음 튜토리얼에서 배울 일부 핵심 목록 입니다. 
+
+* break: Terminates a switch or a loop
+* continue: Jumps out of a loop and starts at the top
+* debugger: Stops the execution of JavaScript, and calls (if available) the debugging function
+* do ... while: Executes a block of statements, and repeats the block, while a condition is true
+* for: Marks a block of statements to be executed, as long as a condition is true
+* function: Declares a function
+* if ... else: Marks a block of statements to be executed, depending on a condition
+* return: Exits a function
+* switch: Marks a block of statements to be executed, depending on different cases
+* try ... catch: Implements error handling to a block of statements
+* var: Declares a variable
+
+* break: 스위치나 루프 종료합니다.
+* continue: 루프 점프나 위에서 시작합니다.
+* debugger: 자바스크립트의 실행 및 호출 디버깅 중지합니다.
+* do ... while: 조건이 true인 동안에 묶음 문장을 실행하고 묶음을 반복합니다.
+* for: 표시된 문장 블록은 true일때 까지 실행합니다.
+* function: 함수를 선언합니다.
+* if ... else: 표시된 문장 블록 조건에 따라 실행됩니다.
+* return: 기능 종료합니다.
+* switch: 표시된 문장 블록은 경우에 따라 실행됩니다.
+* try ... catch: 문장 블록에 오류처리합니다.
+* var: 변수 선언합니다.
+
+JavaScript keywords are reserved words. Reserved words cannot be used as names for variables.  
+자바스크립트 키워드는 단어의 예약입니다. 예약어는 변수 이름으로 사용할 수 없습니다.
 ---
