@@ -1532,3 +1532,268 @@ Comparison and logical operators are described in the JS Comparisons chapter.
 ---
 
 ---
+
+# JavaScript Arithmetic
+
+# 자바스크립트 계산
+
+---
+
+A typical thing to do with numbers is arithmetic.  
+
+전형적인 숫자 계산 방법
+
+---
+
+### JavaScript Arithmetic Operators
+
+### 자바스크립트 연산자
+
+Arithmetic operators perform arithmetic on numbers (literals or variables).  
+
+계산 연산자는 (상수나 변수)숫자를 계산합니다
+
+<pre class="prettyprint">
+Operator	Description  
++		Addition  	덧셈
+-		Subtraction  	뺄셈
+*		Multiplication  곱셈
+/		Division  	나눗셈
+%		Modulus  	계수
+++		Increment  	증가
+--		Decrement  	감소
+</pre>
+
+---
+
+### Arithmetic Operations
+
+### 연산자 계산
+
+A typical arithmetic operation operates on two numbers.   
+The two numbers can be literals:  
+
+전형적인 계산을 진행할 때는 두개의 숫자로 진행합니다.  
+두개의 상수로 가능합니다
+
+<pre class="prettyprint">
+Example
+var x = 100 + 50;
+</pre>
+
+or variables: 또는 변수로
+
+<pre class="prettyprint">
+Example
+var x = a + b;
+</pre>
+
+or expressions: 다른 식
+
+<pre class="prettyprint">
+Example
+var x = (100 + 50) * a;
+</pre>
+
+---
+
+### Operators and Operands
+
+### 피연산자 와 연산자
+
+The numbers (in an arithmetic operation) are called operands.   
+The operation (to be performed between the two operands) is defined by an operator.  
+
+숫자(연산)는 피연산자 라고 불려집니다.  
+(두 피연산자 사이에 실행될)동작을 연산자로 정의합니다.  
+
+<pre class="prettyprint">
+Operands	Operators	Operand
+100		+		50
+</pre>
+
+The addition operator (+) adds numbers:   
+덧셈 연산자는 숫자를 더합니다.
+
+<pre class="prettyprint">
+Adding
+var x = 5;
+var y = 2;
+var z = x + y;
+</pre>
+
+The subtraction operator (-) subtracts numbers.  
+뺄셈 연산자는 숫자를 뺍니다.
+
+<pre class="prettyprint">
+Subtracting
+var x = 5;
+var y = 2;
+var z = x - y;
+</pre>
+
+The multiplication operator (*) multiplies numbers.  
+곱셈 연산자는 숫자를 곱합니다.
+
+<pre class="prettyprint">
+Multiplying
+var x = 5;
+var y = 2;
+var z = x * y;
+</pre>
+
+The division operator (/) divides numbers.  
+나눗셈 연산자는 숫자를 나눕니다.
+
+<pre class="prettyprint">
+Dividing
+var x = 5;
+var y = 2;
+var z = x / y;
+</pre>
+
+The modular operator (%) returns the division remainder.   
+모듈러 연산자는 분할된 나머지를 반환합니다.
+
+<pre class="prettyprint">
+Modulus
+var x = 5;
+var y = 2;
+var z = x % y;
+</pre>
+
+The increment operator (++) increments numbers.  
+증가 연산자는 숫자를 증가시킵니다.
+
+<pre class="prettyprint">
+Incrementing
+var x = 5;
+x++;
+var z = x;
+</pre>
+
+The decrement operator (- -) decrements numbers.   
+감소 연산자는 숫자를 감소시킵니다.
+
+<pre class="prettyprint">
+Decrementing
+var x = 5;
+x--;
+var z = x;
+</pre>
+
+---
+
+### Operator Precedence
+
+### 연산자 순서
+
+Operator precedence describes the order in which operations are performed in an arithmetic expression.
+
+연산자 우선순위에 따른 연산 순서에 대해서 설명합니다.
+
+<pre class="prettyprint">
+Example
+var x = 100 + 50 * 3;
+</pre>
+
+Is the result of example above the same as 150 * 3, or is it the same as 100 + 150?  
+Is the addition or the multiplication done first?  
+As in traditional school mathematics, the multiplication is done first.   
+Multiplication (*) and division (/) have higher precedence than addition (+) and subtraction (-).   
+And (as in school mathematics) the precedence can be changed by using parentheses:
+
+위의 예제와 같은 결과는 150 * 3 또는 100 + 150과 같습니까? 
+덧셈과 곱셈중 어떤것이 먼저일까?  
+전형적인 학교 수학에서는, 곱셈을 먼저 합니다.  
+곱셈과 나눗셈은 덧셈과 뺄셈보다 우선 순위 입니다.  
+그리고 학교 수학에서처럼 괄호로 우선순위를 바꿀 수 있습니다.
+
+<pre class="prettyprint">
+Example
+var x = (100 + 50) * 3;
+</pre>
+
+When using parentheses, the operations inside the parentheses are computed first.    
+When many operations have the same precedence (like addition and subtraction), they are computed from left to right:
+
+괄호를 사용할때, 연산자는 괄호 안을 먼저 계산을 합니다.  
+덧셈과 뺄셈처럼 연산의 우선순위가 같을경우에는 왼쪽에서 오른쪽으로 계산합니다.
+
+<pre class="prettyprint">
+Example
+var x = 100 + 50 - 3;
+</pre>
+
+---
+
+### JavaScript Operator Precedence Values
+
+### 자바스크립트 연산자 값의 우선순위
+
+<pre class="prettyprint">
+Value	Operator	Description		Example
+19	( )		Expression grouping	(3 + 4)
+ 	 	 	 
+18	.		Member			person.name
+18	[]		Member			person["name"]
+ 	 	 	 
+17	()		Function call		myFunction()
+17	new		Create			new Date()
+ 	 	 	 
+16	++		Postfix Increment	i++
+16	--		Postfix Decrement	i--
+ 	 	 	 
+15	++		Prefix Increment	++i
+15	--		Prefix Decrement	--i
+15	!		Logical not		!(x==y)
+15	typeof		Type			typeof x
+ 	 	 	 
+14	*		Multiplication		10 * 5
+14	/		Division		10 / 5
+14	%		Modulo division		10 % 5
+14	**		Exponentiation		10 ** 2
+ 	 	 	 
+13	+		Addition		10 + 5
+13	-		Subtraction		10 - 5
+ 	 	 	 
+12	&lt;&lt;		Shift left		x &lt;&lt; 2
+12	&gt;&gt;		Shift right		x &gt;&gt; 2
+ 	 	 	 
+11	&lt;		Less than		x &lt; y 
+11	&lt;=		Less than or equal	x &lt;= y
+11	&gt;		Greater than		x &gt; y
+11	&gt;=		Greater than or equal	x &gt;= y
+ 	 	 	 
+10	==		Equal			x == y
+10	===		Strict equal		x === y
+10	!=		Unequal			x != y
+10	!==		Strict unequal		x !== y
+ 	 	 	 
+6	&&		And			x && y
+5	||		Or			x || y
+ 	 	 	 
+3	=		Assignment		x = y
+3	+=		Assignment		x += y
+3	-=		Assignment		x -= y
+3	*=		Assignment		x *= y
+3	/=		Assignment		x /= y
+</pre>
+
+Expressions in parentheses are fully computed before the value is used in the rest of the expression.
+
+다른 식을 계산하기 전에 괄호를 완전히 계산하고 나머지 식을 계산합니다.
+
+---
+
+Test Yourself with Exercises!
+
+스스로 테스트 훈련
+
+[[훈련1](http://www.w3schools.com/js/exercise.asp?filename=exercise_arithmetic1)]
+[[훈련2](http://www.w3schools.com/js/exercise.asp?filename=exercise_arithmetic2)]
+[[훈련3](http://www.w3schools.com/js/exercise.asp?filename=exercise_arithmetic3)]
+[[훈련4](http://www.w3schools.com/js/exercise.asp?filename=exercise_arithmetic4)]
+[[훈련5](http://www.w3schools.com/js/exercise.asp?filename=exercise_arithmetic5)]
+
+---
