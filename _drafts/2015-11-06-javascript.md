@@ -1797,3 +1797,451 @@ Test Yourself with Exercises!
 [[훈련5](http://www.w3schools.com/js/exercise.asp?filename=exercise_arithmetic5)]
 
 ---
+
+---
+
+# JavaScript Assignment
+
+# 자바스크립트 할당
+
+### JavaScript Assignment Operators
+
+### 자바스크립트 할당 연산자
+
+Assignment operators assign values to JavaScript variables.
+
+할당 연산자는 자바스크립트 변수에 값을 할당합니다.
+
+<pre class="prettyprint">
+Operator	Example		Same As
+=		x = y		x = y
++=		x += y		x = x + y
+-=		x -= y		x = x - y
+*=		x *= y		x = x * y
+/=		x /= y		x = x / y
+%=		x %= y		x = x % y
+</pre>
+
+The = assignment operator assigns a value to a variable.
+
+=할당 연산자로 변수에 값을 할당합니다.
+
+<pre class="prettyprint">
+Assignment
+var x = 10;
+</pre>
+
+The += assignment operator adds a value to a variable.
+
++=할당 연산자는 변수에 값을 추가하여 할당합니다.
+
+<pre class="prettyprint">
+Assignment
+var x = 10;
+x += 5;
+</pre>
+
+The -= assignment operator subtracts a value from a variable.
+
+-=할당 연산자는 변수에 값을 뺄셈하여 할당합니다.
+
+<pre class="prettyprint">
+Assignment
+var x = 10;
+x -= 5;
+</pre>
+
+The *= assignment operator multiplies a variable.
+
+*=할당 연산자는 별수를 곱합니다.
+
+<pre class="prettyprint">
+Assignment
+var x = 10;
+x *= 5;
+</pre>
+
+The /= assignment divides a variable.
+
+/=할당 연산자는 변수를 나눕니다.
+
+<pre class="prettyprint">
+Assignment
+var x = 10;
+x /= 5;
+</pre>
+
+The %= assignment operator assigns a remainder to a variable.
+
+%=할당 연산자는 변수에 나머지 값을 할당합니다.
+
+<pre class="prettyprint">
+Assignment
+var x = 10;
+x %= 5;
+</pre>
+
+---
+
+### Test Yourself with Exercises!
+
+[[훈련1](http://www.w3schools.com/js/exercise.asp?filename=exercise_assignment1)]
+[[훈련2](http://www.w3schools.com/js/exercise.asp?filename=exercise_assignment2)]
+[[훈련3](http://www.w3schools.com/js/exercise.asp?filename=exercise_assignment3)]
+[[훈련4](http://www.w3schools.com/js/exercise.asp?filename=exercise_assignment4)]
+[[훈련5](http://www.w3schools.com/js/exercise.asp?filename=exercise_assignment5)]
+
+---
+
+---
+
+# JavaScript Data Types
+
+# 자바스크립트 데이터 형식
+
+---
+
+String, Number, Boolean, Array, Object.  
+
+문자열, 숫자, 논리형, 배열, 객체
+
+---
+
+### JavaScript Data Types
+
+### 자바스크립트 데이터 형식
+
+JavaScript variables can hold many data types: numbers, strings, arrays, objects and more:  
+
+자바스크립트 변수들은 많은 데이터 형식들을 가지고 있습니다: 숫자, 문자열, 배열, 객체 와 더많은 것을:
+
+<pre class="prettyprint">
+var length = 16;                               // Number
+var lastName = "Johnson";                      // String
+var cars = ["Saab", "Volvo", "BMW"];           // Array
+var x = {firstName:"John", lastName:"Doe"};    // Object
+</pre>
+
+---
+
+### The Concept of Data Types.
+
+### 데이터 형식의 개념
+
+In programming, data types is an important concept.   
+To be able to operate on variables, it is important to know something about the type.  
+Without data types, a computer cannot safely solve this:   
+
+프로그램에서는 데이터형식의 개념이 중요합니다.  
+변수를 동작할 수 있는, 어떤 유형에 대한 데이터 타입을 아는것이 중요합니다.  
+데이터 타입이 없이는, 컴퓨터는 안전하게 그것을 해결할 수 없습니다.
+
+<pre class="prettyprint">
+var x = 16 + "Volvo";
+</pre>
+
+Does it make any sense to add "Volvo" to sixteen? Will it produce an error or will it produce a result?   
+JavaScript will treat the example above as:  
+
+"Volvo"에 16을 추가한다는 것이 감이 오시나요? 그것은 에러를 발생시키거나 어떤 결과를 만들어 내나요?  
+자바스크립트 위에 예제를 다음과 같이 처리합니다.
+
+<pre class="prettyprint">
+var x = "16" + "Volvo";
+</pre>
+
+When adding a number and a string, JavaScript will treat the number as a string.  
+자바스크립트는 문자열과 숫자열을 더하면 숫자를 문자로 처리합니다.
+
+<pre class="prettyprint">
+Example
+var x = 16 + "Volvo";
+
+Example
+var x = "Volvo" + 16;
+</pre>
+
+JavaScript evaluates expressions from left to right. Different sequences can produce different results:
+
+자바스크립트 왼쪽에서 오른쪽으로 식을 평가합니다. 연속적인다른 순서는 다른 결과를 만들어 냅니다.
+
+<pre class="prettyprint">
+JavaScript:
+var x = 16 + 4 + "Volvo";
+Result:
+20Volvo
+
+JavaScript:
+var x = "Volvo" + 16 + 4;
+Result:
+Volvo164
+</pre>
+
+In the first example, JavaScript treats 16 and 4 as numbers, until it reaches "Volvo".   
+In the second example, since the first operand is a string, all operands are treated as strings.
+
+"Volvo"까지 도달하는 첫번째 예제는, 자바스크립트는 16부터 4까지는 숫자로 다루어 집니다.  
+두번째 예제는, 첫번째에서 문자열을 연산하면은, 모두 문자열로 다루어 집니다.
+
+---
+
+### JavaScript Has Dynamic Types
+
+### 자바스크립트는 동적인 형식을 가지고 있습니다.
+
+JavaScript has dynamic types. This means that the same variable can be used as different types:  
+
+자바스크립트는 동적인 형식을 가지고 있습니다. 이 의미는 변수에 다른 형식을 사용할 수 있다는 것을 의미합니다.
+
+<pre class="prettyprint">
+Example
+var x;               // Now x is undefined
+var x = 5;           // Now x is a Number
+var x = "John";      // Now x is a String
+</pre>
+
+---
+
+### JavaScript Strings
+
+### 자바스크립트 문자열
+
+A string (or a text string) is a series of characters like "John Doe".   
+Strings are written with quotes. You can use single or double quotes:
+
+"John Doe"와 같은 문자열(또는 문자) 입니다.  
+문자열은 따옴표를 사용합니다. 당신은 따옴표나 쌍따옴표를 사용합니다.
+
+
+<pre class="prettyprint">
+Example
+var carName = "Volvo XC60";   // Using double quotes
+var carName = 'Volvo XC60';   // Using single quotes
+</pre>
+
+You can use quotes inside a string, as long as they don't match the quotes surrounding the string:
+
+당신은 따옴표 안의 문자열과 문자열 주변의 따옴표가 다르기만 하면 그것들을 사용할 수 있습니다.
+
+<pre class="prettyprint">
+Example
+var answer = "It's alright";             // Single quote inside double quotes
+var answer = "He is called 'Johnny'";    // Single quotes inside double quotes
+var answer = 'He is called "Johnny"';    // Double quotes inside single quotes
+</pre>
+
+You will learn more about strings later in this tutorial.  
+
+당신은 다음 튜토리얼에서 더많은 문자열에 대해서 배울 것 입니다.
+
+---
+
+### JavaScript Numbers
+
+### 자바스크립트 숫자
+ 
+JavaScript has only one type of numbers.  
+Numbers can be written with, or without decimals:
+
+자바스크립트는 형식중 하나로 숫자가 있습니다.  
+숫자는 소수점이 없는것과 있는것으로 사용이 가능합니다.:
+
+<pre class="prettyprint">
+Example
+var x1 = 34.00;     // Written with decimals
+var x2 = 34;        // Written without decimals
+</pre>
+
+Extra large or extra small numbers can be written with scientific (exponential) notation:
+
+더 크거나, 작은 숫자들은 (지수)로 표기하는 방법을 사용할 수 있습니다.
+
+<pre class="prettyprint">
+Example
+var y = 123e5;      // 12300000
+var z = 123e-5;     // 0.00123
+</pre>
+
+You will learn more about numbers later in this tutorial.
+
+다음 튜토리얼에서 더많은 숫자에 대해서 배울 것 입니다.
+
+---
+
+### JavaScript Booleans
+
+### 자바스크립트 논리형
+
+Booleans can only have two values: true or false.
+
+논리형은 오직 참 과 거짓 같만 가지고 있습니다.
+
+<pre class="prettyprint">
+Example
+var x = true;
+var y = false;
+</pre>
+
+Booleans are often used in conditional testing.   
+You will learn more about conditional testing later in this tutorial.  
+
+논리형은 흔히 조건부 테스트 할때 사용됩니다.  
+당신은 다음 튜토리얼에서 더많은 조건부 테스트에 대해서 배우게 될 것 입니다.
+
+---
+
+### JavaScript Arrays
+
+### 자바스크립트 배열
+
+JavaScript arrays are written with square brackets.  
+Array items are separated by commas.  
+The following code declares (creates) an array called cars, containing three items (car names):
+
+자바스크립트 배열은 대괄호로 사용합니다.  
+배열의 항목들은 콤마로 구분합니다.  
+다음으로 나오는 코드는 car로 불리는 배열을 선언하여 만들 것 이고, 3개의 항목 (차이름)이 들어가 있습니다.
+
+<pre class="prettyprint">
+Example
+var cars = ["Saab", "Volvo", "BMW"];
+</pre>
+
+Array indexes are zero-based, which means the first item is [0], second is [1], and so on.   
+You will learn more about arrays later in this tutorial.
+
+배열의 인덱스는 첫번째 항목은[0]이고 두번째는[1]로 0을 기반으로 합니다.  
+당신은 다음 튜토리얼에서 더많은 배열에 대해서 배우게 될 것 입니다.  
+
+---
+
+### JavaScript Objects
+
+### 자바스크립트 객체
+
+JavaScript objects are written with curly braces.  
+Object properties are written as name:value pairs, separated by commas.
+
+자바스크립트 객체는 중괄호를 사용합니다.  
+객체는 객체의 속성에 대한 이름:값을 구분할때는 콤마를 사용합니다.
+
+<pre class="prettyprint">
+Example
+var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+</pre>
+
+The object (person) in the example above has 4 properties: firstName, lastName, age, and eyeColor.  
+You will learn more about objects later in this tutorial.
+
+위 예제에서 객체는 4개의 속성을 가지고 있습니다: firstName, lastName, age, and eyeColor.  
+당신은 다음 튜토리얼에서 더많은 객체에 대해서 배우게 될 것 입니다.
+
+---
+
+### The typeof Operator
+
+### 연산자 형식
+
+You can use the JavaScript typeof operator to find the type of a JavaScript variable:
+
+당신은 자바스크립트 연산자 형식으로 자바스크립트 변수의 에 다음과 같은 형식을 사용할 수 있습니다:
+
+<pre class="prettyprint">
+Example
+typeof "John"                // Returns string 
+typeof 3.14                  // Returns number
+typeof false                 // Returns boolean
+typeof [1,2,3,4]             // Returns object
+typeof {name:'John', age:34} // Returns object
+</pre>
+
+In JavaScript, an array is a special type of object. Therefore typeof [1,2,3,4] returns object.  
+자바스크립트에서 배열은 특별한 물체의 형태 입니다. 그러므로 [1,2,3,4]는 객체 형식으로 반환합니다.
+
+---
+
+### Undefined
+
+### 정의되지않은
+
+In JavaScript, a variable without a value, has the value undefined. The typeof is also undefined.
+
+자바스크립트에서는 변수에 값이 없으면, 값으로 undefined를 가지고 있습니다. 그것은 형식도 undefined입니다.
+
+<pre class="prettyprint">
+Example
+var person;                  // Value is undefined, type is undefined
+</pre>
+
+Any variable can be emptied, by setting the value to undefined. The type will also be undefined.
+
+어떤 변수이든 undefined로 설정하여 값을 비울 수 있습니다. 그것에 대한 형식도 undefined입니다.
+
+<pre class="prettyprint">
+Example
+person = undefined;          // Value is undefined, type is undefined
+</pre>
+
+---
+
+### Empty Values
+
+### 비어있는 값
+
+
+An empty value has nothing to do with undefined.   
+An empty string variable has both a value and a type.
+
+빈값은 undefined와 관련이 없습니다.   
+빈값은 값과 형식 둘다 가지고 있는 문자열 변수 입니다.
+
+<pre class="prettyprint">
+Example
+var car = "";                // The value is "", the typeof is string
+</pre>
+
+---
+
+### Null
+
+### 가치없는
+
+In JavaScript null is "nothing". It is supposed to be something that doesn't exist.   
+Unfortunately, in JavaScript, the data type of null is an object.   
+You can consider it a bug in JavaScript that typeof null is an object. It should be null.   
+You can empty an object by setting it to null:  
+
+자바스크립트에서 null은 아무것도 의미가없다. 그것은 존재하지 않는 무언가가 될 것입니다.  
+불행하게도, null의 데이터 형식은 자바스크립트의 객체입니다.   
+당신은 null형식이 객체인 자바스크립트 문제라고 할 수 있습니다. 그것은 null이 되야합니다.  
+당신은 null로 객체를 비울 수 있습니다:
+
+<pre class="prettyprint">
+Example
+var person = null;           // Value is null, but type is still an object
+</pre>
+
+You can also empty an object by setting it to undefined:  
+당신은 undefined로 객체를 비울 수 있습니다.
+
+<pre class="prettyprint">
+Example
+var person = undefined;     // Value is undefined, type is undefined
+</pre>
+
+### Difference Between Undefined and Null
+
+### undefined 와 Null의 차이점
+
+<pre class="prettyprint">
+typeof undefined             // undefined
+typeof null                  // object
+null === undefined           // false
+null == undefined            // true
+</pre>
+
+---
+
+---
+
+# functions
