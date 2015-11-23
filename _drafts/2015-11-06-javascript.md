@@ -2258,10 +2258,12 @@ A JavaScript function is executed when "something" invokes it (calls it).
 
 ---
 
+<pre class="prettyprint">
 Example
 function myFunction(p1, p2) {
     return p1 * p2;              // The function returns the product of p1 and p2
 }
+</pre>
 
 ---
 
@@ -2302,15 +2304,19 @@ A Function is much the same as a Procedure or a Subroutine, in other programming
 ### 함수 호출
 
 The code inside the function will execute when "something" invokes (calls) the function:  
-* When an event occurs (when a user clicks a button)
-* When it is invoked (called) from JavaScript code
-* Automatically (self invoked)
+
+* When an event occurs (when a user clicks a button)  
+* When it is invoked (called) from JavaScript code  
+* Automatically (self invoked)  
+
 You will learn a lot more about function invocation later in this tutorial.
 
 함수안의 코드가 실행될수 있도록 호출되는 기능:
+
 * 이벤트 발생
 * 자바스크립트 코드에서 호출될 때
 * 자동
+
 나중에 튜토리얼에서 함수 호출에 대해서 더 많이 배울 것입니다.  
 
 ---
@@ -2431,3 +2437,4 @@ You will learn a lot more about functions later in this tutorial.
 ---
 
 # JavaScript Objects
+
