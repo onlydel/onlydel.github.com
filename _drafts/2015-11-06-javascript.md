@@ -593,7 +593,7 @@ The computation is called an evaluation.
 For example, 5 * 10 evaluates to 50:
 
 expression은 값, 변수, 연산자들의 어떤 값에 대한 결과물입니다.  
-그것의 계산은 evaluation라고 불립니다.  
+그것은 계산은 값이라고 불립니다.  
 예를들어 5*10의 결과는 50입니다:  
 
 <pre class="prettyprint">
@@ -642,8 +642,8 @@ Not all JavaScript statements are "executed".
 Code after double slashes // or between /* and */ is treated as a comment.   
 Comments are ignored, and will not be executed: 
 
-모든 자바스크립트가 전부 "실행"되는 것은 아닙니다.  
-주석은 2개의 슬레쉬// 다음에 아니면 /* 와 */ 사이에 코드의 내용을 취급합니다.  
+모든 자바스크립트는 "실행"되는것이 아닙니다.
+주석은 2개의 슬레쉬// 다음에 아니면 /* 와 */ 사이에 코드의 내용을 취급합니다.
 주석은 무시됩니다, 그리고 실행되지 않습니다.
 
 <pre class="prettyprint">
@@ -666,9 +666,9 @@ Subsequent characters may be letters, digits, underscores, or dollar signs.
 Numbers are not allowed as the first character.  
 This way JavaScript can easily distinguish identifiers from numbers.
 
-식별자의 이름들입니다.  
-자바스크립트에서는, 변수에 식별자의 이름을 사용합니다(키워드나 함수나 라벨).   
-합법적인 이름에대한 규칙은 대부분의 프로그밍 언어들에서 같습니다.  
+식별자의 이름들입니다.
+자바스크립트안에는, 변수에 식별자의 이름을 사용합니다(키워드나 함수나 라벨).   
+법적인 이름에대한 규칙은 대부분의 프로그래밍 언어들이 같다.  
 식별자를 구성하는 첫번째 글자는 반드시'문자'나'밑줄_'이나 '달러$'로 시작되어야 합니다.   
 첫글자 다음 문자로는 '문자' '숫자' '밑줄_' 또는 '달러$' 표시를 할 수 있습니다.  
 숫자는 문자의 첫번째로 오는것은 허용하지 않습니다.  
@@ -778,7 +778,7 @@ In this example, x, y, and z is given values, and finally z is displayed:
 
 최고의 자바스크립트 프로그램은 많은 자바스크립트 문이 들어 있습니다.  
 그 문은 입력한 순서와 동일한 순서로 하나하나씩 순차적으로 실행 됩니다.
-이 예제는 x, y에 값을 주고 마지막으로 z에 표시합니다:
+이 예제는 x, y와z 에 값을 주고 마지막으로 표시합니다:
 
 <pre class="prettyprint">
 Example
@@ -800,7 +800,7 @@ JavaScript programs (and JavaScript statements) are often called JavaScript code
 Semicolons separate JavaScript statements.   
 Add a semicolon at the end of each executable statement:
 
-세미콜론은 자바스크립트 문을 분리합니다.  
+세미콜론은 자바스크립트 문을 분리합니다.
 각 실행 문장 끝에 세미콜론을 추가합니다.:
 
 <pre class="prettyprint">
@@ -816,7 +816,7 @@ When separated by semicolons, multiple statements on one line are allowed:
 a = 5; b = 6; c = a + b;
 </pre>
 
-On the web, you might see examples without semicolons.  
+On the web, you might see examples without semicolons. 
 Ending statements with semicolon is not required, but highly recommended.
 
 웹에는 당신의 세미콜론이 없는 예가 보일 것 입니다.   
@@ -884,10 +884,10 @@ function myFunction() {
 }
 </pre>
 
-In this tutorial we use 4 spaces of indentation for code blocks.   
+In this tutorial we use 4 spaces of indentation for code blocks.
 You will learn more about functions later in this tutorial.
 
-이 튜토리얼에서 우리는 코드불록 들여 쓰기로 4간격을 사용했습니다.  
+이 튜토리얼에서 우리는 코드불록 들여 쓰기 4공간을 사용했습니다.
 우리는 더 많은 함수의 기능을 다음에 자세하게 배울 것 입니다.
 
 ---
@@ -899,7 +899,7 @@ You will learn more about functions later in this tutorial.
 JavaScript statements often start with a keyword to identify the JavaScript action to be performed.   
 Here is a list of some of the keywords you will learn about in this tutorial:  
  
-자바스크립트에서 자주 쓰이는 핵심적인 자바스크립트의 실행방법을 확인해 봅시다.   
+자바스크립트에서 자주 쓰이는 핵심적인 자바스크립트의 실행방법을 확인해 봅시다.
 다음 튜토리얼에서 배울 일부 핵심 목록 입니다. 
 
 * break: Terminates a switch or a loop
@@ -916,9 +916,9 @@ Here is a list of some of the keywords you will learn about in this tutorial:
 
 * break: 스위치나 루프 종료합니다.
 * continue: 루프 점프나 위에서 시작합니다.
-* debugger: 자바스크립트의 실행을 중지하고 디버그 함수를 호출합니다.
+* debugger: 자바스크립트의 실행 및 호출 디버깅 중지합니다.
 * do ... while: 조건이 true인 동안에 묶음 문장을 실행하고 묶음을 반복합니다.
-* for: 명령문 블록이 실행되는 동안에 true상태이기만 하면 실행 됩니다.
+* for: 표시된 문장 블록은 true일때 까지 실행합니다.
 * function: 함수를 선언합니다.
 * if ... else: 표시된 문장 블록 조건에 따라 실행됩니다.
 * return: 기능 종료합니다.
@@ -927,7 +927,6 @@ Here is a list of some of the keywords you will learn about in this tutorial:
 * var: 변수 선언합니다.
 
 JavaScript keywords are reserved words. Reserved words cannot be used as names for variables.  
-
 자바스크립트 키워드는 단어의 예약입니다. 예약어는 변수 이름으로 사용할 수 없습니다.
 
 ---
@@ -1057,7 +1056,7 @@ document.getElementById("myP").innerHTML = "My first paragraph.";
 JavaScript variables are containers for storing data values.  
 In this example, x, y, and z, are variables:
 
-자바스크립트 변수는 컨테이너에 데이터 값을 저장하는 것입니다.  
+자바스크립트 변수는 용기에 데이터 값을 저장하는 것입니다.  
 x,y,z에 대한 변수 예제 입니다.
 
 <pre class="prettyprint">
@@ -1175,7 +1174,7 @@ If you put quotes around a number, it will be treated as a text string.
 
 자바스크립트 변수는 숫자는 100으로, 문자 값은 "John Doe"으로 할 수 있습니다.  
 프로그래밍 안에서 문자값은 문자열로 불립니다.  
-자바스크립트는 많은 형식의 데이터를 다룰 수 있습니다, 하지만 지금은 숫자와 문자열만 생각하겠습니다.  
+자바스크립트는 많은 형식의 데이터를 다룰수 있습니다, 하지만 지금은 숫자와 문자열만 생각하겠습니다.  
 문자열은 쌍따옴표 사이에 문자가 쓰입니다. 숫자는 따옴표 없이 쓰여집니다.  
 만약 당신이 따옴표에 숫자를 넣었으면 그것은 문자열로 취급될 것 입니다.
 
@@ -1789,13 +1788,13 @@ Expressions in parentheses are fully computed before the value is used in the re
 
 Test Yourself with Exercises!
 
-스스로 연습문제 테스트
+스스로 테스트 훈련
 
-[[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_arithmetic1)]
-[[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_arithmetic2)]
-[[연습문제3](http://www.w3schools.com/js/exercise.asp?filename=exercise_arithmetic3)]
-[[연습문제4](http://www.w3schools.com/js/exercise.asp?filename=exercise_arithmetic4)]
-[[연습문제5](http://www.w3schools.com/js/exercise.asp?filename=exercise_arithmetic5)]
+[[훈련1](http://www.w3schools.com/js/exercise.asp?filename=exercise_arithmetic1)]
+[[훈련2](http://www.w3schools.com/js/exercise.asp?filename=exercise_arithmetic2)]
+[[훈련3](http://www.w3schools.com/js/exercise.asp?filename=exercise_arithmetic3)]
+[[훈련4](http://www.w3schools.com/js/exercise.asp?filename=exercise_arithmetic4)]
+[[훈련5](http://www.w3schools.com/js/exercise.asp?filename=exercise_arithmetic5)]
 
 ---
 
@@ -1854,7 +1853,7 @@ x -= 5;
 
 The *= assignment operator multiplies a variable.
 
-*=할당 연산자는 변수를 곱합니다.
+*=할당 연산자는 별수를 곱합니다.
 
 <pre class="prettyprint">
 Assignment
@@ -1886,13 +1885,11 @@ x %= 5;
 
 ### Test Yourself with Exercises!
 
-### 스스로 연습문제 시험
-
-[[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_assignment1)]
-[[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_assignment2)]
-[[연습문제3](http://www.w3schools.com/js/exercise.asp?filename=exercise_assignment3)]
-[[연습문제4](http://www.w3schools.com/js/exercise.asp?filename=exercise_assignment4)]
-[[연습문제5](http://www.w3schools.com/js/exercise.asp?filename=exercise_assignment5)]
+[[훈련1](http://www.w3schools.com/js/exercise.asp?filename=exercise_assignment1)]
+[[훈련2](http://www.w3schools.com/js/exercise.asp?filename=exercise_assignment2)]
+[[훈련3](http://www.w3schools.com/js/exercise.asp?filename=exercise_assignment3)]
+[[훈련4](http://www.w3schools.com/js/exercise.asp?filename=exercise_assignment4)]
+[[훈련5](http://www.w3schools.com/js/exercise.asp?filename=exercise_assignment5)]
 
 ---
 
@@ -2279,10 +2276,10 @@ Function names can contain letters, digits, underscores, and dollar signs (same 
 The parentheses may include parameter names separated by commas: (parameter1,  parameter2, ...)  
 The code to be executed, by the function, is placed inside curly brackets: {}
 
-자바스크립트 함수는 함수 키워드가 같이 정의 되며 뒤에 이름이 오고, 뒤에 괄호()가 옵니다.  
+자바스크립트 함수는 함수 키워드가 같이 정의 되며 뒤에 이름이 오고, 뒤에 ()가 옵니다.  
 함수 이름은 문자 숫자 밑줄 달러 기호를 포함 할 수 있습니다.  
 괄호는 쉼표로 구분 된 매개 변수 이름을 포함 할 수 있습니다.  
-이 코드는 함수에 의해 실행되는, 중괄호{} 내부에 배치됩니다.
+이 코드는 함수에 의해ㅐ 실행되는, 중괄호 내부에 배치됩니다.{}
 
 <pre class="prettyrpint">
 function name(parameter1, parameter2, parameter3) {
@@ -2429,11 +2426,11 @@ You will learn a lot more about functions later in this tutorial.
 
 ### 스스로 연습
 
-[[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_functions1)]
-[[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_functions2)]
-[[연습문제3](http://www.w3schools.com/js/exercise.asp?filename=exercise_functions3)]
-[[연습문제4](http://www.w3schools.com/js/exercise.asp?filename=exercise_functions4)]
-[[연습문제5](http://www.w3schools.com/js/exercise.asp?filename=exercise_functions5)]
+[[훈련1](http://www.w3schools.com/js/exercise.asp?filename=exercise_functions1)]
+[[훈련2](http://www.w3schools.com/js/exercise.asp?filename=exercise_functions2)]
+[[훈련3](http://www.w3schools.com/js/exercise.asp?filename=exercise_functions3)]
+[[훈련4](http://www.w3schools.com/js/exercise.asp?filename=exercise_functions4)]
+[[훈련5](http://www.w3schools.com/js/exercise.asp?filename=exercise_functions5)]
 
 ---
 
@@ -2441,563 +2438,3 @@ You will learn a lot more about functions later in this tutorial.
 
 # JavaScript Objects
 
-# 자바스크립트 객체
-
----
-
-### Real Life Objects, Properties, and Methods
-
-### 현실 객체의 성질과 방법 
-
-In real life, a car is an object.  
-A car has properties like weight and color, and methods like start and stop:
-
-현실 안에서의 객체는 차입니다.  
-차는 색상과 무게와 같은 성질이 있으며 방법으로는 시작과 정지가 있습니다: 
-
-Object: 
-![](http://www.w3schools.com/js/objectExplained.gif)
-
-<pre class="prettyprint">
-  Properties	           Methods
-	
-car.name = Fiat          car.start()
-
-car.model = 500          car.drive()
-
-car.weight = 850kg       car.brake() 
- 
-car.color = white        car.stop()
-</pre>
-
-All cars have the same properties, but the property values differ from car to car.  
-All cars have the same methods, but the methods are performed at different times.
-
-모든 차들은 같은 성질을 가지고 있습니다, 하지만 차들은 서로다른 값들을 가지고 있습니다.  
-모든 차들은 같은 방법을 가지고 있습니다, 하지만 행동을 하는 시간을 다릅니다.
-
----
-
-### JavaScript Objects
-
-### 자바스크립트 객체
-
-You have already learned that JavaScript variables are containers for data values.   
-This code assigns a simple value (Fiat) to a variable named car:
-
-당신은 이미 자바스크립트의 변수는 값들의 컨테이너라는 것을 배웠습니다.  
-이 코드는 차라는 변수에 차 이름값을 할당한 것 입니다:
-
-<pre class=" prettyprint">
-var car = "Fiat";
-</pre>
-
-Objects are variables too. But objects can contain many values.  
-This code assigns many values (Fiat, 500, white) to a variable named car:
-
-객체도 변수 입니다. 하지만 객체는 그안에 많은 값들이 들어가는게 가능합니다.  
-이 코드는 많은 차 이름에 대한 값들을 지정합니다.
-
-<pre class="prettyprint">
-var car = {type:"Fiat", model:500, color:"white"};
-</pre>
-
-The values are written as name:value pairs (name and value separated by a colon).  
-JavaScript objects are containers for named values.
-
-이름:값 쌍으로 쓰여지면서 많은 값들이 들어가는 것이 가능합니다.  
-자바스크립트 객체에 이름과 값들이 들어갑니다.
-
----
-
-### Object Properties
-
-### 객체의 특성
-
-The name:values pairs (in JavaScript objects) are called properties.
-
-특성으로는 이름 : 값 쌍으로 (자바스크립트 객체안에서)불리어 집니다. 
-
-<pre class="prettyprint">
-var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
-</pre>
-
-<pre class="prettyprint">
-Property	Property Value
-firstName	John
-lastName	Doe
-age		50
-eyeColor	blue
-</pre>
-
----
-
-### Object Methods
-
-### 객체 방법
-
-Methods are actions that can be performed on objects.   
-Methods are stored in properties as function definitions.
-
-개체에서 수행할 수 있는 방법 입니다.  
-방법 함수 정의로 속성에 저장됩니다.
-
-<pre class="prettyprint">
-Property	Property Value
-firstName	John
-lastName	Doe
-age		50
-eyeColor	blue
-fullName	function() {return this.firstName + " " + this.lastName;}
-</pre>
-
-JavaScript objects are containers for named values (called properties) and methods.
-
-자바스크립트 객체는 이름 값과 방법을 담는 컨테이너 입니다.
-
----
-
-### Object Definition
-
-### 객체의 정의
-
-You define (and create) a JavaScript object with an object literal:
-
-당신이 만든 자바스크립트 객체는 객체 그대로를 정의합니다.
-
-<pre class="prettyprint">
-Example
-var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
-</pre>
-
-Spaces and line breaks are not important. An object definition can span multiple lines:
-
-객체안에서는 줄바꿈이 중요하지 않습니다. 
-객체는 여러줄에서 정의 될 수도 있습니다.
-
-<pre class="prettyprint">
-Example
-var person = {
-    firstName:"John",
-    lastName:"Doe",
-    age:50,
-    eyeColor:"blue"
-};
-</pre>
-
----
-
-### Accessing Object Properties
-
-### 개체 속성 접근
-
-You can access object properties in two ways:
-
-당신이 객체 속성에 접근하는 방법으로는 2가지가 있습니다.
-
-<pre class="prettyprint">
-objectName.propertyName
-or
-objectName["propertyName"]
-
-Example1
-person.lastName;
-
-Example2
-person["lastName"];
-</pre>
-
----
-
-### Accessing Object Methods
-
-### 객체 메소드 접근
-
-You access an object method with the following syntax:
-
-다음으로는 당신이 객체의 메소드에 접근할수 있는 문법 입니다.
-
-<pre class="prettyprint">
-objectName.methodName()
-
-Example
-name = person.fullName();
-</pre>
-
-If you access the fullName property, without (), it will return the function definition:
-
-만약 당신이 fullName속성에 ()없이 접근 하면 함수의 정의가 반환될 것입니다.
-
-<pre class="prettyprint">
-Example
-name = person.fullName;
-</pre>
-
----
-
-### Do Not Declare Strings, Numbers, and Booleans as Objects!
-
-### 객체에 문자열, 숫자, Booleans를 선언하지 않습니다.
-
-When a JavaScript variable is declared with the keyword "new", the variable is created as an object:
-
-자바스크립트 변수가 키워드로 선언 된 경우에는 새로운 변수가 만들어 집니다.
-
-<pre class="prettyprint">
-var x = new String();        // Declares x as a String object
-var y = new Number();        // Declares y as a Number object
-var z = new Boolean();       //	Declares z as a Boolean object
-</pre>
-
-Avoid String, Number, and Boolean objects. They complicate your code and slow down execution speed.   
-You will learn more about objects later in this tutorial.
-
-문자열, 숫자 및 Boolean를 피해야합니다. 그것들은 당신의 코드를 복잡하고 실행 속도를 향상 시킵니다.  
-당신은 튜토리얼에서 더많은 객체에 대해서 배우게 될 것 입니다.
-
----
-
-### Test Yourself with Exercises!
-
-### 스스로 연습문제 테스트
-
-[[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_objects1)]
-[[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_objects2)]
-[[연습문제3](http://www.w3schools.com/js/exercise.asp?filename=exercise_objects3)]
-
----
-
----
-
-# JavaScript Scope
-
-# 자바스크립트의 범위
-
----
-
-Scope is the set of variables you have access to.
-
-당신이 접근할 변수의 범위의 집합
-
----
-
-### JavaScript Scope
-
-### 자바스크립트의 범위
-
-In JavaScript, objects and functions are also variables.   
-In JavaScript, scope is the set of variables, objects, and functions you have access to.   
-JavaScript has function scope: The scope changes inside functions.
-
-자바스크립트 안에서 객체와 함수 또한 변수 입니다.  
-자바스크립트에서 범위란 변수, 함수, 객체에 접근하는 집합 입니다.  
-자바스크립트 함수의 범위 : 함수 안에서 범위를 변경합니다.
-
----
-
-### Local JavaScript Variables
-
-### 자바스크립트 지역 변수
-
-Variables declared within a JavaScript function, become LOCAL to the function.   
-Local variables have local scope: They can only be accessed within the function.
-
-자바스크립트 함수 안에서 선언된 변수는 함수의 지역이 됩니다.  
-지역 함수가 가지는 범위: 그들은 오직 함수 안에서만 접근 할 수 있습니다
-
-<pre class="prettyprint">
-Example
-// code here can not use carName
-
-function myFunction() {
-    var carName = "Volvo";
-
-    // code here can use carName
-
-}
-</pre>
-
-Since local variables are only recognized inside their functions, variables with the same name can be used in different functions.   
-Local variables are created when a function starts, and deleted when the function is completed.
-
-이후에 지역변수는 그것들의 기능안에서 인정되고 있어서 이름이 같은 변수도 다른 기능에 사용 될 수 있습니다.  
-함수가 시작할 때 지역함수가 생성되었을 때 함수가 완료될 때 삭제 합니다.
-
----
-
-### Global JavaScript Variables
-
-### 자바스크립트 전역 변수
-
-A variable declared outside a function, becomes GLOBAL.  
-A global variable has global scope: All scripts and functions on a web page can access it. 
-
-함수 밖에서 선언되어 지면 전역 변수라고 불립니다.  
-전역 변수는 전체 범위를 가집니다: 전체 웹 페이지의 스크립트와 함수에 접근 할 수 있습니다.
-
-<pre class="prettyprint">
-Example
-var carName = " Volvo";
-
-// code here can use carName
-
-function myFunction() {
-
-    // code here can use	carName 
-
-}
-</pre>
-
----
-
-### Automatically Global
-
-### 전역 자동화
-
-If you assign a value to a variable that has not been declared, it will automatically become a GLOBAL variable.   
-This code example will declare carName as a global variable, even if it is executed inside a function.
-
-만약 당신이 변수를 선언하지 않고 값을 할당할 경우에 그것은 전역으로 자동화가 될 것입니다.  
-이 예제 코드는 함수 안에서 실행 되더라도 전역 변수carName으로 선언 될 것 입니다.
-
-<pre class="prettyprint">
-Example
-// code here can use carName
-
-function myFunction() {
-    carName = "Volvo";
-
-    // code here can use carName
-
-}
-</pre>
-
----
-
-### The Lifetime of JavaScript Variables
-
-### 자바스크립트 변수의 수명
-
-The lifetime of a JavaScript variable starts when it is declared.  
-Local variables are deleted when the function is completed.  
-Global variables are deleted when you close the page.
-
-자바스크립트 변수를 선언할 때 수명이 시작 됩니다.  
-지역 변수는 함수가 완료 될 때 삭제 됩니다.  
-전역 변수는 당신의 페이지를 닫을 때 삭제 됩니다.
-
----
-
-### Function Arguments
-
-### 함수의 인수
-
-Function arguments (parameters) work as local variables inside functions.
-
-함수의 인수(파라미터)는 함수 안에서 지역 변수로 실행 합니다.
-
----
-
-### Global Variables in HTML
-
-### HTML안에 전역변수
-
-With JavaScript, the global scope is the complete JavaScript environment.  
-In HTML, the global scope is the window object: All global variables belong to the window object.
-
-자바스크립트와 같이 전역 범위에 자바스크립트 환경이 완료 됩니다.  
-HTML에서 윈도우 객체의 전역 범위: 모든 전역 변수는 윈도우 객체에 속합니다. 
-
-<pre class="prettyprint">
-Example
-// code here can use window.carName
-
-function myFunction() {
-    carName = "Volvo";
-}
-</pre>
-
----
-
-### Did You Know?
-
-### 당신은 알고 있나요?
-
-Your global variables (or functions) can overwrite window variables (or functions).   
-Any function, including the window object, can overwrite your global variables and functions.
-
-당신의 전역 변수(또는 함수)는 윈도우 변수(또는 함수)로도 중복하여 사용이 가능합니다.  
-윈도우 객체를 포함한 함수는 당신의 전역 변수와 함수를 중복하여 사용할 수 있습니다.
-
----
-
----
-
-# JavaScript Events
-
-# 자바스크립트 이벤트
-
----
-
-HTML events are "things" that happen to HTML elements.  
-When JavaScript is used in HTML pages, JavaScript can "react" on these events.
-
-HTMl이벤트는 HTML요소에서 일어나게 됩니다.  
-HTML페이지에서 자바스크립트를 사용할 때, 자바스크립트는 그것에 대한 일이 일어나게 됩니다.
-
----
-
-### HTML Events
-
-### HTML 이벤트
-
-An HTML event can be something the browser does, or something a user does. 
-Here are some examples of HTML events:
-
-HTML이벤트는 어떤 브라우저 에서 일어나거나, 사용자에 의해서 일어나게 됩니다.  
-여기에 HTML이벤트에 대한 약간의 에제가 있습니다:
-
-* An HTML web page has finished loading
-* An HTML input field was changed
-* An HTML button was clicked
-
-* HTML 웹 페이지의 로드가 완료
-* HTML 필드 입력 변경
-* HTML 버튼을 클릭
-
-Often, when events happen, you may want to do something.  
-JavaScript lets you execute code when events are detected.  
-HTML allows event handler attributes, with JavaScript code, to be added to HTML elements.
-
-종종 당신은 많은 이벤트 들을 하기를 원합니다.  
-자바스크립트 이벤트를 감지하여 코드를 실행 할 수 있습니다.  
-HTML이벤트 핸들러가 있는 HTML요소를 자바스크립트 코드에 추가합니다.
-
-<pre class="prettyprint">
-With single quotes: 따옴표
-&lt;some-HTML-element some-event='some JavaScript'&gt;
-
-With double quotes: 쌍따옴표
-&lt;some-HTML-element some-event="some JavaScript"&gt;
-</pre>
-
-In the following example, an onclick attribute (with code), is added to a button element:
-
-다음 예제에서는 클릭 속성을 엘리먼트 버튼에 추가하는 것 입니다.
-
-<pre class="prettyprint">
-Example
-&lt;button onclick='getElementById("demo").innerHTML=Date()'&gt;The time is?&lt;/button&gt;
-</pre>
-
-In the example above, the JavaScript code changes the content of the element with id="demo".  
-In the next example, the code changes the content of its own element (using this.innerHTML):
-
-위의 예제에서는 자바스크립트 코드에서 id="demo"와 요소를 바꾸는 것 이였습니다.  
-다음 예제 코드는 자신의 요소를(this.innerHTML을 사용하여)내용을 바꿉니다.
-
-<pre class="prettyprint">
-Example
-&lt;button onclick="this.innerHTML=Date()"&gt;The time is?&lt;/button&gt;
-</pre>
-
-JavaScript code is often several lines long. It is more common to see event attributes calling functions:
-
-
-
-<pre class="prettyprint">
-Example
-&lt;button onclick="displayDate()"&gt;The time is?&lt;/button&gt;
-</pre>
-
----
-
-### Common HTML Events
-
-### 일반적인 HTML이벤트
-
-Here is a list of some common HTML events:
-
-여기에 일반적인 HTML이벤트에대한 목록이 있습니다:
-
-<pre class="prettyprint">
-Event			Description
-onchange		An HTML element has been changed
-onclick			The user clicks an HTML element
-onmouseover		The user moves the mouse over an HTML element
-onmouseout		The user moves the mouse away from an HTML element
-onkeydown		The user pushes a keyboard key
-onload			The browser has finished loading the page
-
-이벤트 			설명
-onchange 		HTML요소가 변경됩니다.  
-onclick 		사용자의 HTML요소를 클릭하면 
-onmouseover 		사용자가 요소위에 마우스를 이동시키면
-onmouseout 		사용자가 요소에서 다른곳으로 마우스를 이동시키면  
-onkeydown 		사용자가 키보드를 누르면
-onload 			브라우저 페이지 로딩이 끝나면
-
-</pre>
-
-The list is much longer: [W3Schools JavaScript Reference HTML DOM Events.](http://www.w3schools.com/jsref/dom_obj_event.asp)
-
-이목록 보다 더많은 내용: [W3Schools JavaScript Reference HTML DOM Events.](http://www.w3schools.com/jsref/dom_obj_event.asp)
-
----
-
-### What can JavaScript Do?
-
-### 자바스크립트는 무슨일을 할 수 있나요?
-
-Event handlers can be used to handle, and verify, user input, user actions, and browser actions:
-
-이벤트 헨들러는 입력, 동작, 브라우저 동작을 하는데 사용 할 수 있습니다.
-
-* Things that should be done every time a page loads
-* Things that should be done when the page is closed
-* Action that should be performed when a user clicks a button
-* Content that should be verified when a user inputs data
-* And more ...
-
-* 페이지 로드가 일어날 때마다 실행됩니다.
-* 페이지를 닫을 때마다 실행됩니다. 
-* 사용자가 버튼을 클릭 할 때 실행 됩니다.
-* 사용자가 입력한 데이터내용을 확인 할 때 실행 됩니다.  
-* 그리고 더 많이...
-
-
-Many different methods can be used to let JavaScript work with events:
-
-많은 다른 방법으로 이벤트와 자바스크립트 작업을 할 수 있습니다.
-
-* HTML event attributes can execute JavaScript code directly
-* HTML event attributes can call JavaScript functions
-* You can assign your own event handler functions to HTML elements
-* You can prevent events from being sent or being handled
-* And more ...
-
-* HTML이벤트 속성에서 직접 자바스크립트 코드를 실행 할 수 있습니다.
-* HTML이벤트 속성은 자바스크립트 함수를 호출 할 수 있습니다.
-* 당신은 HTML요소로 자신의 이벤트 핸들러 기능을 할당 할 수 있습니다
-* 당신은 전송되는 처리 이벤트를 방지 할 수 있습니다.
-* 그리고 더 많이...
-
-You will learn a lot more about events and event handlers in the HTML DOM chapters.
-
-당신은 HTML DOM장에서 더많은 이벤트와 이벤트 핸들러에 대해서 배우게 될 것 입니다.
-
----
-
-### Test Yourself with Exercises!
-
-### 스스로 연습문제 시험!
-
-[[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_events1)]
-[[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_events2)]
-[[연습문제3](http://www.w3schools.com/js/exercise.asp?filename=exercise_events3)]
-
----
-
----
-
-# JavaScript Strings
