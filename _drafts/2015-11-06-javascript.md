@@ -364,7 +364,7 @@ Example
 &lt;p&gt;My first paragraph.&lt;/p&gt;
 
 &lt;script&gt;
-window.write(5 + 6);
+document.write(5 + 6);
 &lt;/script&gt;
 
 &lt;/body&gt;
@@ -2244,4 +2244,197 @@ null == undefined            // true
 
 ---
 
-# functions
+# JavaScript functions
+
+# 자바스크립트 함수
+
+---
+
+A JavaScript function is a block of code designed to perform a particular task.  
+A JavaScript function is executed when "something" invokes it (calls it).
+
+자바스크립트 함수는 특정 과제를 수행하는데 필요한 코드 블록입니다.  
+무언가를 호출할때 자바스크립트 기능을 호출하여 실행합니다.
+
+---
+
+<pre class="prettyprint">
+Example
+function myFunction(p1, p2) {
+    return p1 * p2;              // The function returns the product of p1 and p2
+}
+</pre>
+
+---
+
+### JavaScript Function Syntax
+
+### 자바스크립트 함수 문법
+
+A JavaScript function is defined with the function keyword, followed by a name, followed by parentheses ().  
+Function names can contain letters, digits, underscores, and dollar signs (same rules as variables).  
+The parentheses may include parameter names separated by commas: (parameter1,  parameter2, ...)  
+The code to be executed, by the function, is placed inside curly brackets: {}
+
+자바스크립트 함수는 함수 키워드가 같이 정의 되며 뒤에 이름이 오고, 뒤에 ()가 옵니다.  
+함수 이름은 문자 숫자 밑줄 달러 기호를 포함 할 수 있습니다.  
+괄호는 쉼표로 구분 된 매개 변수 이름을 포함 할 수 있습니다.  
+이 코드는 함수에 의해ㅐ 실행되는, 중괄호 내부에 배치됩니다.{}
+
+<pre class="prettyrpint">
+function name(parameter1, parameter2, parameter3) {
+    code to be executed
+}
+</pre>
+
+Function parameters are the names listed in the function definition.  
+Function arguments are the real values received by the function when it is invoked.  
+Inside the function, the arguments behave as local variables.  
+A Function is much the same as a Procedure or a Subroutine, in other programming languages.
+
+함수name에 파라미터 명단을 열거합니다.  
+함수 인수는 값이 호출 될 때 함수를 받는다. 
+함수 안에 인수는 지역변수를 실행시킵니다.  
+다른 프로그래밍 언어의 프로시저 또는 서브 루틴과 동일합니다.
+
+---
+
+### Function Invocation
+
+### 함수 호출
+
+The code inside the function will execute when "something" invokes (calls) the function:  
+
+* When an event occurs (when a user clicks a button)  
+* When it is invoked (called) from JavaScript code  
+* Automatically (self invoked)  
+
+You will learn a lot more about function invocation later in this tutorial.
+
+함수안의 코드가 실행될수 있도록 호출되는 기능:
+
+* 이벤트 발생
+* 자바스크립트 코드에서 호출될 때
+* 자동
+
+나중에 튜토리얼에서 함수 호출에 대해서 더 많이 배울 것입니다.  
+
+---
+
+### Function Return
+
+### 함수 반환
+
+When JavaScript reaches a return statement, the function will stop executing.  
+If the function was invoked from a statement, JavaScript will "return" to execute the code after the invoking statement.   
+Functions often compute a return value. The return value is "returned" back to the "caller":
+
+자바스크립트에 도달하면 return문은 함수의 실행을 중지합니다.  
+함수가 호출된 경우에 자바스크립트 호출 문 다음 코드를 실행하기 위해 반환 합니다.  
+함수들은 계산 리턴 값을 반환 값은 다시 caller를 반환 합니다.
+함수는 종종 리턴값을 계산합니다. 반환되어 돌아온 값은 caller 입니다.
+
+<pre class="prettyprint">
+Example
+Calculate the product of two numbers, and return the result:  
+두 수의 곱을 계산해서 리턴한 결과 입니다:
+
+var x = myFunction(4, 3);        // Function is called, return value will end up in x
+
+function myFunction(a, b) {
+    return a * b;                // Function returns the product of a and b
+}
+
+The result in x will be:  
+x의 결과입니다:
+12
+</pre>
+
+---
+
+### Why Functions?
+
+### 함수 왜 ?
+
+You can reuse code: Define the code once, and use it many times.   
+You can use the same code many times with different arguments, to produce different results.
+
+당신은 코드를 재사용 할 수 있습니다. 한번 코드를 정의하고 그리고 여러번 사용 할 수 있습니다.  
+당신은 같은 코드를 다른 곳에 사용 하여 다른 결과를 나오게 할 수 있습니다.
+
+<pre class="prettyprint">
+Example
+Convert Fahrenheit to Celsius:
+
+function toCelsius(fahrenheit) {
+    return (5/9) * (fahrenheit-32);
+}
+document.getElementById("demo").innerHTML = toCelsius(77);
+</pre>
+
+---
+
+### The () Operator Invokes the Function
+
+### 연산자 함수 호출
+
+Using the example above, toCelsius refers to the function object, and toCelsius() refers to the function result.
+
+위의 예제를 사용하면, toCelsius는 함수 객체를 참조하고, toCelsius()은 함수 결과를 의미합니다.
+
+<pre class="prettyprint">
+Example
+Accessing a function without () will return the function definition:
+
+함수에 ()없이 반환하는 함수 정의 입니다.
+
+function toCelsius(fahrenheit) {
+    return (5/9) * (fahrenheit-32);
+}
+document.getElementById("demo").innerHTML = toCelsius;
+</pre>
+
+---
+
+### Functions Used as Variables
+
+### 변수로 사용 가능한 함수
+
+In JavaScript, you can use functions the same way as you use variables.
+
+당신이 자바스크립트에서 변수를 사용해서, 다음과 같은방식으로 기능을 사용할 수 있습니다.
+
+<pre class="prettyprint">
+Example
+You can use:
+
+var text = "The temperature is " + toCelsius(77) + " Celsius";
+
+Instead of:
+
+var x = toCelsius(32);
+var text = "The temperature is " + x + " Celsius";
+</pre>
+
+You will learn a lot more about functions later in this tutorial.
+
+나중에 튜토리얼에서 기능에대한 더 많은 것을 배울 것 입니다.
+
+---
+
+### Test Yourself with Exercises!
+
+### 스스로 연습
+
+[[훈련1](http://www.w3schools.com/js/exercise.asp?filename=exercise_functions1)]
+[[훈련2](http://www.w3schools.com/js/exercise.asp?filename=exercise_functions2)]
+[[훈련3](http://www.w3schools.com/js/exercise.asp?filename=exercise_functions3)]
+[[훈련4](http://www.w3schools.com/js/exercise.asp?filename=exercise_functions4)]
+[[훈련5](http://www.w3schools.com/js/exercise.asp?filename=exercise_functions5)]
+
+---
+
+---
+
+# JavaScript Objects
+
