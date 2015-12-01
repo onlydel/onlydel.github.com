@@ -3001,3 +3001,296 @@ You will learn a lot more about events and event handlers in the HTML DOM chapte
 ---
 
 # JavaScript Strings
+
+# 자바스크립트 문자열
+
+---
+
+JavaScript strings are used for storing and manipulating text.
+
+자바스크립트 문자열은 text를 저장하거나 처리할 때 사용합니다.
+
+---
+
+### JavaScript Strings
+
+### 자바스크립트 문자열
+
+A JavaScript string simply stores a series of characters like "John Doe".  
+A string can be any text inside quotes. You can use single or double quotes:
+
+자바스크립트 문자열은 "John Doe"와 비슷하게 문자로 저장합니다.  
+문자열은 당신의 작은 따옴표나 큰 따옴표 부호안에다가 텍스트를 넣어서 사용할 수 있습니다.
+
+<pre class="prettyprint">
+Example
+var carname = "Volvo XC60";
+var carname = 'Volvo XC60';
+</pre>
+
+You can use quotes inside a string, as long as they don't match the quotes surrounding the string:
+
+문자열을 둘러싼 따옴표와 다른 종류의 따옴표를 문자열 안에서 사용할 수 있습니다.
+
+<pre class="prettyprint">
+Example
+var answer = "It's alright";
+var answer = "He is called 'Johnny'";
+var answer = 'He is called "Johnny"';
+</pre>
+
+---
+
+### String Length
+
+### 문자열 길이
+
+The length of a string is found in the built in property length:
+
+문자열의 길이는 속성의 길이 안에서 만들어진 것중에 찾는다.
+
+<pre class="prettyprint">
+Example
+var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var sln = txt.length;
+</pre>
+
+---
+
+### Special Characters
+
+### 특수문자
+
+Because strings must be written within quotes, JavaScript will misunderstand this string:
+
+문자열은 따옴표안에서 써야하기 때문에 자바스크립트는 이 문자열을 오해합니다.
+
+<pre class="prettyprint">
+var y = "We are the so-called "Vikings" from the north."
+</pre>
+
+The string will be chopped to "We are the so-called ".   
+The solution to avoid this problem, is to use the \ escape character.  
+The backslash escape character turns special characters into string characters:
+
+문자열을 "We are the so-called "로 개조 해야합니다.  
+이것의 해결방법은 \를 사용해서 문자를 확장시켜서 문제를 방지해야 합니다. 
+역슬래시는 문자는 문자열안에서의 특수문자를 되돌려줍니다.
+
+<pre class="prettyprint">
+Example
+var x = 'It\'s alright';
+var y = "We are the so-called \"Vikings\" from the north."
+</pre>
+
+The escape character (\) can also be used to insert other special characters in a string.   
+This is the list of special characters that can be added to a text string with the backslash sign:
+
+이스케이프 문자(\)는 문자열에 다른 특수문자를 넣을 수 있습니다.  
+역슬래시 기호에 문자를 쓰면 문자열에 추가할 수 있는 특수 문자의 목록 입니다.
+
+<pre class="prettyprint">
+Code	Outputs
+\'	single quote
+\"	double quote
+\\	backslash
+\n	new line
+\r	carriage return
+\t	tab
+\b	backspace
+\f	form feed
+</pre>
+
+### Breaking Long Code Lines
+
+### 긴코드의 줄바꿈
+
+For best readability, programmers often like to avoid code lines longer than 80 characters.   
+If a JavaScript statement does not fit on one line, the best place to break it is after an operator:
+
+최고의 가독성을 위해서 프로그래머는 흔히 80문자보다 긴 코드를 피해야 합니다.  
+자바스크립트문장에서 한줄에 다 표시할 수 없을 경우에 줄을 바꾸기 위한 최고의 장소는 연산자 입니다. 
+
+<pre class="prettyprint">
+Example
+document.getElementById("demo").innerHTML =
+"Hello Dolly.";
+</pre>
+
+You can also break up a code line within a text string with a single backslash:
+
+당신은 코드 라인을 text문자열 안에서 \로 라인을 분리할 수 있습니다.
+
+<pre class="prettyprint">
+Example
+document.getElementById("demo").innerHTML = "Hello \
+Dolly!";
+</pre>
+
+The \ method is not a ECMAScript (JavaScript) standard.  
+Some browsers do not allow spaces behind the \ character. 
+
+\방법은 스크립트 표준 방법이 아닙니다.  
+일부의 브라우저에서는 \문자 뒤에 공백을 허용하지 않습니다.
+
+The safest (but a little slower) way to break a long string is to use string addition:
+
+가장 안정적인 긴 문장에서의 줄바꿈은 문자열을 추가하여 줄바꿈 하는 방법입니다.
+
+<pre class="prettyprint">
+Example
+document.getElementById("demo").innerHTML = "Hello" + 
+"Dolly!";
+</pre>
+
+You cannot break up a code line with a backslash:
+
+당신은 백슬래시 코드로도 문장을 분리 할 수 있습니다.
+
+<pre class="prettyprint">
+Example
+document.getElementById("demo").innerHTML = \ 
+"Hello Dolly!";
+</pre>
+
+### Strings Can be Objects
+
+### 객체로 문자열 사용이 가능합니다
+
+Normally, JavaScript strings are primitive values, created from literals: var firstName = "John"   
+But strings can also be defined as objects with the keyword new: var firstName = new String("John")
+
+보통, 자바스크립트 문자열은 상수를 만들때 var firstName = "John"로 만듭니다.  
+하지만 문자열은 새로운 객체로 정의하여 만들어 낼 수 도 있습니다.var firstName = new String("John")
+
+<pre class="prettyprint">
+Example
+var x = "John";
+var y = new String("John");
+
+// typeof x will return string 
+// typeof y will return object
+// x타입은 문자열을 반환한다.
+// y타입은 객체를 반환한다.
+</pre>
+
+Don't create strings as objects. It slows down execution speed, and produces nasty side effects:
+
+객체와 같은 문자열을 만들면 안됩니다. 그것은 실행속도를 느리게하고, 부작용을 만들어낼 수 있습니다.
+
+When using the == equality operator, equal strings looks equal:
+
+동일한 문자열에 대한 비교를 할때에는 ==평등 연산자를 사용합니다.
+
+<pre class="prettyprint">
+Example
+var x = "John";             
+var y = new String("John");
+
+// (x == y) is true because x and y have equal values
+// x와y는 같은 값을 가지고 있기 때문에 true입니다.
+</pre>
+
+When using the === equality operator, equal strings are not equal, because the === operator expects equality in both type and value.
+
+=== 연산자를 사용할 경우에는, 문자의 값과 타입까지 비교하기때문에, 두 문자열은 동일하지 않습니다.
+
+<pre class="prettyprint">
+Example
+var x = "John";             
+var y = new String("John");
+
+// (x === y) is false because x and y have different types (string and object)
+// (x === y) x와y는 서로다른 문자열 형식을 가지고 있기때문에 false입니다.
+</pre>
+
+Or even worse. Objects cannot be compared:
+
+더 나쁜 예로는 객체는 비교할 수 없습니다. 
+
+<pre class="prettyprint">
+Example
+var x = new String("John");             
+var y = new String("John");
+
+// (x == y) is false because x and y are different objects
+// (x == x) is true because both are the same object
+</pre>
+
+JavaScript objects cannot be compared.
+
+자바스크립트 객체는 비교할 수 없습니다.
+
+---
+
+### String Properties and Methods
+
+### 문자열의 속성과 방법
+
+Primitive values, like "John Doe", cannot have properties or methods (because they are not objects).  
+But with JavaScript, methods and properties are also available to primitive values, because JavaScript treats primitive values as objects when executing methods and properties.
+
+기본타입은 속성이나 methods를 가질 수 없습니다.(때문에 그것들은 객체가 아닙니다)  
+하지만 자바스크립트는 메서드와 속성을 실행할 때 객체로 기본값을 처리하기 때문에 방법이나 속성을 기본타입으로 사용할 수 있습니다.
+
+String methods are covered in next chapter.
+
+문자열 methods는 다음 장에서 설명합니다.
+
+---
+
+### String Properties
+
+### 문자열 속성
+
+<pre class="prettyprint">
+Property	Description
+constructor	Returns the function that created the String object's prototype
+length	Returns the length of a string
+prototype	Allows you to add properties and methods to an object
+</pre>
+
+### String Methods
+
+### 문자열 methods
+
+<pre class="prettyprint">
+Method			Description
+charAt()		Returns the character at the specified index (position)
+charCodeAt()		Returns the Unicode of the character at the specified index
+concat()		Joins two or more strings, and returns a copy of the joined strings
+fromCharCode()		Converts Unicode values to characters
+indexOf()		Returns the position of the first found occurrence of a specified value in a string
+lastIndexOf()		Returns the position of the last found occurrence of a specified value in a string
+localeCompare()		Compares two strings in the current locale
+match()			Searches a string for a match against a regular expression, and returns the matches
+replace()		Searches a string for a value and returns a new string with the value replaced
+search()		Searches a string for a value and returns the position of the match
+slice()			Extracts a part of a string and returns a new string
+split()			Splits a string into an array of substrings
+substr()		Extracts a part of a string from a start position through a number of characters
+substring()		Extracts a part of a string between two specified positions
+toLocaleLowerCase()	Converts a string to lowercase letters, according to the host's locale
+toLocaleUpperCase()	Converts a string to uppercase letters, according to the host's locale
+toLowerCase()		Converts a string to lowercase letters
+toString()		Returns the value of a String object
+toUpperCase()		Converts a string to uppercase letters
+trim()			Removes whitespace from both ends of a string
+valueOf()		Returns the primitive value of a String object
+</pre>
+
+---
+
+### Test Yourself with Exercises!
+
+### 스스로 연습문제 테스트
+
+[[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_strings1)]
+[[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_strings1)]
+[[연습문제3](http://www.w3schools.com/js/exercise.asp?filename=exercise_strings1)]
+
+---
+
+---
+
+# JavaScript String Methods
