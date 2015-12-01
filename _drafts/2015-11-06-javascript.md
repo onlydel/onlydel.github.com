@@ -3215,6 +3215,8 @@ var y = new String("John");
 
 // (x == y) is false because x and y are different objects
 // (x == x) is true because both are the same object
+// x와y는 다른 객체이기 때문에 false입니다.
+// x == x는 둘다 같은 객체이기 때문에 true입니다.
 </pre>
 
 JavaScript objects cannot be compared.
@@ -3246,8 +3248,15 @@ String methods are covered in next chapter.
 <pre class="prettyprint">
 Property	Description
 constructor	Returns the function that created the String object's prototype
-length	Returns the length of a string
+length		Returns the length of a string
 prototype	Allows you to add properties and methods to an object
+</pre>
+
+<pre class="prettyprint">
+Property	Description
+constructor	함수에 만들어진 문자열 객체의 원형을 반환합니다.
+length		문자열의 길이를 반환합니다.
+prototype	당신의 객체에 속성이나 메서드를 추가하는 것을 허용합니다.
 </pre>
 
 ### String Methods
@@ -3277,6 +3286,31 @@ toString()		Returns the value of a String object
 toUpperCase()		Converts a string to uppercase letters
 trim()			Removes whitespace from both ends of a string
 valueOf()		Returns the primitive value of a String object
+</pre>
+
+<pre class="prettyprint">
+Method			Description
+charAt()		지정한 인덱스 위치에 있는 문자열을 반환합니다.
+charCodeAt()		문자의 유니코드는 지정된 인덱스를 반환합니다.
+concat()		2개의상의 문자열을 연결하고 연결된 문자열의 복사본을 반환합니다.
+fromCharCode()		문자를 유니코드값으로 변환합니다.
+indexOf()		문자열에 저장된 값중에 첫번째 발견된 위치의 값을 반환합니다.
+lastIndexOf()		문자열에 저장된 값중에 마지막에 발견된 위치의 값을 반환합니다.
+localeCompare()		현제 위치의 2개의 문자열을 비교합니다.
+match()			정규식에 일치하는 문자열을 검색하여 일치되는 내용을 반환합니다.
+replace()		값으로 문자열을 검색하여 대체값을 가지는 새로운 문자열을 반환합니다.
+search()		문자열 값을 검색하여 일치하는 값을 반환합니다.
+slice()			문자열의 일부를 추출해서 새로운 문자열로 반환합니다.
+split()			문자열의 배열로 문자열을 분할합니다.
+substr()		문자 숫자의 위치로부터 문자열의 일부를 추출합니다.
+substring()		지정된 두 위치 사이에 문자열의 일부를 추출합니다.
+toLocaleLowerCase()	 host's locale에 따라서 소문자 문자열을 반환합니다.
+toLocaleUpperCase()	 host's locale에 따라서 대문자 문자열을 반환합니다.
+toLowerCase()		글자를 소문자 문자열로 변환합니다.
+toString()		string객체의 값을 반환합니다.
+toUpperCase()		글자를 대문자 문자열로 변환합니다.
+trim()			문자열의 양쪽 끝의 공백을 제거 합니다.
+valueOf()		문자열 객체의 기본형식의 값을 반환합니다.
 </pre>
 
 ---
