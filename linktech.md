@@ -41,16 +41,24 @@ permalink: /linktech/
     - [http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html](http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html)
     - [http://react.rocks/tag/FullStack](http://react.rocks/tag/FullStack)
     - [http://helmetrex.com](http://helmetrex.com)
+* [ReactCheatSheet](http://reactcheatsheet.com) : React 주요 API들을 모아 놓은 건가?
 
 ### Mac Tip
 * Finder에서 hidden folder & file 보기 : defaults write com.apple.finder AppleShowAllFiles YES
 
-  <pre class="prettyprint">
+  <pre>
     Onlydel-MacBook-Pro:apache2 gotodo$ defaults write com.apple.finder AppleShowAllFiles YES
     Onlydel-MacBook-Pro:apache2 gotodo$ killall Finder
     Onlydel-MacBook-Pro:apache2 gotodo$ defaults write com.apple.finder AppleShowAllFiles NO
     Onlydel-MacBook-Pro:apache2 gotodo$ killall Finder
   </pre>
+* [생산성 향상을 위한 터미널 명령어 10개](http://code.tutsplus.com/articles/10-terminal-commands-that-will-boost-your-productivity--net-14105)
+* [Custom Shell Prompt](http://itsmetommy.com/2011/02/09/changing-your-shell-prompt/)
+    - prompt path변경 `$ nano ~/.profile` 파일에 아래 설정 추가
+
+        <pre>
+        # h is the host name, w is the complete path
+        export PS1="mac-pro:$ "</pre>
 
 ### Node.js
 * Setup

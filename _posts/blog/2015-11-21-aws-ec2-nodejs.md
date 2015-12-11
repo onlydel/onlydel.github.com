@@ -59,6 +59,33 @@ https://aws.amazon.com/amazon-linux-ami/2015.09-release-notes/
 
 SSH에 연결하면 우선 Linux 업데이트를 실행한다. AMI의 Linux버전에 따라 많은 양의 업데이트가 이루어지기도 하고 업데이트할 내용이 없기도 한 것 같다. 이런 내용이 확실치 않지만 보안이나 버그패치를 위해 업데이트는 해야 한다고 한다.
 
+아래 명령을 실행하면 업데이트 된다.
+
+<pre>
+$ <mark>sudo yum update</mark>
+Loaded plugins: priorities, security, update-motd, upgrade-helper
+amzn-main                                                | 2.1 kB     00:00
+amzn-updates                                             | 2.3 kB     00:00
+Setting up Update Process
+Resolving Dependencies
+--> Running transaction check
+---> Package aws-apitools-ec2.noarch 0:1.6.8.1-1.0.amzn1 will be updated
+---> Package aws-apitools-ec2.noarch 0:1.6.10.0-1.0.amzn1 will be an update
+---> Package gnupg2.x86_64 0:2.0.18-1.16.amzn1 will be updated
+---> Package gnupg2.x86_64 0:2.0.19-8.21.amzn1 will be an update
+---> Package libgcrypt.i686 0:1.4.5-9.10.amzn1 will be updated
+---> Package libgcrypt.x86_64 0:1.4.5-9.10.amzn1 will be updated
+---> Package libgcrypt.i686 0:1.4.5-9.12.amzn1 will be an update
+---> Package libgcrypt.x86_64 0:1.4.5-9.12.amzn1 will be an update
+---> Package openssl.x86_64 1:1.0.1e-4.53.amzn1 will be updated
+---> Package openssl.x86_64 1:1.0.1e-4.54.amzn1 will be an update
+---> Package python-boto.noarch 0:2.9.9-1.0.amzn1 will be updated
+---> Package python-boto.noarch 0:2.13.3-1.0.amzn1 will be an update
+--> Finished Dependency Resolution
+
+Dependencies Resolved
+</pre>
+
 ## 설치
 
 ##### Node.js설치

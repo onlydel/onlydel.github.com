@@ -16,9 +16,34 @@ tags:
 
 자바스크립트(Javascript)는 웹 개발의 중심 언어라고 말 할 수 있다. 특히 최근에는 클라이언트 웹개발 뿐만 아니라 서버개발, 모바일 앱개발에도 자바스크립트가 사용되고 있다. 제대로 알고 사용해야 한다.
 
+
+### react
+
+* [react & ES6](http://webframeworks.kr/tutorials/react/es2015-react/)
+* [flux & react](http://taegon.kim/archives/5288)
+* [before vs after algorithm](http://snip.ly/ywCe#http://calendar.perfplanet.com/2013/diff/)
+
+### npm
+
+package manager
+
+### bower
+
+package manager, only front-end
+
 ### node.js
 ### browserify
+
+### webpack
+
+builder
+
 ### require.js
+
+### CDN
+
+* [jsdeliver](http://www.jsdelivr.com)
+* [cdnjs](https://cdnjs.com/about)
 
 ### javascript template
 
