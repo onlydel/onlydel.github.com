@@ -2357,7 +2357,7 @@ x의 결과입니다:
 
 ### Why Functions?
 
-### 함수 왜 ?
+### 함수는 어떻게 사용할 수 있나요?
 
 You can reuse code: Define the code once, and use it many times.   
 You can use the same code many times with different arguments, to produce different results.
@@ -2379,7 +2379,7 @@ document.getElementById("demo").innerHTML = toCelsius(77);
 
 ### The () Operator Invokes the Function
 
-### 연산자 함수 호출
+### ()연산자 함수 호출
 
 Using the example above, toCelsius refers to the function object, and toCelsius() refers to the function result.
 
@@ -3047,7 +3047,7 @@ var answer = 'He is called "Johnny"';
 
 The length of a string is found in the built in property length:
 
-문자열의 길이는 속성의 길이 안에서 만들어진 것중에 찾는다.
+문자열의 길이는 속성의 길이 안에서 만들어진 것 중에서 찾는다.
 
 <pre class="prettyprint">
 Example
@@ -3265,19 +3265,19 @@ prototype	당신의 객체에 속성이나 메서드를 추가하는 것을 허�
 
 <pre class="prettyprint">
 Method			Description
-charAt()		Returns the character at the specified index (position)
+charAt()			Returns the character at the specified index (position)
 charCodeAt()		Returns the Unicode of the character at the specified index
-concat()		Joins two or more strings, and returns a copy of the joined strings
+concat()			Joins two or more strings, and returns a copy of the joined strings
 fromCharCode()		Converts Unicode values to characters
 indexOf()		Returns the position of the first found occurrence of a specified value in a string
 lastIndexOf()		Returns the position of the last found occurrence of a specified value in a string
 localeCompare()		Compares two strings in the current locale
 match()			Searches a string for a match against a regular expression, and returns the matches
 replace()		Searches a string for a value and returns a new string with the value replaced
-search()		Searches a string for a value and returns the position of the match
+search()			Searches a string for a value and returns the position of the match
 slice()			Extracts a part of a string and returns a new string
 split()			Splits a string into an array of substrings
-substr()		Extracts a part of a string from a start position through a number of characters
+substr()			Extracts a part of a string from a start position through a number of characters
 substring()		Extracts a part of a string between two specified positions
 toLocaleLowerCase()	Converts a string to lowercase letters, according to the host's locale
 toLocaleUpperCase()	Converts a string to uppercase letters, according to the host's locale
@@ -3290,22 +3290,22 @@ valueOf()		Returns the primitive value of a String object
 
 <pre class="prettyprint">
 Method			Description
-charAt()		지정한 인덱스 위치에 있는 문자열을 반환합니다.
+charAt()			지정한 인덱스 위치에 있는 문자열을 반환합니다.
 charCodeAt()		문자의 유니코드는 지정된 인덱스를 반환합니다.
-concat()		2개의상의 문자열을 연결하고 연결된 문자열의 복사본을 반환합니다.
+concat()			2개의상의 문자열을 연결하고 연결된 문자열의 복사본을 반환합니다.
 fromCharCode()		문자를 유니코드값으로 변환합니다.
 indexOf()		문자열에 저장된 값중에 첫번째 발견된 위치의 값을 반환합니다.
 lastIndexOf()		문자열에 저장된 값중에 마지막에 발견된 위치의 값을 반환합니다.
 localeCompare()		현제 위치의 2개의 문자열을 비교합니다.
 match()			정규식에 일치하는 문자열을 검색하여 일치되는 내용을 반환합니다.
 replace()		값으로 문자열을 검색하여 대체값을 가지는 새로운 문자열을 반환합니다.
-search()		문자열 값을 검색하여 일치하는 값을 반환합니다.
+search()			문자열 값을 검색하여 일치하는 값을 반환합니다.
 slice()			문자열의 일부를 추출해서 새로운 문자열로 반환합니다.
 split()			문자열의 배열로 문자열을 분할합니다.
-substr()		문자 숫자의 위치로부터 문자열의 일부를 추출합니다.
+substr()			문자 숫자의 위치로부터 문자열의 일부를 추출합니다.
 substring()		지정된 두 위치 사이에 문자열의 일부를 추출합니다.
-toLocaleLowerCase()	 host's locale에 따라서 소문자 문자열을 반환합니다.
-toLocaleUpperCase()	 host's locale에 따라서 대문자 문자열을 반환합니다.
+toLocaleLowerCase()	host's locale에 따라서 소문자 문자열을 반환합니다.
+toLocaleUpperCase()	host's locale에 따라서 대문자 문자열을 반환합니다.
 toLowerCase()		글자를 소문자 문자열로 변환합니다.
 toString()		string객체의 값을 반환합니다.
 toUpperCase()		글자를 대문자 문자열로 변환합니다.
@@ -3328,3 +3328,779 @@ valueOf()		문자열 객체의 기본형식의 값을 반환합니다.
 ---
 
 # JavaScript String Methods
+
+# 자바스크립트 문자열 Methods
+
+---
+
+String methods help you to work with strings.
+
+문자열methods는 문자열 작업을 하는데 도움이 됩니다.
+
+---
+
+### Finding a String in a String
+
+### 문자열에서 문자열 찾기
+
+The indexOf() method returns the index of (the position of) the first occurrence of a specified text in a string:
+
+indexOf()메소드는 첫번째 문자열에서 지정된 문자열이 존재하면 index를 반환합니다.
+
+<pre class="prettyprint">
+Example
+var str = "Please locate where 'locate' occurs!";
+var pos = str.indexOf("locate");
+</pre>
+
+The lastIndexOf() method returns the index of the last occurrence of a specified text in a string:
+
+lastIndexOf()메소드는 문자열에서 마지막에 존재하는 명시된 문자의 index를 반환합니다.
+
+<pre class="prettyprint">
+Example
+var str = "Please locate where 'locate' occurs!";
+var pos = str.lastIndexOf("locate");
+</pre>
+
+Both the indexOf(), and the lastIndexOf() methods return -1 if the text is not found.
+
+indexOf()와 lastIndexOf()메소드 둘다 문자를 찾을 수 없으면 -1을 반환 합니다.
+
+JavaScript counts positions from zero.  
+0 is the first position in a string, 1 is the second, 2 is the third ...
+Both methods accept a second parameter as the starting position for the search.
+
+자바스크립트는 0에서부터 수를 셉니다.  
+0번부터 시작하여 2번째는 1, 3번째는 2 ...  
+두 메소드는 2번째 파라미터로 검색의 시작위치를 받아들입니다.
+
+---
+
+### Searching for a String in a String
+
+### 문자열에서 문자열 검색
+
+The search() method searches a string for a specified value and returns the position of the match:
+
+search()메소드는 지정된 값으로 문자열을 검색하고 일치하는 위치를 반환합니다.
+
+<pre class="prettyprint">
+Example
+var str = "Please locate where 'locate' occurs!";
+var pos = str.search("locate");
+</pre>
+	
+Did You Notice?
+
+당신은 주의 하셨나요?
+
+The two methods, indexOf() and search(), are equal.  
+They accept the same arguments (parameters), and they return the same value.  
+The two methods are equal, but the search() method can take much more powerful search values.  
+You will learn more about powerful search values in the chapter about regular expressions.
+
+indexOf()와 search()두 메소드는 동일합니다.  
+그들은 같은 인수를 받아들여서 동일한 값을 반환합니다.  
+두 가지 방법은 같지만 search()메소드는 훨씬 더 효과적으로 값을 검색할 수 있습니다.  
+당신은 정규 표현식에 대한 장에서 효과적인 검색 값에 대하여 배울 것 입니다.  
+
+---
+
+### Extracting String Parts
+
+### 문자열 부분 추출
+
+There are 3 methods for extracting a part of a string:
+
+문자열의 일부를 추출하기 위한 3가지 방법이 있습니다.
+
+* slice(start, end)
+* substring(start, end)
+* substr(start, length)
+
+---
+
+### The slice() Method
+
+### slice()메소드
+
+slice() extracts a part of a string and returns the extracted part in a new string.  
+The method takes 2 parameters: the starting index (position), and the ending index (position).  
+This example slices out a portion of a string from position 7 to position 13:
+
+slice()는 문자열의 일부를 추출하여 새로운 문자열에서 추출된 부분을 반환합니다.  
+시작 인덱스(위치)와 종료 인덱스(위치)로 2개의 파라미터로 만들어 집니다.  
+이 예제는 7번 위치에서 13번 이치까지 문자열 부분을 추출한 것 입니다.
+
+<pre class="prettyprint">
+Example
+var str = "Apple, Banana, Kiwi";
+var res = str.slice(7,13);
+
+The result of res will be:
+Banana
+</pre>
+
+If a parameter is negative, the position is counted from the end of the string.    
+This example slices out a portion of a string from  +position -12 to position -6:
+
+만약 파라미터가 음수면 문자열 위치의 끝에서부터 카운트 됩니다.
+
+<pre class="prettyprint">
+Example
+var str = "Apple, Banana, Kiwi";
+var res = str.slice(-12,-6);
+
+The result of res will be:
+Banana
+</pre>
+
+If you omit the second parameter, the method will slice out the rest of the string:
+
+만약 당신이 2번째 파라미터를 생략하면, 문자열의 나머지를 자를 것 입니다.
+
+<pre class="prettyprint">
+Example
+var res = str.slice(7);
+</pre>
+
+or, counting from the end:
+
+또는 마지막부터 시작
+
+<pre class="prettyprint">
+Example
+var res = str.slice(-12);
+</pre>
+
+Negative positions does not work in Internet Explorer 8 and earlier.
+
+음수는 위치는 Internet Explorer8에서는 동작하지 않습니다.
+
+---
+
+### The substring() Method
+
+문자열()메소드
+
+substring() is similar to slice().  
+The difference is that substring() cannot accept negative indexes.
+
+substring()과 slice()는 비슷합니다.  
+차이점은 substring()은 음수 인덱스를 받아들일 수 없다는 것입니다.
+
+<pre class="prettyprint">
+Example
+var str = "Apple, Banana, Kiwi";
+var res = str.substring(7,13);
+
+The result of res will be:
+Banana
+</pre>
+
+If you omit the second parameter, substring() will slice out the rest of the string.
+
+만약 두번째 파라미터를 생략하면 substring()은 문자열의 나머지 부분을 잘라냅니다.
+
+---
+
+### The substr() Method
+
+### substr()메소드
+
+substr() is similar to slice().  
+The difference is that the second parameter specifies the length of the extracted part.
+
+substr()은 slice()와 비슷합니다.   
+두번째 파라미터에 지정된 것은 추출될 부분의 길이 차이 입니다.
+
+<pre class="prettyprint">
+Example
+var str = "Apple, Banana, Kiwi";
+var res = str.substr(7,6);
+
+The result of res will be:
+Banana
+</pre>
+
+If the first parameter is negative, the position counts from the end of the string.  
+The second parameter can not be negative, because it defines the length.  
+If you omit the second parameter, substr() will slice out the rest of the string.
+
+만약 첫번째 파라미터가 음수면 문자열 끝에서 부터 카운트 합니다.  
+두번째 파라미터는 문자의 길이를 정의하기 때문에 음수가 올 수 없습니다.  
+만약 두번째 파라미터를 생략한다면 substr()은 문자열의 나머지 부분을 잘라냅니다.
+
+---
+
+### Replacing String Content
+
+### 문자열의 내용 교체
+
+The replace() method replaces a specified value with another value in a string:
+
+replace()메소드는 문자열을 지정된 값으로 대체합니다.
+
+<pre class="prettyprint">
+Example
+str = "Please visit Microsoft!";
+var n = str.replace("Microsoft","W3Schools");
+</pre>
+
+The replace() method can also take a regular expression as the search value.
+
+replace()메소드 또한 검색값과 같은 정규식으로 취할 수 있습니다.
+
+---
+
+### Converting to Upper and Lower Case
+
+### 대소문자 변환
+
+A string is converted to upper case with toUpperCase():
+
+toUpperCase()는 문자열을 대문자로 변환합니다.
+
+<pre class="prettyprint">
+Example
+var text1 = "Hello World!";       // String
+var text2 = text1.toUpperCase();  // text2 is text1 converted to upper
+</pre>
+
+A string is converted to lower case with toLowerCase():
+
+toLowerCase()는 문자열을 소문자로 변환합니다.
+
+<pre class="prettyprint">
+Example
+var text1 = "Hello World!";       // String
+var text2 = text1.toLowerCase();  // text2 is text1 converted to lower
+</pre>
+
+---
+
+### The concat() Method
+
+concat() joins two or more strings:
+
+concat() 2개이상의 문자열 연결
+
+<pre class="prettyprint">
+Example
+var text1 = "Hello";
+var text2 = "World";
+text3 = text1.concat("	",text2);
+</pre>
+
+The concat() method can be used instead of the plus operator. These two lines do the same:
+
+concat()메소드로 더하기 연산자를 대신해서 사용할 수 있습니다. 두 라인은 같은 작업을 수행합니다.
+
+<pre class="prettyprint">
+Example
+var text = "Hello" + " " + "World!";
+var text = "Hello".concat(" ","World!");
+</pre>
+
+All string methods return a new string. They don't modify the original string.  
+Formally said: Strings are immutable: Strings cannot be changed, only replaced.
+
+모든 문자열 메소드는 새로운 문자열을 반환합니다. 그들은 원래 문자열을 수정하지 않습니다.  
+공식적으로: 문자열은 불변함으로 변경이나 교체를 할 수 없습니다.
+
+---
+
+### Extracting String Characters
+
+### 문자열의 문자열 추출
+
+There are 2 safe methods for extracting string characters:
+
+2개의 안전하게 문자열을 추출하는 방법 
+
+* charAt(position)
+* charCodeAt(position)
+
+---
+
+### The charAt() Method
+
+### charAt()메소드
+
+The charAt() method returns the character at a specified index (position) in a string:
+
+charAt()메소드는 문자열에서 지정된 인덱스 위치에 있는 문자를 반환합니다.
+
+<pre class="prettyprint">
+Example
+var str = "HELLO WORLD";
+str.charAt(0);            // returns H
+</pre>
+
+---
+
+### The charCodeAt() Method
+
+### charCodeAt()메소드
+
+The charCodeAt() method returns the unicode of the character at a specified index in a string:
+
+charCodeAt()메소드는 문자열에서 지정된 인덱스에 있는 유니코드를 반환합니다.
+
+<pre class="prettyprint">
+Example
+var str = "HELLO WORLD";
+
+str.charCodeAt(0);         //	returns 72
+</pre>
+
+---
+
+### Accessing a String as an Array is Unsafe
+
+### 불안전한 문자열 배열 접근
+
+You might have seen code like this, accessing a string as an array:
+
+당신은 배열로 문자열에 접근하는 이와 같은 코드를 본적이 있습니다.
+
+<pre class="prettyprint">
+var str = "HELLO WORLD";
+str[0];                   // returns H
+</pre>
+
+This is unsafe and unpredictable:
+
+불안전하고 예측할수 없다.
+
+* It does not work in all browsers (not in IE5, IE6, IE7)
+* It makes strings look like arrays (but they are not)
+* str[0] = "H" does not give an error (but does not work)
+
+* 그것은 모든 브라우저에서 동작하지 않습니다.
+* 그것은 문자열 배열처럼보이게(하지만 그들은 그렇지 않다.)
+* str[0] = "H"오류를 제공하지 않습니다(하지만 동작하지 않는다)
+
+If you want to read a string as an array, convert it to an array first.
+
+당신은 배열로 문자열을 읽으려면, 문저배열로 반환해합니다.
+
+---
+
+### Converting a String to an Array
+
+### 문자열을 배열로 변환
+
+A string can be converted to an array with the split() method:
+
+문자열을 배열로 변환할 수 있습니다 split()방법
+
+<pre class="prettyprint">
+Example
+var txt = "a,b,c,d,e";   // String
+txt.split(",");          // Split on commas
+txt.split(" ");          // Split on spaces
+txt.split("|");          // Split on pipe
+</pre>
+
+If the separator is omitted, the returned array will contain the whole string in index [0].   
+If the separator is " ", the returned array will be an array of single characters:
+
+만약 구분을 생략하면 반환된 배열 인덱스[0]의  전체 문자열이 포함됩니다.  
+구분" "의 경우 반환된 배열은 단일 문자의 배열이 될 것입니다.
+
+<pre class="prettyprint">
+Example
+var txt = "Hello";       // String
+txt.split("");           // Split in characters
+</pre>
+
+---
+
+### Complete String Reference
+
+### 전체 문자열 참조
+
+For a complete reference, go to our [Complete JavaScript String Reference](http://www.w3schools.com/jsref/jsref_obj_string.asp).   
+The reference contains descriptions and examples of all string properties and methods.
+
+참고로 완전한 우리의 자바스크립트 레퍼런스를 참고 하세요.  
+레퍼런스에는 모든 문자열 속성과 메소드의 설명과 예제가 들어 있습니다.
+
+---
+
+### Test Yourself with Exercises!
+
+[[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_stringsmet1)]
+[[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_stringsmet2)]
+[[연습문제3](http://www.w3schools.com/js/exercise.asp?filename=exercise_stringsmet3)]
+[[연습문제4](http://www.w3schools.com/js/exercise.asp?filename=exercise_stringsmet4)]
+[[연습문제5](http://www.w3schools.com/js/exercise.asp?filename=exercise_stringsmet5)]
+[[연습문제6](http://www.w3schools.com/js/exercise.asp?filename=exercise_stringsmet6)]
+
+---
+
+---
+
+# JavaScript Numbers
+
+# 자바스크립트 숫자
+
+---
+
+JavaScript has only one type of number.  
+Numbers can be written with, or without, decimals.
+
+자바스크립트는 오직 하나의 숫자 타입만 가지고 있습니다.  
+숫자는 소수점없는 십진법으로 사용합니다.
+
+---
+
+### JavaScript Numbers
+
+### 자바스크립트 숫자
+
+JavaScript numbers can be written with, or without decimals:
+
+자바스크립트 숫자는 소수점없는 십진법으로 사용이 가능합니다.
+
+<pre class="prettyprint">
+Example
+var x = 34.00;    // A number with decimals
+var y = 34;       // A number without decimals
+</pre>
+
+Extra large or extra small numbers can be written with scientific (exponent) notation:
+
+매우 크거나 작은 숫자들은 지수 표기법으로 쓸 수 있습니다. 
+
+<pre class="prettyprint">
+Example
+var x = 123e5;    // 12300000
+var y = 123e-5;   // 0.00123
+</pre>
+
+---
+
+### JavaScript Numbers are Always 64-bit Floating Point
+
+### 자바스크립트는 항상 64비트의 부동 소수점 숫자 입니다.
+
+Unlike many other programming languages, JavaScript does not define different types of numbers, like integers, short, long, floating-point etc.  
+JavaScript numbers are always stored as double precision floating point numbers, following the international IEEE 754 standard.    
+This format stores numbers in 64 bits, where the number (the fraction) is stored in bits 0 to 51, the exponent in bits 52 to 62, and the sign in bit 63:
+
+많은 프로그래밍 언어와는 다르게 자바스크립트는 정수, 부동소수점 숫자를 다른유형을 정의하지 않습니다.
+자바 스크립트 번호 항상 배정 밀도 부동 소수 점 숫자로, 국제 IEEE754기준에 따르저장됩니다.   
+이 형식이 숫자(분수)비트에 051에 저장된다 64비트이며, 지수에서 비트에 52로는 62에서, 비트 전송 63에서:번호 저장합니다.
+
+<pre class="prettyprint">
+Value (aka Fraction/Mantissa)	Exponent		Sign
+52 bits (0 - 51) 		11 bits (52 - 62)	1 bit (63)
+</pre>
+
+---
+
+### Precision
+
+### 정확성
+
+Integers (numbers without a period or exponent notation) are considered accurate up to 15 digits.
+
+정수는 15자리까지 정확한 것으로 간주됩니다.
+
+<pre class="prettyprin">
+Example
+var x = 999999999999999;   // x will be 999999999999999
+var y = 9999999999999999;  // y will be 10000000000000000
+</pre>
+
+The maximum number of decimals is 17, but floating point arithmetic is not always 100% accurate:
+
+소수의 최대 갯수는 17개 이며 연산은 항상 100% 정확한 것은 아니다
+
+<pre calss="prettyprint">
+Example
+var x = 0.2 + 0.1;         // x will be 0.30000000000000004
+</pre>
+
+To solve the problem above, it helps to multiply and divide:
+
+문제들을 해결하기 위해서는 곱하기와 나누기로 도와줘야한다.
+
+<pre class="prettyprint">
+Example
+var x = (0.2 * 10 + 0.1 * 10) / 10;       // x will be 0.3
+</pre>
+
+---
+
+### Hexadecimal
+
+### 진수
+
+JavaScript interprets numeric constants as hexadecimal if they are preceded by 0x.
+
+그들은 0x를 시작으로 하느 경우에 자바스크립트 진수로 상수 숫자를 해석 합니다
+
+<pre class="prettyprint">
+Example
+var x = 0xFF;             // x will be 255
+</pre>
+
+Never write a number with a leading zero (like 07).  
+Some JavaScript versions interpret numbers as octal if they are written with a leading zero.  
+
+절대로 앞에0 과같은 숫자를 쓰지 마십시오.  
+그것들은 자바스크립트에서 일부 버전에선 숫자로 해석합니다.
+
+By default, Javascript displays numbers as base 10 decimals.  
+But you can use the toString() method to output numbers as base 16 (hex), base 8 (octal), or base 2 (binary).
+
+기본적으로 자바스크립트는 10진수로 숫자를 표시합니다.  
+하지만 당신은 toStirng()메소드에 16진수 2진수 8진수 모두를 사용한 수 있습니다.
+
+<pre class="prettyprint">
+Example
+var myNumber = 128;
+myNumber.toString(16);     // returns 80
+myNumber.toString(8);      // returns 200
+myNumber.toString(2);      // returns 10000000
+</pre>
+
+---
+
+### Infinity
+
+### 무한대
+
+Infinity (or -Infinity) is the value JavaScript will return if you calculate a number outside the largest possible number.
+
+무한대(또는 -무한대)값은 자바스크립트에서 가장 큰 수를 계산하는 것 입니다.
+
+<pre class="prettyprint">
+Example
+var myNumber = 2;
+while (myNumber != Infinity) {          // Execute until Infinity
+    myNumber = myNumber * myNumber;
+}
+</pre>
+
+Division by 0 (zero) also generates Infinity:
+
+0으로 나누면 무한대를 발생 시킵니다.
+
+<pre class="prettyprint">"
+Example
+var x =  2 / 0;          // x will be Infinity
+var y = -2 / 0;          // y will be -Infinity
+</pre>
+
+Infinity is a number: typeOf Infinity returns number.
+
+무한대는 숫자입니다 : 무한태는 타입으로 숫자를 반환합니다.
+
+<pre class="prettyprint">
+Example
+typeof Infinity;        // returns "number"
+</pre>
+
+---
+
+### NaN - Not a Number
+
+### NaN은 숫자가 아닙니다
+
+NaN is a JavaScript reserved word indicating that a value is not a number.  
+Trying to do arithmetic with a non-numeric string will result in NaN (Not a Number):
+
+NaN은 값이 숫자가 아닌것을 나타내는 자바스크립트예약어 입니다.  
+숫자가 아닌 문자열로 연산하려하면 NaN이 발생합니다.
+
+<pre class="prettyprint">
+Example
+var x = 100 / "Apple";  // x will be NaN (Not a Number)
+</pre>
+
+However, if the string contains a numeric value , the result will be a number:
+
+문자열에 숫자 값이 있는 경우에는 결과로 숫자값이 나올 것입니다.
+
+<pre class="prettyprint">
+Example
+var x = 100 / "10";     // x will be 10
+</pre>
+
+You can use the global JavaScript function isNaN() to find out if a value is a number.
+
+당신은 자바스크립트 함수 isNaN()을 사용해서 값이 숫자인지 알아 볼 수 있습니다
+
+<pre class="prettyprint">
+Example
+var x = 100 / "Apple";
+isNaN(x);               // returns true because x is Not a Number
+</pre>
+
+Watch out for NaN. If you use NaN in a mathematical operation, the result will also be NaN:
+
+NaN을 조심해야 합니다. 만약 당신이 NaN으로 수학적인 연산을 하면, 결과는 NaN이 될 것입니다.
+
+<pre class="prettyprint">
+Example
+var x = NaN;
+var y = 5;
+var z = x + y;         // z will be NaN
+</pre>
+
+Or the result might be a concatenation:
+
+아니면 결과는 연결될 수 있습니다.
+
+<pre class="prettyprint">
+Example
+var x = NaN;
+var y = "5";
+var z = x + y;         // z will be NaN5
+</pre>
+
+NaN is a number, and typeof NaN returns number:
+
+NaN은 숫자 입니다 그리고 NaN은 타입으로 숫자를 반환합니다
+
+<pre class="prettyprint">
+Example
+typeof NaN;             // returns "number"
+</pre>
+
+---
+
+### Numbers Can be Objects
+
+### 숫자는 객체로도 가능합니다
+
+Normally JavaScript numbers are primitive values created from literals: var x = 123  
+But numbers can also be defined as objects with the keyword new: var y = new Number(123)
+
+보통의 자바스크립트는 숫자의 원시 값은 리터럴로 만들어 집니다: var x = 123와 같이  
+하지만 숫자는 var y = new Number(123)와 같이 new 키워드와 객체로 정의할 수 있습니다.
+
+<pre class="prettyprint">
+Example
+var x = 123;
+var y = new Number(123);
+
+// typeof x returns number
+// typeof y returns object
+</pre>
+
+Don't create Number objects. It slows down execution speed.
+The new keyword complicates the code. This can produce some unexpected results:
+
+숫자는 객체를 만들지 않습니다. 이것은 실행 속도가 느려지고 새로운 키워드 코드를 복잡하게 합니다.
+이것은 예상하지 못한 결과를 얻을 수 있습니다.
+
+When using the == equality operator, equal numbers looks equal:
+
+== 비교 연산자를 사용하는 경우에는 같은 숫자는 동일합니다
+
+<pre class="prettyprint">
+Example
+var x = 500;             
+var y = new Number(500);
+
+// (x == y) is true because x and y have equal values
+</pre>
+
+When using the === equality operator, equal numbers are not equal, because the === operator expects equality in both type and value.
+
+=== 비교 연산자를 사용하는 경우 === 연산자는 유형과 값 모두 같아야 하기 때문에 숫자 값은 같아도 형식은 같지 않습니다.
+
+<pre class="prettyprint">
+Example
+var x = 500;             
+var y = new Number(500);
+
+// (x === y) is false because x and y have different types
+</pre>
+
+Or even worse. Objects cannot be compared:
+
+아니면 그밖에도 객체는 비교할 수 없습니다.
+
+<pre class="prettyprint">
+Example
+var x = new Number(500);             
+var y = new Number(500);
+
+// (x == y) is false because objects cannot be compared
+</pre>
+
+JavaScript objects cannot be compared.
+
+자바스크립트 객체는 비교할 수 없습니다.
+
+---
+
+### Number Properties and Methods
+
+### 숫자의 속성과 방법
+
+Primitive values (like 3.14 or 2014), cannot have properties and methods (because they are not objects).  
+But with JavaScript, methods and properties are also available to primitive values, because JavaScript treats primitive values as objects when executing methods and properties.
+
+기본값(3.14또는2014등) 속성과 방법을 가질 수 없습니다.  
+하지만 메서드와 속성을 실행할 때 자바스크립트 객체로 기본 값을 처리하기 때문에 자바스크립트 방법 과 특성은 기본값을 사용 할 수 있습니다.
+
+---
+
+### Number Properties
+
+### 숫자 속성
+
+<pre class="prettyprint">
+Property		Description
+MAX_VALUE		Returns the largest number possible in JavaScript
+MIN_VALUE		Returns the smallest number possible in JavaScript
+NEGATIVE_INFINITY	Represents negative infinity (returned on overflow)
+NaN			Represents a "Not-a-Number" value
+POSITIVE_INFINITY	Represents infinity (returned on overflow)
+
+MAX_VALUE		자바스크립트에서 가장 큰 수를 반환합니다.
+MIN_VALUE		자바스크립트에서 가장 작은 수를 반환합니다.
+NEGATIVE_INFINITY	음의 무한대(오버플로우 반환)를 반환합니다.
+NaN			"Not-a-Number"값으로 대신합니다.
+POSITIVE_INFINITY	무한대(오버플로우 반환)를 반환합니다
+
+Example
+var x = Number.MAX_VALUE;
+</pre>
+
+Number properties belongs to the JavaScript's number object wrapper called Number.  
+These properties can only be accessed as Number.MAX_VALUE.  
+Using myNumber.MAX_VALUE, where myNumber is a variable, expression, or value, will return undefined:
+
+숫자 속성은 자바스크립트의 숫자 객체 래퍼에 속합니다.  
+이러한 속성은 전용으로 접근 할 수 있습니다. MAX_VALUE.  
+myNumber.MAX_VALUE, where myNumber is a variable, expression를 사용하면 값으로 undefined를 반환합니다.
+
+<pre class="prettyprint">
+Example
+var x = 6;
+var y = x.MAX_VALUE;    // y becomes undefined
+</pre>
+
+Number methods are covered in the next chapter
+
+숫자 메소드에 대해서는 다음 장에서 설명 하겠습니다.
+
+---
+
+Test Yourself with Exercises!
+
+스스로 연습문제 테스트!
+
+[[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_numbers1)]
+[[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_numbers2)]
+[[연습문제3](http://www.w3schools.com/js/exercise.asp?filename=exercise_numbers3)]
+[[연습문제4](http://www.w3schools.com/js/exercise.asp?filename=exercise_numbers4)]
