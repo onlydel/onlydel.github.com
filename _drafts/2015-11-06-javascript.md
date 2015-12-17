@@ -4104,3 +4104,280 @@ Test Yourself with Exercises!
 [[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_numbers2)]
 [[연습문제3](http://www.w3schools.com/js/exercise.asp?filename=exercise_numbers3)]
 [[연습문제4](http://www.w3schools.com/js/exercise.asp?filename=exercise_numbers4)]
+
+---
+
+---
+
+# JavaScript Number Methods
+
+# 자바스크립트 숫자 메소드
+
+---
+
+Number methods help you to work with numbers.
+
+숫자 메소드는 당신의 숫자를 동작하는데 도움이 될 것입니다.
+
+---
+
+### Global Methods
+
+### 전반적인 메소드
+
+JavaScript global functions can be used on all JavaScript data types.  
+These are the most relevant methods, when working with numbers:
+
+자바스크립트 전역 함수는 모든 자바스크립트 데이터 형식에서 사용할 수 있습니다.  
+숫자들을 적용할때에 가장 관련 있는 것들 입니다.
+
+<pre class="prettyprint">
+Method		Description
+Number()		Returns a number, converted from its argument.
+parseFloat()	Parses its argument and returns a floating point number
+parseInt()	Parses its argument and returns an integer
+
+Method		Description
+Number()		인수의 숫자를 변환하여 반환합니다.
+parseFloat()	인수를 구문분석하고 부동소수점의 수를 반환합니다.
+parseInt()	인수를 구문분석하고 정수를 반환합니다.
+</pre>
+
+---
+
+### Number Methods
+
+### 숫자 메소드
+
+JavaScript number methods are methods that can be used on numbers:
+
+자바스크립트 숫자 메소드에서 숫자를 사용할 수 있는 방법 입니다.
+
+<pre class="prettyprint">
+Method		Description
+toString()	Returns a number as a string
+toExponential()	Returns a string, with a number rounded and written using exponential notation.
+toFixed()	Returns a string, with a number rounded and written with a specified number of decimals.
+toPrecision()	Returns a string, with a number written with a specified length
+valueOf()	Returns a number as a number
+
+Method		Description
+toString()	숫자를 문자열로 반환합니다.
+toExponential()	지수법을 사용하여 반올림하여 문자열로 반환합니다.
+toFixed()	소수로 지정된 숫자를 반올림한 숫자를 문자열로 반환합니다.
+toPrecision()	지정된 길이로 작성된 숫자를 문자열로 반환합니다.
+valueOf()	숫자를 숫자로 반환해 줍니다.
+</pre>
+
+All number methods return a new value. They do not change the original variable.
+
+모든 숫자 메소드는 새로운 값을 반환합니다. 그들은 원래 변수를 변경하지 않습니다.
+
+---
+
+### The toString() Method
+
+### toString() 메소드
+
+toString() returns a number as a string.  
+All number methods can be used on any type of numbers (literals, variables, or expressions):
+
+toString()은 숫자를 문자열로 반환합니다.  
+모든 숫자는 숫자 메소드(정수, 변수, 표현)중 어느 타입에서 사용될 수 있습니다.
+
+<pre class="prettyprint">
+Example
+var x = 123;
+x.toString();            // returns 123 from variable x
+(123).toString();        // returns 123 from literal 123
+(100 + 23).toString();   // returns 123 from expression 100 + 23
+</pre>
+
+### The toExponential() Method
+
+### toExponential() 메소드
+
+toExponential() returns a string, with a number rounded and written using exponential notation.  
+A parameter defines the number of characters behind the decimal point:
+
+toExponential()에서는 반올림 지수 표기법을 사용하여 숫자를 문자열로 반환합니다.  
+파라미터는 소수점 뒤에 문자의 수를 정의합니다:
+
+<pre class="prettyprint">
+Example
+var x = 9.656;
+x.toExponential(2);     // returns 9.66e+0
+x.toExponential(4);     // returns 9.6560e+0
+x.toExponential(6);     // returns 9.656000e+0
+</pre>
+
+The parameter is optional. If you don't specify it, JavaScript will not round the number.
+
+인자값은 선택입니다. 당신이 그것을 지정하지 않을 경우에는 JavaScript는 반올림을 하지 않습니다.
+
+### The toFixed() Method
+
+### toFixed() 메소드
+
+toFixed() returns a string, with the number written with a specified number of decimals:
+
+toFixed()는 소수의 길이를 지정하고 길이만큼의 숫자를 문자열로 반환합니다.
+
+<pre class="prettyprint">
+Example
+var x = 9.656;
+x.toFixed(0);           // returns 10
+x.toFixed(2);           // returns 9.66
+x.toFixed(4);           // returns 9.6560
+x.toFixed(6);           // returns 9.656000
+</pre>
+
+toFixed(2) is perfect for working with money.
+
+---
+
+### The toPrecision() Method
+
+### toPrecision() 메소드
+
+toPrecision() returns a string, with a number written with a specified length:
+
+toPrecision()은 지정된 길이로 작성된 숫자를 문자열로 반환합니다.
+
+<pre class="prettyprint">
+Example
+var x = 9.656;
+x.toPrecision();        // returns 9.656
+x.toPrecision(2);       // returns 9.7
+x.toPrecision(4);       // returns 9.656
+x.toPrecision(6);       // returns 9.65600
+</pre>
+
+### Converting Variables to Numbers
+
+### 숫자 변수를 변환
+
+There are 3 JavaScript functions that can be used to convert variables to numbers:
+
+숫자를 변수로 변환하는데 사용될수 있는 함수로는 3가지가 있다
+
+* The Number() method
+* The parseInt() method
+* The parseFloat() method
+
+These methods are not number methods, but global JavaScript methods.
+
+숫자 메소드 방법은 아니다, 하지만 전반적인 자바스크립트 방법이다.
+
+---
+
+### The Number() Method
+
+### Number() 메소드
+
+Number(), can be used to convert JavaScript variables to numbers:
+
+Number()는 자바스크립트 변수를 숫자로 변환 할 수 있습니다.
+
+<pre class="prettyprint">
+Example
+x = true;
+Number(x);        // returns 1
+x = false;     
+Number(x);        // returns 0
+x = new Date();
+Number(x);        // returns 1404568027739
+x = "10"
+Number(x);        // returns 10
+x = "10 20"
+Number(x);        // returns NaN
+</pre>
+
+Used on Date(), the Number() method returns the number of milliseconds since 1.1.1970.
+
+날짜와 숫자 메소드는 1970년 1월1일 이후의 밀리 초 수를 반환합니다.
+
+---
+
+### The parseInt() Method
+
+### parseInt() 메소드
+
+parseInt() parses a string and returns a whole number. Spaces are allowed. Only the first number is returned:
+
+parseInt()는 문자열을 구문 분석하고 정수를 반환합니다. 공백을 허용합니다. 첫번째 숫자가 반환됩니다.
+
+<pre class="prettyprint">
+Example
+parseInt("10");         // returns 10
+parseInt("10.33");      // returns 10
+parseInt("10 20 30");   // returns 10
+parseInt("10 years");   // returns 10
+parseInt("years 10");   // returns NaN 
+</pre>
+
+If the number cannot be converted, NaN (Not a Number) is returned.
+
+수를 변환할 수 없을 경우에는 NaN(숫자가 아니다)를 반환합니다.
+
+---
+
+### The parseFloat() Method
+
+### parseFloat() 메소드
+
+parseFloat() parses a string and returns a number. Spaces are allowed. Only the first number is returned:
+
+parseFloat()는 문자열을 구문 분석하고 수를 반환합니다. 공백이 허용됩니다. 첫번째 숫자가 반환됩니다. 
+
+<pre class="prettyprint">
+Example
+parseFloat("10");        // returns 10
+parseFloat("10.33");     // returns 10.33
+parseFloat("10 20 30");  // returns 10
+parseFloat("10 years");  // returns 10
+parseFloat("years 10");  // returns NaN
+</pre>
+
+If the number cannot be converted, NaN (Not a Number) is returned.
+
+수를 변환 할 수 없는 경우에는 NaN(숫자가 아니다)를 반환합니다.
+
+---
+
+### The valueOf() Method
+
+### valueOf() 메소드
+
+valueOf() returns a number as a number.
+
+valueOf()은 숫자로 숫자를 반환합니다.
+
+<pre class="prettyprint">
+Example
+var x = 123;
+x.valueOf();            // returns 123 from variable x
+(123).valueOf();        // returns 123 from literal 123
+(100 + 23).valueOf();   // returns 123 from expression 100 + 23
+</pre>
+
+In JavaScript, a number can be a primitive value (typeof = number) or an object (typeof = object).  
+The valueOf() method is used internally in JavaScript to convert Number objects to primitive values.  
+There is no reason to use it in your code.  
+In JavaScript, all data types have a valueOf() and a toString() method. 
+
+자바스크립트에서 숫자는 원시값 또는 객체가 될 수 있습니다.  
+valueOf() 메서드는 기본값으로 번호 개체를 변환하는 자바스크립트에서 내부적으로 사용됩니다.  
+코드에서 그것을 사용하는 이유는 
+
+---
+
+### Complete JavaScript Number Reference
+
+### 완벽한 자바스크립트 숫자를 참고
+
+For a complete reference, go to our Complete JavaScript Number Reference.  
+The reference contains descriptions and examples of all Number properties and methods.
+
+완벽한 참고로, 우리는 완벽한 자바스크립트 숫자 참고로 이동합니다.  
+기준은 모든 수의 속성과 메소드의 설명과 예제가 들어 있습니다.
