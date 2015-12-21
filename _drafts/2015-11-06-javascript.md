@@ -4381,3 +4381,480 @@ The reference contains descriptions and examples of all Number properties and me
 
 완벽한 참고로, 우리는 완벽한 자바스크립트 숫자 참고로 이동합니다.  
 기준은 모든 수의 속성과 메소드의 설명과 예제가 들어 있습니다.
+
+---
+
+---
+
+# JavaScript Math Object
+
+# 자바스크립트 수학 객체
+
+---
+
+The Math object allows you to perform mathematical tasks on numbers.
+
+Math 객체는 숫자에 수학적 작업을 수행 할 수 있습니다.
+
+---
+
+### The Math Object
+
+### 수학 객체
+
+The Math object allows you to perform mathematical tasks.  
+The Math object includes several mathematical methods.
+
+Math객체는 수학적 작업을 수행 할 수 있습니다.  
+Math객체의 목적은 여러가지 수학적인 방법을 포함하고 있습니다.
+
+---
+
+One common use of the Math object is to create a random number:
+
+Math객체의 하나의 일반적인 사용방법은 임의의 숫자를 생성하는 것 입니다.
+
+<pre class="prettyprint">
+Example
+Math.random();       // returns a random number
+</pre>
+
+Math has no constructor. No methods have to create a Math object first.
+
+Math는 생성자가 없습니다. 수학 객체를 생성 할 필요는 없습니다.
+
+### Math.min() and Math.max()
+
+Math.min() and Math.max() can be used to find the lowest or highest value in a list of arguments:
+
+Math.min() 과 Math.max()는 인수 목록중에서 가장 낮거나 가장 높은 값을 찾기위해 사용됩니다.
+
+<pre class="prettyprint">
+Example
+Math.min(0, 150, 30, 20, -8, -200);      // returns -200
+</pre>
+
+<pre class="prettyprint">
+Example
+Math.max(0, 150, 30, 20, -8, -200);      // returns 150
+</pre>
+
+### Math.random()
+
+Math.random() returns a random number between 0 (inclusive),  and 1 (exclusive):
+
+Math.random()은 0과 1사이에서 임의의 수를 반환합니다.
+
+<pre class="prettyprint">
+Example
+Math.random();              // returns a random number
+</pre>
+
+Math.random() always returns a number lower than 1.
+
+Math.random()은 항상 1보다 낮은 수를 반환합니다.
+
+---
+
+### Math.round()
+
+Math.round() rounds a number to the nearest integer:
+
+Math.round()는 가장 가까운 정수로 숫자를 반올림 합니다.
+
+<pre class="prettyprint">
+Example
+Math.round(4.7);            // returns 5
+Math.round(4.4);            // returns 4
+</pre>
+
+---
+
+### Math.ceil()
+
+Math.ceil() rounds a number up to the nearest integer:
+
+Math.ceil()은 위쪽으로 가장 가까운 정수 입니다.
+
+<pre class="prettyprint">
+Example
+Math.ceil(4.4);             // returns 5
+</pre>
+
+---
+
+### Math.floor()
+
+Math.floor() rounds a number down to the nearest integer:
+
+Math.floor() 아래쪽으로 가장 가까운 정수 입니다.
+
+<pre class="prettyprint">
+Example
+Math.floor(4.7);            // returns 4
+</pre>
+
+Math.floor() and Math.random() can be used together to return a random number between 0 and 10:
+
+Math.floor()과 Math.random()를 같이 사용하여 0부터 10 사이에 숫자를 랜덤으로 반환합니다. 
+
+<pre class="prettyprint">
+Example
+Math.floor(Math.random() * 11);   // returns a random number between 0 and 10
+</pre>
+
+---
+
+### Math Constants
+
+### Math 정수
+
+JavaScript provides 8 mathematical constants that can be accessed with the Math object:
+
+자바스크립트는 수학 객체에 접근 할 수 있도록 8개의 수학적인 정수를 제공해 줍니다.
+
+<pre class="prettyprint">
+Example
+Math.E          // returns Euler's number
+Math.PI         // returns PI
+Math.SQRT2      // returns the square root of 2
+Math.SQRT1_2    // returns the square root of 1/2
+Math.LN2        // returns the natural logarithm of 2
+Math.LN10       // returns the natural logarithm of 10
+Math.LOG2E      // returns base 2 logarithm of E
+Math.LOG10E     // returns base 10 logarithm of E
+
+Math.E          // 오일러의 수를 반환합니다.
+Math.PI         // PI를 반환 합니다.
+Math.SQRT2      // 2의 제곱근을 반환 합니다.
+Math.SQRT1_2    // 1/2의 제곱근을 반환 합니다.
+Math.LN2        // 2의 자연 로그를 반환합니다.
+Math.LN10       // 10의 자연 로그를 반환합니다.
+Math.LOG2E      // E의 기본 로그 반환
+Math.LOG10E     // E의10대수를 기반으로 반환
+</pre>
+
+### Math Object Methods
+
+### Math 오브젝트 메소드
+
+<pre class="prettyprint">
+Method			Description
+abs(x)			Returns the absolute value of x
+acos(x)			Returns the arccosine of x, in radians
+asin(x)			Returns the arcsine of x, in radians
+atan(x)			Returns the arctangent of x as a numeric value between -PI/2 and PI/2 radians
+atan2(y,x)		Returns the arctangent of the quotient of its arguments
+ceil(x)			Returns x, rounded upwards to the nearest integer
+cos(x)			Returns the cosine of x (x is in radians)
+exp(x)			Returns the value of Ex
+floor(x)			Returns x, rounded downwards to the nearest integer
+log(x)			Returns the natural logarithm (base E) of x
+max(x,y,z,...,n)		Returns the number with the highest value
+min(x,y,z,...,n)		Returns the number with the lowest value
+pow(x,y)			Returns the value of x to the power of y
+random()			Returns a random number between 0 and 1
+round(x)			Rounds x to the nearest integer
+sin(x)			Returns the sine of x (x is in radians)
+sqrt(x)			Returns the square root of x
+tan(x)			Returns the tangent of an angle
+
+abs(x)			x의 절대 값을 반환합니다.
+acos(x)			x의 라디안의 arccosine을 반환 합니다.
+asin(x)			x의 라디안의 arcsine을 반환 합니다.
+atan(x)			-PI/2와 PI/2 라디안 사이의 숫자 값으로 x의 arctangent를 반환 합니다.
+atan2(y,x)		인수의 몫의 arctangent를 반환합니다.
+ceil(x)			위쪽으로 가장 가까운정수를 반환합니다.
+cos(x)			x의 코사인을 돌려줍니다. (x는 라디안)
+exp(x)			E의 x승으로 값을 반환합니다.
+floor(x)			가장 가까운 정수로 아래로 반올림 합니다.
+log(x)			x의 자연 로그를 돌려줍니다.(기본E)
+max(x,y,z,...,n)		가장 높은 값의 수를 돌려줍니다.
+min(x,y,z,...,n)		가장 낮은 값의 수를 돌려줍니다.
+pow(x,y)			y의 동작에 x값을 반환합니다.
+random()			0과1 사이의 임의의 수를 반환합니다.
+round(x)			가장 가까운 정수를 반환합니다.
+sin(x)			x의 사인을 반환 합니다.
+sqrt(x)			x의 제곱근을 반환합니다.
+tan(x)			각에대한 탄젠트를 반환합니다.
+</pre>
+
+---
+
+### Complete Math Reference
+
+### 전체 수학 참조
+
+For a complete reference, go to our complete Math object reference.   
+The reference contains descriptions and examples of all Math properties and methods.
+
+완전한 참조로, 우리의 전체 수학 객체 참조로 이동합니다.  
+참조 설명과 모든 수학의 속성과 메서드에 대한 예제가 들어 있습니다.
+
+---
+
+### Test Yourself with Exercises!
+
+### 스스로 연습문제 시험
+
+[[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_math1)]
+[[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_math2)]
+[[연습문제3](http://www.w3schools.com/js/exercise.asp?filename=exercise_math3)]
+[[연습문제4](http://www.w3schools.com/js/exercise.asp?filename=exercise_math4)]
+
+---
+
+---
+
+# JavaScript Dates
+
+# 자바스크립트 날짜
+
+---
+
+The Date object lets you work with dates (years, months, days, hours, minutes, seconds, and milliseconds)
+
+Date객체는 (년, 월, 일, 시, 분, 초, 밀리초)를 처리 할 수 있습니다. 
+
+---
+
+### JavaScript Date Formats
+
+### 자바스크립트 날짜 형식 
+
+A JavaScript date can be written as a string:   
+Mon Dec 21 2015 14:47:40 GMT+0900 (대한민국 표준시)  
+or as a number:  
+1450676860265   
+Dates written as numbers, specifies the number of milliseconds since January 1, 1970, 00:00:00.
+
+자바스크립트 날짜는 문자열로 기록 될 수있습니다.  
+월 2015년 12월 21일 14시 47분 (그리ㅣ니치 표준시)+ 0900(대한민국 표준시)  
+또는 숫자로:  
+1450676860265  
+숫자로 작성된 날짜는 1970년 1월 1일 00:00:00 이후로 밀리 초를 지정하였습니다.
+
+---
+
+### Displaying Dates
+
+### 날짜 표시
+
+In this tutorial we use a script to display dates inside a <p> element with id="demo":
+
+이 튜토리얼 안에서 우리는 id="demo"dhk <p> 요소 배내에 날짜를 표시하는 스크립트 사용
+
+<pre class="prettyprint">
+Example
+&lt;p id="demo"&gt;&lt;/p&gt;
+
+<script>
+document.getElementById("demo").innerHTML = Date();
+</script>
+</pre>
+
+The script above says: assign the value of Date() to the content (innerHTML) of the element with id="demo". 
+
+ 위의 스크립트에서 말합니다: id="demo"와 요소의내용(innerHTML을) 에 날짜 값()을 합니다
+
+You will learn how to display a date, in a more readable format, at the bottom of this page.
+
+이 페이지는 페이지 하단에 더 읽을 수 없는 형식으로, 날짜를 표시하는 방법을 배우울 것 입니다.
+
+---
+
+### Creating Date Objects
+
+### 날짜 객체 만들기
+
+The Date object lets us work with dates.  
+A date consists of a year, a month, a day, an hour, a minute, a second, and milliseconds.  
+Date objects are created with the new Date() constructor.  
+There are 4 ways of initiating a date:
+
+Date객체로 우리는 날짜 작업을 할 수 있습니다.  
+날짜는 년, 월, 일, 시, 분, 초, 밀리 초로 구성 되어 있습니다.  
+new Date()로 새로운 날짜 개체가 만들어 집니다.  
+날짜를 시작하는 4가지 방법이 있습니다.
+
+<pre class="prettyprint">
+new Date()
+new Date(milliseconds)
+new Date(dateString)
+new Date(year, month, day, hours, minutes, seconds, milliseconds)
+</pre>
+
+Using new Date(), creates a new date object with the current date and time:
+
+new Date()를 사용하면 Date객체를 새로만들어서 현재 날짜와 시간을 사용할 수 있습니다. 
+
+<pre class="prettyprint">
+Example
+&lt;script&gt;
+var d = new Date();
+document.getElementById("demo").innerHTML = d;
+&lt;/script&gt;
+</pre>
+
+Using new Date(date string), creates a new date object from the specified date and time:
+
+문자열을 로 새로운 날짜를 사용하여 지정된 날짜 및 시간에서 새로운 Date객체를 만들수 있습니다.
+
+<pre class="prettyprint">
+Example
+&lt;script&gt;
+var d = new Date("October 13, 2014 11:13:00");
+document.getElementById( "demo").innerHTML = d;
+&lt;/script&gt;
+</pre>
+
+Valid date strings (date formats) are described in the next chapter.  
+Using new Date(number), creates a new date object as zero time plus the number.   
+Zero time is 01 January 1970 00:00:00 UTC. The number is specified in milliseconds:   
+
+유요한 날짜 문자열(날짜 형식)은 다음 장에 설명 되어 있습니다.  
+new Date(number)를 사용하더라도 0시간을 더한 번호로 새로운 날짜 개체를 만듭니다.  
+0시간은 1970년 1월 00:00시 수는 밀리터리 초로 표시합니다.
+
+<pre class="prettyprint">
+Example
+&lt;script&gt;
+var d = new Date(86400000);
+document.getElementById("demo").innerHTML = d;
+&lt;/script&gt;
+</pre>
+
+JavaScript dates are calculated in milliseconds from 01 January, 1970 00:00:00 Universal Time (UTC). One day contains 86,400,000 millisecond.
+
+자바스크립트 날짜 1970년 1월 1일 00시 0분 0초 세계시(UTC)에서 밀리 초 단위로 계산됩니다.하루는 86,400,000밀리초를 포함합니다.
+
+Using new Date(7 numbers), creates a new date object with the specified date and time:   
+The 7 numbers specify the year, month, day, hour, minute, second, and millisecond, in that order:
+
+new Date(7 numbers)와 같이 새로운 date 객체를 생성하여 시간과 날짜를 설정할 수 있습니다.   
+7은 숫자 순서대로 년,월,일,시 ,분,초 를 지정합니다.
+
+<pre class="prettyprint">
+Example
+&lt;script&gt;
+var d = new Date(99,5,24,11,33,30,0);
+document.getElementById("demo").innerHTML = d;
+&lt;/script&gt;
+</pre>
+
+Variants of the example above let us omit any of the last 4 parameters:
+
+예제는 우리는 4개의 파라미터 변수를 생략 할 수 있습니다.
+
+<pre class="prettyprint">
+Example
+&lt;script&gt;
+var d = new Date(99,5,24);
+document.getElementById("demo").innerHTML = d;
+&lt;/script&gt;
+</pre>
+
+JavaScript counts months from 0 to 11. January is 0. December is 11.
+
+자바스크립트는 0부터 11개월 순서입니다. 1월은 0 이고 12월은 11입니다.
+
+---
+
+### Date Methods
+
+### 날짜 메소드
+
+When a Date object is created, a number of methods allow you to operate on it.  
+Date methods allow you to get and set the year, month, day, hour, minute, second, and millisecond of objects, using either local time or UTC (universal, or GMT) time.
+
+Date객체가 생성 될 때 다수의 방법은 당신이 그것을 동작할 수 있습니다.  
+date메소드는 시간을 현지 시간 또는 UTC를 사용하여 당신의 년 월 일 시 분을 얻어 고 두번째는 객체의 밀리초를 설정할 수 있도록 합니다.
+
+Date methods are covered in a later chapter.
+
+Date메소드는 뒷 장에서 설명합니다.
+
+---
+
+### Displaying Dates
+
+### 날짜 표시
+
+When you display a date object in HTML, it is automatically converted to a string, with the toString() method.
+
+당신이 date객체를 HTML에 표시할때 그것은 자동적으로 toString()메소드 처럼 문자열로 전환됩니다.
+
+<pre class="prettyprint">
+Example
+&lt;p id="demo"></p>
+
+&lt;script>
+d = new Date();
+document.getElementById("demo").innerHTML = d;
+&lt;/script>
+
+Is the same as:
+
+이것은 같을 수 있습니다.
+
+&lt;p id="demo"></p>
+
+&lt;script&gt;
+d = new Date();
+document.getElementById("demo").innerHTML = d.toString();
+&lt;/script&gt;
+</pre>
+
+The toUTCString() method converts a date to a UTC string (a date display standard).
+
+toUTCString()메소드는 UTC문자열(날짜 표시 기준)로 날짜를 변환합니다.
+
+<pre class="prettyprint">
+Example
+&lt;script&gt;
+var d = new Date();
+document.getElementById("demo").innerHTML = d.toUTCString();
+&lt;/script&gt;
+</pre>
+
+The toDateString() method converts a date to a more readable format:
+
+toDateString() 메소드는 더 읽기 쉬운 구성으로 날짜를 변환합니다.
+
+<pre class="prettyprint">
+Example
+&lt;script&gt;
+var d = new Date();
+document.getElementById("demo").innerHTML = d.toDateString();
+&lt;/script&gt;
+</pre>
+
+Date objects are static, not dynamic. The computer time is ticking, but date objects, once created, are not.
+
+Date객체는 동적, 정적이지 않습니다. 컴퓨터는 시간은 똑닥 거리지만 date 객체는 한번만들면 그렇지 않습니다.
+
+---
+
+### Time Zones
+
+### 시간대
+
+When setting a date, without specifying the time zone, JavaScript will use the browser's time zone.  
+When getting a date, without specifying the time zone, the result is converted to the browser's time zone.  
+In other words: If a date/time is created in GMT (Greenwich Mean Time), the date/time will be converted to CDT (Central US Daylight Time) if a user browses from central US.  
+Read more about time zones in the next chapters.
+
+시간대를 정하지 않고 날짜를 설정하면 자바스크립트는 브라우저의 시간대를 사용합니다.  
+날짜를 얻는 경우에는 시간대를 지정하지 않고 그 결과는 브라우저의 시간대로 변환됩니다.  
+날짜/ 시간은 GMT(그리니치 표준시)에 만든 경우 사용자가  중앙 미국에서 탐색 할 경우, 날짜 / 시간은 CDT(미국 중부 일광 절약 시간)로 변환됩니다.  
+다음 장에서 시간대에 대한 자세한 내용을 읽어 보시겠습니다.
+
+---
+
+### Test Yourself with Exercises!
+
+### 스스로 연습문제 테스트!
+
+[[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_dates1)]
+[[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_dates2)]
+[[연습문제3](http://www.w3schools.com/js/exercise.asp?filename=exercise_dates3)]
