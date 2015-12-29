@@ -4629,7 +4629,7 @@ or as a number:
 Dates written as numbers, specifies the number of milliseconds since January 1, 1970, 00:00:00.
 
 자바스크립트 날짜는 문자열로 기록 될 수있습니다.  
-월 2015년 12월 21일 14시 47분 (그리ㅣ니치 표준시)+ 0900(대한민국 표준시)  
+월 2015년 12월 21일 14시 47분 (그리니치 표준시)+ 0900(대한민국 표준시)  
 또는 숫자로:  
 1450676860265  
 숫자로 작성된 날짜는 1970년 1월 1일 00:00:00 이후로 밀리 초를 지정하였습니다.
@@ -4858,3 +4858,237 @@ Read more about time zones in the next chapters.
 [[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_dates1)]
 [[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_dates2)]
 [[연습문제3](http://www.w3schools.com/js/exercise.asp?filename=exercise_dates3)]
+
+---
+
+---
+
+# JavaScript Date Formats
+
+# 자바스크립트 날짜 구성
+
+---
+
+### JavaScript Date Input
+
+### 자바스크립트 날짜 입력
+
+There are generally 4 types of JavaScript date formats:
+
+자바스크립트 날짜 구성에는 일반적으로 4가지 형태가 있습니다.
+
+* ISO Dates
+* Long Dates
+* Short Dates
+* Full Format
+
+* ISO 날짜
+* 긴 날짜
+* 짧은 날짜
+* 전체 구성
+
+---
+
+### JavaScript Date Output
+
+### 자바스크립트 날짜 출력
+
+Independent of input format, JavaScript will (by default) output dates in full text string format:  
+Wed Mar 25 2015 01:00:00 GMT+0100 (W. Europe Standard Time)
+
+입력 형식의 독립을 위해서, 자바스크립트에는 전체 텍스트 문자열 형식으로 (기본적으로) 날짜를 출력하는 것입니다.  
+Wed Mar 25 2015 01:00:00 GMT+0100 (서부 유럽 시간기준)
+
+
+---
+
+### JavaScript ISO Dates
+
+### 자바스크립트 ISO날짜
+
+ISO 8601 is the international standard for the representation of dates and times.  
+The ISO 8601 syntax (YYYY-MM-DD) is also the preferred JavaScript date format:
+
+ISO8601은 날짜와 시간에 대한 국제적인 표준 입니다.  
+ISO8601문법은 (YYYY-MM-DD)이며 또한 자바스크립트에서 우선적으로 날짜 구성을 해야합니다.
+
+<pre class="prettyprint">
+Example (Complete date)
+var d = new Date("2015-03-25");
+</pre>
+
+It can be written without specifying the day (YYYY-MM):
+
+그것은 일(YYYY-MM)을 사용하지 않고 쓰는것이 가능합니다.
+
+<pre class="prettyprint">
+Example (Year and month)
+var d = new Date("2015-03");
+</pre>
+
+It can be written without month and day (YYYY):
+
+그것은 월과 일을 사용하지 않고 쓰는것이 가능합니다.
+
+<pre class="prettyprint">
+Example (Only year)
+var d = new Date("2015");
+</pre>
+
+It can be written with added hours, minutes, and seconds (YYY-MM-DDTHH:MM:SS):
+
+그것은 시간, 분, 초를 추가하여 사용할 수 있습니다.
+
+<pre class="prettyprint">
+Example (Complete date plus hours, minutes, and seconds)
+var d = new Date("2015-03-25T12:00:00");
+</pre>
+
+The T in the date string, between the date and time, indicates UTC time.  
+UTC (Universal Time Coordinated)  is the same as GMT (Greenwich Mean Time).
+
+날짜문자열과 시간 사이에 T는 UTC시간을 나타냅니다.  
+UTC(세계 표준시)는 GMT(그리니치 표준시)와 같습니다.
+
+---
+
+### JavaScript Long Dates.
+
+### 자바스크립트 긴 날짜
+
+Long dates are most often written with a "MMM DD YYYY" syntax like this:
+
+긴 날짜는 자주 "MMM DD YYYY"와 비슷한 문법으로 쓰여집니다.
+
+<pre class="prettyprint">
+Example
+var d = new Date("Mar 25 2015");
+</pre>
+
+But, year, month, and day can be in any order:
+
+하지만 년, 월, 일은 임의의 순서로도 가능합니다.
+
+<pre class="prettyprint">
+Example
+var d = new Date("25 Mar 2015");
+</pre>
+
+<pre class="prettyprint">
+Example
+var d = new Date("2015 Mar 25");
+</pre>
+
+And, month can be written in full (January), or abbreviated (Jan):
+
+그리고, 달은 1월(January)를 단축해서 1월(Jan)로 쓸 수도 있습니다.
+
+<pre class="prettyprint">
+Example
+var d = new Date("January 25 2015");
+</pre>
+
+<pre class="prettyprint">
+Example
+var d = new Date("Jan 25 2015");
+</pre>
+
+Commas are ignored. Names are case insensitive:
+
+콤마는 생략합니다. 이름은 대소문자를 구별하지 않습니다.
+
+<pre class="prettyprint">
+Example
+var d = new Date("2015, JANUARY, 25");
+</pre>
+
+---
+
+### JavaScript Short Dates.
+
+### 자바스크립트 짧은 날짜
+
+Short dates are most often written with an "MM/DD/YYYY" syntax like this:
+
+짧은 날짜는 대부분 "MM/DD/YYYY"와 같은 문법으로 쓰여집니다.
+
+<pre class="prettyprint">
+Example
+var d = new Date("03/25/2015");
+</pre>
+
+Either "/" or "-" can be used as a separator:
+
+양쪽의 분리할 때는 / 또는 -를 사용합니다.
+
+<pre class="prettyprint">
+Example
+var d = new Date("03-25-2015");
+</pre>
+
+JavaScript will also accept "YYYY/MM/DD":
+
+게다가 자바스크립트는 "YYYY/MM/DD"를 받아들입니다.
+
+<pre class="prettyprint">
+Example
+var d = new Date("2015/03/25");
+</pre>
+
+Month is written before day in all short date and ISO date formats.
+
+---
+
+### Full Date Format
+
+### 전체 날짜 형식
+
+JavaScript will accept date strings in "full JavaScript format":
+
+자바스크립트는 전체 자바스크립트 형식으로 날짜 문자열을 받아들입니다.
+
+<pre class="prettyprint">
+Example
+var d = new Date("Wed Mar 25 2015 09:56:24 GMT+0100 (W. Europe Standard Time)");
+</pre>
+
+JavaScript will ignore errors both in the day name and in the time parentheses:
+
+자바스크립트는 날이름과 시간의 모든 오류를 무시합니다.
+
+<pre clalss="prettyprint">
+Example
+var d = new Date("Fri Mar 25 2015 09:56:24 GMT+0100 (Tokyo Time)");
+</pre>
+
+---
+
+### Time Zones
+
+### 시간대
+
+JavaScript accepts these time zones:
+
+자바스크립트에는 이러한 시간대를 받아들입니다.
+
+<pre class="prettyprint">
+Time Zone	Description
+UTC		Coordinated Universal Time
+GMT		Greenwich Mean Time
+EDT		(US) Eastern Daylight Time
+CDT		(US) Central Daylight Time
+MDT		(US) Mountain Daylight Time
+PDT		(US) Pacific Daylight Time
+EST		(US) Eastern Standard Time
+CST		(US) Central Standard Time
+MST		(US) Mountain Standard Time
+PST		(US) Pacific Standard Time
+</pre>
+
+When setting a date, without specifying the time zone, JavaScript will use the browser's time zone.  
+When getting a date, without specifying the time zone, the result is converted to the browser's time zone.   
+In other words: If a date/time is created in GMT (Greenwich Mean Time), the date/time will be converted to CDT (Central US Daylight Time) if a user browses from central US.
+
+시간대를 설정하지 않고 날짜를 사용하면 자바스크립트는 브라우저의 시간대를 사용합니다.  
+날짜를 가져올때 시간대를 정하지않으면 그 결과는 브라우저의 시간대로 변환됩니다.  
+다시말해서: 날짜/시간은 GMT에 만든경우 사용자가 중앙 미국에서 탐색할 경우 날짜 시간은 CDT로 변환됩니다.
