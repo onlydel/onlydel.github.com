@@ -2357,7 +2357,7 @@ x의 결과입니다:
 
 ### Why Functions?
 
-### 함수 왜 ?
+### 함수는 어떻게 사용할 수 있나요?
 
 You can reuse code: Define the code once, and use it many times.   
 You can use the same code many times with different arguments, to produce different results.
@@ -2379,7 +2379,7 @@ document.getElementById("demo").innerHTML = toCelsius(77);
 
 ### The () Operator Invokes the Function
 
-### 연산자 함수 호출
+### ()연산자 함수 호출
 
 Using the example above, toCelsius refers to the function object, and toCelsius() refers to the function result.
 
@@ -3047,7 +3047,7 @@ var answer = 'He is called "Johnny"';
 
 The length of a string is found in the built in property length:
 
-문자열의 길이는 속성의 길이 안에서 만들어진 것중에 찾는다.
+문자열의 길이는 속성의 길이 안에서 만들어진 것 중에서 찾는다.
 
 <pre class="prettyprint">
 Example
@@ -3265,19 +3265,19 @@ prototype	당신의 객체에 속성이나 메서드를 추가하는 것을 허�
 
 <pre class="prettyprint">
 Method			Description
-charAt()		Returns the character at the specified index (position)
+charAt()			Returns the character at the specified index (position)
 charCodeAt()		Returns the Unicode of the character at the specified index
-concat()		Joins two or more strings, and returns a copy of the joined strings
+concat()			Joins two or more strings, and returns a copy of the joined strings
 fromCharCode()		Converts Unicode values to characters
 indexOf()		Returns the position of the first found occurrence of a specified value in a string
 lastIndexOf()		Returns the position of the last found occurrence of a specified value in a string
 localeCompare()		Compares two strings in the current locale
 match()			Searches a string for a match against a regular expression, and returns the matches
 replace()		Searches a string for a value and returns a new string with the value replaced
-search()		Searches a string for a value and returns the position of the match
+search()			Searches a string for a value and returns the position of the match
 slice()			Extracts a part of a string and returns a new string
 split()			Splits a string into an array of substrings
-substr()		Extracts a part of a string from a start position through a number of characters
+substr()			Extracts a part of a string from a start position through a number of characters
 substring()		Extracts a part of a string between two specified positions
 toLocaleLowerCase()	Converts a string to lowercase letters, according to the host's locale
 toLocaleUpperCase()	Converts a string to uppercase letters, according to the host's locale
@@ -3290,22 +3290,22 @@ valueOf()		Returns the primitive value of a String object
 
 <pre class="prettyprint">
 Method			Description
-charAt()		지정한 인덱스 위치에 있는 문자열을 반환합니다.
+charAt()			지정한 인덱스 위치에 있는 문자열을 반환합니다.
 charCodeAt()		문자의 유니코드는 지정된 인덱스를 반환합니다.
-concat()		2개의상의 문자열을 연결하고 연결된 문자열의 복사본을 반환합니다.
+concat()			2개의상의 문자열을 연결하고 연결된 문자열의 복사본을 반환합니다.
 fromCharCode()		문자를 유니코드값으로 변환합니다.
 indexOf()		문자열에 저장된 값중에 첫번째 발견된 위치의 값을 반환합니다.
 lastIndexOf()		문자열에 저장된 값중에 마지막에 발견된 위치의 값을 반환합니다.
 localeCompare()		현제 위치의 2개의 문자열을 비교합니다.
 match()			정규식에 일치하는 문자열을 검색하여 일치되는 내용을 반환합니다.
 replace()		값으로 문자열을 검색하여 대체값을 가지는 새로운 문자열을 반환합니다.
-search()		문자열 값을 검색하여 일치하는 값을 반환합니다.
+search()			문자열 값을 검색하여 일치하는 값을 반환합니다.
 slice()			문자열의 일부를 추출해서 새로운 문자열로 반환합니다.
 split()			문자열의 배열로 문자열을 분할합니다.
-substr()		문자 숫자의 위치로부터 문자열의 일부를 추출합니다.
+substr()			문자 숫자의 위치로부터 문자열의 일부를 추출합니다.
 substring()		지정된 두 위치 사이에 문자열의 일부를 추출합니다.
-toLocaleLowerCase()	 host's locale에 따라서 소문자 문자열을 반환합니다.
-toLocaleUpperCase()	 host's locale에 따라서 대문자 문자열을 반환합니다.
+toLocaleLowerCase()	host's locale에 따라서 소문자 문자열을 반환합니다.
+toLocaleUpperCase()	host's locale에 따라서 대문자 문자열을 반환합니다.
 toLowerCase()		글자를 소문자 문자열로 변환합니다.
 toString()		string객체의 값을 반환합니다.
 toUpperCase()		글자를 대문자 문자열로 변환합니다.
@@ -3328,3 +3328,1767 @@ valueOf()		문자열 객체의 기본형식의 값을 반환합니다.
 ---
 
 # JavaScript String Methods
+
+# 자바스크립트 문자열 Methods
+
+---
+
+String methods help you to work with strings.
+
+문자열methods는 문자열 작업을 하는데 도움이 됩니다.
+
+---
+
+### Finding a String in a String
+
+### 문자열에서 문자열 찾기
+
+The indexOf() method returns the index of (the position of) the first occurrence of a specified text in a string:
+
+indexOf()메소드는 첫번째 문자열에서 지정된 문자열이 존재하면 index를 반환합니다.
+
+<pre class="prettyprint">
+Example
+var str = "Please locate where 'locate' occurs!";
+var pos = str.indexOf("locate");
+</pre>
+
+The lastIndexOf() method returns the index of the last occurrence of a specified text in a string:
+
+lastIndexOf()메소드는 문자열에서 마지막에 존재하는 명시된 문자의 index를 반환합니다.
+
+<pre class="prettyprint">
+Example
+var str = "Please locate where 'locate' occurs!";
+var pos = str.lastIndexOf("locate");
+</pre>
+
+Both the indexOf(), and the lastIndexOf() methods return -1 if the text is not found.
+
+indexOf()와 lastIndexOf()메소드 둘다 문자를 찾을 수 없으면 -1을 반환 합니다.
+
+JavaScript counts positions from zero.  
+0 is the first position in a string, 1 is the second, 2 is the third ...
+Both methods accept a second parameter as the starting position for the search.
+
+자바스크립트는 0에서부터 수를 셉니다.  
+0번부터 시작하여 2번째는 1, 3번째는 2 ...  
+두 메소드는 2번째 파라미터로 검색의 시작위치를 받아들입니다.
+
+---
+
+### Searching for a String in a String
+
+### 문자열에서 문자열 검색
+
+The search() method searches a string for a specified value and returns the position of the match:
+
+search()메소드는 지정된 값으로 문자열을 검색하고 일치하는 위치를 반환합니다.
+
+<pre class="prettyprint">
+Example
+var str = "Please locate where 'locate' occurs!";
+var pos = str.search("locate");
+</pre>
+	
+Did You Notice?
+
+당신은 주의 하셨나요?
+
+The two methods, indexOf() and search(), are equal.  
+They accept the same arguments (parameters), and they return the same value.  
+The two methods are equal, but the search() method can take much more powerful search values.  
+You will learn more about powerful search values in the chapter about regular expressions.
+
+indexOf()와 search()두 메소드는 동일합니다.  
+그들은 같은 인수를 받아들여서 동일한 값을 반환합니다.  
+두 가지 방법은 같지만 search()메소드는 훨씬 더 효과적으로 값을 검색할 수 있습니다.  
+당신은 정규 표현식에 대한 장에서 효과적인 검색 값에 대하여 배울 것 입니다.  
+
+---
+
+### Extracting String Parts
+
+### 문자열 부분 추출
+
+There are 3 methods for extracting a part of a string:
+
+문자열의 일부를 추출하기 위한 3가지 방법이 있습니다.
+
+* slice(start, end)
+* substring(start, end)
+* substr(start, length)
+
+---
+
+### The slice() Method
+
+### slice()메소드
+
+slice() extracts a part of a string and returns the extracted part in a new string.  
+The method takes 2 parameters: the starting index (position), and the ending index (position).  
+This example slices out a portion of a string from position 7 to position 13:
+
+slice()는 문자열의 일부를 추출하여 새로운 문자열에서 추출된 부분을 반환합니다.  
+시작 인덱스(위치)와 종료 인덱스(위치)로 2개의 파라미터로 만들어 집니다.  
+이 예제는 7번 위치에서 13번 이치까지 문자열 부분을 추출한 것 입니다.
+
+<pre class="prettyprint">
+Example
+var str = "Apple, Banana, Kiwi";
+var res = str.slice(7,13);
+
+The result of res will be:
+Banana
+</pre>
+
+If a parameter is negative, the position is counted from the end of the string.    
+This example slices out a portion of a string from  +position -12 to position -6:
+
+만약 파라미터가 음수면 문자열 위치의 끝에서부터 카운트 됩니다.
+
+<pre class="prettyprint">
+Example
+var str = "Apple, Banana, Kiwi";
+var res = str.slice(-12,-6);
+
+The result of res will be:
+Banana
+</pre>
+
+If you omit the second parameter, the method will slice out the rest of the string:
+
+만약 당신이 2번째 파라미터를 생략하면, 문자열의 나머지를 자를 것 입니다.
+
+<pre class="prettyprint">
+Example
+var res = str.slice(7);
+</pre>
+
+or, counting from the end:
+
+또는 마지막부터 시작
+
+<pre class="prettyprint">
+Example
+var res = str.slice(-12);
+</pre>
+
+Negative positions does not work in Internet Explorer 8 and earlier.
+
+음수는 위치는 Internet Explorer8에서는 동작하지 않습니다.
+
+---
+
+### The substring() Method
+
+문자열()메소드
+
+substring() is similar to slice().  
+The difference is that substring() cannot accept negative indexes.
+
+substring()과 slice()는 비슷합니다.  
+차이점은 substring()은 음수 인덱스를 받아들일 수 없다는 것입니다.
+
+<pre class="prettyprint">
+Example
+var str = "Apple, Banana, Kiwi";
+var res = str.substring(7,13);
+
+The result of res will be:
+Banana
+</pre>
+
+If you omit the second parameter, substring() will slice out the rest of the string.
+
+만약 두번째 파라미터를 생략하면 substring()은 문자열의 나머지 부분을 잘라냅니다.
+
+---
+
+### The substr() Method
+
+### substr()메소드
+
+substr() is similar to slice().  
+The difference is that the second parameter specifies the length of the extracted part.
+
+substr()은 slice()와 비슷합니다.   
+두번째 파라미터에 지정된 것은 추출될 부분의 길이 차이 입니다.
+
+<pre class="prettyprint">
+Example
+var str = "Apple, Banana, Kiwi";
+var res = str.substr(7,6);
+
+The result of res will be:
+Banana
+</pre>
+
+If the first parameter is negative, the position counts from the end of the string.  
+The second parameter can not be negative, because it defines the length.  
+If you omit the second parameter, substr() will slice out the rest of the string.
+
+만약 첫번째 파라미터가 음수면 문자열 끝에서 부터 카운트 합니다.  
+두번째 파라미터는 문자의 길이를 정의하기 때문에 음수가 올 수 없습니다.  
+만약 두번째 파라미터를 생략한다면 substr()은 문자열의 나머지 부분을 잘라냅니다.
+
+---
+
+### Replacing String Content
+
+### 문자열의 내용 교체
+
+The replace() method replaces a specified value with another value in a string:
+
+replace()메소드는 문자열을 지정된 값으로 대체합니다.
+
+<pre class="prettyprint">
+Example
+str = "Please visit Microsoft!";
+var n = str.replace("Microsoft","W3Schools");
+</pre>
+
+The replace() method can also take a regular expression as the search value.
+
+replace()메소드 또한 검색값과 같은 정규식으로 취할 수 있습니다.
+
+---
+
+### Converting to Upper and Lower Case
+
+### 대소문자 변환
+
+A string is converted to upper case with toUpperCase():
+
+toUpperCase()는 문자열을 대문자로 변환합니다.
+
+<pre class="prettyprint">
+Example
+var text1 = "Hello World!";       // String
+var text2 = text1.toUpperCase();  // text2 is text1 converted to upper
+</pre>
+
+A string is converted to lower case with toLowerCase():
+
+toLowerCase()는 문자열을 소문자로 변환합니다.
+
+<pre class="prettyprint">
+Example
+var text1 = "Hello World!";       // String
+var text2 = text1.toLowerCase();  // text2 is text1 converted to lower
+</pre>
+
+---
+
+### The concat() Method
+
+concat() joins two or more strings:
+
+concat() 2개이상의 문자열 연결
+
+<pre class="prettyprint">
+Example
+var text1 = "Hello";
+var text2 = "World";
+text3 = text1.concat("	",text2);
+</pre>
+
+The concat() method can be used instead of the plus operator. These two lines do the same:
+
+concat()메소드로 더하기 연산자를 대신해서 사용할 수 있습니다. 두 라인은 같은 작업을 수행합니다.
+
+<pre class="prettyprint">
+Example
+var text = "Hello" + " " + "World!";
+var text = "Hello".concat(" ","World!");
+</pre>
+
+All string methods return a new string. They don't modify the original string.  
+Formally said: Strings are immutable: Strings cannot be changed, only replaced.
+
+모든 문자열 메소드는 새로운 문자열을 반환합니다. 그들은 원래 문자열을 수정하지 않습니다.  
+공식적으로: 문자열은 불변함으로 변경이나 교체를 할 수 없습니다.
+
+---
+
+### Extracting String Characters
+
+### 문자열의 문자열 추출
+
+There are 2 safe methods for extracting string characters:
+
+2개의 안전하게 문자열을 추출하는 방법 
+
+* charAt(position)
+* charCodeAt(position)
+
+---
+
+### The charAt() Method
+
+### charAt()메소드
+
+The charAt() method returns the character at a specified index (position) in a string:
+
+charAt()메소드는 문자열에서 지정된 인덱스 위치에 있는 문자를 반환합니다.
+
+<pre class="prettyprint">
+Example
+var str = "HELLO WORLD";
+str.charAt(0);            // returns H
+</pre>
+
+---
+
+### The charCodeAt() Method
+
+### charCodeAt()메소드
+
+The charCodeAt() method returns the unicode of the character at a specified index in a string:
+
+charCodeAt()메소드는 문자열에서 지정된 인덱스에 있는 유니코드를 반환합니다.
+
+<pre class="prettyprint">
+Example
+var str = "HELLO WORLD";
+
+str.charCodeAt(0);         //	returns 72
+</pre>
+
+---
+
+### Accessing a String as an Array is Unsafe
+
+### 불안전한 문자열 배열 접근
+
+You might have seen code like this, accessing a string as an array:
+
+당신은 배열로 문자열에 접근하는 이와 같은 코드를 본적이 있습니다.
+
+<pre class="prettyprint">
+var str = "HELLO WORLD";
+str[0];                   // returns H
+</pre>
+
+This is unsafe and unpredictable:
+
+불안전하고 예측할수 없다.
+
+* It does not work in all browsers (not in IE5, IE6, IE7)
+* It makes strings look like arrays (but they are not)
+* str[0] = "H" does not give an error (but does not work)
+
+* 그것은 모든 브라우저에서 동작하지 않습니다.
+* 그것은 문자열 배열처럼보이게(하지만 그들은 그렇지 않다.)
+* str[0] = "H"오류를 제공하지 않습니다(하지만 동작하지 않는다)
+
+If you want to read a string as an array, convert it to an array first.
+
+당신은 배열로 문자열을 읽으려면, 문저배열로 반환해합니다.
+
+---
+
+### Converting a String to an Array
+
+### 문자열을 배열로 변환
+
+A string can be converted to an array with the split() method:
+
+문자열을 배열로 변환할 수 있습니다 split()방법
+
+<pre class="prettyprint">
+Example
+var txt = "a,b,c,d,e";   // String
+txt.split(",");          // Split on commas
+txt.split(" ");          // Split on spaces
+txt.split("|");          // Split on pipe
+</pre>
+
+If the separator is omitted, the returned array will contain the whole string in index [0].   
+If the separator is " ", the returned array will be an array of single characters:
+
+만약 구분을 생략하면 반환된 배열 인덱스[0]의  전체 문자열이 포함됩니다.  
+구분" "의 경우 반환된 배열은 단일 문자의 배열이 될 것입니다.
+
+<pre class="prettyprint">
+Example
+var txt = "Hello";       // String
+txt.split("");           // Split in characters
+</pre>
+
+---
+
+### Complete String Reference
+
+### 전체 문자열 참조
+
+For a complete reference, go to our [Complete JavaScript String Reference](http://www.w3schools.com/jsref/jsref_obj_string.asp).   
+The reference contains descriptions and examples of all string properties and methods.
+
+참고로 완전한 우리의 자바스크립트 레퍼런스를 참고 하세요.  
+레퍼런스에는 모든 문자열 속성과 메소드의 설명과 예제가 들어 있습니다.
+
+---
+
+### Test Yourself with Exercises!
+
+[[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_stringsmet1)]
+[[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_stringsmet2)]
+[[연습문제3](http://www.w3schools.com/js/exercise.asp?filename=exercise_stringsmet3)]
+[[연습문제4](http://www.w3schools.com/js/exercise.asp?filename=exercise_stringsmet4)]
+[[연습문제5](http://www.w3schools.com/js/exercise.asp?filename=exercise_stringsmet5)]
+[[연습문제6](http://www.w3schools.com/js/exercise.asp?filename=exercise_stringsmet6)]
+
+---
+
+---
+
+# JavaScript Numbers
+
+# 자바스크립트 숫자
+
+---
+
+JavaScript has only one type of number.  
+Numbers can be written with, or without, decimals.
+
+자바스크립트는 오직 하나의 숫자 타입만 가지고 있습니다.  
+숫자는 소수점없는 십진법으로 사용합니다.
+
+---
+
+### JavaScript Numbers
+
+### 자바스크립트 숫자
+
+JavaScript numbers can be written with, or without decimals:
+
+자바스크립트 숫자는 소수점없는 십진법으로 사용이 가능합니다.
+
+<pre class="prettyprint">
+Example
+var x = 34.00;    // A number with decimals
+var y = 34;       // A number without decimals
+</pre>
+
+Extra large or extra small numbers can be written with scientific (exponent) notation:
+
+매우 크거나 작은 숫자들은 지수 표기법으로 쓸 수 있습니다. 
+
+<pre class="prettyprint">
+Example
+var x = 123e5;    // 12300000
+var y = 123e-5;   // 0.00123
+</pre>
+
+---
+
+### JavaScript Numbers are Always 64-bit Floating Point
+
+### 자바스크립트는 항상 64비트의 부동 소수점 숫자 입니다.
+
+Unlike many other programming languages, JavaScript does not define different types of numbers, like integers, short, long, floating-point etc.  
+JavaScript numbers are always stored as double precision floating point numbers, following the international IEEE 754 standard.    
+This format stores numbers in 64 bits, where the number (the fraction) is stored in bits 0 to 51, the exponent in bits 52 to 62, and the sign in bit 63:
+
+많은 프로그래밍 언어와는 다르게 자바스크립트는 정수, 부동소수점 숫자를 다른유형을 정의하지 않습니다.
+자바 스크립트 번호 항상 배정 밀도 부동 소수 점 숫자로, 국제 IEEE754기준에 따르저장됩니다.   
+이 형식이 숫자(분수)비트에 051에 저장된다 64비트이며, 지수에서 비트에 52로는 62에서, 비트 전송 63에서:번호 저장합니다.
+
+<pre class="prettyprint">
+Value (aka Fraction/Mantissa)	Exponent		Sign
+52 bits (0 - 51) 		11 bits (52 - 62)	1 bit (63)
+</pre>
+
+---
+
+### Precision
+
+### 정확성
+
+Integers (numbers without a period or exponent notation) are considered accurate up to 15 digits.
+
+정수는 15자리까지 정확한 것으로 간주됩니다.
+
+<pre class="prettyprin">
+Example
+var x = 999999999999999;   // x will be 999999999999999
+var y = 9999999999999999;  // y will be 10000000000000000
+</pre>
+
+The maximum number of decimals is 17, but floating point arithmetic is not always 100% accurate:
+
+소수의 최대 갯수는 17개 이며 연산은 항상 100% 정확한 것은 아니다
+
+<pre calss="prettyprint">
+Example
+var x = 0.2 + 0.1;         // x will be 0.30000000000000004
+</pre>
+
+To solve the problem above, it helps to multiply and divide:
+
+문제들을 해결하기 위해서는 곱하기와 나누기로 도와줘야한다.
+
+<pre class="prettyprint">
+Example
+var x = (0.2 * 10 + 0.1 * 10) / 10;       // x will be 0.3
+</pre>
+
+---
+
+### Hexadecimal
+
+### 진수
+
+JavaScript interprets numeric constants as hexadecimal if they are preceded by 0x.
+
+그들은 0x를 시작으로 하느 경우에 자바스크립트 진수로 상수 숫자를 해석 합니다
+
+<pre class="prettyprint">
+Example
+var x = 0xFF;             // x will be 255
+</pre>
+
+Never write a number with a leading zero (like 07).  
+Some JavaScript versions interpret numbers as octal if they are written with a leading zero.  
+
+절대로 앞에0 과같은 숫자를 쓰지 마십시오.  
+그것들은 자바스크립트에서 일부 버전에선 숫자로 해석합니다.
+
+By default, Javascript displays numbers as base 10 decimals.  
+But you can use the toString() method to output numbers as base 16 (hex), base 8 (octal), or base 2 (binary).
+
+기본적으로 자바스크립트는 10진수로 숫자를 표시합니다.  
+하지만 당신은 toStirng()메소드에 16진수 2진수 8진수 모두를 사용한 수 있습니다.
+
+<pre class="prettyprint">
+Example
+var myNumber = 128;
+myNumber.toString(16);     // returns 80
+myNumber.toString(8);      // returns 200
+myNumber.toString(2);      // returns 10000000
+</pre>
+
+---
+
+### Infinity
+
+### 무한대
+
+Infinity (or -Infinity) is the value JavaScript will return if you calculate a number outside the largest possible number.
+
+무한대(또는 -무한대)값은 자바스크립트에서 가장 큰 수를 계산하는 것 입니다.
+
+<pre class="prettyprint">
+Example
+var myNumber = 2;
+while (myNumber != Infinity) {          // Execute until Infinity
+    myNumber = myNumber * myNumber;
+}
+</pre>
+
+Division by 0 (zero) also generates Infinity:
+
+0으로 나누면 무한대를 발생 시킵니다.
+
+<pre class="prettyprint">"
+Example
+var x =  2 / 0;          // x will be Infinity
+var y = -2 / 0;          // y will be -Infinity
+</pre>
+
+Infinity is a number: typeOf Infinity returns number.
+
+무한대는 숫자입니다 : 무한태는 타입으로 숫자를 반환합니다.
+
+<pre class="prettyprint">
+Example
+typeof Infinity;        // returns "number"
+</pre>
+
+---
+
+### NaN - Not a Number
+
+### NaN은 숫자가 아닙니다
+
+NaN is a JavaScript reserved word indicating that a value is not a number.  
+Trying to do arithmetic with a non-numeric string will result in NaN (Not a Number):
+
+NaN은 값이 숫자가 아닌것을 나타내는 자바스크립트예약어 입니다.  
+숫자가 아닌 문자열로 연산하려하면 NaN이 발생합니다.
+
+<pre class="prettyprint">
+Example
+var x = 100 / "Apple";  // x will be NaN (Not a Number)
+</pre>
+
+However, if the string contains a numeric value , the result will be a number:
+
+문자열에 숫자 값이 있는 경우에는 결과로 숫자값이 나올 것입니다.
+
+<pre class="prettyprint">
+Example
+var x = 100 / "10";     // x will be 10
+</pre>
+
+You can use the global JavaScript function isNaN() to find out if a value is a number.
+
+당신은 자바스크립트 함수 isNaN()을 사용해서 값이 숫자인지 알아 볼 수 있습니다
+
+<pre class="prettyprint">
+Example
+var x = 100 / "Apple";
+isNaN(x);               // returns true because x is Not a Number
+</pre>
+
+Watch out for NaN. If you use NaN in a mathematical operation, the result will also be NaN:
+
+NaN을 조심해야 합니다. 만약 당신이 NaN으로 수학적인 연산을 하면, 결과는 NaN이 될 것입니다.
+
+<pre class="prettyprint">
+Example
+var x = NaN;
+var y = 5;
+var z = x + y;         // z will be NaN
+</pre>
+
+Or the result might be a concatenation:
+
+아니면 결과는 연결될 수 있습니다.
+
+<pre class="prettyprint">
+Example
+var x = NaN;
+var y = "5";
+var z = x + y;         // z will be NaN5
+</pre>
+
+NaN is a number, and typeof NaN returns number:
+
+NaN은 숫자 입니다 그리고 NaN은 타입으로 숫자를 반환합니다
+
+<pre class="prettyprint">
+Example
+typeof NaN;             // returns "number"
+</pre>
+
+---
+
+### Numbers Can be Objects
+
+### 숫자는 객체로도 가능합니다
+
+Normally JavaScript numbers are primitive values created from literals: var x = 123  
+But numbers can also be defined as objects with the keyword new: var y = new Number(123)
+
+보통의 자바스크립트는 숫자의 원시 값은 리터럴로 만들어 집니다: var x = 123와 같이  
+하지만 숫자는 var y = new Number(123)와 같이 new 키워드와 객체로 정의할 수 있습니다.
+
+<pre class="prettyprint">
+Example
+var x = 123;
+var y = new Number(123);
+
+// typeof x returns number
+// typeof y returns object
+</pre>
+
+Don't create Number objects. It slows down execution speed.
+The new keyword complicates the code. This can produce some unexpected results:
+
+숫자는 객체를 만들지 않습니다. 이것은 실행 속도가 느려지고 새로운 키워드 코드를 복잡하게 합니다.
+이것은 예상하지 못한 결과를 얻을 수 있습니다.
+
+When using the == equality operator, equal numbers looks equal:
+
+== 비교 연산자를 사용하는 경우에는 같은 숫자는 동일합니다
+
+<pre class="prettyprint">
+Example
+var x = 500;             
+var y = new Number(500);
+
+// (x == y) is true because x and y have equal values
+</pre>
+
+When using the === equality operator, equal numbers are not equal, because the === operator expects equality in both type and value.
+
+=== 비교 연산자를 사용하는 경우 === 연산자는 유형과 값 모두 같아야 하기 때문에 숫자 값은 같아도 형식은 같지 않습니다.
+
+<pre class="prettyprint">
+Example
+var x = 500;             
+var y = new Number(500);
+
+// (x === y) is false because x and y have different types
+</pre>
+
+Or even worse. Objects cannot be compared:
+
+아니면 그밖에도 객체는 비교할 수 없습니다.
+
+<pre class="prettyprint">
+Example
+var x = new Number(500);             
+var y = new Number(500);
+
+// (x == y) is false because objects cannot be compared
+</pre>
+
+JavaScript objects cannot be compared.
+
+자바스크립트 객체는 비교할 수 없습니다.
+
+---
+
+### Number Properties and Methods
+
+### 숫자의 속성과 방법
+
+Primitive values (like 3.14 or 2014), cannot have properties and methods (because they are not objects).  
+But with JavaScript, methods and properties are also available to primitive values, because JavaScript treats primitive values as objects when executing methods and properties.
+
+기본값(3.14또는2014등) 속성과 방법을 가질 수 없습니다.  
+하지만 메서드와 속성을 실행할 때 자바스크립트 객체로 기본 값을 처리하기 때문에 자바스크립트 방법 과 특성은 기본값을 사용 할 수 있습니다.
+
+---
+
+### Number Properties
+
+### 숫자 속성
+
+<pre class="prettyprint">
+Property		Description
+MAX_VALUE		Returns the largest number possible in JavaScript
+MIN_VALUE		Returns the smallest number possible in JavaScript
+NEGATIVE_INFINITY	Represents negative infinity (returned on overflow)
+NaN			Represents a "Not-a-Number" value
+POSITIVE_INFINITY	Represents infinity (returned on overflow)
+
+MAX_VALUE		자바스크립트에서 가장 큰 수를 반환합니다.
+MIN_VALUE		자바스크립트에서 가장 작은 수를 반환합니다.
+NEGATIVE_INFINITY	음의 무한대(오버플로우 반환)를 반환합니다.
+NaN			"Not-a-Number"값으로 대신합니다.
+POSITIVE_INFINITY	무한대(오버플로우 반환)를 반환합니다
+
+Example
+var x = Number.MAX_VALUE;
+</pre>
+
+Number properties belongs to the JavaScript's number object wrapper called Number.  
+These properties can only be accessed as Number.MAX_VALUE.  
+Using myNumber.MAX_VALUE, where myNumber is a variable, expression, or value, will return undefined:
+
+숫자 속성은 자바스크립트의 숫자 객체 래퍼에 속합니다.  
+이러한 속성은 전용으로 접근 할 수 있습니다. MAX_VALUE.  
+myNumber.MAX_VALUE, where myNumber is a variable, expression를 사용하면 값으로 undefined를 반환합니다.
+
+<pre class="prettyprint">
+Example
+var x = 6;
+var y = x.MAX_VALUE;    // y becomes undefined
+</pre>
+
+Number methods are covered in the next chapter
+
+숫자 메소드에 대해서는 다음 장에서 설명 하겠습니다.
+
+---
+
+Test Yourself with Exercises!
+
+스스로 연습문제 테스트!
+
+[[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_numbers1)]
+[[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_numbers2)]
+[[연습문제3](http://www.w3schools.com/js/exercise.asp?filename=exercise_numbers3)]
+[[연습문제4](http://www.w3schools.com/js/exercise.asp?filename=exercise_numbers4)]
+
+---
+
+---
+
+# JavaScript Number Methods
+
+# 자바스크립트 숫자 메소드
+
+---
+
+Number methods help you to work with numbers.
+
+숫자 메소드는 당신의 숫자를 동작하는데 도움이 될 것입니다.
+
+---
+
+### Global Methods
+
+### 전반적인 메소드
+
+JavaScript global functions can be used on all JavaScript data types.  
+These are the most relevant methods, when working with numbers:
+
+자바스크립트 전역 함수는 모든 자바스크립트 데이터 형식에서 사용할 수 있습니다.  
+숫자들을 적용할때에 가장 관련 있는 것들 입니다.
+
+<pre class="prettyprint">
+Method		Description
+Number()		Returns a number, converted from its argument.
+parseFloat()	Parses its argument and returns a floating point number
+parseInt()	Parses its argument and returns an integer
+
+Method		Description
+Number()		인수의 숫자를 변환하여 반환합니다.
+parseFloat()	인수를 구문분석하고 부동소수점의 수를 반환합니다.
+parseInt()	인수를 구문분석하고 정수를 반환합니다.
+</pre>
+
+---
+
+### Number Methods
+
+### 숫자 메소드
+
+JavaScript number methods are methods that can be used on numbers:
+
+자바스크립트 숫자 메소드에서 숫자를 사용할 수 있는 방법 입니다.
+
+<pre class="prettyprint">
+Method		Description
+toString()	Returns a number as a string
+toExponential()	Returns a string, with a number rounded and written using exponential notation.
+toFixed()	Returns a string, with a number rounded and written with a specified number of decimals.
+toPrecision()	Returns a string, with a number written with a specified length
+valueOf()	Returns a number as a number
+
+Method		Description
+toString()	숫자를 문자열로 반환합니다.
+toExponential()	지수법을 사용하여 반올림하여 문자열로 반환합니다.
+toFixed()	소수로 지정된 숫자를 반올림한 숫자를 문자열로 반환합니다.
+toPrecision()	지정된 길이로 작성된 숫자를 문자열로 반환합니다.
+valueOf()	숫자를 숫자로 반환해 줍니다.
+</pre>
+
+All number methods return a new value. They do not change the original variable.
+
+모든 숫자 메소드는 새로운 값을 반환합니다. 그들은 원래 변수를 변경하지 않습니다.
+
+---
+
+### The toString() Method
+
+### toString() 메소드
+
+toString() returns a number as a string.  
+All number methods can be used on any type of numbers (literals, variables, or expressions):
+
+toString()은 숫자를 문자열로 반환합니다.  
+모든 숫자는 숫자 메소드(정수, 변수, 표현)중 어느 타입에서 사용될 수 있습니다.
+
+<pre class="prettyprint">
+Example
+var x = 123;
+x.toString();            // returns 123 from variable x
+(123).toString();        // returns 123 from literal 123
+(100 + 23).toString();   // returns 123 from expression 100 + 23
+</pre>
+
+### The toExponential() Method
+
+### toExponential() 메소드
+
+toExponential() returns a string, with a number rounded and written using exponential notation.  
+A parameter defines the number of characters behind the decimal point:
+
+toExponential()에서는 반올림 지수 표기법을 사용하여 숫자를 문자열로 반환합니다.  
+파라미터는 소수점 뒤에 문자의 수를 정의합니다:
+
+<pre class="prettyprint">
+Example
+var x = 9.656;
+x.toExponential(2);     // returns 9.66e+0
+x.toExponential(4);     // returns 9.6560e+0
+x.toExponential(6);     // returns 9.656000e+0
+</pre>
+
+The parameter is optional. If you don't specify it, JavaScript will not round the number.
+
+인자값은 선택입니다. 당신이 그것을 지정하지 않을 경우에는 JavaScript는 반올림을 하지 않습니다.
+
+### The toFixed() Method
+
+### toFixed() 메소드
+
+toFixed() returns a string, with the number written with a specified number of decimals:
+
+toFixed()는 소수의 길이를 지정하고 길이만큼의 숫자를 문자열로 반환합니다.
+
+<pre class="prettyprint">
+Example
+var x = 9.656;
+x.toFixed(0);           // returns 10
+x.toFixed(2);           // returns 9.66
+x.toFixed(4);           // returns 9.6560
+x.toFixed(6);           // returns 9.656000
+</pre>
+
+toFixed(2) is perfect for working with money.
+
+---
+
+### The toPrecision() Method
+
+### toPrecision() 메소드
+
+toPrecision() returns a string, with a number written with a specified length:
+
+toPrecision()은 지정된 길이로 작성된 숫자를 문자열로 반환합니다.
+
+<pre class="prettyprint">
+Example
+var x = 9.656;
+x.toPrecision();        // returns 9.656
+x.toPrecision(2);       // returns 9.7
+x.toPrecision(4);       // returns 9.656
+x.toPrecision(6);       // returns 9.65600
+</pre>
+
+### Converting Variables to Numbers
+
+### 숫자 변수를 변환
+
+There are 3 JavaScript functions that can be used to convert variables to numbers:
+
+숫자를 변수로 변환하는데 사용될수 있는 함수로는 3가지가 있다
+
+* The Number() method
+* The parseInt() method
+* The parseFloat() method
+
+These methods are not number methods, but global JavaScript methods.
+
+숫자 메소드 방법은 아니다, 하지만 전반적인 자바스크립트 방법이다.
+
+---
+
+### The Number() Method
+
+### Number() 메소드
+
+Number(), can be used to convert JavaScript variables to numbers:
+
+Number()는 자바스크립트 변수를 숫자로 변환 할 수 있습니다.
+
+<pre class="prettyprint">
+Example
+x = true;
+Number(x);        // returns 1
+x = false;     
+Number(x);        // returns 0
+x = new Date();
+Number(x);        // returns 1404568027739
+x = "10"
+Number(x);        // returns 10
+x = "10 20"
+Number(x);        // returns NaN
+</pre>
+
+Used on Date(), the Number() method returns the number of milliseconds since 1.1.1970.
+
+날짜와 숫자 메소드는 1970년 1월1일 이후의 밀리 초 수를 반환합니다.
+
+---
+
+### The parseInt() Method
+
+### parseInt() 메소드
+
+parseInt() parses a string and returns a whole number. Spaces are allowed. Only the first number is returned:
+
+parseInt()는 문자열을 구문 분석하고 정수를 반환합니다. 공백을 허용합니다. 첫번째 숫자가 반환됩니다.
+
+<pre class="prettyprint">
+Example
+parseInt("10");         // returns 10
+parseInt("10.33");      // returns 10
+parseInt("10 20 30");   // returns 10
+parseInt("10 years");   // returns 10
+parseInt("years 10");   // returns NaN 
+</pre>
+
+If the number cannot be converted, NaN (Not a Number) is returned.
+
+수를 변환할 수 없을 경우에는 NaN(숫자가 아니다)를 반환합니다.
+
+---
+
+### The parseFloat() Method
+
+### parseFloat() 메소드
+
+parseFloat() parses a string and returns a number. Spaces are allowed. Only the first number is returned:
+
+parseFloat()는 문자열을 구문 분석하고 수를 반환합니다. 공백이 허용됩니다. 첫번째 숫자가 반환됩니다. 
+
+<pre class="prettyprint">
+Example
+parseFloat("10");        // returns 10
+parseFloat("10.33");     // returns 10.33
+parseFloat("10 20 30");  // returns 10
+parseFloat("10 years");  // returns 10
+parseFloat("years 10");  // returns NaN
+</pre>
+
+If the number cannot be converted, NaN (Not a Number) is returned.
+
+수를 변환 할 수 없는 경우에는 NaN(숫자가 아니다)를 반환합니다.
+
+---
+
+### The valueOf() Method
+
+### valueOf() 메소드
+
+valueOf() returns a number as a number.
+
+valueOf()은 숫자로 숫자를 반환합니다.
+
+<pre class="prettyprint">
+Example
+var x = 123;
+x.valueOf();            // returns 123 from variable x
+(123).valueOf();        // returns 123 from literal 123
+(100 + 23).valueOf();   // returns 123 from expression 100 + 23
+</pre>
+
+In JavaScript, a number can be a primitive value (typeof = number) or an object (typeof = object).  
+The valueOf() method is used internally in JavaScript to convert Number objects to primitive values.  
+There is no reason to use it in your code.  
+In JavaScript, all data types have a valueOf() and a toString() method. 
+
+자바스크립트에서 숫자는 원시값 또는 객체가 될 수 있습니다.  
+valueOf() 메서드는 기본값으로 번호 개체를 변환하는 자바스크립트에서 내부적으로 사용됩니다.  
+코드에서 그것을 사용하는 이유는 
+
+---
+
+### Complete JavaScript Number Reference
+
+### 완벽한 자바스크립트 숫자를 참고
+
+For a complete reference, go to our Complete JavaScript Number Reference.  
+The reference contains descriptions and examples of all Number properties and methods.
+
+완벽한 참고로, 우리는 완벽한 자바스크립트 숫자 참고로 이동합니다.  
+기준은 모든 수의 속성과 메소드의 설명과 예제가 들어 있습니다.
+
+---
+
+---
+
+# JavaScript Math Object
+
+# 자바스크립트 수학 객체
+
+---
+
+The Math object allows you to perform mathematical tasks on numbers.
+
+Math 객체는 숫자에 수학적 작업을 수행 할 수 있습니다.
+
+---
+
+### The Math Object
+
+### 수학 객체
+
+The Math object allows you to perform mathematical tasks.  
+The Math object includes several mathematical methods.
+
+Math객체는 수학적 작업을 수행 할 수 있습니다.  
+Math객체의 목적은 여러가지 수학적인 방법을 포함하고 있습니다.
+
+---
+
+One common use of the Math object is to create a random number:
+
+Math객체의 하나의 일반적인 사용방법은 임의의 숫자를 생성하는 것 입니다.
+
+<pre class="prettyprint">
+Example
+Math.random();       // returns a random number
+</pre>
+
+Math has no constructor. No methods have to create a Math object first.
+
+Math는 생성자가 없습니다. 수학 객체를 생성 할 필요는 없습니다.
+
+### Math.min() and Math.max()
+
+Math.min() and Math.max() can be used to find the lowest or highest value in a list of arguments:
+
+Math.min() 과 Math.max()는 인수 목록중에서 가장 낮거나 가장 높은 값을 찾기위해 사용됩니다.
+
+<pre class="prettyprint">
+Example
+Math.min(0, 150, 30, 20, -8, -200);      // returns -200
+</pre>
+
+<pre class="prettyprint">
+Example
+Math.max(0, 150, 30, 20, -8, -200);      // returns 150
+</pre>
+
+### Math.random()
+
+Math.random() returns a random number between 0 (inclusive),  and 1 (exclusive):
+
+Math.random()은 0과 1사이에서 임의의 수를 반환합니다.
+
+<pre class="prettyprint">
+Example
+Math.random();              // returns a random number
+</pre>
+
+Math.random() always returns a number lower than 1.
+
+Math.random()은 항상 1보다 낮은 수를 반환합니다.
+
+---
+
+### Math.round()
+
+Math.round() rounds a number to the nearest integer:
+
+Math.round()는 가장 가까운 정수로 숫자를 반올림 합니다.
+
+<pre class="prettyprint">
+Example
+Math.round(4.7);            // returns 5
+Math.round(4.4);            // returns 4
+</pre>
+
+---
+
+### Math.ceil()
+
+Math.ceil() rounds a number up to the nearest integer:
+
+Math.ceil()은 위쪽으로 가장 가까운 정수 입니다.
+
+<pre class="prettyprint">
+Example
+Math.ceil(4.4);             // returns 5
+</pre>
+
+---
+
+### Math.floor()
+
+Math.floor() rounds a number down to the nearest integer:
+
+Math.floor() 아래쪽으로 가장 가까운 정수 입니다.
+
+<pre class="prettyprint">
+Example
+Math.floor(4.7);            // returns 4
+</pre>
+
+Math.floor() and Math.random() can be used together to return a random number between 0 and 10:
+
+Math.floor()과 Math.random()를 같이 사용하여 0부터 10 사이에 숫자를 랜덤으로 반환합니다. 
+
+<pre class="prettyprint">
+Example
+Math.floor(Math.random() * 11);   // returns a random number between 0 and 10
+</pre>
+
+---
+
+### Math Constants
+
+### Math 정수
+
+JavaScript provides 8 mathematical constants that can be accessed with the Math object:
+
+자바스크립트는 수학 객체에 접근 할 수 있도록 8개의 수학적인 정수를 제공해 줍니다.
+
+<pre class="prettyprint">
+Example
+Math.E          // returns Euler's number
+Math.PI         // returns PI
+Math.SQRT2      // returns the square root of 2
+Math.SQRT1_2    // returns the square root of 1/2
+Math.LN2        // returns the natural logarithm of 2
+Math.LN10       // returns the natural logarithm of 10
+Math.LOG2E      // returns base 2 logarithm of E
+Math.LOG10E     // returns base 10 logarithm of E
+
+Math.E          // 오일러의 수를 반환합니다.
+Math.PI         // PI를 반환 합니다.
+Math.SQRT2      // 2의 제곱근을 반환 합니다.
+Math.SQRT1_2    // 1/2의 제곱근을 반환 합니다.
+Math.LN2        // 2의 자연 로그를 반환합니다.
+Math.LN10       // 10의 자연 로그를 반환합니다.
+Math.LOG2E      // E의 기본 로그 반환
+Math.LOG10E     // E의10대수를 기반으로 반환
+</pre>
+
+### Math Object Methods
+
+### Math 오브젝트 메소드
+
+<pre class="prettyprint">
+Method			Description
+abs(x)			Returns the absolute value of x
+acos(x)			Returns the arccosine of x, in radians
+asin(x)			Returns the arcsine of x, in radians
+atan(x)			Returns the arctangent of x as a numeric value between -PI/2 and PI/2 radians
+atan2(y,x)		Returns the arctangent of the quotient of its arguments
+ceil(x)			Returns x, rounded upwards to the nearest integer
+cos(x)			Returns the cosine of x (x is in radians)
+exp(x)			Returns the value of Ex
+floor(x)			Returns x, rounded downwards to the nearest integer
+log(x)			Returns the natural logarithm (base E) of x
+max(x,y,z,...,n)		Returns the number with the highest value
+min(x,y,z,...,n)		Returns the number with the lowest value
+pow(x,y)			Returns the value of x to the power of y
+random()			Returns a random number between 0 and 1
+round(x)			Rounds x to the nearest integer
+sin(x)			Returns the sine of x (x is in radians)
+sqrt(x)			Returns the square root of x
+tan(x)			Returns the tangent of an angle
+
+abs(x)			x의 절대 값을 반환합니다.
+acos(x)			x의 라디안의 arccosine을 반환 합니다.
+asin(x)			x의 라디안의 arcsine을 반환 합니다.
+atan(x)			-PI/2와 PI/2 라디안 사이의 숫자 값으로 x의 arctangent를 반환 합니다.
+atan2(y,x)		인수의 몫의 arctangent를 반환합니다.
+ceil(x)			위쪽으로 가장 가까운정수를 반환합니다.
+cos(x)			x의 코사인을 돌려줍니다. (x는 라디안)
+exp(x)			E의 x승으로 값을 반환합니다.
+floor(x)			가장 가까운 정수로 아래로 반올림 합니다.
+log(x)			x의 자연 로그를 돌려줍니다.(기본E)
+max(x,y,z,...,n)		가장 높은 값의 수를 돌려줍니다.
+min(x,y,z,...,n)		가장 낮은 값의 수를 돌려줍니다.
+pow(x,y)			y의 동작에 x값을 반환합니다.
+random()			0과1 사이의 임의의 수를 반환합니다.
+round(x)			가장 가까운 정수를 반환합니다.
+sin(x)			x의 사인을 반환 합니다.
+sqrt(x)			x의 제곱근을 반환합니다.
+tan(x)			각에대한 탄젠트를 반환합니다.
+</pre>
+
+---
+
+### Complete Math Reference
+
+### 전체 수학 참조
+
+For a complete reference, go to our complete Math object reference.   
+The reference contains descriptions and examples of all Math properties and methods.
+
+완전한 참조로, 우리의 전체 수학 객체 참조로 이동합니다.  
+참조 설명과 모든 수학의 속성과 메서드에 대한 예제가 들어 있습니다.
+
+---
+
+### Test Yourself with Exercises!
+
+### 스스로 연습문제 시험
+
+[[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_math1)]
+[[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_math2)]
+[[연습문제3](http://www.w3schools.com/js/exercise.asp?filename=exercise_math3)]
+[[연습문제4](http://www.w3schools.com/js/exercise.asp?filename=exercise_math4)]
+
+---
+
+---
+
+# JavaScript Dates
+
+# 자바스크립트 날짜
+
+---
+
+The Date object lets you work with dates (years, months, days, hours, minutes, seconds, and milliseconds)
+
+Date객체는 (년, 월, 일, 시, 분, 초, 밀리초)를 처리 할 수 있습니다. 
+
+---
+
+### JavaScript Date Formats
+
+### 자바스크립트 날짜 형식 
+
+A JavaScript date can be written as a string:   
+Mon Dec 21 2015 14:47:40 GMT+0900 (대한민국 표준시)  
+or as a number:  
+1450676860265   
+Dates written as numbers, specifies the number of milliseconds since January 1, 1970, 00:00:00.
+
+자바스크립트 날짜는 문자열로 기록 될 수있습니다.  
+월 2015년 12월 21일 14시 47분 (그리니치 표준시)+ 0900(대한민국 표준시)  
+또는 숫자로:  
+1450676860265  
+숫자로 작성된 날짜는 1970년 1월 1일 00:00:00 이후로 밀리 초를 지정하였습니다.
+
+---
+
+### Displaying Dates
+
+### 날짜 표시
+
+In this tutorial we use a script to display dates inside a <p> element with id="demo":
+
+이 튜토리얼 안에서 우리는 id="demo"dhk <p> 요소 배내에 날짜를 표시하는 스크립트 사용
+
+<pre class="prettyprint">
+Example
+&lt;p id="demo"&gt;&lt;/p&gt;
+
+<script>
+document.getElementById("demo").innerHTML = Date();
+</script>
+</pre>
+
+The script above says: assign the value of Date() to the content (innerHTML) of the element with id="demo". 
+
+ 위의 스크립트에서 말합니다: id="demo"와 요소의내용(innerHTML을) 에 날짜 값()을 합니다
+
+You will learn how to display a date, in a more readable format, at the bottom of this page.
+
+이 페이지는 페이지 하단에 더 읽을 수 없는 형식으로, 날짜를 표시하는 방법을 배우울 것 입니다.
+
+---
+
+### Creating Date Objects
+
+### 날짜 객체 만들기
+
+The Date object lets us work with dates.  
+A date consists of a year, a month, a day, an hour, a minute, a second, and milliseconds.  
+Date objects are created with the new Date() constructor.  
+There are 4 ways of initiating a date:
+
+Date객체로 우리는 날짜 작업을 할 수 있습니다.  
+날짜는 년, 월, 일, 시, 분, 초, 밀리 초로 구성 되어 있습니다.  
+new Date()로 새로운 날짜 개체가 만들어 집니다.  
+날짜를 시작하는 4가지 방법이 있습니다.
+
+<pre class="prettyprint">
+new Date()
+new Date(milliseconds)
+new Date(dateString)
+new Date(year, month, day, hours, minutes, seconds, milliseconds)
+</pre>
+
+Using new Date(), creates a new date object with the current date and time:
+
+new Date()를 사용하면 Date객체를 새로만들어서 현재 날짜와 시간을 사용할 수 있습니다. 
+
+<pre class="prettyprint">
+Example
+&lt;script&gt;
+var d = new Date();
+document.getElementById("demo").innerHTML = d;
+&lt;/script&gt;
+</pre>
+
+Using new Date(date string), creates a new date object from the specified date and time:
+
+문자열을 로 새로운 날짜를 사용하여 지정된 날짜 및 시간에서 새로운 Date객체를 만들수 있습니다.
+
+<pre class="prettyprint">
+Example
+&lt;script&gt;
+var d = new Date("October 13, 2014 11:13:00");
+document.getElementById( "demo").innerHTML = d;
+&lt;/script&gt;
+</pre>
+
+Valid date strings (date formats) are described in the next chapter.  
+Using new Date(number), creates a new date object as zero time plus the number.   
+Zero time is 01 January 1970 00:00:00 UTC. The number is specified in milliseconds:   
+
+유요한 날짜 문자열(날짜 형식)은 다음 장에 설명 되어 있습니다.  
+new Date(number)를 사용하더라도 0시간을 더한 번호로 새로운 날짜 개체를 만듭니다.  
+0시간은 1970년 1월 00:00시 수는 밀리터리 초로 표시합니다.
+
+<pre class="prettyprint">
+Example
+&lt;script&gt;
+var d = new Date(86400000);
+document.getElementById("demo").innerHTML = d;
+&lt;/script&gt;
+</pre>
+
+JavaScript dates are calculated in milliseconds from 01 January, 1970 00:00:00 Universal Time (UTC). One day contains 86,400,000 millisecond.
+
+자바스크립트 날짜 1970년 1월 1일 00시 0분 0초 세계시(UTC)에서 밀리 초 단위로 계산됩니다.하루는 86,400,000밀리초를 포함합니다.
+
+Using new Date(7 numbers), creates a new date object with the specified date and time:   
+The 7 numbers specify the year, month, day, hour, minute, second, and millisecond, in that order:
+
+new Date(7 numbers)와 같이 새로운 date 객체를 생성하여 시간과 날짜를 설정할 수 있습니다.   
+7은 숫자 순서대로 년,월,일,시 ,분,초 를 지정합니다.
+
+<pre class="prettyprint">
+Example
+&lt;script&gt;
+var d = new Date(99,5,24,11,33,30,0);
+document.getElementById("demo").innerHTML = d;
+&lt;/script&gt;
+</pre>
+
+Variants of the example above let us omit any of the last 4 parameters:
+
+예제는 우리는 4개의 파라미터 변수를 생략 할 수 있습니다.
+
+<pre class="prettyprint">
+Example
+&lt;script&gt;
+var d = new Date(99,5,24);
+document.getElementById("demo").innerHTML = d;
+&lt;/script&gt;
+</pre>
+
+JavaScript counts months from 0 to 11. January is 0. December is 11.
+
+자바스크립트는 0부터 11개월 순서입니다. 1월은 0 이고 12월은 11입니다.
+
+---
+
+### Date Methods
+
+### 날짜 메소드
+
+When a Date object is created, a number of methods allow you to operate on it.  
+Date methods allow you to get and set the year, month, day, hour, minute, second, and millisecond of objects, using either local time or UTC (universal, or GMT) time.
+
+Date객체가 생성 될 때 다수의 방법은 당신이 그것을 동작할 수 있습니다.  
+date메소드는 시간을 현지 시간 또는 UTC를 사용하여 당신의 년 월 일 시 분을 얻어 고 두번째는 객체의 밀리초를 설정할 수 있도록 합니다.
+
+Date methods are covered in a later chapter.
+
+Date메소드는 뒷 장에서 설명합니다.
+
+---
+
+### Displaying Dates
+
+### 날짜 표시
+
+When you display a date object in HTML, it is automatically converted to a string, with the toString() method.
+
+당신이 date객체를 HTML에 표시할때 그것은 자동적으로 toString()메소드 처럼 문자열로 전환됩니다.
+
+<pre class="prettyprint">
+Example
+&lt;p id="demo"></p>
+
+&lt;script>
+d = new Date();
+document.getElementById("demo").innerHTML = d;
+&lt;/script>
+
+Is the same as:
+
+이것은 같을 수 있습니다.
+
+&lt;p id="demo"></p>
+
+&lt;script&gt;
+d = new Date();
+document.getElementById("demo").innerHTML = d.toString();
+&lt;/script&gt;
+</pre>
+
+The toUTCString() method converts a date to a UTC string (a date display standard).
+
+toUTCString()메소드는 UTC문자열(날짜 표시 기준)로 날짜를 변환합니다.
+
+<pre class="prettyprint">
+Example
+&lt;script&gt;
+var d = new Date();
+document.getElementById("demo").innerHTML = d.toUTCString();
+&lt;/script&gt;
+</pre>
+
+The toDateString() method converts a date to a more readable format:
+
+toDateString() 메소드는 더 읽기 쉬운 구성으로 날짜를 변환합니다.
+
+<pre class="prettyprint">
+Example
+&lt;script&gt;
+var d = new Date();
+document.getElementById("demo").innerHTML = d.toDateString();
+&lt;/script&gt;
+</pre>
+
+Date objects are static, not dynamic. The computer time is ticking, but date objects, once created, are not.
+
+Date객체는 동적, 정적이지 않습니다. 컴퓨터는 시간은 똑닥 거리지만 date 객체는 한번만들면 그렇지 않습니다.
+
+---
+
+### Time Zones
+
+### 시간대
+
+When setting a date, without specifying the time zone, JavaScript will use the browser's time zone.  
+When getting a date, without specifying the time zone, the result is converted to the browser's time zone.  
+In other words: If a date/time is created in GMT (Greenwich Mean Time), the date/time will be converted to CDT (Central US Daylight Time) if a user browses from central US.  
+Read more about time zones in the next chapters.
+
+시간대를 정하지 않고 날짜를 설정하면 자바스크립트는 브라우저의 시간대를 사용합니다.  
+날짜를 얻는 경우에는 시간대를 지정하지 않고 그 결과는 브라우저의 시간대로 변환됩니다.  
+날짜/ 시간은 GMT(그리니치 표준시)에 만든 경우 사용자가  중앙 미국에서 탐색 할 경우, 날짜 / 시간은 CDT(미국 중부 일광 절약 시간)로 변환됩니다.  
+다음 장에서 시간대에 대한 자세한 내용을 읽어 보시겠습니다.
+
+---
+
+### Test Yourself with Exercises!
+
+### 스스로 연습문제 테스트!
+
+[[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_dates1)]
+[[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_dates2)]
+[[연습문제3](http://www.w3schools.com/js/exercise.asp?filename=exercise_dates3)]
+
+---
+
+---
+
+# JavaScript Date Formats
+
+# 자바스크립트 날짜 구성
+
+---
+
+### JavaScript Date Input
+
+### 자바스크립트 날짜 입력
+
+There are generally 4 types of JavaScript date formats:
+
+자바스크립트 날짜 구성에는 일반적으로 4가지 형태가 있습니다.
+
+* ISO Dates
+* Long Dates
+* Short Dates
+* Full Format
+
+* ISO 날짜
+* 긴 날짜
+* 짧은 날짜
+* 전체 구성
+
+---
+
+### JavaScript Date Output
+
+### 자바스크립트 날짜 출력
+
+Independent of input format, JavaScript will (by default) output dates in full text string format:  
+Wed Mar 25 2015 01:00:00 GMT+0100 (W. Europe Standard Time)
+
+입력 형식의 독립을 위해서, 자바스크립트에는 전체 텍스트 문자열 형식으로 (기본적으로) 날짜를 출력하는 것입니다.  
+Wed Mar 25 2015 01:00:00 GMT+0100 (서부 유럽 시간기준)
+
+
+---
+
+### JavaScript ISO Dates
+
+### 자바스크립트 ISO날짜
+
+ISO 8601 is the international standard for the representation of dates and times.  
+The ISO 8601 syntax (YYYY-MM-DD) is also the preferred JavaScript date format:
+
+ISO8601은 날짜와 시간에 대한 국제적인 표준 입니다.  
+ISO8601문법은 (YYYY-MM-DD)이며 또한 자바스크립트에서 우선적으로 날짜 구성을 해야합니다.
+
+<pre class="prettyprint">
+Example (Complete date)
+var d = new Date("2015-03-25");
+</pre>
+
+It can be written without specifying the day (YYYY-MM):
+
+그것은 일(YYYY-MM)을 사용하지 않고 쓰는것이 가능합니다.
+
+<pre class="prettyprint">
+Example (Year and month)
+var d = new Date("2015-03");
+</pre>
+
+It can be written without month and day (YYYY):
+
+그것은 월과 일을 사용하지 않고 쓰는것이 가능합니다.
+
+<pre class="prettyprint">
+Example (Only year)
+var d = new Date("2015");
+</pre>
+
+It can be written with added hours, minutes, and seconds (YYY-MM-DDTHH:MM:SS):
+
+그것은 시간, 분, 초를 추가하여 사용할 수 있습니다.
+
+<pre class="prettyprint">
+Example (Complete date plus hours, minutes, and seconds)
+var d = new Date("2015-03-25T12:00:00");
+</pre>
+
+The T in the date string, between the date and time, indicates UTC time.  
+UTC (Universal Time Coordinated)  is the same as GMT (Greenwich Mean Time).
+
+날짜문자열과 시간 사이에 T는 UTC시간을 나타냅니다.  
+UTC(세계 표준시)는 GMT(그리니치 표준시)와 같습니다.
+
+---
+
+### JavaScript Long Dates.
+
+### 자바스크립트 긴 날짜
+
+Long dates are most often written with a "MMM DD YYYY" syntax like this:
+
+긴 날짜는 자주 "MMM DD YYYY"와 비슷한 문법으로 쓰여집니다.
+
+<pre class="prettyprint">
+Example
+var d = new Date("Mar 25 2015");
+</pre>
+
+But, year, month, and day can be in any order:
+
+하지만 년, 월, 일은 임의의 순서로도 가능합니다.
+
+<pre class="prettyprint">
+Example
+var d = new Date("25 Mar 2015");
+</pre>
+
+<pre class="prettyprint">
+Example
+var d = new Date("2015 Mar 25");
+</pre>
+
+And, month can be written in full (January), or abbreviated (Jan):
+
+그리고, 달은 1월(January)를 단축해서 1월(Jan)로 쓸 수도 있습니다.
+
+<pre class="prettyprint">
+Example
+var d = new Date("January 25 2015");
+</pre>
+
+<pre class="prettyprint">
+Example
+var d = new Date("Jan 25 2015");
+</pre>
+
+Commas are ignored. Names are case insensitive:
+
+콤마는 생략합니다. 이름은 대소문자를 구별하지 않습니다.
+
+<pre class="prettyprint">
+Example
+var d = new Date("2015, JANUARY, 25");
+</pre>
+
+---
+
+### JavaScript Short Dates.
+
+### 자바스크립트 짧은 날짜
+
+Short dates are most often written with an "MM/DD/YYYY" syntax like this:
+
+짧은 날짜는 대부분 "MM/DD/YYYY"와 같은 문법으로 쓰여집니다.
+
+<pre class="prettyprint">
+Example
+var d = new Date("03/25/2015");
+</pre>
+
+Either "/" or "-" can be used as a separator:
+
+양쪽의 분리할 때는 / 또는 -를 사용합니다.
+
+<pre class="prettyprint">
+Example
+var d = new Date("03-25-2015");
+</pre>
+
+JavaScript will also accept "YYYY/MM/DD":
+
+게다가 자바스크립트는 "YYYY/MM/DD"를 받아들입니다.
+
+<pre class="prettyprint">
+Example
+var d = new Date("2015/03/25");
+</pre>
+
+Month is written before day in all short date and ISO date formats.
+
+---
+
+### Full Date Format
+
+### 전체 날짜 형식
+
+JavaScript will accept date strings in "full JavaScript format":
+
+자바스크립트는 전체 자바스크립트 형식으로 날짜 문자열을 받아들입니다.
+
+<pre class="prettyprint">
+Example
+var d = new Date("Wed Mar 25 2015 09:56:24 GMT+0100 (W. Europe Standard Time)");
+</pre>
+
+JavaScript will ignore errors both in the day name and in the time parentheses:
+
+자바스크립트는 날이름과 시간의 모든 오류를 무시합니다.
+
+<pre clalss="prettyprint">
+Example
+var d = new Date("Fri Mar 25 2015 09:56:24 GMT+0100 (Tokyo Time)");
+</pre>
+
+---
+
+### Time Zones
+
+### 시간대
+
+JavaScript accepts these time zones:
+
+자바스크립트에는 이러한 시간대를 받아들입니다.
+
+<pre class="prettyprint">
+Time Zone	Description
+UTC		Coordinated Universal Time
+GMT		Greenwich Mean Time
+EDT		(US) Eastern Daylight Time
+CDT		(US) Central Daylight Time
+MDT		(US) Mountain Daylight Time
+PDT		(US) Pacific Daylight Time
+EST		(US) Eastern Standard Time
+CST		(US) Central Standard Time
+MST		(US) Mountain Standard Time
+PST		(US) Pacific Standard Time
+</pre>
+
+When setting a date, without specifying the time zone, JavaScript will use the browser's time zone.  
+When getting a date, without specifying the time zone, the result is converted to the browser's time zone.   
+In other words: If a date/time is created in GMT (Greenwich Mean Time), the date/time will be converted to CDT (Central US Daylight Time) if a user browses from central US.
+
+시간대를 설정하지 않고 날짜를 사용하면 자바스크립트는 브라우저의 시간대를 사용합니다.  
+날짜를 가져올때 시간대를 정하지않으면 그 결과는 브라우저의 시간대로 변환됩니다.  
+다시말해서: 날짜/시간은 GMT에 만든경우 사용자가 중앙 미국에서 탐색할 경우 날짜 시간은 CDT로 변환됩니다.
