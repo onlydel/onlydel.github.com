@@ -4,6 +4,16 @@ title: Programming log
 permalink: /plog/
 ---
 
+### Dec 24, 2015
+* javascript가 더이상 웹 전용이 아니라는 사실을 확인시켜주는 자료들.
+    - [node-webkit(nw.js) samples](https://github.com/nwjs/nw.js/wiki/List-of-apps-and-companies-using-nw.js)
+* 나를 미치게 만들었던 게임, 심시티. 그를 능가하는 게임([시티바운스](http://cityboundsim.com))을 만들고 있는 또 한 사람([Anselm Eickhoff](http://aeplay.co))
+* AWS에서 몇 백원씩 과금 되던 놈, 원인을 찾았다. 예전에 node를 설치한 AMI 이미지를 저장해 놓고 있었는데 snapshot을 저장하는 elastics block storage는 free tier에 해당사항이 없기 때문이었던것 같다. 이런 detail한 과금 체계는 장점인가? 단점인가?
+
+
+### Dec 22, 2015
+* ES6에서 mixins 지원하지 않는 다고 한다. 더 쉬운 방법으로 비슷한 기능을 제공한다고 하니 그때까진 어쩔 수 없겠구먼.
+
 ### Dec 11, 2015
 * React 책을 하나 구입했다. 번역된 eBook이다. 일주일 목표로 읽어본다. 알고있는 내용은 스킵하고 이틀동안 러프하게 한 번 읽으면서 간단한것만 실습하고 , 3일간 다시 한번 보면서 나머지 실습한다.
 * 
