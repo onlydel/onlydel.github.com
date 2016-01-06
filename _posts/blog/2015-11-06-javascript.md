@@ -555,7 +555,7 @@ An equal sign is used to assign values to variables.
 In this example, x is defined as a variable. Then, x is assigned (given) the value 6:
 
 프로그래밍 언어에서 변수는 데이터 값을 저장하는데 사용합니다.  
-자바스크립트에서는 변수의 핵심단어를 var로 정의하여 사용합니다.
+자바스크립트에서는 변수의 핵심단어를 var로 정의하여 사용합니다.  
 =은 변수에 값을 할당하는데 사용합니다.  
 예제에서는 x는 변수로 정의 합니다. 그x에 6이라는 값으로 부여합니다.
 
@@ -5092,3 +5092,490 @@ In other words: If a date/time is created in GMT (Greenwich Mean Time), the date
 시간대를 설정하지 않고 날짜를 사용하면 자바스크립트는 브라우저의 시간대를 사용합니다.  
 날짜를 가져올때 시간대를 정하지않으면 그 결과는 브라우저의 시간대로 변환됩니다.  
 다시말해서: 날짜/시간은 GMT에 만든경우 사용자가 중앙 미국에서 탐색할 경우 날짜 시간은 CDT로 변환됩니다.
+
+---
+
+----
+
+# JavaScript Arrays
+
+# 자바스크립트 배열
+
+---
+
+JavaScript arrays are used to store multiple values in a single variable.
+
+자바스크립트 배열은 하나의 변수에 여러가지 값들을 저장하는데 사용합니다.
+
+---
+
+### Displaying Arrays
+
+### 배열 표시
+
+In this tutorial we will use a script to display arrays inside a <p> element with id="demo":
+
+이 튜토리얼에서 우리는 스크립트를 <p> 요소의 id="demo"안에서 배열을 보여주기 위해 사용하였습니다.
+
+<pre class="prettyprint">
+Example
+&lt;p id="demo"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+var cars = ["Saab", "Volvo", "BMW"];
+document.getElementById("demo").innerHTML = cars;
+&lt;/script&gt;
+</pre>
+
+The first line (in the script) creates an array named cars.  
+The second line "finds" the element with id="demo", and "displays" the array in the "innerHTML" of it. 
+
+첫번째 (스크립트에서)줄에 이름이 cars인 배열을 생성 하였습니다.  
+두번째 줄에서 요소의 id="demo"인 것을 찾고 innerHTML로 배열을 보여줍니다.
+
+---
+
+### Try it Yourself
+
+### 혼자 해보기
+
+Create an array, and assign values to it:
+
+배열을 만들고 그것의 안에다가 값들을 넣는다
+
+<pre class="prettyprint">
+Example
+var cars = ["Saab", "Volvo", "BMW"];
+</pre>
+
+Spaces and line breaks are not important. A declaration can span multiple lines:
+
+줄 바꿈과 띄워쓰기는 중요하지 않습니다. 여러줄에 선언할 수 있습니다.
+
+<pre class="prettyprint">
+Example
+var cars = [
+    "Saab",
+    "Volvo",
+    "BMW"
+];
+</pre>
+
+Never put a comma after the last element (like "BMW",). The effect is inconsistent across browsers.
+
+절대 마지막 요소 다음에는 콤마를 찍지 말아야 합니다. 그것은 브라우저에서 다른 결과를 나오게 합니다.
+
+---
+
+### What is an Array?
+
+### 배열이란 무엇인가?
+
+An array is a special variable, which can hold more than one value at a time.  
+If you have a list of items (a list of car names, for example), storing the cars in single variables could look like this:
+
+배열은 한번에 여러개의 값들을 갖을 수 있는 특별한 변수 입니다.   
+만약 당신이 가지고 있는 목록(예를들면 차 이름),  차 하나의 변수에 보이는 것과 비슷한 것들을 저장할 수 있습니다.
+
+<pre class="prettyprint">
+var car1 = "Saab";
+var car2 = "Volvo";
+var car3 = "BMW";
+</pre>
+
+However, what if you want to loop through the cars and find a specific one? And what if you had not 3 cars, but 300?  
+The solution is an array!   
+An array can hold many values under a single name, and you can access the values by referring to an index number.
+
+그러나 당신이 원하는 정보를 얻으려고 하는 경우에 3개의 차가 아닌 300개라면?  
+해결 책은 배열입니다!  
+배열은 하나로 여러개의 값을 받아들일 수 있으며 인덱스 번호를 참조하여 접근 할 수 있습니다.
+
+---
+
+### Creating an Array
+
+### 배열 생성
+
+Using an array literal is the easiest way to create a JavaScript Array.
+
+배열 리터럴을 사용하여 자바스크립트 배열을 생성할 수 있는 가장 쉬운방법 입니다.
+
+<pre class="prettyprint">
+Syntax:
+var array-name = [item1, item2, ...];       
+Example:
+var cars = ["Saab", "Volvo", "BMW"];
+</pre>
+
+---
+
+### Using the JavaScript Keyword new
+
+### 자바스크립트 새로운 키워드 사용
+
+The following example also creates an Array, and assigns values to it:
+
+다음 예제는 배열을 생성하고 값을 할당하는 예제 입니다.
+
+<pre class="prettyprint">
+Example
+var cars = new Array("Saab", "Volvo", "BMW");
+</pre>
+
+The two examples above do exactly the same. There is no need to use new Array().   
+For simplicity, readability and execution speed, use the first one (the array literal method).
+
+위에의 2개 정확하게 같은 예제 입니다. 거기에는 new Array()를 사용할 필요가 없습니다.  
+단순성, 가독성과 실행 속도의 경우에는 첫번째를 사용 합니다.
+
+---
+
+### Access the Elements of an Array
+
+### 배열의 요소에 접근
+
+You refer to an array element by referring to the index number.  
+This statement accesses the value of the first element in cars:
+
+당신은 배열의 요소에대한 index number를 참고하여 참조하십시오.  
+이것은 차 요소의 첫번째 값에 대한 접근 방법을 설명한 것 입니다.
+
+var name = cars[0];
+
+This statement modifies the first element in cars:
+
+이것은 차 요소의 첫번째를 수정하는 방법을 설명한 것 입니다.
+
+cars[0] = "Opel";
+
+[0] is the first element in an array. [1] is the second. Array indexes start with 0.
+
+[0]은 배열의 첫번째 요소 입니다. [1]은 2번째 입니다. 배열 인덱스의 시작은 0부터 입니다.
+
+### You Can Have Different Objects in One Array
+
+### 당신의 배열과 오브젝트는 차이점을 가지고 있습니다. 
+
+JavaScript variables can be objects. Arrays are special kinds of objects.  
+Because of this, you can have variables of different types in the same Array.  
+You can have objects in an Array. You can have functions in an Array. You can have arrays in an Array:
+
+자바스크립트 변수는 오브젝트로 가능합니다. 배열은 특별한 오브젝트 종류 입니다.  
+때문에 같은 배열에서 서로 다른 형태의 변수를 가질 수 있습니다.  
+당신은 배열 안에 오브젝트를 가질 수 있습니다. 당신은 배열에 함수를 가질 수 있습니다. 당신은 배열에 배열들을 가질 수 있습니다.
+
+<pre class="prettyprint">
+myArray[0] = Date.now;
+myArray[1] = myFunction;
+myArray[2] = myCars;
+</pre>
+
+---
+
+### Arrays are Objects
+
+### 배열의 오브젝트
+
+Arrays are a special type of objects. The typeof operator in JavaScript returns "object" for arrays.  
+But, JavaScript arrays are best described as arrays.  
+Arrays use numbers to access its "elements". In this example, person[0] returns John:
+
+배열은 특별한 형식의 오브젝트 입니다. 자바스크립트에서 배열은 typeof연산자로 "오브젝트"를 반환합니다.  
+하지만 배열은 가장좋은 배열로 설명 되어 있습니다.  
+배열에서는 요소에 숫자로 접근할 수 있습니다. 예를들면 person[0]은 John을 반환합니다.
+
+<pre class="prettyprint">
+Array:
+var person = ["John", "Doe", 46];
+</pre>
+
+Objects use names to access its "members". In this example, person.firstName returns John:
+
+오브젝트는 접근할때 해당 이름을 사용하여 접근 합니다. 이 예제는, person.firstName은 John을 반환합니다.
+
+<pre class="prettyprint">
+Object:
+var person = {firstName:"John", lastName:"Doe", age:46};
+</pre>
+
+---
+
+### Array Properties and Methods
+
+### 배열의 속성과 방법
+
+The real strength of JavaScript arrays are the built-in array properties and methods:
+
+자바스크립트 배열의 진정한 힘은 내장된 배열의 속성과 메소드 입니다.
+
+<pre class="prettyprint">
+Examples
+var x = cars.length;         // The length property returns the number of elements in cars
+var y = cars.sort();         // The sort() method sort cars in alphabetical order
+</pre>
+
+Array methods are covered in the next chapter.
+
+배열 방법에 대해서는 다음잘에서 배울 것입니다
+
+---
+
+### The length Property
+
+### 길이 속성
+
+The length property of an array returns the length of an array (the number of array elements).
+
+배열에서의 길이 속성은 배열의 길이를 반환합니다.(배열 요소의 갯수)
+
+<pre class="prettyprint">
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.length;                       // the length of fruits is 4
+</pre>
+
+The length property is always one more than the highest array index.
+
+길이 속성은 배열에서 가장높은 인덱스에 1을 더합니다.
+
+---
+
+### Adding Array Elements
+
+### 배열 요소 추가하기
+
+The easiest way to add a new element to an array is using the push method:
+
+새로운 요소를 배열에 추가하는 가장쉬운 방법은 push메소도를 사용해서 추가하는 방법입니다.
+
+<pre class="prettyprint">
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Lemon");                // adds a new element (Lemon) to fruits
+</pre>
+
+New element can also be added to an array using the length property:
+
+또한 새로운 요소는 길이 속성을 사용해서 배열에 추가할 수 있습니다.
+
+<pre class="prettyprint">
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits[fruits.length] = "Lemon";     // adds a new element (Lemon) to fruits
+</pre>
+ 
+Adding elements with high indexes can create undefined "holes" in an array:
+
+배열은 높은 인덱스르르 사용해서 빈 배열을 만들 수도 있습니다.
+
+<pre class="prettyprint">
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits[10] = "Lemon";                // adds a new element (Lemon) to fruits
+</pre>
+
+---
+
+### Looping Array Elements
+
+### 배열 요소 반복
+
+The best way to loop through an array, is using a "for" loop:
+
+배열에 반복문을 사용하는 방법중 가장 좋은 방법은 입니다
+
+<pre class="prettyprint">
+Example
+var index;
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+for	(index = 0; index &lt; fruits.length; index++) {
+    text += fruits[index];
+}
+</pre>
+
+---
+
+### Associative Arrays
+
+### 연관된 배열
+
+Many programming languages support arrays with named indexes.   
+Arrays with named indexes are called associative arrays (or hashes).   
+JavaScript does not support arrays with named indexes.   
+In JavaScript, arrays always use numbered indexes.  
+
+많은 프로그래밍 언어는 익덱스 배열을 지원합니다.   
+인덱스 배열은 연관배열(또는 해시)라고 합니다.  
+자바스크립트 배열은 이름에 인덱스 배열을 지원합니다.  
+자바스크립트 배열은 항상 인덱스 번호를 사용합니다.
+
+<pre class="prettyprint">
+Example
+var person = [];
+person[0] = "John";
+person[1] = "Doe";
+person[2] = 46;
+var x = person.length;         // person.length will return 3
+var y = person[0];             // person[0] will return "John"
+</pre>
+
+WARNING !!
+If you use a named index, JavaScript will redefine the array to a standard object.
+After that, all array methods and properties will produce incorrect results.
+
+경고!!  
+만약 당신이 인덱스 이름을 사용하면 자바스크립트 표준객체를 재정의 합니다.
+그 후 모든 배열 메서드와 속성이 잘못된 결과를 생성합니다.
+
+<pre class="prettyprint">
+ Example:
+var person = [];
+person["firstName"] = "John";
+person["lastName"] = "Doe";
+person["age"] = 46;
+var x = person.length;         // person.length will return 0
+var y = person[0];             // person[0] will return undefined
+</pre>
+
+---
+
+### The Difference Between Arrays and Objects
+
+### 배열과 객체 사이에서의 차이점
+
+In JavaScript, arrays use numbered indexes.     
+In JavaScript, objects use named indexes.  
+Arrays are a special kind of objects, with numbered indexes.
+
+자바스크립트에서는 배열은 인덱스로 숫자를 사용합니다.  
+자바스크립트에서는 객체는 인덱트로 이름을 사용합니다.  
+배열은 인덱스로 숫자를 사용하는 객체의 종류 중 하나입니다.
+
+---
+
+### When to Use Arrays. When to use Objects.
+
+### 배열과 오브젝트를 사용하는 경우
+
+* JavaScript does not support associative arrays.
+* You should use objects when you want the element names to be strings (text).
+* You should use arrays when you want the element names to be numbers.
+
+* 자바스크립트는 연관배열을 지원하지 않습니다.  
+* 문자 요소의 이름으로 문자열을 원한다면 당신은 객체를 사용 해야합니다.  
+* 요소 이름에 숫자를 원한다면 당신은 배열을 사용해야 합니다.
+
+---
+
+### Avoid new Array()
+
+### new Array()의 다른방법
+
+There is no need to use the JavaScript's built-in array constructor new Array().   
+Use [] instead.  
+These two different statements both create a new empty array named points:
+
+자바스크립트의 내장 배열 생성자를 사용할 필요가 없습니다.  
+대신에 []를 사용합니다.  
+이 두개의 서로다른 문은 모두 빈 배열을 만듭니다.
+
+<pre class="prettyprint">
+var points = new Array();         // Bad
+var points = [];                  // Good 
+</pre>
+
+These two different statements both create a new array containing 6 numbers:
+
+이 두개의 서로다른 문은 모두 6이라는 숫자를 포함하는 새로운 배열을 만드는 것 입니다.
+
+<pre class="prettyprint">
+var points = new Array(40, 100, 1, 5, 25, 10)  // Bad
+var points = [40, 100, 1, 5, 25, 10];          // Good
+</pre>
+
+The new keyword only complicates the code. It can also produce some unexpected results:
+
+새로운 키워드는 코드를 복잡하게 합니다. 또한 예상 밖의 결과가 발생할 수 있습니다.
+
+<pre class="prettyprint">
+var points = new Array(40, 100);  // Creates an array with two elements (40 and 100)
+</pre>
+
+What if I remove one of the elements?
+
+만약 내가 하나의 요소를 제거한다면?
+
+<pre class="prettyprint">
+var points = new Array(40);       // Creates an array with 40 undefined elements !!!!!
+</pre>
+
+---
+
+### How to Recognize an Array
+
+### 배열을 인식하는 요령
+
+A common question is: How do I know if a variable is an array?  
+The problem is that the JavaScript operator typeof returns "object":
+
+일반적인 질문 : 변수가 배열인 경우 어떻게 알 수 있을까?  
+문제는 자바스크립트 연산자인 typeof는 개체를 반환합니다.
+
+<pre class="prettyprint">
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+typeof fruits;             // returns object
+</pre>
+
+The typeof operator returns object because a JavaScript array is an object.  
+Solution 1:  
+To solve this problem ECMAScript 5 defines a new method Array.isArray():
+
+자바스크립트 배열은 객체이기 때문에 typeof 연산자의 값이 Object입니다.  
+해결방법 1:  
+ECMAScript 5 는 새로운 방법 Array.isArray 를 정의 하고 이 문제를 해결하려면
+
+<pre class="prettyprint">
+Array.isArray(fruits);     // returns true
+</pre>
+
+The problem with this solution is that ECMAScript 5 is not supported in older browsers.  
+Solution 2:  
+To solve this problem you can create your own isArray() function:
+
+이 솔루션의 문제는 ECMAScript 5에서 된다는 것 입니다 이전버전의 브라우저 에서는 지원하지 않습니다.  
+해결방법 2:  
+당신은 하나의 isArray()함수를 생성해서 이 문제를 해결할 수 있습니다.
+
+<pre class="prettyprint">
+function isArray(x) {
+    return x.constructor.toString().indexOf("Array") > -1;
+}
+</pre>
+
+The function above always returns true if the argument is an array.   
+Or more precisely: it returns true if the object prototype contains the word "Array".   
+Solution 3:  
+The instanceof operator returns true if an object is created by a given constructor:
+
+인수가배열인 경우 항상 위의 함수는 true를 반환합니다.  
+또는 더 정확하게: 객체의 트로토 타입이  배열을 포함하는 경우에는 true를 반환합니다.  
+해결방법 3:
+instanceof 객체가 주어진 생성자에 의해 생성되는 경우에 연산자는 true를 반환합니다.
+
+<pre class="prettyprint">
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+fruits instanceof Array     // returns true
+</pre>
+
+---
+
+### Test Yourself with Exercises!
+
+### 스스로 연습문제 테스트
+
+[[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_arrays1)]
+[[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_arrays2)]
+[[연습문제3](http://www.w3schools.com/js/exercise.asp?filename=exercise_arrays3)]
