@@ -90,6 +90,8 @@ permalink: /linktech/
             ....  </pre>
 
 ### Javascript
+* Front-End(프론트앤드)개발
+    - [http://www.slideshare.net/jinkwonlee52?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideview](http://www.slideshare.net/jinkwonlee52?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideview)
 * [Javascript Library design tutorial](http://code.tutsplus.com/tutorials/build-your-first-javascript-library--net-26796)
 * [MDN](https://developer.mozilla.org/ko/)
     - [객체지향 자바스크립트](https://developer.mozilla.org/ko/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)
