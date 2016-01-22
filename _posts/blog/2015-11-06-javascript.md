@@ -5449,7 +5449,7 @@ In JavaScript, objects use named indexes.
 Arrays are a special kind of objects, with numbered indexes.
 
 자바스크립트에서는 배열은 인덱스로 숫자를 사용합니다.  
-자바스크립트에서는 객체는 인덱트로 이름을 사용합니다.  
+자바스크립트에서는 객체는 인덱스로 이름을 사용합니다.  
 배열은 인덱스로 숫자를 사용하는 객체의 종류 중 하나입니다.
 
 ---
@@ -5579,3 +5579,525 @@ fruits instanceof Array     // returns true
 [[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_arrays1)]
 [[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_arrays2)]
 [[연습문제3](http://www.w3schools.com/js/exercise.asp?filename=exercise_arrays3)]
+
+---
+
+---
+
+# JavaScript Array Methods
+
+# 자바스크립트 Array Methods
+
+---
+
+The strength of JavaScript arrays lies in the array methods.
+
+자바스크립트 배열의 장점은 arrays methods에 있습니다.
+
+---
+
+### Converting Arrays to Strings
+
+### 문자열을 배열로 전환
+
+The JavaScript method toString() converts an array to a string of (comma separated) array values.
+
+자바스크립트 toString()메소드는 배열값을 문자열로 변환을 시켜줍니다.(쉼표로 분리)
+
+<pre class="prettyprint">
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+Result
+Banana,Orange,Apple,Mango
+</pre>
+
+The join() method also joins all array elements into a string.  
+It behaves just like toString(), but in addition you can specify the separator:
+
+join()메소드 또한 모든 배열의 요소를 문자열로 연결시켜 줍니다.  
+toString()과 비슷하게 실행은 되지만, 당신이 분리할 기호를 추가할 수 있습니다. 
+
+<pre class="prettyprint">
+Example
+var fruits = ["Banana", "Orange","Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.join(" * ");
+Result
+Banana * Orange * Apple * Mango
+</pre>
+
+---
+
+### Popping and Pushing
+
+### 빼고 넣습니다.
+
+When you work with arrays, it is easy to remove elements and add new elements.  
+This is what popping and pushing is:   
+Popping items out of an array, or pushing items into an array.  
+
+배열로 작업을 할때, 그것은 쉽게 요소를 제거하거나 새로운 요소를 추가할 수 있습니다.  
+그것은 빼내하거나 넣을 수 있습니다.  
+popping은 배열에서 항목을 빼내고, 또는 puching은 배열에 항목을 추가합니다.
+
+---
+
+### Popping
+
+### 빼기
+
+The pop() method removes the last element from an array:
+
+pop()메소드는 배열에서 마지막 요소를 제거합니다.
+
+<pre class="prettyprint">
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.pop();              // Removes the last element ("Mango") from fruits
+</pre>
+
+The pop() method returns the value that was "popped out":
+
+pop()메서드는 빼내어 제거된 값을 반환합니다.
+
+<pre class="prettyprint">
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var x = fruits.pop();      // the value of x is "Mango"
+</pre>
+
+---
+
+### Pushing
+
+### 밀어넣기
+
+The push() method adds a new element to an array (at the end):
+
+pushh()메소드는 배열(끝부분)의 새로운 요소를 추가시켜 줍니다.
+
+<pre class="prettyprint">
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Kiwi");       //  Adds a new element ("Kiwi") to fruits
+</pre>
+
+The push() method returns the new array length:
+
+push()메소드는 새로운 배열의 길이를 반환합니다.
+
+<pre class="prettyprint">
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+var x = fruits.push("Kiwi");   //  the value of x is 5
+</pre>
+
+---
+
+### Shifting Elements
+
+### 엘리먼트 이동
+
+Shifting is equivalent to popping, working on the first element instead of the last.   
+The shift() method removes the first element of an array, and "shifts" all other elements one place up.
+
+Shifting은 첫번째 요소를 튕겨내는 일을 대신해서 합니다.  
+shift()메소드는 배열의 첫번째 요소를 제거하고, 모든 다른 요소들을 하나씩 위치를 올립니다.  
+
+<pre class="prettyprint">
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.shift();            // Removes the first element "Banana" from fruits
+</pre>
+
+The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements:
+
+unshift() 메소드는 새로운 배열의 시작에 새로운 요소를 추가하고, 이전의 요소를 되돌려 줍니다. 
+
+<pre class="prettyprint">
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.unshift("Lemon");    // Adds a new element "Lemon" to fruits
+</pre>
+
+The shift() method returns the string that was "shifted out".   
+The unshift() method returns the new array length.
+
+shift() 메소드는 옮겨지는 문자열을 반환합니다.  
+unshift() 메소드는 새로울 배열의 길이를 반환합니다.
+
+---
+
+### Changing Elements
+
+### 요소 변경
+
+Array elements are accessed using their index number:  
+Array indexes start with 0. [0] is the first array element, [1] is the second, [2] is the third ....
+
+배열요소들은 인덱스 번호를 사용하여 연결합니다.  
+배열의 인덱스들은 0부터 시작합니다. [0]은 첫번째 배열의 요소 [1]두번째 [3] 세번째...
+
+<pre class="prettyprint">
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits[0] = "Kiwi";        // Changes the first element of fruits to "Kiwi"
+</pre>
+
+The length property provides an easy way to append a new element to an array:
+
+길이 속성은 배열에 새로운 요소를 쉽게 추가할 수 있도록 공급해 줍니다.
+
+<pre class="prettyprint">
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits[fruits.length] = "Kiwi";          // Appends "Kiwi" to fruit
+</pre>
+
+---
+
+### Deleting Elements
+
+### 삭제 요소
+
+Since JavaScript arrays are objects, elements can be deleted by using the JavaScript operator delete:
+
+자바스크립트는 배열 객체 입니다. 자바스크립트 연산자 삭제를 사용하여 요소를 제거할 수 있습니다.
+
+<pre class="prettyprint">
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+delete fruits[0];           // Changes the first element in fruits to undefined
+</pre>
+
+Using delete on array elements leaves undefined holes in the array. Use pop() or shift() instead.
+
+delete를 사용하여 배열의 요소를 정의되지않는 구멍을 만들어 냅니다. 대신에 pop()이나 shift()를 사용합니다. 
+
+---
+
+### Splicing an Array
+
+### 배열 짜맞추기
+
+The splice() method can be used to add new items to an array:
+
+splice()메소드는 배열에 새 항목을 추가할 수 있습니다.
+
+<pre class="prettyprint">
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(2, 0, "Lemon", "Kiwi");
+</pre>
+
+The first parameter (2) defines the position where new elements should be added (spliced in).   
+The second parameter (0) defines how many elements should be removed.   
+The rest of the parameters ("Lemon" , "Kiwi") define the new elements to be added.
+
+첫번째 parameter(2)는 새로운 요소가 추가되어야 하는 위치를 정의합니다.  
+두번째 parameter(0)는 몇개의 요소를 재거할 건지를 결정 합니다.  
+parameter의 나머지는 새로 추가될 요소들을 정의합니다.
+
+
+---
+
+### Using splice() to Remove Elements
+
+### 요소를 제어하는 splice()사용
+
+With clever parameter setting, you can use splice() to remove elements without leaving "holes" in the array:
+
+parameter설정을 하면 배열에 구멍을 내지 않고 요소를 제거하기 위해서 splice()를 사용합니다.
+
+<pre class="prettyprint">
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.splice(0, 1);        // Removes the first element of fruits
+</pre>
+
+The first parameter (0) defines the position where new elements should be added (spliced in).   
+The second parameter (1) defines how many elements should be removed.   
+The rest of the parameters are omitted. No new elements will be added.
+
+첫번째 parameter(0)은 새로운 요소가 추가되어야 하는 위치를 정의합니다.  
+두번째 parameter(1)는 얼마나 많은 요소가 제거 되어야 하는지를 정의합니다.  
+parameter의 나머지는 생략 됩니다. 새로운 요소가 추가되지 않습니다.
+
+---
+
+### Sorting an Array
+
+### 배열 정렬
+
+The sort() method sorts an array alphabetically:
+
+sort() 메소드는 알파벳 순으로 배열을 정렬시킵니다.
+
+<pre class="prettyprint">
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.sort();            // Sorts the elements of fruits
+</pre>
+
+---
+
+### Reversing an Array
+
+### 배열 역순
+
+The reverse() method reverses the elements in an array.    
+You can use it to sort an array in descending order:
+
+reverse() 메소드는 배열의 요소를 역순으로 정렬합니다.  
+당신은 내림차순으로 배열을 정렬하는데 사용할 수 있습니다.
+
+<pre class="prettyprint">
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.sort();            // Sorts the elements of fruits 
+fruits.reverse();         // Reverses the order of the elements
+</pre>
+
+---
+
+### Numeric Sort
+
+### 숫자 정렬
+
+By default, the sort() function sorts values as strings.   
+This works well for strings ("Apple" comes before "Banana").  
+However, if numbers are sorted as strings, "25" is bigger than "100", because "2" is bigger than "1".  
+Because of this, the sort() method will produce incorrect result when sorting numbers.  
+You can fix this by providing a compare function:
+
+기본적으로, sort()함수는 문자열 값을 정렬합니다.  
+이 문자열은 정상적으로 작동합니다.(사과와 바나나 앞에)  
+번호가 문자열로 되어 있는 경우에는 2보다 1이 크기 때문에 100보다 25가 큽니다. 
+그렇기 때문에 숫자를 정렬할 때는 sort()메소드는 잘못된 결과를 생성합니다.  
+당신은 비교 기능으로 문제를 해결할 수 있습니다.
+
+<pre class="prettyprint">
+Example
+var points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return a-b});
+</pre>
+
+or
+
+<pre class="prettyprint">
+Example
+var points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return a>b});
+</pre>
+
+Use the same trick to sort an array descending:
+
+배열 내림차순으로 트릭으로 정렬 같이 사용할 수 있습니다. 
+
+<pre class="prettyprint">
+Example
+var points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return b-a});
+</pre>
+
+or
+
+<pre class="prettyprint">
+Example
+var points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return b>a});
+</pre>
+
+---
+
+### The Compare Function
+
+### 비교 함수
+
+The purpose of the compare function is to define an alternative sort order.  
+The compare function should return a negative, zero, or positive value, depending on the arguments:
+
+비교 함수의 목적은 정렬 순서를 정의 하는 것 입니다.  
+비교 함수는 인수에 따라 +,-,0의 값을 반환해야 합니다.  
+
+<pre class="prettyprint">
+function(a, b){return a-b}
+</pre>
+
+When the sort() function compares two values, it sends the values to the compare function, and sorts the values according to the returned (negative, zero, positive) value.
+
+sort() 함수는 두 값을 비교하여 함수 값을 전송하고 음,양,0 의 값에 따라 값들을 정렬 합니다.  
+
+Example:  
+When comparing 40 and 100, the sort() method calls the compare function(40,100).  
+The function calculates 40-100, and returns -60 (a negative value).  
+The sort function will sort 40 as a value lower than 100.
+
+예:  
+40과 100을 sort() 메소드로 비교하려면 function(40,100)로 비교함수를 호출합니다.  
+함수에서 40-100은 -60을 반환합니다.(음의 값)  
+정렬 기능은 100보다 낮은 값으로 40을 정렬합니다.
+
+---
+
+### Find the Highest (or Lowest) Value
+
+### 최고갑 최저값 찾기
+
+How to find the highest value in an array?
+
+어떻게 배열에서 가장 높은 값을 찾을까요?
+
+<pre class="prettyprint">
+Example
+var points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return b-a});
+// now points[0] contains the highest value
+</pre>
+
+And the lowest:
+
+그리고 최저는:
+
+<pre class="prettyprint">
+Example
+var points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return a-b});
+// now points[0] contains the lowest value
+</pre>
+
+---
+
+### Joining Arrays
+
+### 배열 연결
+
+The concat() method creates a new array by concatenating two arrays:
+
+concat() 메소드는 두개의 배열을 하나로 연결하여 새로운 배열로 만들어 냅니다.
+
+<pre class="prettyprint">
+Example
+var myGirls = ["Cecilie", "Lone"];
+var myBoys = ["Emil", "Tobias","Linus"];
+var myChildren = myGirls.concat(myBoys);     // Concatenates (joins) myGirls and myBoys
+</pre>
+
+The concat() method can take any number of array arguments:
+
+concat()메소드는 배열 인수를 무제한으로 수행 할 수 있습니다.
+
+<pre class="prettyprint">
+Example
+var arr1 = ["Cecilie", "Lone"];
+var arr2 = ["Emil", "Tobias","Linus"];
+var arr3 = ["Robin", "Morgan"];
+var myChildren = arr1.concat(arr2, arr3);     // Concatenates arr1 with arr2 and arr3
+</pre>
+
+### Slicing an Array
+
+### 배열 조각
+
+The slice() method slices out a piece of an array into a new array.   
+This example slices out a part of an array starting from array element 1 ("Orange"):
+
+slice()메소드는 배열의 조각을 새로운 배열이 됩니다.  
+예제는 배열의 요소1부터 시작하는 조각낸 배열 입니다.
+
+<pre class="prettyprint">
+Example
+var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+var citrus = fruits.slice(1);
+</pre>
+
+Array indexes start with 0. [0] is the first array element, [1] is the second, [2] is the third ....  
+This example slices out a part of an array starting from array element 3 ("Apple"):
+
+배열 인덱스는 [0]첫번째 배열요소 [1] 두번째, [2]세번째...   
+이 예제는 배열 요소3부터 배열의 일부분을 조각낸 배열 입니다.  
+
+<pre class="prettyprint">
+Example
+var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+var citrus = fruits.slice(3);
+</pre>
+
+The slice() method can take two arguments like slice(1,3).   
+The method then selects elements from the start argument, and up to (but not including) the end argument.
+
+slice()메소드는 slice(1,3)과 같이 2개의 인수로 할 수 있습니다.  
+이 메소드는 종료요소를 시작 요소로 선택하고 끝나는 요소도 선택 합니다.(하지만 끝지점 요소는 포함하지 않습니다.)
+
+<pre class="prettyprint">
+Example
+var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+var citrus = fruits.slice(1, 3);
+</pre>
+
+If the end argument is omitted, like in the first examples, the slice() method slices out the rest of the array.
+
+만약 끝나는 인수가 첫번째 실수 예에서와 같이 생략 되면 slice()메소드는 나머지 조각을 빼냅니다.
+
+<pre class="prettyprint">
+Example
+var fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+var citrus = fruits.slice(2);
+</pre>
+
+---
+
+### The valueOf() Method
+
+### valueOf() 메소드
+
+The valueOf() method is the default behavior for an array. It converts an array to a primitive value.   
+JavaScript will automatically convert an array to a string when a primitive value is expected.   
+Because of this, all these examples will produce the same result:
+
+valueOf()메소드는 배열의 기본 동작입니다. 그것은 기본 값으로 배열을 반환합니다.  
+원시 값이 예상되는 경우 자바 스크립트가 자동으로 문자열로 배열을 변환합니다.  
+때문에 모든 이러한 예는 동일한 결과를 생성합니다.
+
+
+<pre class="prettyprint">
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.valueOf();
+
+Example
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.toString();
+</pre>
+
+All JavaScript objects have the valueOf() and toString() methods.
+
+모든 자바스크립트는 객체는 valueOf() 및 toString()메서드가 있습니다.
+
+---
+
+### Complete Array Reference
+
+### 전체 배열 참조
+
+For a complete reference, go to our Complete JavaScript Array Reference.   
+The reference contains descriptions and examples of all Array properties and methods.
+
+완벽한 reference로 이동하여 전체 자바스크립트 배열을 참조.  
+reference는 모든 배열의 속성과 메소드의 설명과 예제가 들어 있습니다.
+
+---
+
+Test Yourself with Exercises!
+
+스스로 연습문제 테스트 
+
+[[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_arraysmet1)]
+[[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_arraysmet2)]
+[[연습문제3](http://www.w3schools.com/js/exercise.asp?filename=exercise_arraysmet3)]
+[[연습문제4](http://www.w3schools.com/js/exercise.asp?filename=exercise_arraysmet4)]
+[[연습문제5](http://www.w3schools.com/js/exercise.asp?filename=exercise_arraysmet5)]
