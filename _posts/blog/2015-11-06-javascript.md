@@ -6101,3 +6101,179 @@ Test Yourself with Exercises!
 [[연습문제3](http://www.w3schools.com/js/exercise.asp?filename=exercise_arraysmet3)]
 [[연습문제4](http://www.w3schools.com/js/exercise.asp?filename=exercise_arraysmet4)]
 [[연습문제5](http://www.w3schools.com/js/exercise.asp?filename=exercise_arraysmet5)]
+
+---
+
+---
+
+# JavaScript Booleans
+
+# 자바스크립트 Booleans
+
+---
+
+A JavaScript Boolean represents one of two values: true or false.
+
+자바스크립트 boolean은 참 또는 거짓 2개중에 하나를 나타냅니다.
+
+---
+
+### Boolean Values
+
+### Boolean값
+
+Very often, in programming, you will need a data type that can only have one of two values, like
+
+* YES / NO
+* ON / OFF
+* TRUE / FALSE
+
+For this, JavaScript has a Boolean data type. It can only take the values true or false.
+
+당신은 프로그래밍을 하면서 매우 자주 데이터 형식에 2개중 하나의 비슷한 값들을 필요로 할 것 입니다.
+
+* YES / NO
+* ON / OFF
+* TRUE / FALSE 
+
+그것을 하기위해 자바스크립트 Boolean데이터 형식이 필요합니다. 이것은 오직 참과 거깃 값만 가지고 있습니다.
+
+---
+
+### The Boolean() Function
+
+### Boolean() 함수
+
+You can use the Boolean() function to find out if an expression (or a variable) is true:
+
+당신은 Boolean() 함수에서 true 값을 밖으로 표현하여 사용하는 것이 가능합니다.
+
+<pre calss="prettyprint"> 
+Example
+Boolean(10 > 9)        // returns true
+
+Or even easier:
+
+더 쉽게는:
+
+Example
+(10 > 9)              // also returns true
+10 > 9                // also returns true
+</pre>
+
+---
+
+### Comparisons and Conditions
+
+### 비교와 조건
+
+The chapter JS Comparisons gives a full overview of comparison operators.  
+The chapter JS Conditions gives a full overview of conditional statements.   
+Here are some examples:
+
+JS장에서 비교는 비교 연산자의 전체 개요에 대해서 제공해 줍니다.  
+JS장에서 조건은 조건부에 대하여 전체 개요를 제공해 줍니다.
+예를들면 다음과 같습니다:
+
+<pre class="prettyprint">
+Operator	Description	Example
+==	equal to	if (day == "Monday")
+&gt;	greater than	if (salary &gt; 9000)
+&lt;	less than	if (age &lt; 18)
+</pre>
+
+The Boolean value of an expression is the fundament for JavaScript comparisons and conditions.
+
+Boolean값 표현은 자바스크립트의 기초가 되는 비교와 조건 입니다.
+
+---
+
+Everything With a "Real" Value is True
+
+모든 값이 True인 실제 값들
+
+<pre class="prettyprint">
+Examples
+100
+3.14
+-15
+"Hello"
+"false"
+7 + 1 + 3.14
+5 &lt; 6
+</pre>
+
+---
+
+Everything Without a "Real" is False
+
+모든 값이 False인 실제 값들
+
+<pre class="prettyprint">
+The Boolean value of 0 (zero) is false:  
+Boolean값이 0이면 false:
+
+var x = 0;
+Boolean(x);       // returns false
+
+The Boolean value of -0 (minus zero) is false:  
+Boolean값이 -0 이면 false:
+
+var x = -0;
+Boolean(x);       // returns false
+
+The Boolean value of "" (empty string) is false:  
+Boolean값이 "" 공백 문자열 이면 false:
+
+var x = "";
+Boolean(x);       // returns false
+
+The Boolean value of undefined is false:  
+Boolean값이 존재 하지 않으면 false:
+
+var x;
+Boolean(x);       // returns false
+
+The Boolean value of null is false:  
+Boolean값이 null이면 false:
+
+var x = null;
+Boolean(x);       // returns false
+
+The Boolean value of false is (you guessed it) false:  
+Boolean값이 false이면 false:
+
+var x = false;
+Boolean(x);       // returns false
+
+The Boolean value of NaN is false:  
+Boolean값이 숫자가 아닌값이면 false
+
+var x = 10 / "H";
+Boolean(x);       // returns false
+</pre>
+
+---
+
+### Boolean Properties and Methods
+
+### Boolean의 성질과 방법
+
+Primitive values, like true and false, cannot have properties or methods (because they are not objects).  
+But with JavaScript, methods and properties are also available to primitive values, because JavaScript treats primitive values as objects when executing methods and properties.
+
+참과 거짓과 같은 원시 값은 속성이나 메소드를 가질 수 없습니다.(때문에 그들은 객체가 아닙니다.)  
+메소드와 속성을 실행할 때 자바스크립트 객체로 원시값을 처리하기 때문에 자바스크립트 메소드 및 특성은 원시 값을 사용할 수 있습니다.
+
+---
+
+### Complete Boolean Reference
+
+### 필요한 모든 것이 갖춰진 Boolean 참조
+
+For a complete reference, go to our [Complete JavaScript Boolean Reference](http://www.w3schools.com/jsref/jsref_obj_boolean.asp).  
+The reference contains descriptions and examples of all Boolean properties and methods.
+
+필요한 모든 것이 갖춰진 우리 자바스크립트 Boolean참고 참조  
+참조 설명과 모든 Boolean 속성과 메서드에 대한 예제가 들어 있습니다.
+
