@@ -1,6 +1,6 @@
 ---
 layout: post
-title: react를 위한 webpack정리 (II)
+title: react를 위한 webpack정리 (II) - 작성중
 date:   2016-01-08 22:24:23 +9:00 GMT
 categories: 
   - Javascript

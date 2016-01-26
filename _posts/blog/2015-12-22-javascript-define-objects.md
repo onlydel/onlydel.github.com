@@ -52,7 +52,7 @@ var Person = function(name, age) {
     _speaked = true;
   }
 
-  this.hasBeenSpeaked = function {
+  this.hasBeenSpeaked = function() {
     return _speaked;
   }
 }
