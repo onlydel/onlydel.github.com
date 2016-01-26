@@ -3,6 +3,8 @@ layout: page
 title: Programming log
 permalink: /plog/
 ---
+### Jan 25, 2016
+* animation test day 1 [http://javascript.info/tutorial/animation](http://javascript.info/tutorial/animation)
 
 ### Jan 12, 2016
 * [마이크로프트 Adapt - 음성인식 오픈소스](https://adapt.mycroft.ai)
