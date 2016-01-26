@@ -4,6 +4,13 @@ title: Programming log
 permalink: /plog/
 ---
 
+### Jan 12, 2016
+* [마이크로프트 Adapt - 음성인식 오픈소스](https://adapt.mycroft.ai)
+
+### Jan 11, 2016
+* [ReactJs를 이해하다.(번역글)-링크](http://blog.coderifleman.com/post/122232296024/reactjs를-이해하다1)
+* [online book : Programming Javascript Applications - Eric Elliott](http://chimera.labs.oreilly.com/books/1234000000262/index.html)
+
 ### Dec 24, 2015
 * javascript가 더이상 웹 전용이 아니라는 사실을 확인시켜주는 자료들.
     - [node-webkit(nw.js) samples](https://github.com/nwjs/nw.js/wiki/List-of-apps-and-companies-using-nw.js)

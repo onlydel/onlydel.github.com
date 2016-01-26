@@ -90,6 +90,8 @@ permalink: /linktech/
             ....  </pre>
 
 ### Javascript
+* 튜토리얼
+    - [http://javascript.info](http://javascript.info): 볼만한 내용이 많다. 메모리릭
 * Front-End(프론트앤드)개발
     - [http://www.slideshare.net/jinkwonlee52?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideview](http://www.slideshare.net/jinkwonlee52?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideview)
 * [Javascript Library design tutorial](http://code.tutsplus.com/tutorials/build-your-first-javascript-library--net-26796)

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: react를 위한 webpack정리
+title: react를 위한 webpack정리 (I)
 date:   2015-12-28 22:24:23 +9:00 GMT
 categories: 
   - Javascript
@@ -16,11 +16,11 @@ tags:
 
 ## init
 
-[react webpack cookbook](https://christianalfoni.github.io/react-webpack-cookbook/) 보면서 정리하는 것임.
+Webpack React로 개발해보고자 [react webpack cookbook](https://christianalfoni.github.io/react-webpack-cookbook/) 보면서 정리해 본다. 기회가 되면 정식 번역이라도... 하고 싶지만 내 영어실력에 번역은 원작자를 욕먹이는 일이 될 수도 있다.
 
 ## webpack 기본
 
-"webpack이 뭔가?" 부터 설명할 수는 없다. 왜냐하면 나도 그 질문에 명확한 해답을 가지고 있지 않기 때문. [webpack 사이트](https://webpack.github.io/)에는 module bundler라고 정의 되어있다. 
+"webpack이 뭔가?" 부터 설명할 수는 없다. 왜냐하면 나도 그 질문에 명확한 해답을 가지고 있지 않기 때문. [webpack 사이트](https://webpack.github.io/)에는 module bundler라고 정의 되어있다. 묶음이나 꾸러미를 의미하는 bundle의 의미로 보면 `모듈들을 묶어주는 놈` 이 되겠다.
 
 javascript를 모듈화 하려는 노력은 세계적인 추세이고 모듈화라는건 하면 할 수록, 명확하지만 복잡해지는 것 같다. 어려워진다고 해야 하나?
 
@@ -247,9 +247,80 @@ devServer: {
 
 ## 브라우저 자동갱신
 
+`webpack-dev-server`는 실행시 프로젝트 폴더의 파일 변화를 감시한다. 파일이 변경되면 브라우저를 자동으로 갱신한다. 이 과정에서 프로젝트를 다시 빌드하고 변화를 서버에 알려 브라우저를 갱신하도록 한다. 
+
+실험을 위해 www폴더 밑에 있는 index.html파일의 내용을 수정하고 저장해보자. 또, 변동될때 마다 애플리케이션을 리플래시 할 필요가 있는 파일들은 configuration의 entry point에 추가해 주면 된다.
+
+여기서는 index.html파일을 직접 만들었는데 단순 테스트를 위해 기본적인 index.html파일을 자동으로 생성해주는 툴도 있다. [html-webpack-plugin](https://www.npmjs.com/package/html-webpack-plugin)을 참고하자.
+
 ## 파일 require하기
 
-모듈 시스템에서 require는 현재 모듈에서 또 다른 모듈을 필요로 한다는 의미로 이해 하면 될것 같다. 
+모듈 시스템에서 `require`는 현재 모듈에서 또 다른 모듈을 필요로 하여 불러온다는 의미로 이해하자. 보통 다른 언어에서 import나 using, uses등과 같은 의미로 해석하면 되겠다.
+
+webpack은 현존하는 모듈 패턴들. 즉, ES6 Modules, CommonJs, AMD 패턴을 모두 사용할 수 있다. 이런 패턴들은 알고보면 거기서 거기, 그놈이 그놈... 동일한 방법으로 작동된다. 참고페이지에 있는 예를 적어보면 아래와 같다. 
+
+나는 최근 개인적으로 es6 패턴을 사용하는데, 온라인에 있는 많은 코드들은 CommonJs로 되어 있다. 또, 여러패턴이 혼용되기도 한다. 이 부분은 좀 신기하기도 하지만 생각해 보면 당연하고 간혹 나 조차도 그렇게 쓸때가 있다.    
+어쨋거나 AMD 패턴은 이제 거의 사용하지 않는 것 같고 최근 올라오는 글들을 보면 대부분 CommonJs나 ES6로 되어 있는것 같고, ES6의 비율이 점점더 높아지는 추세인듯 하다. 
+
+이 글에서는 가능한한 ES6만 사용해서 코드를 작성하기로 한다.
+
+
+패턴별로 모듈을 로드하는 코드의 예는 아래와 같다.
+
+#### ES6 modules
+<pre class="prettyprint">
+import MyModule from './MyModule.js';
+</pre>
+
+#### CommonJs
+<pre class="prettyprint">
+var MyModule = require('./MyModule.js');
+</pre>
+
+#### AMD
+<pre class="prettyprint">
+define(['./MyModule.js'], function (MyModule) {
+
+});
+</pre>
+
+## 경로(path) 이해하기
+
+모듈은 파일 경로로 로드한다. 다음과 같은 파일구조가 있다고 가정하면,
+
+* /app
+  * /modules
+    * MyModule.js
+  * main.js (entry point)
+  * utils.js
+
+entry point인 main.js에서 /app/modules/MyModule.js파일을 불러오기(require)위해 코드를 작성해 보면 아래처럼 코딩한다.
+
+<pre class="prettyprint">
+// ES6
+import MyModule from './modules/MyModule.js';
+</pre>
+
+여기서 `./`는 일반적인 파일시스템 처럼 현재파일의 경로를 의미하며 상위 경로는 `../`를 사용한다.
+
+그럼 MyModule.js파일에서 utils.js파일을 불러오는 코드를 작성해 보자.
+
+<pre class="prettyprint">
+// ES6
+import MyModule from './../util.js';
+
+import MyModule from '/util.js';
+</pre>
+
+첫 번째 줄은 위에서 설명했고, 두 번째 줄은 utils.js가 최상위 경로, 즉 root경로에 있기 때문에 `/`를 사용해도 된다. 이런 두 가지 경로 표현 방법을 일반적으로 상대경로(relative path)와 절대경로(absolute path)라고 할 수 있다. 절대경로의 기준이 되는 점(entry point)는 configuration에서 설정한 entry file의 위치일 것이다. 위의 파일구조에서 main.js파일이 있는 지점이 root가 되겠다.
+
+## 파일 확장명
+
+Webpack에 의해서 bundle될때에는 .js나 .jsx, css등 파일확장명은 없애도 된다. 하지만 이것은 node_modules에 설치된 모듈명을 require하는 것과는 전혀 다른 의미 이므로 구분해서 이해해야 한다.
+
+
+모든 설명을 한 페이지에 다 넣으려고 했는데 좀 지루한것 같아. 파일을 나누기로 한다.
+본격적인 react에 대한 내용은 [(II)](/javascript/2016/01/08/javascript-webpack-for-react2.html)에 이어서 한다.
 
 ---
 **참조**
