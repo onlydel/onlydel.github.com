@@ -1342,12 +1342,14 @@ If you add a number to a string, the number will be treated as string, and conca
 
 ### Test Yourself with Exercises!
 
-[[실습1](http://www.w3schools.com/js/exercise.asp?filename=exercise_variables1)]
-[[실습2](http://www.w3schools.com/js/exercise.asp?filename=exercise_variables2)]
-[[실습3](http://www.w3schools.com/js/exercise.asp?filename=exercise_variables3)]
-[[실습4](http://www.w3schools.com/js/exercise.asp?filename=exercise_variables4)]
-[[실습5](http://www.w3schools.com/js/exercise.asp?filename=exercise_variables5)]
-[[실습6](http://www.w3schools.com/js/exercise.asp?filename=exercise_variables6)]
+### 연습문제로 자신을 테스트!
+
+[[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_variables1)]
+[[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_variables2)]
+[[연습문제3](http://www.w3schools.com/js/exercise.asp?filename=exercise_variables3)]
+[[연습문제4](http://www.w3schools.com/js/exercise.asp?filename=exercise_variables4)]
+[[연습문제5](http://www.w3schools.com/js/exercise.asp?filename=exercise_variables5)]
+[[연습문제6](http://www.w3schools.com/js/exercise.asp?filename=exercise_variables6)]
 
 ---
 
@@ -1787,9 +1789,9 @@ Expressions in parentheses are fully computed before the value is used in the re
 
 ---
 
-Test Yourself with Exercises!
+### Test Yourself with Exercises!
 
-스스로 연습문제 테스트
+### 연습문제로 자신을 테스트!
 
 [[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_arithmetic1)]
 [[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_arithmetic2)]
@@ -1886,7 +1888,7 @@ x %= 5;
 
 ### Test Yourself with Exercises!
 
-### 스스로 연습문제 시험
+### 연습문제로 자신을 테스트!
 
 [[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_assignment1)]
 [[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_assignment2)]
@@ -2427,7 +2429,7 @@ You will learn a lot more about functions later in this tutorial.
 
 ### Test Yourself with Exercises!
 
-### 스스로 연습문제 테스트
+### 연습문제로 자신을 테스트!
 
 [[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_functions1)]
 [[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_functions2)]
@@ -2659,7 +2661,7 @@ You will learn more about objects later in this tutorial.
 
 ### Test Yourself with Exercises!
 
-### 스스로 연습문제 테스트
+### 연습문제로 자신을 테스트!
 
 [[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_objects1)]
 [[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_objects2)]
@@ -2990,7 +2992,7 @@ You will learn a lot more about events and event handlers in the HTML DOM chapte
 
 ### Test Yourself with Exercises!
 
-### 스스로 연습문제 시험!
+### 연습문제로 자신을 테스트!
 
 [[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_events1)]
 [[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_events2)]
@@ -3317,7 +3319,7 @@ valueOf()		문자열 객체의 기본형식의 값을 반환합니다.
 
 ### Test Yourself with Exercises!
 
-### 스스로 연습문제 테스트
+### 연습문제로 자신을 테스트!
 
 [[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_strings1)]
 [[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_strings1)]
@@ -3732,6 +3734,8 @@ The reference contains descriptions and examples of all string properties and me
 
 ### Test Yourself with Exercises!
 
+### 연습문제로 자신을 테스트!
+
 [[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_stringsmet1)]
 [[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_stringsmet2)]
 [[연습문제3](http://www.w3schools.com/js/exercise.asp?filename=exercise_stringsmet3)]
@@ -4096,9 +4100,9 @@ Number methods are covered in the next chapter
 
 ---
 
-Test Yourself with Exercises!
+### Test Yourself with Exercises!
 
-스스로 연습문제 테스트!
+### 연습문제로 자신을 테스트!
 
 [[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_numbers1)]
 [[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_numbers2)]
@@ -4595,7 +4599,7 @@ The reference contains descriptions and examples of all Math properties and meth
 
 ### Test Yourself with Exercises!
 
-### 스스로 연습문제 시험
+### 연습문제로 자신을 테스트!
 
 [[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_math1)]
 [[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_math2)]
@@ -4853,7 +4857,7 @@ Read more about time zones in the next chapters.
 
 ### Test Yourself with Exercises!
 
-### 스스로 연습문제 테스트!
+### 연습문제로 자신을 테스트!
 
 [[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_dates1)]
 [[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_dates2)]
@@ -5574,7 +5578,7 @@ fruits instanceof Array     // returns true
 
 ### Test Yourself with Exercises!
 
-### 스스로 연습문제 테스트
+### 연습문제로 자신을 테스트!
 
 [[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_arrays1)]
 [[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_arrays2)]
@@ -6092,9 +6096,9 @@ reference는 모든 배열의 속성과 메소드의 설명과 예제가 들어 
 
 ---
 
-Test Yourself with Exercises!
+### Test Yourself with Exercises!
 
-스스로 연습문제 테스트 
+### 연습문제로 자신을 테스트!
 
 [[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_arraysmet1)]
 [[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_arraysmet2)]
@@ -6177,9 +6181,9 @@ JS장에서 조건은 조건부에 대하여 전체 개요를 제공해 줍니�
 
 <pre class="prettyprint">
 Operator	Description	Example
-==	equal to	if (day == "Monday")
-&gt;	greater than	if (salary &gt; 9000)
-&lt;	less than	if (age &lt; 18)
+==		equal to	if (day == "Monday")
+&gt;		greater than	if (salary &gt; 9000)
+&lt;		less than	if (age &lt; 18)
 </pre>
 
 The Boolean value of an expression is the fundament for JavaScript comparisons and conditions.
@@ -6277,3 +6281,206 @@ The reference contains descriptions and examples of all Boolean properties and m
 필요한 모든 것이 갖춰진 우리 자바스크립트 Boolean참고 참조  
 참조 설명과 모든 Boolean 속성과 메서드에 대한 예제가 들어 있습니다.
 
+---
+
+---
+
+# JavaScript Comparison and Logical Operators
+
+# 자바스크립트 비교와 논리 연산자
+
+---
+
+Comparison and Logical operators are used to test for true or false.
+
+비교와 논리 연산자는 참 또는 거짓을 테스트 할 때 사용합니다.
+
+---
+
+### Comparison Operators
+
+### 비교 연산자
+
+Comparison operators are used in logical statements to determine equality or difference between variables or values.  
+Given that x = 5, the table below explains the comparison operators:
+
+비교 연산자는 변수 나 값 사이에 동등하거나 차이를 결정하는 논리적인 문장에 사용됩니다.  
+x가 5로 정해진, 아래표에 비교 연산자에 대해서 설명 되어 있습니다.
+
+<pre class="prettyprint">
+Operator	Description			Comparing	Returns
+==		equal to			x == 8		false	
+						x == 5		true	
+						x == "5"		true
+-----------------------------------------------------------------------	
+===		equal value and equal type	x === 5		true	
+						x === "5"	false
+-----------------------------------------------------------------------	
+!=		not equal			x != 8		true
+-----------------------------------------------------------------------		
+!==		not equal value or 
+		not equal type			x !== 5		false	
+						x !== "5"	true	
+						x !== 8		true	
+-----------------------------------------------------------------------	
+&gt;		greater than			x &gt; 8		false
+-----------------------------------------------------------------------		
+&lt;		less than			x &lt; 8		true
+-----------------------------------------------------------------------
+>=		greater than or equal to		x >= 8		false
+-----------------------------------------------------------------------		
+&lt;=		less than or equal to 		x &lt;= 8		true	
+</pre>
+
+---
+
+### How Can it be Used
+
+### 어떻게 사용이 가능한가
+
+Comparison operators can be used in conditional statements to compare values and take action depending on the result:
+
+비교 연산자는 조건문에서 값을 비교하거나 이동에 따라 다음 결과처럼 사용할 수 있습니다.
+
+<pre class="prettyprint">
+if (age &lt; 18) text = "Too young";
+</pre>
+
+You will learn more about the use of conditional statements in the next chapter of this tutorial.
+
+당신은 조건문에 대한 사용 방법에 대해서 이 튜토리얼의 다음장에서 배우게 될 것입니다.
+
+---
+
+### Logical Operators
+
+### 논리 연산자
+
+Logical operators are used to determine the logic between variables or values.  
+Given that x = 6 and y = 3, the table below explains the logical operators:
+
+논리연산자는 변수 또는 값 사이에 논리적으로 결정하는데 사용됩니다.  
+x에6을 y에3을 대입합니다, 아래의 표는 논리연산자에 대한 설명입니다.
+
+<pre class="prettyprint">
+Operator	Description	Example	
+&&		and		(x &lt; 10 && y &gt; 1) is true	
+||		or		(x == 5 || y == 5) is false	
+!		not		!(x == y) is true 
+</pre>
+
+### Conditional (Ternary) Operator
+
+### 조건(삼항) 연산자
+
+JavaScript also contains a conditional operator that assigns a value to a variable based on some condition.
+
+자바스크립트는 일부 조건에 따라 변수에 값을 할당하는 조건 연산자가 포함되어 있습니다.
+
+Syntax  
+문법
+
+<pre class="prettyprint">
+variablename = (condition) ? value1:value2 
+Example
+var voteable = (age < 18) ? "Too young":"Old enough";
+</pre>
+
+If the variable age is a value below 18, the value of the variable voteable will be "Too young", otherwise the value of voteable will be "Old enough".
+
+만약 나이변수가 18보다 아래인 값이면, 변수voteable의 값은 "Too young"일 것이고, 아니면 voteable의 값은 "Old enough"일 것입니다.
+
+---
+
+### Comparing Different Types
+
+### 다른 형식 비교
+
+Comparing data of different types may give unexpected results.   
+When comparing a string with a number, JavaScript will convert the string to a number when doing the comparison. An empty string converts to 0. A non-numeric string converts to NaN which is always false.
+
+다른 유형의 데이터를 비교하면 예상치 못한 결과값을 가질 수 있습니다.  
+문자열과 숫자를 비교할 때 자바스크립트 문자열을 숫자로 변환합니다. 0이 아닌 숫자 문자열로 변환되고 빈 문자열은 항상 false인 NaN으로 변환 합니다.
+
+<pre class="prettyprint">
+Case	Value	
+2 &lt; 12	true	
+2 &lt; "12"	true	
+2 &lt; "John"	false	
+2 &gt; "John"	false	
+2 == "John"	false	
+"2" &lt; "12"	false	
+"2" &gt; "12"	true	
+"2" == "12"	false	
+</pre>
+
+When comparing two strings, "2" will be greater than "12", because (alphabetically) 1 is less than 2.  
+To secure a proper result, variables should be converted to the proper type before comparison:
+
+두 문자열을 비교할 때는 (알파벳 순으로)1이 2보다 작기 때문에 "2"가 "12"보다 큽니다.  
+안전하고 적절한 결과를 얻기 위해서는, 비교하기 전에 변수를 전환 해줘야 합니다.
+
+<pre class="prettyprint">
+age = Number(age);
+if (isNaN(age)) {
+    voteable = "Error in input";
+} else {
+    voteable = (age &lt; 18) ? "Too young" : "Old enough";
+}
+</pre>
+
+---
+
+### JavaScript Bitwise Operators
+
+### 자바스크립트 비트 연산자
+
+Bit operators work on 32-bit numbers.  
+Any numeric operand in the operation is converted into a 32-bit number.  
+The result is converted back to a JavaScript number.
+
+비트 연산자는 32비트 숫자로 작동합니다.   
+동작에 있어서 어떤 수 피연산 함수는 32비트 숫자로 변환됩니다.  
+그 결과는 자바스크립트의 숫자로 변환되어 돌아옵니다.
+
+<pre class="prettyprint">
+Example
+x = 5 & 1;
+The result in x:
+1
+</pre>
+
+<pre class="prettyprint">
+Operator	Description	Example		Same as		Result	Decimal
+&		AND		x = 5 & 1	0101 & 0001	0001	1
+|		OR		x = 5 | 1	0101 | 0001	0101	5
+~		NOT		x = ~ 5	 	~0101		1010	10
+^		XOR		x = 5 ^ 1	0101 ^ 0001	0100	4
+&lt;&lt;		Left shift	x = 5 &lt;&lt; 1	0101 &lt;&lt; 1	1010	10
+&gt;&gt;		Right shift	x = 5 &gt;&gt; 1	0101 &gt;&gt; 1	0010	2
+</pre>
+
+The examples above use 4 bits unsigned examples. But JavaScript uses 32-bit signed numbers.  
+Because of this, in JavaScript, ~ 5 will not return 10. It will return -6.   
+~00000000000000000000000000000101 will return 11111111111111111111111111111010
+
+위에 예제에서는 부호가 없는 예제는 4비트를 사용합니다. 하지만 자바스크립트는 부호가 있는 숫자는 32비트를 사용합니다.  
+이 때문에, 자바스크립트 안에서는 ~5는 10을 반환하지 않습니다. 그것은 -6 으로 반환합니다.
+<pre class="prettyprint">
+~5(0101) 반대값 10(1010)은 4비트에서의 결과값
+32비트에서의 결과 값:  
+~5(00000000000000000000000000000101)  
+-6(11111111111111111111111111111010)
+</pre>
+---
+
+### Test Yourself with Exercises!
+
+### 연습문제로 자신을 테스트! 
+
+[[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_comparisons1)]
+[[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_comparisons2)]
+[[연습문제3](http://www.w3schools.com/js/exercise.asp?filename=exercise_comparisons3)]
+[[연습문제4](http://www.w3schools.com/js/exercise.asp?filename=exercise_comparisons4)]
+[[연습문제5](http://www.w3schools.com/js/exercise.asp?filename=exercise_comparisons5)]
+[[연습문제6](http://www.w3schools.com/js/exercise.asp?filename=exercise_comparisons6)]
