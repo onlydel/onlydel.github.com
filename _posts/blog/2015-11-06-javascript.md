@@ -4652,9 +4652,9 @@ In this tutorial we use a script to display dates inside a <p> element with id="
 Example
 &lt;p id="demo"&gt;&lt;/p&gt;
 
-<script>
+&lt;script&gt;
 document.getElementById("demo").innerHTML = Date();
-</script>
+&lt/script&gt;
 </pre>
 
 The script above says: assign the value of Date() to the content (innerHTML) of the element with id="demo". 
@@ -6484,3 +6484,565 @@ Because of this, in JavaScript, ~ 5 will not return 10. It will return -6.
 [[연습문제4](http://www.w3schools.com/js/exercise.asp?filename=exercise_comparisons4)]
 [[연습문제5](http://www.w3schools.com/js/exercise.asp?filename=exercise_comparisons5)]
 [[연습문제6](http://www.w3schools.com/js/exercise.asp?filename=exercise_comparisons6)]
+
+---
+
+---
+
+# JavaScript If...Else Statements
+
+# 자바스크립트 if...Else문
+
+---
+
+Conditional statements are used to perform different actions based on different conditions.
+
+조건문은 특색이 다른 조건에서 수행하기 위해서 사용 됩니다.
+
+---
+
+### Conditional Statements
+
+### 조건문
+
+Very often when you write code, you want to perform different actions for different decisions.  
+You can use conditional statements in your code to do this.  
+In JavaScript we have the following conditional statements:
+
+* Use if to specify a block of code to be executed, if a specified condition is true
+* Use else to specify a block of code to be executed, if the same condition is false
+* Use else if to specify a new condition to test, if the first condition is false
+* Use switch to specify many alternative blocks of code to be executed
+
+당신이 코드를 작성할때 매우 자주, 당신은 차이가 나는 조건에서 결정을 하고싶어 합니다.   
+당신의 코드에서 조건문을 사용할 수 있습니다.  
+우리는 자바스크립트안에 다음과 같은 조건문을 가질 수 있습니다.
+
+* if는 코드범위에 명시된 작업의 조건이 만약 참일경우에 작업을 수행하기 위해 사용합니다.
+* else는 코드범위에 명시된 작업의 조건이 만약 false와 같다면 수행사기 위해 사용합니다.
+* else if는 새로운 조건 지정하고 테스트 하기위서 만약 첫번째 조건이 false일 경우에 사용 합니다.
+* switch는 많은 조건의 코드 범위에서 명시된 조건을 선택하여 실행하기 위해 사용합니다.
+
+---
+
+### The if Statement
+
+### if문
+
+Use the if statement to specify a block of JavaScript code to be executed if a condition is true.
+
+if 문은 자바스크립트 코드범위안에 명시된 조건이 참 일때 실행 되기 위해서 사용합니다.
+
+Syntax 문법
+<pre class="prettyprint">
+if (condition) {
+    block of code to be executed if the condition is true
+}
+</pre>
+
+Note that if is in lowercase letters. Uppercase letters (If or IF) will generate a JavaScript error.
+
+참고하세요 if는 소문자 입니다. 대문자일 경우(If나 IF)에는 자바스크립트는 오류를 발생시킵니다.
+
+<pre class="prettyprint">
+Example
+Make a "Good day" greeting if the hour is less than 18:00:
+
+if (hour &lt; 18) {
+    greeting = "Good day";
+}
+The result of greeting will be:
+
+Good day
+</pre>
+
+---
+
+### The else Statement
+
+### else문
+
+Use the else statement to specify a block of code to be executed if the condition is false.
+
+else문은 코드범위에서 명시된 조건이 만약 false인 경우에 실행하기 위해 사용합니다.
+
+<pre class="prettyprint">
+if (condition) {
+    block of code to be executed if the condition is true
+} else { 
+    block of code to be executed if the condition is false
+}
+</pre>
+
+<pre claa="prettyprint">
+Example
+If the hour is less than 18, create a "Good day" greeting, otherwise "Good evening":
+
+if (hour &lt; 18) {
+    greeting = "Good day";
+} else {
+    greeting = "Good evening";
+}
+The result of greeting will be:
+
+Good day
+</pre>
+
+### The else if Statement
+
+### else if문
+
+Use the else if statement to specify a new condition if the first condition is false.
+
+else if문은 첫번째 조건이 false인 경우에 새로운 조건을 명시하기 위해 사용합니다. 
+
+
+Syntax 문법
+<pre class="prettyprint">
+if (condition1) {
+    block of code to be executed if condition1 is true
+} else if (condition2) {
+    block of code to be executed if the condition1 is false and condition2 is true
+} else {
+    block of code to be executed if the condition1 is false and condition2 is false
+}
+</pre>
+
+<pre class="prettyprint">
+Example
+If time is less than 10:00, create a "Good morning" greeting, if not, but time is less than 20:00, create a "Good day" greeting, otherwise a "Good evening":
+
+if (time &lt; 10) {
+    greeting = "Good morning";
+} else if (time &lt; 20) {
+    greeting = "Good day";
+} else {
+    greeting = "Good evening";
+}
+The result of greeting will be:
+
+Good morning
+</pre>
+
+---
+
+### More Examples
+
+[Random link](http://www.w3schools.com/js/tryit.asp?filename=tryjs_randomlink)
+This example will write a link to either W3Schools or to the World Wildlife Foundation (WWF). By using a random number, there is a 50% chance for each of the links.
+
+위의 링크 예제는 50%의 확률로 세계적인 동물 사이트나 W3Schools중 하나를 랜덤으로 링크로 나타내 주는 예제 입니다.
+
+---
+
+### Test Yourself with Exercises!
+
+### 연습문제로 자신을 테스트!
+
+[[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_conditions1)]
+[[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_conditions2)]
+[[연습문제3](http://www.w3schools.com/js/exercise.asp?filename=exercise_conditions3)]
+[[연습문제4](http://www.w3schools.com/js/exercise.asp?filename=exercise_conditions4)]
+[[연습문제5](http://www.w3schools.com/js/exercise.asp?filename=exercise_conditions5)]
+[[연습문제6](http://www.w3schools.com/js/exercise.asp?filename=exercise_conditions6)]
+
+---
+
+---
+
+# JavaScript Switch Statement
+
+# 자바스크립트 Switch문
+
+---
+
+The switch statement is used to perform different actions based on different conditions.
+
+switch문은 다양한 조건에 맞게 실행되기 위해서 사용합니다.
+
+---
+
+### The JavaScript Switch Statement
+
+### 자바스크립트 Switch문
+
+Use the switch statement to select one of many blocks of code to be executed.
+
+많은 조건 중에서 하나의 코드를 표현하기 위해서 switch문을 사용합니다.
+
+Syntax 문법
+<pre class="prettyprint">
+switch(expression) {
+    case n:
+        code block
+        break;
+    case n:
+        code block
+        break;
+    default:
+        default code block
+}
+</pre>
+
+This is how it works:
+
+* The switch expression is evaluated once.
+* The value of the expression is compared with the values of each case.
+* If there is a match, the associated block of code is executed.
+
+동작방법:
+
+* switch표현은 한번씩 평가됩니다.
+* 표현식의 값은 각각의 경우에 값을 비교합니다.
+* 만약 맞는 것이 존재한다면, 관련된 블록의 코드를 실행 할 것입니다.
+
+<pre class="prettyprint">
+Example
+The getDay() method returns the weekday as a number between 0 and 6. (Sunday=0, Monday=1, Tuesday=2 ..)
+
+Use the weekday number to calculate weekday name:
+
+switch (new Date().getDay()) {
+    case 0:
+        day = "Sunday";
+        break;
+    case 1:
+        day = "Monday";
+        break;
+    case 2:
+        day = "Tuesday";
+        break;
+    case 3:
+        day = "Wednesday";
+        break;
+    case 4:
+        day = "Thursday";
+        break;
+    case 5:
+        day = "Friday";
+        break;
+    case 6:
+        day = "Saturday";
+        break;
+}
+The result of day will be:
+
+Thursday
+</pre>
+
+---
+
+### The break Keyword
+
+### break키워드
+
+When the JavaScript code interpreter reaches a break keyword, it breaks out of the switch block.  
+This will stop the execution of more code and case testing inside the block.  
+When a match is found, and the job is done, it's time for a break.
+There is no need for more testing.
+
+그것은 자바스크립트 코드를 해석하다가 swich블록 중에서 break키워드에 도달 했을 때 정지합니다.  
+이것은 더 많은 코드와 case블록 내부의 테스트를 중단 시킵니다.   
+맞는 것을 찾았을 때, 그리고 일이 끝날때, 그것을 중단시킵니다.  
+그것들은 그 이상의 테스트를 필요로 하지 않습니다.
+
+---
+
+### The default Keyword
+
+### default키워드
+
+The default keyword specifies the code to run if there is no case match:
+
+default 키워드는 코드를 실행하다가 만약 그것들과 맞는 경우가 없을때 명시합니다.
+
+<pre class="prettyprint">
+Example
+The getDay() method returns the weekday as a number between 0 and 6.
+
+If today is neither Saturday (6) nor Sunday (0), write a default message:
+
+switch (new Date().getDay()) {
+    case 6:
+        text = "Today is Saturday";
+        break; 
+    case 0:
+        text = "Today is Sunday";
+        break; 
+    default: 
+        text = "Looking forward to the Weekend";
+}
+The result of text will be:
+
+Looking forward to the Weekend
+</pre>
+
+---
+
+### Common Code and Fall-Through
+
+### 공통 코드와 실패로 끝난
+
+Sometimes, in a switch block, you will want different cases to use the same code, or fall-through to a common default.  
+Note from the next example, that cases can share the same code block, and that the default case does not have to be the last case in a switch block:
+
+때때로, 스위치 블록에 동일한 코드를 사용하거나 공통 기본으로 서로 다른 경우를 원할 것 입니다.  
+다음 예제는, 동일한 코드 불록은 공유할 수 있고 스위치 블록 내의 마지막 경우로 하지 않습니다.
+
+<pre class="prettyprint">
+Example
+switch (new Date().getDay()) {
+    case 1:
+    case 2:
+    case 3:
+    default: 
+        text = "Looking forward to the Weekend";
+        break; 
+    case 4:
+    case 5:
+       text = "Soon it is Weekend";
+        break; 
+    case 0:
+    case 6:
+       text = "It is Weekend";
+}
+</pre>
+
+If default is not the last case in the switch block, remember to end it with a break.
+
+기본적으로 default는 switch블록의 case안에서 마지막이 아닐경우에, 끝과 중지로 기억합니다.
+
+---
+
+### Test Yourself with Exercises!
+
+### 연습문제로 자신을 테스트!
+
+[[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_switch1)]
+[[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_switch2)]
+[[연습문제3](http://www.w3schools.com/js/exercise.asp?filename=exercise_switch3)]
+[[연습문제4](http://www.w3schools.com/js/exercise.asp?filename=exercise_switch4)]
+
+---
+
+---
+
+# JavaScript For Loop
+
+# 자바스크립트 For반복
+
+---
+
+Loops can execute a block of code a number of times.
+
+블럭 코드를 몇번이고 반복적으로 실행하는게 가능합니다.
+
+---
+
+### JavaScript Loops
+
+### 자바스크립트 반복
+
+Loops are handy, if you want to run the same code over and over again, each time with a different value.  
+Often this is the case when working with arrays:
+
+당신은 각각의 다른 값으로 처음부터 같은 코드를 다시 반복해서 편리하게 사용하길 원합니다.  
+보통 배열로 작업하는 경우는 다음과 같습니다:
+
+<pre class="prettyprint">
+Instead of writing:
+text += cars[0] + "&lt;br&gt;"; 
+text += cars[1] + "&lt;br&gt;"; 
+text += cars[2] + "&lt;br&gt;"; 
+text += cars[3] + "&lt;br&gt;"; 
+text += cars[4] + "&lt;br&gt;"; 
+text += cars[5] + "&lt;br&gt;";
+
+You can write:
+for (i = 0; i &lt; cars.length; i++) { 
+    text += cars[i] + "&lt;br&gt;";
+}
+</pre>
+
+---
+
+### Different Kinds of Loops
+
+### Loop의 약간 다른 차이
+
+JavaScript supports different kinds of loops:
+
+* for - loops through a block of code a number of times
+* for/in - loops through the properties of an object
+* while - loops through a block of code while a specified condition is true
+* do/while - also loops through a block of code while a specified condition is true
+
+자바스크립트는 약간 다른 차이의 loop를 지원 합니다:
+
+* for - 코드 블록을 통하여 몇번이고 반복합니다.
+* for/in - 오브젝트의 성질을 통하여 반복합니다.
+* while - 명시된 조건이 true일 동안에  코드 블록을 반복합니다.
+* do/while - 또한 코드블록을 통해 명시된 조건이 참일 동안에 반복합니다.
+
+---
+
+### The For Loop
+
+### For반복
+
+The for loop is often the tool you will use when you want to create a loop.  
+The for loop has the following syntax:
+
+for반복은 보통 당신이 새로운 반복을 하기를 원할 때 도구로 사용 됩니다.  
+다음은 for반복에대한 문법 입니다.
+
+<pre class="prettyprint">
+for (statement 1; statement 2; statement 3) {
+    code block to be executed
+}
+</pre>
+
+Statement 1 is executed before the loop (the code block) starts.  
+Statement 2 defines the condition for running the loop (the code block).  
+Statement 3 is executed each time after the loop (the code block) has been executed.
+
+Statement 1은 반복(코드 블록)이 시작되기 전에 실행 됩니다.
+Statement 2는 반복(코드 블록)을 실행하기 위한 조건 입니다.
+Statement 3은 반복(코드 블록)이 실행 된 후마다 실행 됩니다.
+
+<pre class="prettyprint">
+Example
+for (i = 0; i &lt; 5; i++) {
+    text += "The number is " + i + "&lt;br&gt;";
+}
+</pre>
+
+From the example above, you can read:  
+Statement 1 sets a variable before the loop starts (var i = 0).  
+Statement 2 defines the condition for the loop to run (i must be less than 5).  
+Statement 3 increases a value (i++) each time the code block in the loop has been executed.
+
+위의 예에서 당신은 읽을 수 있었습니다:
+Statement 1은 변수 값에 반복의 시작(var i =0)을 먼져 저장합니다.
+Statement 2는 실행하는 반복의 조건을 정의(i는 5보다 작을때)
+Statement 3은 값이 블록 코드에서 실행 된 각각의 시간을 증가(i++) 시킵니다.
+
+---
+
+### Statement 1
+
+### Statement 1
+
+Normally you will use statement 1 to initiate the variable used in the loop (i = 0).   
+This is not always the case, JavaScript doesn't care. Statement 1 is optional.   
+You can initiate many values in statement 1 (separated by comma):
+
+당신은 보통은 statement1은 반복에 사용할 변수를 지정합니다.(i = 0)  
+항상 그런것은 아닙니다, 자바스크립트는 상관하지 않습니다. Statement1은 선택 사항입니다.  
+당신은 쉼표로 statement1의 많은 값들을 구분 할 수 있습니다.
+
+<pre class="prettyprint">
+Example
+for (i = 0, len = cars.length, text = ""; i &lt; len; i++) { 
+    text += cars[i] + "&lt;br&gt;";
+}
+</pre>
+
+And you can omit statement 1 (like when your values are set before the loop starts):  
+
+그리고 당신은 statement1을 생략하는것이 가능합니다.(반복이 시작되기 전에 설정되는 경우에는)
+
+<pre class="prettyprint">
+Example
+var i = 2;
+var len = cars.length;
+var text = "";
+for (; i &lt; len; i++) { 
+    text += cars[i] + "&lt;br&gt;";
+}
+</pre>
+
+---
+
+### Statement 2
+
+### Statement 2
+
+Often statement 2 is used to evaluate the condition of the initial variable.   
+This is not always the case, JavaScript doesn't care. Statement 2 is also optional.   
+If statement 2 returns true, the loop will start over again, if it returns false, the loop will end.  
+If you omit statement 2, you must provide a break inside the loop. Otherwise the loop will never end. This will crash your browser. Read about breaks in a later chapter of this tutorial. 
+
+보통 statement2는 초기 변수의 상태를 평가하는데 사용됩니다.  
+항상 그런것은 아닙니다, 자바스크립트는 상관하지 않습니다. Statement2또한 선택사항 입니다.  
+만약 statement2가 true 를 반환하면, 반복문은 다시 시작됩니다, 만약 false를 반환하면, 반복은 끝날 것입니다.  
+만약 statement2를 생략한다면, 당신은 반복 안에 break를 제공 해야합니다. 아닐경우에는 그것은 끝없이 반복할 것입니다.  
+이 브라우저는 충돌합니다. 이 튜토리얼의 이후에 break에 대해서 읽어 보십시오.
+
+---
+
+### Statement 3
+
+### Statement 3
+
+Often statement 3 increases the initial variable.  
+This is not always the case, JavaScript doesn't care, and statement 3 is optional.  
+Statement 3 can do anything like negative increment (i--), positive increment (i = i + 15), or anything else.  
+Statement 3 can also be omitted (like when you increment your values inside the loop):
+
+보통의 statement3은 초기 변수를 증가 시킵니다.  
+항상 그런것은 아닙니다, 자바스크립트는 상관하지 않고, statement3은 선택사항 입니다.  
+
+
+
+<pre class="prettyprint">
+Example
+var i = 0;
+var len = cars.length;
+for (; i &lt; len; ) { 
+    text += cars[i] + "&lt;br&gt;";
+    i++;
+}
+</pre>
+
+---
+
+### The For/In Loop
+
+### For/In 반복
+
+The JavaScript for/in statement loops through the properties of an object:
+
+for/in문은 자바스크립트의 객체의 속성을 통해서 반복됩니다.
+
+<pre class="prettyprint">
+Example
+var person = {fname:"John", lname:"Doe", age:25}; 
+
+var text = "";
+var x;
+for (x in person) {
+    text += person[x];
+}
+</pre>
+
+---
+
+### The While Loop
+
+### While반복
+
+The while loop and the do/while loop will be explained in the next chapter.
+
+While과 do/while 반복은 다음 장에서 설명 하겠습니다.
+
+---
+
+### Test Yourself with Exercises!
+
+### 연습문제로 자신을 테스트!
+
+[[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_for1)]
+[[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_for2)]
+[[연습문제3](http://www.w3schools.com/js/exercise.asp?filename=exercise_for3)]
+[[연습문제4](http://www.w3schools.com/js/exercise.asp?filename=exercise_for4)]
