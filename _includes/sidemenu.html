@@ -29,7 +29,8 @@
   {% assign down_cat = cat | downcase %}
 
   {% for post in site.posts %}
-    {% if post.categories contains down_cat %}
+    {% assign down_post_cat = post.categories | downcase %}
+    {% if down_post_cat contains down_cat %}
         <li>
           <a class="page-link" href="{{ post.url | prepend: site.baseurl }}">
 
