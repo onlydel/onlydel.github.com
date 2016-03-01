@@ -19,20 +19,20 @@ tags:
 JavaScript is the most popular programming language in the world.    
 This page contains some examples of what JavaScript can do.
 
-자바스크립트는 세계에서 최고로 인기있는 프로그래밍 언어이다.  
+자바스크립트는 세계에서 최고로 인기있는 프로그래밍 언어입니다.  
 이 페이지에는 자바스크립트가 어떤동작을 하는지에대한 약간의 예제가 들어가 있습니다.
 
 ---
 
 ### JavaScript Can Change HTML Content  
 
-### 자바스크립트는 HTML내용을 변화 시킬 수 있습니다.
+### 자바스크립트는 HTML내용을 변경할 수 있습니다.
 
 One of many HTML methods is getElementById().  
 This example uses the method to "find" an HTML element (with id="demo"), and changes the element content (innerHTML) to "Hello JavaScript":
 
  getElementById()는 많은 HTML 방법중에 하나입니다.  
-이 예시는 HTML요소에서(with id="demo")를 찾아서, (innerHTML)요소안을 "Hello JavaScript"로 변화시키는 방법입니다.
+이 예시는 HTML요소에서(with id="demo")를 찾아서, (innerHTML)요소안을 "Hello JavaScript"로 변경하는 방법입니다.
 
 <pre class="prettyprint">
 Example
@@ -43,7 +43,7 @@ document.getElementById("demo").innerHTML = "Hello JavaScript";
 
 ### JavaScript Can Change HTML Attributes
 
-### HTML 속성은 자바스크립트에 의해서 변환이 가능합니다
+### HTML 속성은 자바스크립트에 의해서 변경하는 것이 가능합니다
 
 This example changes an HTML image, by changing the src attribute of an <img> tag:
 
@@ -60,9 +60,7 @@ This example changes an HTML image, by changing the src attribute of an <img> ta
 
 Changing the style of an HTML element, is a variant of changing an HTML attribute:
 
-HTML요소에서 스타일을 변경한 HTML의 결과이다:
-
-
+HTML요소에서 HTML의 스타일을 변경한 결과입니다.
 
 <pre class="prettyprint">
 Example
@@ -78,8 +76,8 @@ document.getElementById("demo").style.fontSize = "25px";
 JavaScript is often used to validate input:  
 Please input a number between 1 and 10  
  <input type="text"><input type="button" value="Submit">
-  
-자바스크립트는 흔이 입력을 인증하는데 사용합니다.  
+
+자바스크립트는 보통 입력의 유효성을 검사하는데 사용합니다.   
 1부터10사이에 숫자를 넣어보세요.
 [링크](http://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_validate)
 
@@ -165,7 +163,7 @@ Keeping all code in one place, is always a good habit.
 In this example, a JavaScript function is placed in the <head> section of an HTML page.   
 The function is invoked (called) when a button is clicked:
 
-이것을 예로들자면, 자바스크립트 함수는 HTML페이지의 <head>부분 안에 배치됩니다.
+이것을 예로들자면, 자바스크립트 함수는 HTML페이지의 <head>부분 안에 배치됩니다.  
 버튼이 클릭될 때 이 함수를 호출합니다:
 
 <pre class="prettyprint">
@@ -201,7 +199,7 @@ function myFunction() {
 In this example, a JavaScript function is placed in the <body> section of an HTML page.
 The function is invoked (called) when a button is clicked:
 
-이것을 예로들자면, 자바스크립트 함수는 HTML페이지의 <body>부분 안에 배치됩니다.
+이것을 예로들자면, 자바스크립트 함수는 HTML페이지의 <body>부분 안에 배치됩니다.  
 버튼이 클릭될 때 함수가 호출됩니다:
 
 <pre class="prettyprint">
@@ -228,10 +226,9 @@ function myFunction() {
 
 It is a good idea to place scripts at the bottom of the body element.   
 This can improve page load, because HTML display is not blocked by scripts loading.
- 
-body요소 아래다 스크립트 장소를 지정하는 것이 좋습니다.
-이것은 페이지의 로드를 차단하기 때문에 HTML화면에 스크립트 로딩이 앞에서 차단되기 않기 위해서 입니다.
-
+  
+body요소 아래에 스크립트를 배치하는 것이 좋습니다.
+HTML 화면로드가 스크립트에 의해 차단되지 않기 때문에, 페이지로드를 향상시킬 수있습니다.
 
 ---
 
@@ -245,10 +242,10 @@ External scripts are practical when the same code is used in many different web 
 JavaScript files have the file extension .js.  
 To use an external script, put the name of the script file in the src (source) attribute of the &lt;script&gt; tag:
 
-스크립트는 외부 파일에 배치 될 수도 있습니다.
+스크립트는 외부에 파일로 배치 될 수도 있습니다.
 코드가 같고 다양한 웹 페이지에서는 외부 스크립트를 사용하는 것이 실용적 입니다.
 자바스크립트 파일의 파일확장자명은.js입니다.
-&lt;script&gt;태그의 SRC(소스) 속성에 스크립트 파일을 넣어서 외부 스크립트를 사용합니다.:
+&lt;script&gt;태그의 SRC(소스) 속성에 스크립트 파일을 넣어서 외부 스크립트를 사용합니다.
 </pre>
 
 <pre class="prettyprint">
@@ -285,9 +282,9 @@ Placing JavaScripts in external files has some advantages:
 *  It makes HTML and JavaScript easier to read and maintain
 *  Cached JavaScript files can speed up page loads
 
-*  HTML과 코드를 따로 입니다.
-*  HTML과 자바스크립트로 만들면 쉽게 읽고 유지 할 수 있습니다.
-*  저장된 자바스크립트 파일은 페이지 로드 속도를 올릴 수 있습니다.
+*  이것은 HTML과 code를 나눌 수 있습니다.
+*  이것은 HTML과 자바스크립트를 쉽게 읽고 유지보수를 할 수 있습니다.
+*  캐시에 저장된 자바스크립트 파일은 페이지 로드 속도를 올릴 수 있습니다.
 
 ---
 
@@ -313,8 +310,8 @@ JavaScript can "display" data in different ways:
 *  Writing into the browser console, using console.log().
 
 *  경고 상자 안에다가 글을 쓸때는 window.alert().를 사용합니다.
-*  HTML안에다 출력할 글을 쓸때는 document.write()를 사용합니다.
-*  HTML요소 안에다 글을쓸때는 innerHTML을 사용합니다.
+*  HTML안에서 출력할 글을 쓸때는 document.write()를 사용합니다.
+*  HTML요소 안에 글을 쓸때는 innerHTML을 사용합니다.
 *  브라우저 콘솔안에다 글을 쓸때는 console.log()를 사용합니다.
 
 ---
@@ -352,7 +349,7 @@ window.alert(5 + 6);
 
 For testing purposes, it is convenient to use document.write():
 
-편리하게 사용하기 위해 document.write()를 다음과 같이 사용하여 테스트 해보겠습니다.:
+편리하게 사용하기 위해 document.write()를 다음과 같이 사용하여 테스트 해보겠습니다.
 
 <pre class="prettyprint">
 Example
@@ -372,7 +369,7 @@ document.write(5 + 6);
 </pre>
 
 Using document.write() after an HTML document is fully loaded, will delete all existing HTML:  
-HTML문서가 완전히 로드 된 후에 document.write()를 사용합니다. 기존에 사용하던 HTML을 삭제합니다:
+HTML문서가 완전히 로드 된 후에 document.write()를 사용하고, 기존에 사용하던 HTML을 삭제합니다.
 
 <pre class="prettyprint">
 &lt;!DOCTYPE html&gt;
@@ -389,7 +386,7 @@ HTML문서가 완전히 로드 된 후에 document.write()를 사용합니다. �
 
 The document.write() method should be used only for testing.
 
-document.write() 방법은 테스트용으로만 사용 되어야 합니다.
+document.write() 방법은 테스트일 경우에만 사용 되어야 합니다.
 
 ---
 
@@ -401,7 +398,7 @@ To access an HTML element, JavaScript can use the document.getElementById(id) me
 The id attribute defines the HTML element. The innerHTML property defines the HTML content:
 
 HTML요소에 들어가려면, 자바스크립트의 document.getElementById(id)방법을 사용해야 합니다.  
-그 아이디속성은 HTML의 요소를 정의합니다. innerHTML속성 정의는 HTML내용의 입니다.
+id속성은 HTML의 요소를 정의합니다. innerHTML속성은 HTML의 내용을 정의합니다.
 
 <pre class="prettyprint">
 &lt;!DOCTYPE html&gt;
@@ -423,7 +420,7 @@ document.getElementById("demo").innerHTML = 5 + 6;
 
 To "display data" in HTML, (in most cases) you will set the value of an innerHTML property.
  
-(대부분의 경우)HTML로"데이터 표시"를 위해, 당신은 innerHTML속성의 값을 설정 해야합니다.
+대부분의 경우에 HTML로 데이터를 표기하기 위해서, 당신은 innerHTML 속성의 값을 설정 해야합니다.
 
 ---
 
@@ -433,8 +430,8 @@ To "display data" in HTML, (in most cases) you will set the value of an innerHTM
 
 In your browser, you can use the console.log() method to display data.  
 Activate the browser console with F12, and select "Console" in the menu.
-
-당신의 브라우저안에서, console.log()방법을 사용해서 데이터를 보여줄 수 있습니다.  
+ 
+console.log()메소드를 사용해서 당신의 브라우저 안에서 데이터를 볼 수 있습니다.
 F12로 브라우저의 콘솔을 활성화 시키고, 메뉴에서 콘솔을 선택합니다.
 
 <pre class="prettyprint">
@@ -466,7 +463,7 @@ console.log(5 + 6);
 
 JavaScript syntax is the set of rules, how JavaScript programs are constructed.
 
-자바스크립트 문법은, 어떻게 자바스크립트 프로그램이 만들어지는가에 대한 규칙이다.
+자바스크립트 문법은, 어떻게 자바스크립트 프로그램이 만들어지는가에 대한 규칙입니다.
 
 ### JavaScript Programs
 
@@ -478,9 +475,9 @@ JavaScript is a programming language.
 JavaScript statements are separated by semicolons.  
 
 컴퓨터에서의 목록중에 '지시'로 '실행'되는것이 컴퓨터 프로그램입니다.  
-프로그램 언어 안에서는 프로그램 명령들을 문 이라고 불린다.  
+프로그램 언어 안에서는 프로그램 명령들을 statements라고 불립니다.  
 자바스크립트는 프로그래밍 언어입니다.  
-자바스크립트 문은 세미콜론으로 구분됩니다.
+자바스크립트 statements는 세미콜론으로 구분됩니다.
 
 <pre class="prettyprint">
 Example
@@ -496,19 +493,19 @@ HTML안에서의, 자바스크립트 프로그램은 웹 브라우저에서 실�
 
 ### JavaScript Statements
 
-### 자바스크립트 문
+### 자바스크립트 Statements
 
 JavaScript statements are composed of:  
 Values, Operators, Expressions, Keywords, and Comments.
 
-자바스크립트 문의 구성:
+자바스크립트 statements의 구성:  
 Values, Operators, Expressions, Keywords, and Comments.  
 
 ---
 
 ### JavaScript Values
 
-### 자바스크립트 values
+### 자바스크립트 값
 
 The JavaScript syntax defines two types of values: Fixed values and variable values.  
 Fixed values are called literals. Variable values are called variables.
@@ -520,12 +517,12 @@ Fixed values are called literals. Variable values are called variables.
 
 ### JavaScript Literals
 
-### 자바스크립트 리터럴
+### 자바스크립트 상수
 
 The most important rules for writing fixed values are:   
 Numbers are written with or without decimals:
 
-고정된 값을 쓸때 가장 중요한 점은:  
+고정된 값을 쓸때 가장 중요한 점:  
 숫자를 소수점이 없이 쓰일경우: 
 
 <pre class="prettyprint">
@@ -535,7 +532,7 @@ Numbers are written with or without decimals:
 </pre>
 
 Strings are text, written within double or single quotes:  
-문자열에 글씨는, 따옴표1개 또는 2개안에 쓰입니다:
+문자열에 글씨는, 따옴표 또는 쌍따옴표 안에서 쓰입니다:
 
 <pre class="prettyprint">
 "John Doe"
@@ -557,7 +554,7 @@ In this example, x is defined as a variable. Then, x is assigned (given) the val
 프로그래밍 언어에서 변수는 데이터 값을 저장하는데 사용합니다.  
 자바스크립트에서는 변수의 핵심단어를 var로 정의하여 사용합니다.  
 =은 변수에 값을 할당하는데 사용합니다.  
-예제에서는 x는 변수로 정의 합니다. 그x에 6이라는 값으로 부여합니다.
+예제에서는 x는 변수로 정의 합니다. 그 다음에 x에 6이라는 값으로 부여합니다.
 
 <pre class="prettyprint">
 var x;
@@ -570,7 +567,7 @@ x = 6;
 ### 자바스크립트 연산자
 
 JavaScript uses an assignment operator ( = ) to assign values to variables:  
-자바스크립트 대입연산자(=)를 사용해서 변수에 값을 부여합니다:
+자바스크립트 대입 연산자(=)를 사용해서 변수에 값을 부여합니다:
 
 <pre class="prettyprint">
 var x = 5;
@@ -593,7 +590,7 @@ The computation is called an evaluation.
 For example, 5 * 10 evaluates to 50:
 
 expression은 값, 변수, 연산자들의 어떤 값에 대한 결과물입니다.  
-그것의 계산은 evaluation라고 불립니다.   
+그 계산 값은 evaluation라고 불립니다.   
 예를들어 5*10의 결과는 50입니다:  
 
 <pre class="prettyprint">
@@ -601,7 +598,7 @@ expression은 값, 변수, 연산자들의 어떤 값에 대한 결과물입니�
 </pre>
 
 Expressions can also contain variable values:  
-게다가 Expressions는 변수에 들어있는 값도 가능합니다: 
+게다가 Expressions는 변수에 들어있는 값으로도 가능합니다: 
 
 <pre class="prettyprint">
 x * 10
@@ -623,9 +620,9 @@ For example, "John" + " " + "Doe", evaluates to "John Doe":
 
 JavaScript keywords are used to identify actions to be performed.   
 The var keyword tells the browser to create a new variable:
-
-자바스크립트 키워드는 행동을 확인할때 사용합니다.  
-var키워드는 브라우저에서 새로운 변수를 만드는것을 말합니다. 
+  
+자바스크립트 키워드는 실행될 동작을 식별할 때 사용 됩니다.  
+var키워드는 브라우저에서 새로운 변수를 만드는 것을 말합니다. 
 
 <pre class="prettyprint">
 var x = 5 + 6;
@@ -642,9 +639,9 @@ Not all JavaScript statements are "executed".
 Code after double slashes // or between /* and */ is treated as a comment.   
 Comments are ignored, and will not be executed: 
 
-모든 자바스크립트가 전부 "실행"되는 것은 아닙니다.  
-주석은 2개의 슬레쉬// 다음에 아니면 /* 와 */ 사이에 코드의 내용을 취급합니다. 
-주석은 무시됩니다, 그리고 실행되지 않습니다.
+모든 자바스크립트의 statements가 전부 "실행"되는 것은 아닙니다.  
+주석은 2개의 슬레쉬// 다음에 아니면 /* 와 */ 사이에 코드의 내용을 처리합니다.   
+주석은 무시되고, 실행되지 않습니다.
 
 <pre class="prettyprint">
 var x = 5;   // I will be executed
@@ -667,7 +664,7 @@ Numbers are not allowed as the first character.
 This way JavaScript can easily distinguish identifiers from numbers.
 
 식별자의 이름들입니다.  
-자바스크립트에서는, 변수에 식별자의 이름을 사용합니다(키워드나 함수나 라벨).   
+자바스크립트에서는, 변수에 식별자의 이름을 사용합니다(키워드, 함수, 라벨).   
 합법적인 이름에대한 규칙은 대부분의 프로그밍 언어들에서 같습니다.   
 식별자를 구성하는 첫번째 글자는 반드시'문자'나'밑줄_'이나 '달러$'로 시작되어야 합니다.   
 첫글자 다음 문자로는 '문자' '숫자' '밑줄_' 또는 '달러$' 표시를 할 수 있습니다.  
@@ -683,15 +680,16 @@ This way JavaScript can easily distinguish identifiers from numbers.
 All JavaScript identifiers are case sensitive.    
 The variables lastName and lastname, are two different variables.
 
-모든 자바스크립트 식별자는 대소문자를 구별합니다.
-변수lastName과lastname 2개는 다른 변수 입니다.
+모든 자바스크립트 식별자는 대소문자를 구별합니다.  
+변수lastName과 lastname 2개는 다른 변수 입니다.
 
 <pre class="prettyprint">
 lastName = "Doe";
 lastname = "Peterson";
 </pre>
 
-JavaScript does not interpret VAR or Var as the keyword var.  
+JavaScript does not interpret VAR or Var as the keyword var. 
+
 자바스크립트는 VAR또는Var로 해석하지 않고 키워드는 var 입니다.
 
 ---
@@ -743,23 +741,23 @@ For a closer look, please study our [Complete Unicode Reference](http://www.w3sc
 
 # JavaScript Statements
 
-# 자바스크립트 문 
+# 자바스크립트 Statements 
 
 ---
 
 In HTML, JavaScript statements are "instructions" to be "executed" by the web browser.
 
-HTML안에는 자바스크립트 문은 웹브라우저의 지시와 지침 입니다.
+HTML안에서 자바스크립트 statements는 웹브라우저의 지시와 지침 입니다.
 
 ---
 
 ### JavaScript Statements
 
-### 자바스크립트 문
+### 자바스크립트 Statements
 
 This statement tells the browser to write "Hello Dolly." inside an HTML element with id="demo":
 
-이 문장은 브라우저에 Hello Dolly를 쓸수있는 것을 말합니다. HTML 요소 안에 id를 demo로 함께 사용합니다.
+이 문장은 브라우저에 HTML 내부 요소 id="demo"에 "Hello Dolly"를 쓰는 것을 말합니다.
 
 <pre class="prettyprint">
 Example
@@ -776,9 +774,9 @@ Most JavaScript programs contain many JavaScript statements.
 The statements are executed, one by one, in the same order as they are written.   
 In this example, x, y, and z is given values, and finally z is displayed:
 
-최고의 자바스크립트 프로그램은 많은 자바스크립트 문이 들어 있습니다.  
+최고의 자바스크립트 프로그램에는 많은 자바스크립트 statements들이 들어 있습니다.  
 그 문은 입력한 순서와 동일한 순서로 하나하나씩 순차적으로 실행 됩니다.
-이 예제는 x, y에 값을 주고 마지막으로 z에 표시합니다:
+이 예제는 x, y에 값을 주고 마지막으로 z에 표시합니다.
 
 <pre class="prettyprint">
 Example
@@ -788,7 +786,8 @@ var z = x + y;
 document.getElementById("demo").innerHTML = z;
 </pre>
 
-JavaScript programs (and JavaScript statements) are often called JavaScript code.  
+JavaScript programs (and JavaScript statements) are often called JavaScript code. 
+
 자바스크립트 프로그램은 흔히 자바스크립트 코드라고도 불립니다.
 
 ---
@@ -800,8 +799,8 @@ JavaScript programs (and JavaScript statements) are often called JavaScript code
 Semicolons separate JavaScript statements.   
 Add a semicolon at the end of each executable statement:
 
-세미콜론은 자바스크립트 문을 분리합니다.  
-각 실행 문장 끝에 세미콜론을 추가합니다.:
+세미콜론은 자바스크립트 statements를 분리합니다.  
+각각의 실행 문장 끝에 세미콜론을 추가합니다.
 
 <pre class="prettyprint">
 a = 5;
@@ -810,7 +809,8 @@ c = a + b;
 </pre>
 
 When separated by semicolons, multiple statements on one line are allowed:  
-세미콜론으로 많은 문장을 한줄로 구역을 나누어 사용할 수 있습니다.:
+
+세미콜론으로 많은 문장을 한줄에 구역을 나누어 사용할 수 있습니다.
 
 <pre class="prettyprint">
 a = 5; b = 6; c = a + b;
@@ -819,20 +819,20 @@ a = 5; b = 6; c = a + b;
 On the web, you might see examples without semicolons.  
 Ending statements with semicolon is not required, but highly recommended.
 
-웹에는 당신의 세미콜론이 없는 예가 보일 것 입니다.   
-끝에 세미콜론을 붙이는거는 필수는 아니지만, 세미콜론을 붙이는 것을 매우 권장한다.
+웹에는 당신의 세미콜론이 없는 예제가 보일 것 입니다.   
+끝에 세미콜론을 붙이는 것이 필수는 아니지만, 세미콜론을 붙이는 것을 추천 합니다.
 
 ---
 
 ### JavaScript White Space
 
-### 자바스크립트 여백
+### 자바스크립트 공백
 
 JavaScript ignores multiple spaces. You can add white space to your script to make it more readable.  
 The following lines are equivalent:
 
-자바스크립트는 다수의 공백을 제외합니다. 당신이 잘 읽을수 있도록 여백을 추가할 수 있습니다.  
-다음에 나오는 줄의 의미는 같습니다:
+자바스크립트는 여러 공백을 무시합니다. 당신이 잘 읽을 수 있도록 공백을 추가할 수 있습니다.  
+다음에 나오는 줄들은 동일 합니다.
 
 <pre class="prettyprint">
 var person = "Hege";
@@ -840,7 +840,8 @@ var person="Hege";
 </pre>
 
 A good practice is to put spaces around operators ( = + - * / ):  
-좋은 방법은 연산자의 주위를 공백을 넣는 것 입니다.
+
+좋은 방법은 연산자의 주위에 공백을 넣는 것 입니다.
 
 var x = y + z;
 
@@ -853,8 +854,8 @@ var x = y + z;
 For best readability, programmers often like to avoid code lines longer than 80 characters.   
 If a JavaScript statement does not fit on one line, the best place to break it, is after an operator:
 
-최고의 가독성을 위해서, 프로그램 라인의 길이가 80자인 코드를 피하는 것입니다.  
-만약 자바스크립트 문이 한줄에 끝나지 않는경우에, 더좋은 방법은 연산자에서 줄바꿈 입니다.
+최고의 가독성을 위해서, 프로그램 라인의 길이가 80자 보다 길은 코드는 피하는 것이 좋습니다.  
+만약 자바스크립트 문이 한줄에 끝나지 않는경우에, 더좋은 방법은 연산자에서 줄바꿈 하는 것입니다.
 
 <pre class="prettyprint">
 Example
@@ -872,9 +873,9 @@ JavaScript statements can be grouped together in code blocks, inside curly brack
 The purpose of code blocks is to define statements to be executed together.   
 One place you will find statements grouped together in blocks, are in JavaScript functions:
 
-자바스크립트문은 {...}내부 코드로 묶어 그룹화 할 수 있습니다.  
+자바스크립트 statements는 {...}내부 코드로 묶어 그룹화 할 수 있습니다.  
 코드 묶음의 목적은 문장이 같이 실행되는 것을 정의합니다.  
-자바스크립트 함수 장소 안에서 당신이 그룹화한 문장을 찾을수 있습니다.
+자바스크립트 함수 안에서 당신은 그룹화된 문장을 찾을 수 있습니다.
 
 <pre class="prettyprint">
 Example
@@ -887,8 +888,8 @@ function myFunction() {
 In this tutorial we use 4 spaces of indentation for code blocks.  
 You will learn more about functions later in this tutorial.
 
-이 튜토리얼에서 우리는 코드불록 들여 쓰기 4공간을 사용했습니다.  
-우리는 더 많은 함수의 기능을 다음에 자세하게 배울 것 입니다.
+우리는 이 튜토리얼의 코드 블록의 4곳에서 들여쓰기를 사용했습니다.  
+우리는 더 많은 함수의 기능에 대해서 다음에 자세하게 배울 것입니다.
 
 ---
 
@@ -899,7 +900,7 @@ You will learn more about functions later in this tutorial.
 JavaScript statements often start with a keyword to identify the JavaScript action to be performed.   
 Here is a list of some of the keywords you will learn about in this tutorial:  
  
-자바스크립트에서 자주 쓰이는 핵심적인 자바스크립트의 실행방법을 확인해 봅시다.  
+자바스크립트에서 자주 쓰이는 핵심적인 자바스크립트의 실행방법을 확인해 보겠습니다.  
 다음 튜토리얼에서 배울 일부 핵심 목록 입니다. 
 
 * break: Terminates a switch or a loop
@@ -915,20 +916,20 @@ Here is a list of some of the keywords you will learn about in this tutorial:
 * var: Declares a variable
 
 * break: 스위치나 루프 종료합니다.
-* continue: 루프 점프나 위에서 시작합니다.
+* continue: 루프 점프나 상단에서 시작합니다.
 * debugger: 자바스크립트의 실행을 중지하고 디버그 함수를 호출합니다.
-* do ... while: 조건이 true인 동안에 묶음 문장을 실행하고 묶음을 반복합니다.
+* do ... while: 조건이 true일 동안에 블록 문장을 반복적으로 실행합니다.
 * for: 명령문 블록이 실행되는 동안에 true상태이기만 하면 실행 됩니다.
 * function: 함수를 선언합니다.
-* if ... else: 표시된 문장 블록 조건에 따라 실행됩니다.
-* return: 기능 종료합니다.
+* if ... else: 표시된 문장의 블록 조건에 따라 실행됩니다.
+* return: 함수를 종료합니다.
 * switch: 표시된 문장 블록은 경우에 따라 실행됩니다.
-* try ... catch: 문장 블록에 오류처리합니다.
-* var: 변수 선언합니다.
+* try ... catch: 문장 블록의 오류를 처리합니다.
+* var: 변수를 선언합니다.
 
 JavaScript keywords are reserved words. Reserved words cannot be used as names for variables.  
 
-자바스크립트 키워드는 단어의 예약입니다. 예약어는 변수 이름으로 사용할 수 없습니다.
+자바스크립트 키워드는 예약어 입니다. 예약어는 변수 이름으로 사용 할 수 없습니다.
 
 ---
 
@@ -957,8 +958,8 @@ Any text between // and the end of the line, will be ignored by JavaScript (will
 This example uses a single line comment before each line, to explain the code:
 
 각 줄의 주석의 시작은 //로 합니다.  
-// 와 줄의 끝 사이에 글은 자바스크립트에서 제외됩니다.(제거하여 보이지 않는다.)  
-이 예제는 각줄의 주석을 줄 앞에 사용하는 것을 설명하는 코드 예제 입니다.
+// 와 줄의 끝 사이에 글은 자바스크립트에서 무시됩니다.(제거되어 보이지 않습니다.)  
+이 예제는 각줄을 설명하기 위해 줄의 앞에 주석을 사용한 코드 예제 입니다.
 
 <pre class="prettyprint">
 Example
@@ -969,7 +970,8 @@ document.getElementById("myP").innerHTML = "My first paragraph.";
 </pre>
 
 This example uses a single line comment at the end of each line, to explain the code:   
-이 예제는 하나의 줄에 주석은 줄의 끝까지 인것을 설명하는 코드 입니다. :
+
+이 예제는 각각의 주석이 한줄의 끝까지 인것을 설명하는 코드 입니다.
 
 <pre class="prettyprint">
 Example
@@ -989,8 +991,9 @@ Any text between /* and */ will be ignored by JavaScript.
 This example uses a multi-line comment (a comment block) to explain the code:
 
 여러줄의 주석의 시작은 /* 로 시작하여 */로 끝납니다.  
-이것은 /* 와 */ 사이에 문자는 자바스크립트에서 제외됩니다.  
-여러줄에 주석 사용에 대한 설명을 한 예제 코드입니다.(주석 묶음)
+이것은 /* 와 */ 사이에 문자는 자바스크립트에서 무시합니다.  
+이 예제는 여러줄의 주석을 사용한 코드에 대한 설명 입니다.
+
 </pre>
 
 <pre class="prettyprint">
@@ -1008,8 +1011,8 @@ document.getElementById("myP").innerHTML = "My first paragraph.";
 It is most common to use single line comments.  
 Block comments are often used for formal documentation.
 
-이것은 흔히 사용하는 단독 주석입니다.  
-묶음 주석은 종종 공식 문서에 사용됩니다.
+이것은 흔히 사용하는 단일 주석입니다.  
+블록 주석은 종종 공식 문서에 사용됩니다.
 
 ---
 
@@ -1021,9 +1024,9 @@ Using comments to prevent execution of code, is suitable for code testing.
 Adding // in front of a code line changes the code lines from an executable line to a comment.   
 This example uses // to prevent execution of one of the code lines:
  
-적절한 코드에 대한 테스트를 위해서 주석을 사용해서 코드의 실행을 방지할 수 있습니다.  
+적절한 코드에 대한 테스트를 위해서 주석을 사용해 코드의 실행을 방지할 수 있습니다.  
 변경될 코드 앞에 // 를 추가해서 주석으로 실행할 수 있습니다.  
-이 예제는 //로 한줄의 실행을 방지한 코드 입니다.:
+이 예제는 //로 한줄의 실행을 방지한 코드 입니다.
 
 <pre class="prettyprint">
 Example
@@ -1032,7 +1035,7 @@ document.getElementById("myP").innerHTML = "My first paragraph.";
 </pre>
 
 This example uses a comment block to prevent execution of multiple lines:  
-이 예제는 주석을 묶음단위로 사용하여 여러줄의 실행을 방지한 것 입니다:
+이 예제는 주석을 블록단위로 사용하여 여러줄의 실행을 방지한 것 입니다:
 
 <pre class="prettyprint">
 Example
@@ -1087,7 +1090,7 @@ From the example above, you can expect:
 
 In this example, price1, price2, and total, are variables:
 
-에제 안에는 price1, price2, total의 변수 입니다:
+예제 안에는 price1, price2, total의 변수 입니다:
 
 <pre class="prettyprint">
 Example
@@ -1116,9 +1119,9 @@ Identifiers can be short names (like x and y), or more descriptive names (age, s
 The general rules for constructing names for variables (unique identifiers) are:  
 
 모든 자바스크립트 변수는 고유의 식별자 이름을 필요로 합니다.  
-식별자 이름은 고유이름으로 불립니다.  
+식별자 이름은 고유의 이름으로 불립니다.  
 식별자는 짧은 x나y처럼 짧은 이름이나 무언가를 설명하는 age,sum,totalVolume으로도 사용이 사능합니다.  
-일반적인 규칙은 변수는 고유의 식별자 이름으로 구성됩니다:
+일반적인 규칙은 변수는 고유의 식별자 이름으로 구성됩니다.
 
 * Names can contain letters, digits, underscores, and dollar signs.
 * Names must begin with a letter
@@ -1129,8 +1132,8 @@ The general rules for constructing names for variables (unique identifiers) are:
 * 이름안에는 달러나, 알파벳이나, 수학기호나, 밑줄로 사용이 가능합니다.
 * 이름을 시작할때는 영문으로 시작합니다.
 * 이름은 달러나 _로도 시작이 가능합니다.(하지만 우리 튜토리얼에서는 사용하지 않습니다)
-* 이름으로는 대소문자를 구분합니다(Y와y는 다른변수 입니다)
-* 자바스크립트의 핵심과 맞는 것을 이름으로 사용합니다.
+* 이름은 대소문자를 구분합니다.(Y와y는 다른변수 입니다)
+* 예약어(자바스크립트 키워드)는 이름으로 사용할 수 없습니다.
 
 JavaScript identifiers are case-sensitive.
 
@@ -1142,10 +1145,11 @@ JavaScript identifiers are case-sensitive.
 
 ### 할당 연산자
 
-In JavaScript, the equal sign (=) is an "assignment" operator, not an "equal to" operator.   
+In JavaScript, the equal sign (=) is an "assignment" operator, not an "equal to" operator.    
 This is different from algebra. The following does not make sense in algebra:
 
-자바스크립트의 = 는 같다는 의미의 연산자가 아닌 할당 연산자 입니다.
+자바스크립트의 = 는 같다는 의미의 연산자가 아닌 할당 연산자 입니다.  
+이것은 수학적인 것과 다릅니다. 다음은 수학적인 이치에 맞지 않습니다.
 
 <pre class="prettyprint">
 x = x + 5
@@ -1155,7 +1159,7 @@ In JavaScript, however, it makes perfect sense: it assigns the value of x + 5 to
 (It calculates the value of x + 5 and puts the result into x. The value of x is incremented by 5.)
 
 자바스크립트 안에서는 정확하게 x + 5의 값을 x에 할당합니다.  
-이것은 수학적인 것과 다릅니다. 다음에 나오는 것은 수학적으로 판달하지
+(그것은 x에 x+5의 결과를 계산하여 넣습니다. x값은 5에 의해 증가됩니다.)
 
 The "equal to" operator is written like == in JavaScript.
 
@@ -1173,7 +1177,7 @@ JavaScript can handle many types of data, but for now, just think of numbers and
 Strings are written inside double or single quotes. Numbers are written without quotes.   
 If you put quotes around a number, it will be treated as a text string.
 
-자바스크립트 변수는 숫자는 100으로, 문자 값은 "John Doe"으로 할 수 있습니다.  
+자바스크립트 변수는 100과 같은 숫자나, 문자 값은 "John Doe"으로 할 수 있습니다.  
 프로그래밍 안에서 문자값은 문자열로 불립니다.  
 자바스크립트는 많은 형식의 데이터를 다룰수 있습니다, 하지만 지금은 숫자와 문자열만 생각하겠습니다.  
 문자열은 쌍따옴표 사이에 문자가 쓰입니다. 숫자는 따옴표 없이 쓰여집니다.  
@@ -1195,8 +1199,8 @@ var answer = 'Yes I am!';
 Creating a variable in JavaScript is called "declaring" a variable.  
 You declare a JavaScript variable with the var keyword:
 
-자바스크립트에서는 변수를 선언해서 변수를 만들수 있습니다.  
-당신은 자바스크립트 변수를 var keyword에 선언합니다. 
+자바스크립트에서는 변수 선언으로 변수를 만들수 있습니다.  
+당신은 자바스크립트 변수를 var keyword로 선언합니다. 
 
 <pre class="prettyprint">
 var carName;
@@ -1204,8 +1208,8 @@ var carName;
 
 After the declaration, the variable has no value. (Technically it has the value of undefined)   
 To assign a value to the variable, use the equal sign:
-
-선언 했던것은, 값이 없는 변수 입니다.(말하자면 값이 의미를 가지고 있지 않다)  
+ 
+선언한 다음에, 변수는 값이 없습니다. (말하자면 값이 의미를 가지고 있지 않다)
 변수에 값을 할당할때는 =를 사용합니다.
 
 <pre class="prettyprint">
@@ -1214,7 +1218,7 @@ carName = "Volvo";
 
 You can also assign a value to the variable when you declare it:  
 
-당신은 변수를 선언할때 값을 넣는것이 가능합니다.
+당신은 변수를 선언할때 값을 넣는 것이 가능합니다.
 
 <pre class="prettyprint">
 var carName = "Volvo";
@@ -1223,8 +1227,8 @@ var carName = "Volvo";
 In the example below, we create a variable called carName and assign the value "Volvo" to it.  
 Then we "output" the value inside an HTML paragraph with id="demo":
 
-아래 예제는 우리가 carName으로 불리는 것과 값으로 "Volvo"라고 넣어서 만들 변수 입니다.  
-그것은 우리가 HTML paragraph with id="demo"안에다가 값을 넣어야 출력 됩니다.
+아래 예제는 우리가 carName으로 불리는 것에 값으로 "Volvo"라고 넣어서 만들 변수 입니다.  
+그것은 우리가 HTML 단락의 id="demo"안에다가 값을 같이 넣어야 출력 됩니다.
 
 <pre class="prettyprint">
 Example
@@ -1258,7 +1262,7 @@ var person = "John Doe", carName = "Volvo", price = 200;
 
 A declaration can span multiple lines:  
 
-새로운 여러줄에다가 선언하는게 가능합니다.
+선언은 여러줄에 할 수 있습니다.
 
 <pre class="prettyprint">
 var person = "John Doe",
@@ -1274,7 +1278,7 @@ In computer programs, variables are often declared without a value. The value ca
 A variable declared without a value will have the value undefined.  
 The variable carName will have the value undefined after the execution of this statement:
 
-컴퓨터 프로그램 안에서는, 변수는 값이 없이 자주 선언됩니다. 계산되어야 하는 값이나 사용자의 입력 같은것은 나중에 제공하는 것이 가능합니다.  
+컴퓨터 프로그램 안에서는, 변수는 값이 없이 자주 선언됩니다. 계산되어야 하는 값이나 사용자의 입력 같은 것은 나중에 제공하는 것이 가능합니다.  
 선언한 변수는 값이 없으면 값이 정의되지 않습니다.  
 명령문을 실행하면 변수 carName의 값이 정의되지 않는 값으로 실행 될 것입니다.
 
@@ -1292,8 +1296,8 @@ var carName;
 If you re-declare a JavaScript variable, it will not lose its value.   
 The variable carName will still have the value "Volvo" after the execution of these statements:
 
-만약 자바스크립트변수를 다시선언을 해도 값을 잃어버리진 않을 것 입니다.   
-변수carName는 계속해서 값으로 "Volvo"를 가지고 문장이 실행 될 것입니다.  
+만약 자바스크립트 변수를 다시선언을 해도 값을 잃어버리진 않을 것 입니다.   
+변수carName은 계속해서 값으로 "Volvo"를 가지고 문장이 실행 될 것입니다.  
 
 <pre class="prettyprint">
 Example
@@ -1318,7 +1322,7 @@ var x = 5 + 2 + 3;
 
 You can also add strings, but strings will be concatenated (added end-to-end):
 
-게다가 당신은 문자열을 추가하면 문자열이 연결되어 집니다.
+게다가 당신은 문자열을 추가하면 문자열이 연결 됩니다.
 
 <pre class="prettyprint">
 Example
@@ -1327,7 +1331,7 @@ var x = "John" + " " + "Doe";
 
 Also try this:  
 
-이것도 시도해 봅니다:
+이것도 시도해 봅시다.
 
 <pre class="prettyprint">
 Example
@@ -1491,7 +1495,7 @@ What a very nice day
 
 Adding two numbers, will return the sum, but adding a number and a string will return a string:
 
-두개의 숫자의 합을 반환 하거나, 숫자나와 문자열을 더하면 문자열로 반환합니다: 
+두개의 숫자의 합을 반환 하거나, 숫자나와 문자열을 더하면 문자열로 반환합니다.
 
 <pre class="prettyprint">
 Example
@@ -1918,7 +1922,7 @@ String, Number, Boolean, Array, Object.
 
 JavaScript variables can hold many data types: numbers, strings, arrays, objects and more:  
 
-자바스크립트 변수들은 많은 데이터 형식들을 가지고 있습니다: 숫자, 문자열, 배열, 객체 와 더많은 것을:
+자바스크립트 변수들은 많은 데이터 형식들을 가지고 있습니다: 숫자, 문자열, 배열, 객체 와 더많은 것을
 
 <pre class="prettyprint">
 var length = 16;                               // Number
@@ -1956,6 +1960,7 @@ var x = "16" + "Volvo";
 </pre>
 
 When adding a number and a string, JavaScript will treat the number as a string.  
+
 자바스크립트는 문자열과 숫자열을 더하면 숫자를 문자로 처리합니다.
 
 <pre class="prettyprint">
@@ -2079,7 +2084,7 @@ You will learn more about numbers later in this tutorial.
 
 Booleans can only have two values: true or false.
 
-논리형은 오직 참 과 거짓 같만 가지고 있습니다.
+Booleans는 true 또는 false의 2개의 값만 가지고 있습니다.
 
 <pre class="prettyprint">
 Example
@@ -2090,7 +2095,7 @@ var y = false;
 Booleans are often used in conditional testing.   
 You will learn more about conditional testing later in this tutorial.  
 
-논리형은 흔히 조건부 테스트 할때 사용됩니다.  
+Booleans는 흔히 조건부 테스트 할때 사용됩니다.  
 당신은 다음 튜토리얼에서 더많은 조건부 테스트에 대해서 배우게 될 것 입니다.
 
 ---
@@ -2149,7 +2154,7 @@ You will learn more about objects later in this tutorial.
 
 You can use the JavaScript typeof operator to find the type of a JavaScript variable:
 
-당신은 자바스크립트 연산자 형식으로 자바스크립트 변수의 에 다음과 같은 형식을 사용할 수 있습니다:
+당신은 자바스크립트 연산자 형식으로 자바스크립트 변수에 다음과 같은 형식을 사용할 수 있습니다.
 
 <pre class="prettyprint">
 Example
@@ -2171,7 +2176,7 @@ In JavaScript, an array is a special type of object. Therefore typeof [1,2,3,4] 
 
 In JavaScript, a variable without a value, has the value undefined. The typeof is also undefined.
 
-자바스크립트에서는 변수에 값이 없으면, 값으로 undefined를 가지고 있습니다. 그것은 형식도 undefined입니다.
+자바스크립트에서는 변수에 값이 없으면, 값으로 undefined를 가지고 있습니다. 그것의 형식 또한 undefined입니다.
 
 <pre class="prettyprint">
 Example
@@ -2180,7 +2185,7 @@ var person;                  // Value is undefined, type is undefined
 
 Any variable can be emptied, by setting the value to undefined. The type will also be undefined.
 
-어떤 변수이든 undefined로 설정하여 값을 비울 수 있습니다. 그것에 대한 형식도 undefined입니다.
+어떤 변수이든 undefined로 설정하여 값을 비울 수 있습니다. 그것의 형식 또한 undefined입니다.
 
 <pre class="prettyprint">
 Example
@@ -2216,17 +2221,18 @@ Unfortunately, in JavaScript, the data type of null is an object.
 You can consider it a bug in JavaScript that typeof null is an object. It should be null.   
 You can empty an object by setting it to null:  
 
-자바스크립트에서 null은 아무것도 의미가없다. 그것은 존재하지 않는 무언가가 될 것입니다.  
+자바스크립트에서 null은 아무런 의미가 없습니다. 그것은 존재하지 않는 무언가가 될 것입니다.  
 불행하게도, null의 데이터 형식은 자바스크립트의 객체입니다.   
 당신은 null형식이 객체인 자바스크립트 문제라고 할 수 있습니다. 그것은 null이 되야합니다.  
-당신은 null로 객체를 비울 수 있습니다:
+당신은 null로 객체를 비울 수 있습니다.
 
 <pre class="prettyprint">
 Example
 var person = null;           // Value is null, but type is still an object
 </pre>
 
-You can also empty an object by setting it to undefined:  
+You can also empty an object by setting it to undefined:
+
 당신은 undefined로 객체를 비울 수 있습니다.
 
 <pre class="prettyprint">
@@ -2298,8 +2304,8 @@ Inside the function, the arguments behave as local variables.
 A Function is much the same as a Procedure or a Subroutine, in other programming languages.
 
 함수name에 파라미터 명단을 열거합니다.  
-함수 인수는 값이 호출 될 때 함수를 받는다. 
-함수 안에 인수는 지역변수를 실행시킵니다.  
+함수 인수는 값이 호출 될 때 함수에 의해 수신된 실제 값을 받습니다.  
+함수 내에서 인수는 로컬 변수 처럼 행동합니다.  
 다른 프로그래밍 언어의 프로시저 또는 서브 루틴과 동일합니다.
 
 ---
@@ -2318,9 +2324,9 @@ You will learn a lot more about function invocation later in this tutorial.
 
 함수안의 코드가 실행될수 있도록 호출되는 기능:
 
-* 이벤트 발생
+* 이벤트 발생(사용자가 버튼을 클릭했을 때)
 * 자바스크립트 코드에서 호출될 때
-* 자동
+* 자동(스스로 호출)
 
 나중에 튜토리얼에서 함수 호출에 대해서 더 많이 배울 것입니다.  
 
@@ -2391,7 +2397,7 @@ Using the example above, toCelsius refers to the function object, and toCelsius(
 Example
 Accessing a function without () will return the function definition:
 
-함수에 ()없이 반환하는 함수 정의 입니다.
+함수에 ()없이 반환하는 함수의 정의입니다.
 
 function toCelsius(fahrenheit) {
     return (5/9) * (fahrenheit-32);
@@ -2423,7 +2429,7 @@ var text = "The temperature is " + x + " Celsius";
 
 You will learn a lot more about functions later in this tutorial.
 
-나중에 튜토리얼에서 기능에대한 더 많은 것을 배울 것 입니다.
+나중에 튜토리얼에서 기능에 대한 더 많은 것을 배울 것 입니다.
 
 ---
 
@@ -5383,11 +5389,11 @@ fruits[10] = "Lemon";                // adds a new element (Lemon) to fruits
 
 ### Looping Array Elements
 
-### 배열 요소 반복
+### 배열 요소 루프
 
 The best way to loop through an array, is using a "for" loop:
 
-배열에 반복문을 사용하는 방법중 가장 좋은 방법은 입니다
+배열에 루프문을 사용하는 방법중 가장 좋은 방법은 입니다
 
 <pre class="prettyprint">
 Example
@@ -6497,7 +6503,7 @@ Because of this, in JavaScript, ~ 5 will not return 10. It will return -6.
 
 Conditional statements are used to perform different actions based on different conditions.
 
-조건문은 특색이 다른 조건에서 수행하기 위해서 사용 됩니다.
+조건문은 다양한 조건을 기반으로 하는 동작을 하기 위해서 사용됩니다.
 
 ---
 
@@ -6514,7 +6520,7 @@ In JavaScript we have the following conditional statements:
 * Use else if to specify a new condition to test, if the first condition is false
 * Use switch to specify many alternative blocks of code to be executed
 
-당신이 코드를 작성할때 매우 자주, 당신은 차이가 나는 조건에서 결정을 하고싶어 합니다.   
+당신이 코드를 작성할때 매우 자주, 다른 조건에서 결정을 하고싶어 합니다.
 당신의 코드에서 조건문을 사용할 수 있습니다.  
 우리는 자바스크립트안에 다음과 같은 조건문을 가질 수 있습니다.
 
@@ -6829,7 +6835,7 @@ If default is not the last case in the switch block, remember to end it with a b
 
 # JavaScript For Loop
 
-# 자바스크립트 For반복
+# 자바스크립트 For루프
 
 ---
 
@@ -6841,7 +6847,7 @@ Loops can execute a block of code a number of times.
 
 ### JavaScript Loops
 
-### 자바스크립트 반복
+### 자바스크립트 루프
 
 Loops are handy, if you want to run the same code over and over again, each time with a different value.  
 Often this is the case when working with arrays:
@@ -6888,7 +6894,7 @@ JavaScript supports different kinds of loops:
 
 ### The For Loop
 
-### For반복
+### For 루프
 
 The for loop is often the tool you will use when you want to create a loop.  
 The for loop has the following syntax:
@@ -6906,9 +6912,9 @@ Statement 1 is executed before the loop (the code block) starts.
 Statement 2 defines the condition for running the loop (the code block).  
 Statement 3 is executed each time after the loop (the code block) has been executed.
 
-Statement 1은 반복(코드 블록)이 시작되기 전에 실행 됩니다.
-Statement 2는 반복(코드 블록)을 실행하기 위한 조건 입니다.
-Statement 3은 반복(코드 블록)이 실행 된 후마다 실행 됩니다.
+Statement 1은 루프(코드 블록)가 시작되기 전에 실행 됩니다.
+Statement 2는 루프(코드 블록)를 실행하기 위한 조건 입니다.
+Statement 3은 루프(코드 블록)가 실행 된 후마다 실행 됩니다.
 
 <pre class="prettyprint">
 Example
@@ -6923,9 +6929,9 @@ Statement 2 defines the condition for the loop to run (i must be less than 5).
 Statement 3 increases a value (i++) each time the code block in the loop has been executed.
 
 위의 예에서 당신은 읽을 수 있었습니다:
-Statement 1은 변수 값에 반복의 시작(var i =0)을 먼져 저장합니다.
-Statement 2는 실행하는 반복의 조건을 정의(i는 5보다 작을때)
-Statement 3은 값이 블록 코드에서 실행 된 각각의 시간을 증가(i++) 시킵니다.
+Statement 1은 변수 값에 루프의 시작(var i =0)을 먼져 저장합니다.
+Statement 2는 실행하는 루프의 조건을 정의(i는 5보다 작을때)
+Statement 3은 값이 블록 코드에서 반복적으로 실행 될 각각의 시간을 증가(i++) 시킵니다.
 
 ---
 
@@ -6937,7 +6943,7 @@ Normally you will use statement 1 to initiate the variable used in the loop (i =
 This is not always the case, JavaScript doesn't care. Statement 1 is optional.   
 You can initiate many values in statement 1 (separated by comma):
 
-당신은 보통은 statement1은 반복에 사용할 변수를 지정합니다.(i = 0)  
+당신은 보통은 statement1은 루프에 사용할 변수를 지정합니다.(i = 0)  
 항상 그런것은 아닙니다, 자바스크립트는 상관하지 않습니다. Statement1은 선택 사항입니다.  
 당신은 쉼표로 statement1의 많은 값들을 구분 할 수 있습니다.
 
@@ -6975,7 +6981,7 @@ If you omit statement 2, you must provide a break inside the loop. Otherwise the
 
 보통 statement2는 초기 변수의 상태를 평가하는데 사용됩니다.  
 항상 그런것은 아닙니다, 자바스크립트는 상관하지 않습니다. Statement2또한 선택사항 입니다.  
-만약 statement2가 true 를 반환하면, 반복문은 다시 시작됩니다, 만약 false를 반환하면, 반복은 끝날 것입니다.  
+만약 statement2가 true 를 반환하면, 반복문은 다시 시작됩니다, 만약 false를 반환하면, 루프는 끝날 것입니다.  
 만약 statement2를 생략한다면, 당신은 반복 안에 break를 제공 해야합니다. 아닐경우에는 그것은 끝없이 반복할 것입니다.  
 이 브라우저는 충돌합니다. 이 튜토리얼의 이후에 break에 대해서 읽어 보십시오.
 
@@ -6992,8 +6998,8 @@ Statement 3 can also be omitted (like when you increment your values inside the 
 
 보통의 statement3은 초기 변수를 증가 시킵니다.  
 항상 그런것은 아닙니다, 자바스크립트는 상관하지 않고, statement3은 선택사항 입니다.  
-
-
+statement3은 음의 증가, 양의증가 또는 그밖에 다른 것도 할 수 있습니다.
+statement3는 (당신의 값을 루프 안에서 증가 시키는 것과 같이) 생략할 수 있습니다.
 
 <pre class="prettyprint">
 Example
@@ -7009,7 +7015,7 @@ for (; i &lt; len; ) {
 
 ### The For/In Loop
 
-### For/In 반복
+### For/In 루프
 
 The JavaScript for/in statement loops through the properties of an object:
 
@@ -7030,11 +7036,11 @@ for (x in person) {
 
 ### The While Loop
 
-### While반복
+### While 루프
 
 The while loop and the do/while loop will be explained in the next chapter.
 
-While과 do/while 반복은 다음 장에서 설명 하겠습니다.
+While과 do/while 루프는 다음 장에서 설명 하겠습니다.
 
 ---
 
@@ -7046,3 +7052,141 @@ While과 do/while 반복은 다음 장에서 설명 하겠습니다.
 [[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_for2)]
 [[연습문제3](http://www.w3schools.com/js/exercise.asp?filename=exercise_for3)]
 [[연습문제4](http://www.w3schools.com/js/exercise.asp?filename=exercise_for4)]
+
+---
+
+---
+
+# JavaScript While Loop
+
+# 자바스크립트 while 반복
+
+---
+
+Loops can execute a block of code as long as a specified condition is true.
+
+명시된 조건이 true일동안 블록 코드를 반복해서 실행하는 것이 가능합니다.  
+
+---
+
+### The While Loop
+
+### While 루프
+
+The while loop loops through a block of code as long as a specified condition is true.
+
+while루프는 명시된 조건이 true일 동안 코드 블록을 반복 합니다.
+
+Syntax 문법
+<pre class="prettyprint">
+while (condition) {
+    code block to be executed
+}
+</pre>
+
+Example  
+In the following example, the code in the loop will run, over and over again, as long as a variable (i) is less than 10:
+
+예제  
+다음 예제는, 변수i가 10보다 작을 동안에, 루프의 코드가 실행되고, 여러번 다시 반복되는 예제 입니다.
+
+<pre class="prettyprint">
+Example
+while (i &lt; 10) {
+    text += "The number is " + i;
+    i++;
+}
+</pre>
+
+If you forget to increase the variable used in the condition, the loop will never end. This will crash your browser.
+
+만약 당신이 변수를 증가시키는 조건을 사용하는 것을 잊었다면, 루프는 종료되지 않습니다. 당신의 브라우저는 충돌합니다.
+
+---
+
+### The Do/While Loop
+
+### Do/While 루프
+
+The do/while loop is a variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.
+
+do/while루프는 while루프에서 변환된 것 입니다. 이 루프는 코드블록을 한번 실행하기 전에 만약 조건이 true인지 확인하고, 조건이 true일 동안에 반복합니다.
+
+Syntax
+<pre class="prettyprint">
+do {
+    code block to be executed
+}
+while (condition);
+</pre>
+
+Example  
+The example below uses a do/while loop. The loop will always be executed at least once, even if the condition is false, because the code block is executed before the condition is tested:
+
+예제  
+이 아래의 예제는 do/while루프를 사용하였습니다. 조건이 테스트전에 코드블록이 실행 되기 때문에, 이 루프는 조건이 false일 경우에도 적어도 1번은 실행 합니다.
+
+<pre class="prettyprint">
+Example
+do {
+    text += "The number is " + i;
+    i++;
+}
+while (i &lt; 10);
+</pre>
+
+Do not forget to increase the variable used in the condition, otherwise the loop will never end!
+
+조건에 대한 변수의 증가 값을 사용하는 것을 잊으면 안됩니다, 그렇지 않는다면 루프는 절대로 끝나지 않습니다.
+
+---
+
+### Comparing For and While
+
+### For과 While 비교하기
+
+If you have read the previous chapter, about the for loop, you will discover that a while loop is much the same as a for loop, with statement 1 and statement 3 omitted.   
+The loop in this example uses a for loop to collect the car names from the cars array:
+
+당신은 이전의 장에서 for loop에 대해서 읽었다면, 당신은 satament1과 statement3의 생략과 같은 while loop와 같은점을 발견 했을 것 입니다.  
+이 루프 예제는 for loop안에서 차 이름을 수집하는 차 배열에 대한 예제 입니다.
+
+<pre class="prettyprint">
+Example
+var cars = ["BMW", "Volvo", "Saab", "Ford"];
+var i = 0;
+var text = "";
+
+for (;cars[i];) {
+    text += cars[i] + "<br>";
+    i++;
+}
+</pre>
+
+The loop in this example uses a while loop to collect the car names from the cars array:
+
+이 루프 예제는 while루프를 사용해서 차 이름을 차 배열에서 반복적으로 가지고 오는 예제입니다.
+
+<pre class="prettyprint">
+Example
+var cars = ["BMW", "Volvo", "Saab", "Ford"];
+var i = 0;
+var text = "";
+
+while (cars[i]) {
+    text += cars[i] + "<br>";
+    i++;
+}
+</pre>
+
+---
+
+### Test Yourself with Exercises!
+
+### 연습문제로 자신을 테스트!
+
+[[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_while1)]
+[[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_while2)]
+[[연습문제3](http://www.w3schools.com/js/exercise.asp?filename=exercise_while3)]
+[[연습문제4](http://www.w3schools.com/js/exercise.asp?filename=exercise_while4)]
+[[연습문제5](http://www.w3schools.com/js/exercise.asp?filename=exercise_while5)]
