@@ -263,9 +263,9 @@ You can place an external script reference in &lt;head&gt; or &lt;body&gt; as yo
 The script will behave as if it was located exactly where the &lt;script&gt; tag is located.
 External scripts cannot contain &lt;script&gt; tags.
 
-당신은 &lt;head&gt;와&lt;body&gt;안에 당신이 좋아하는 장소에 외부 스크립트를 배치할 수 있습니다.
+당신은 &lt;head&gt;나&lt;body&gt;안에 당신이 원하는 곳에 외부 스크립트를 참조 할 수 있습니다.
 이 &lt;script&gt;태그에 위치한 것처럼 스크립트가 동작합니다.
-...외부 스크립트들은 &lt;script&gt;태그들 속에 할 수 없습니다.
+외부스크립트는 &lt;script&gt;태그를 포함할 수 없습니다.
 </pre>
 
 ---
@@ -3733,8 +3733,8 @@ txt.split("");           // Split in characters
 For a complete reference, go to our [Complete JavaScript String Reference](http://www.w3schools.com/jsref/jsref_obj_string.asp).   
 The reference contains descriptions and examples of all string properties and methods.
 
-참고로 완전한 우리의 자바스크립트 레퍼런스를 참고 하세요.  
-레퍼런스에는 모든 문자열 속성과 메소드의 설명과 예제가 들어 있습니다.
+필요한 모든 것이 갖춰진 우리 자바스크립트 String reference참조  
+reference에는 모든 String의 속성과 메소드에 대한 설명과 예제가 들어 있습니다.
 
 ---
 
@@ -4384,13 +4384,13 @@ valueOf() 메서드는 기본값으로 번호 개체를 변환하는 자바스�
 
 ### Complete JavaScript Number Reference
 
-### 완벽한 자바스크립트 숫자를 참고
+### 완벽한 자바스크립트 숫자 Reference
 
 For a complete reference, go to our Complete JavaScript Number Reference.  
 The reference contains descriptions and examples of all Number properties and methods.
 
-완벽한 참고로, 우리는 완벽한 자바스크립트 숫자 참고로 이동합니다.  
-기준은 모든 수의 속성과 메소드의 설명과 예제가 들어 있습니다.
+필요한 모든 것이 갖춰진 우리 자바스크립트 Number Reference참조. 
+reference에는 모든 Number의 속성과 메소드에 대한 설명과 예제가 들어 있습니다. 
 
 ---
 
@@ -4593,13 +4593,13 @@ tan(x)			각에대한 탄젠트를 반환합니다.
 
 ### Complete Math Reference
 
-### 전체 수학 참조
+### 전체 수학 Reference
 
 For a complete reference, go to our complete Math object reference.   
 The reference contains descriptions and examples of all Math properties and methods.
 
-완전한 참조로, 우리의 전체 수학 객체 참조로 이동합니다.  
-참조 설명과 모든 수학의 속성과 메서드에 대한 예제가 들어 있습니다.
+필요한 모든 것이 갖춰진 우리 자바스크립트 Math Reference참조. 
+reference에는 모든 Math의 속성과 메소드에 대한 설명과 예제가 들어 있습니다.
 
 ---
 
@@ -6092,13 +6092,13 @@ All JavaScript objects have the valueOf() and toString() methods.
 
 ### Complete Array Reference
 
-### 전체 배열 참조
+### 전체 배열 Rederence
 
 For a complete reference, go to our Complete JavaScript Array Reference.   
 The reference contains descriptions and examples of all Array properties and methods.
 
-완벽한 reference로 이동하여 전체 자바스크립트 배열을 참조.  
-reference는 모든 배열의 속성과 메소드의 설명과 예제가 들어 있습니다.
+필요한 모든 것이 갖춰진 우리 자바스크립트 Array Reference참조.  
+reference에는 모든 Array의 속성과 메소드에 대한 설명과 예제가 들어 있습니다.
 
 ---
 
@@ -6279,13 +6279,13 @@ But with JavaScript, methods and properties are also available to primitive valu
 
 ### Complete Boolean Reference
 
-### 필요한 모든 것이 갖춰진 Boolean 참조
+### 필요한 모든 것이 갖춰진 Boolean Reference
 
 For a complete reference, go to our [Complete JavaScript Boolean Reference](http://www.w3schools.com/jsref/jsref_obj_boolean.asp).  
 The reference contains descriptions and examples of all Boolean properties and methods.
 
-필요한 모든 것이 갖춰진 우리 자바스크립트 Boolean참고 참조  
-참조 설명과 모든 Boolean 속성과 메서드에 대한 예제가 들어 있습니다.
+필요한 모든 것이 갖춰진 우리 자바스크립트 Boolean reference 참조  
+reference에는 모든 Boolean의 속성과 메소드에 대한 설명과 예제가 들어 있습니다.
 
 ---
 
@@ -7190,3 +7190,846 @@ while (cars[i]) {
 [[연습문제3](http://www.w3schools.com/js/exercise.asp?filename=exercise_while3)]
 [[연습문제4](http://www.w3schools.com/js/exercise.asp?filename=exercise_while4)]
 [[연습문제5](http://www.w3schools.com/js/exercise.asp?filename=exercise_while5)]
+
+---
+
+---
+
+# JavaScript Break and Continue
+
+# 자바스크립트의 중단과 계속
+
+---
+
+The break statement "jumps out" of a loop.  
+The continue statement "jumps over" one iteration in the loop.
+
+break statement는 루프에서 밖으로 나가집니다.  
+continue statement는 루프에서 하나씩 반복을 통해 넘어갑니다. 
+
+---
+
+### The Break Statement
+
+### Break Statement
+
+You have already seen the break statement used in an earlier chapter of this tutorial. It was used to "jump out" of a switch() statement.   
+The break statement can also be used to jump out of a loop.    
+The break statement breaks the loop and continues executing the code after the loop (if any):
+
+당신은 이미 이튜토리얼 이전에 break statement에 대해서 switch() statement의 반복을 통하여 본적 있습니다.  
+break statement는 루프를 빠져 나올때도 사용이 가능합니다.  
+break statement는 루프를 중단하거나 루프 다음의 코드를 실행 합니다.
+
+<pre class="prettyprint">
+Example
+for (i = 0; i &lt; 10; i++) {
+    if (i === 3) { break; }
+    text += "The number is " + i + "&lt;br&gt;";
+}
+</pre>
+
+---
+
+### The Continue Statement
+
+### Continue Statement
+
+The continue statement breaks one iteration (in the loop), if a specified condition occurs, and continues with the next iteration in the loop.  
+This example skips the value of 3:
+
+continue statement는 한번의 반복(루프 안에서)을 마치고, 만약 명시된 조건의 일이 일어나면, 계속 다음 루프를 반복합니다.   
+이 예제는 3의 값을 넘어가는 예제입니다.
+
+<pre class="prettyprint">
+Example
+for (i = 0; i &lt; 10; i++) {
+    if (i === 3) { continue; }
+    text += "The number is " + i + "&lt;br&gt;";
+}
+</pre>
+
+---
+
+### JavaScript Labels
+
+### 자바스클비트 라벨
+
+To label JavaScript statements you precede the statements with a label name and a colon:
+
+JavaScript statements의 라벨을 지정하려면 statements의 앞에 이름과 콜론을 선언합니다.
+
+<pre class="prettyprint">
+label:
+statements
+</pre>
+
+The break and the continue statements are the only JavaScript statements that can "jump out of" a code block.
+
+break와 continue statements는 자바스크립트 statements들의 코드 블록만 나갈수 있습니다.
+
+Syntax: 문법
+
+<pre class="prettyprint">
+break labelname; 
+
+continue labelname;
+</pre>
+
+The continue statement (with or without a label reference) can only be used to skip one loop iteration.  
+The break statement, without a label reference, can only be used to jump out of a loop or a switch.  
+With a label reference, the break statement can be used to jump out of any code block:
+
+continue statement는 오직 하나의 루프 반복을 건너 뛸 경우에 사용이 가능합니다.  
+break statement는, 라벨을 참조하지 않고, 오직 루프를 빠져나오거나 switch에서 사용이 가능합니다.  
+라벨을 참고하여, break statement는 모든 코드 블록을 빠져나올때 사용합니다.
+
+<pre class="prettyrpint">
+Example
+var cars = ["BMW", "Volvo", "Saab", "Ford"];
+list: {
+    text += cars[0] + "<br>"; 
+    text += cars[1] + "<br>"; 
+    text += cars[2] + "<br>"; 
+    text += cars[3] + "<br>"; 
+    break list;
+    text += cars[4] + "<br>"; 
+    text += cars[5] + "<br>"; 
+}
+</pre>
+
+A code block is a block of code between { and }.
+
+코드블록은 {와} 사이에 코드블록 입니다.
+
+---
+
+### Test Yourself with Exercises!
+
+### 연습문제로 자신을 테스트!
+
+[[연습문제1](http://www.w3schools.com/js/exercise.asp?filename=exercise_break1)]
+[[연습문제2](http://www.w3schools.com/js/exercise.asp?filename=exercise_break2)]
+[[연습문제3](http://www.w3schools.com/js/exercise.asp?filename=exercise_break3)]
+[[연습문제4](http://www.w3schools.com/js/exercise.asp?filename=exercise_break4)]
+[[연습문제5](http://www.w3schools.com/js/exercise.asp?filename=exercise_break5)]
+
+---
+
+---
+
+# JavaScript Type Conversion
+
+# 자바스크립트 타입 변환
+
+---
+
+Number() converts to a Number, String() converts to a String, Boolean() converts to a Boolean.
+
+Number()를 숫자로 변환, String()을 문자로 변환, Boolean()을 논리형으로 변환합니다.
+
+---
+
+### JavaScript Data Types
+
+### 자바스크립트 날짜 형식
+
+In JavaScript there are 5 different data types that can contain values:
+
+자바스크립트는 5가지의 다른 데이터 형식으로 값이 들어 있습니다.
+
+* string 문자형
+* number 숫자형
+* boolean 논리형
+* object 오브젝트
+* functions 함수
+
+There are 3 types of objects:
+
+오브젝트는 3가지 타입이 존재합니다.
+
+* Object
+* Date
+* Array
+
+And 2 data types that cannot contain values:
+
+그리고 2가지의 데이터 타입으로 존재하지 않는 값이 들어갑니다.
+
+* null
+* undefined
+
+---
+
+### The typeof Operator
+
+### typeof연산자
+
+You can use the typeof operator to find the data type of a JavaScript variable.
+
+당신은 typeof연산자를 사용해서 자바스크립트 변수의 데이터 형식을 찾을 수 있습니다.
+
+<pre class="prettyprint">
+Example
+typeof "John"                 // Returns string 
+typeof 3.14                   // Returns number
+typeof NaN                    // Returns number
+typeof false                  // Returns boolean
+typeof [1,2,3,4]              // Returns object
+typeof {name:'John', age:34}  // Returns object
+typeof new Date()             // Returns object
+typeof function () {}         // Returns function
+typeof myCar                  // Returns undefined (if myCar is not declared)
+typeof null                   // Returns object
+</pre>
+
+Please observe:
+
+지켜야할 사항:
+
+* The data type of NaN is number
+* The data type of an array is object
+* The data type of a date is object
+* The data type of null is object
+* The data type of an undefined variable is undefined
+
+* NaN의 데이터 형식은 숫자 입니다.
+* 배열의 데이터형식은 오브젝트 입니다.
+* 날짜의 데이터 형식은 오브젝트 입니다.
+* null의 데이터 형식은 오브젝트 입니다.
+* 변수가 undefined이면 데이터 형식은 undefined입니다.
+
+You cannot use typeof to determine if a JavaScript object is an array (or a date).
+
+자바스크립트가 배열(또는 날짜)인 경우에는 typeof를 사용해도 알 수 없습니다.
+
+---
+
+### The Data Type of typeof
+
+### typeof의 데이터 형식
+
+The typeof operator is not a variable. It is an operator. Operators ( + - * / ) do not have any data type.   
+But, the typeof operator always returns a string containing the type of the operand.
+
+typeof연산자는 변수가 아닙니다. 이것은 연산자 입니다. 연산자이지만 ( + = * /)데이터 형식을 가지고 있지는 않습니다.
+
+---
+
+### The constructor Property
+
+### 생성자 속성
+
+The constructor property returns the constructor function for all JavaScript variables.
+
+모든 자바스크립트 변수의 생성자 함수는 생성자 속성을 반환합니다.
+
+<pre class="prettyprint">
+Example
+"John".constructor                 // Returns function String()  { [native code] }
+(3.14).constructor                 // Returns function Number()  { [native code] }
+false.constructor                  // Returns function Boolean() { [native code] }
+[1,2,3,4].constructor              // Returns function Array()   { [native code] }
+{name:'John', age:34}.constructor  // Returns function Object()  { [native code] }
+new Date().constructor             // Returns function Date()    { [native code] }
+function () {}.constructor         // Returns function Function(){ [native code] }
+</pre>
+
+You can check the constructor property to find out if an object is an Array (contains the word "Array"):
+
+당신의 객체가 배열(단어배열 포함)인 경우에 생성자 속성을 확인할 수 있습니다.
+
+<pre class="prettyprint">
+Example
+function isArray(myArray) {
+    return myArray.constructor.toString().indexOf("Array") > -1;
+}
+</pre>
+
+You can check the constructor property to find out if an object is a Date (contains the word "Date"):
+
+당신은 객체가 날짜(단어날짜 포함)인 경우에 생성자 속성을 확인할 수 있습니다. 
+
+<pre class="prettyprint">
+Example
+function isDate(myDate) {
+    return myDate.constructor.toString().indexOf("Date") > -1;
+}
+</pre>
+
+---
+
+### JavaScript Type Conversion
+
+### 자바스크립트 형변환
+
+JavaScript variables can be converted to a new variable and another data type:
+
+자바스크립트 변수는 새로운 변수와 다른 데이터 형식으로 형변환이 가능합니다.
+
+* By the use of a JavaScript function
+* Automatically by JavaScript itself
+
+* 자바스크립트 함수를 사용하여
+* 자바스크립트 스스로 자동적으로
+
+---
+
+### Converting Numbers to Strings
+
+### 숫자를 문자로 변환
+
+The global method String() can convert numbers to strings.  
+It can be used on any type of numbers, literals, variables, or expressions:
+
+전역 메소드 String()으로 숫자를 문자로 변환할 수 있습니다.  
+그것은 아무런 숫자, 변수, 정수, 표현 형식에 사용 가능합니다.
+
+<pre class="prettyprint">
+Example
+String(x)         // returns a string from a number variable x
+String(123)       // returns a string from a number literal 123
+String(100 + 23)  // returns a string from a number from an expression
+</pre>
+
+The Number method toString() does the same.
+
+숫자는 toString()와 방법은 같습니다.
+
+<pre class="prettyprint">
+Example
+x.toString()
+(123).toString()
+(100 + 23).toString()
+</pre>
+
+In the chapter Number Methods, you will find more methods that can be used to convert numbers to strings:
+
+이번 장에서 숫자 메소드는, 당신이 많은 방법을 찾을 수 있습니다 숫자에서 문자로 변경하는 
+
+<pre class="prettyprint">
+Method	Description
+toExponential()	Returns a string, with a number rounded and written using exponential notation.
+toFixed()	Returns a string, with a number rounded and written with a specified number of decimals.
+toPrecision()	Returns a string, with a number written with a specified length
+</pre>
+
+### Converting Booleans to Strings
+
+### 논리형을 문자로 변환
+
+The global method String() can convert booleans to strings.
+
+전역 메소드 String()으로 논리형을 문자로 변환할 수 있습니다.
+
+<pre class="prettyprint">
+String(false)        // returns "false"
+String(true)         // returns "true"
+</pre>
+
+The Boolean method toString() does the same.
+
+논리형은 toString()과 방법은 같습니다.
+
+<pre class="prettyprint">
+false.toString()     // returns "false"
+true.toString()      // returns "true"
+</pre>
+
+### Converting Dates to Strings
+
+### 날짜를 문자로 변환
+
+The global method String() can convert dates to strings.
+
+전역 메소드 String()으로 날짜를 문자로 변환할 수 있습니다.
+
+<pre class="prettyprint">
+String(Date())      // returns Thu Jul 17 2014 15:38:19 GMT+0200 (W. Europe Daylight Time)
+</pre>
+
+The Date method toString() does the same.
+
+날짜 메소드는 toString()과 동일한 작업을 합니다.
+
+<pre class="prettyprint">
+Example
+Date().toString()   // returns Thu Jul 17 2014 15:38:19 GMT+0200 (W. Europe Daylight Time)
+</pre>
+
+In the chapter Date Methods, you will find more methods that can be used to convert dates to strings:
+
+날짜메소드 장에서, 당신은 날짜에서 문자열로 변환하는데 사용 할 수 있는 방법을 찾을 수 있을 것 입니다.
+
+<pre class="prettyprint">
+Method	Description
+getDate()	Get the day as a number (1-31)
+getDay()	Get the weekday a number (0-6)
+getFullYear()	Get the four digit year (yyyy)
+getHours()	Get the hour (0-23)
+getMilliseconds()	Get the milliseconds (0-999)
+getMinutes()	Get the minutes (0-59)
+getMonth()	Get the month (0-11)
+getSeconds()	Get the seconds (0-59)
+getTime()	Get the time (milliseconds since January 1, 1970)
+</pre>
+
+---
+
+### Converting Strings to Numbers
+
+### 문자를 숫자로 변환
+
+The global method Number() can convert strings to numbers.  
+Strings containing numbers (like "3.14") convert to numbers (like 3.14).  
+Empty strings convert to 0.   
+Anything else converts to NaN (Not a number).
+
+전역 메소드 Number()로 문자를 숫자로 변환 할수 있습니다.   
+숫자를 포함한 문자열은 숫자로 변환합니다.  
+빈 문자열은 0으로 변환합니다.  
+다른 것은 NaN(숫자가 아닌)으로 변환합니다.
+
+<pre class="prettyprint">
+Number("3.14")    // returns 3.14
+Number(" ")       // returns 0 
+Number("")        // returns 0
+Number("99 88")   // returns NaN
+</pre>
+
+In the chapter Number Methods, you will find more methods that can be used to convert strings to numbers:
+
+Number메소드 장 안에서, 당신은 문자를 숫자로 변환하는 방법에 대해서 더많은 방법을 찾을 수 있을 것 입니다.
+
+<pre class="prettyprint">
+Method	Description
+parseFloat()	Parses a string and returns a floating point number
+parseInt()	Parses a string and returns an integer
+</pre>
+
+---
+
+### The Unary + Operator
+
+### 단항 + 연산자
+
+The unary + operator can be used to convert a variable to a number:
+
+단항 + 연산자는 변수를 숫자로 변환하여 사용이 가능합니다.
+
+<pre class="prettyprint">
+Example
+var y = "5";      // y is a string
+var x = + y;      // x is a number
+</pre>
+
+If the variable cannot be converted, it will still become a number, but with the value NaN (Not a number):
+
+변수는 숫자로 변환할 수 없는경우, 그것은 여전히 NaN값과 숫자가 될 것입니다.
+
+<pre class="prettyprint">
+Example
+var y = "John";   // y is a string
+var x = + y;      // x is a number (NaN)
+</pre>
+
+---
+
+### Converting Booleans to Numbers
+
+### 논리형을 숫자로 변환
+
+The global method Number() can also convert booleans to numbers.
+
+전역 메소드 Number()또한 논리형을 숫자로 변환할 수 있습니다.
+
+<pre class="prettyprint">
+Number(false)     // returns 0
+Number(true)      // returns 1
+</pre>
+
+### Converting Dates to Numbers
+
+### 날짜를 숫자로 변환
+
+The global method Number() can be used to convert dates to numbers.
+
+전역 메소드 Number()는 날짜를 숫자로 변환하여 사용할 수 있습니다.
+
+<pre class="prettyprint">
+d = new Date();
+Number(d)          // returns 1404568027739
+</pre>
+
+The date method getTime() does the same.
+
+날짜 메소드도 getTime()과 동작은 같습니다.
+
+<pre class="prettyprint">
+d = new Date();
+d.getTime()        // returns 1404568027739
+</pre>
+
+### Automatic Type Conversion
+
+### 자동 형변환
+
+When JavaScript tries to operate on a "wrong" data type, it will try to convert the value to a "right" type.   
+The result is not always what you expect:
+
+자바스크립트에서 데이터 형식이 틀린 작동을 하려고 할때, 그것은 오른쪽에 있는 값으로 변환을 시도할 것 입니다.
+
+<pre class="prettyprint">
+5 + null    // returns 5         because null is converted to 0
+"5" + null  // returns "5null"   because null is converted to "null"
+"5" + 2     // returns 52        because 2 is converted to "2"
+"5" - 2     // returns 3         because "5" is converted to 5
+"5" * "2"   // returns 10        because "5" and "2" are converted to 5 and 2
+</pre>
+
+---
+
+### Automatic String Conversion
+
+### 자동 문자열 변환
+
+JavaScript automatically calls the variable's toString() function when you try to "output" an object or a variable:
+
+함수에서 오브젝트나 변수를 출력하려고 할때 자바스크립트는 자동으로 변수에 toString()을 호출합니다.
+
+<pre class="prettyprint">
+document.getElementById("demo").innerHTML = myVar;
+
+// if myVar = {name:"Fjohn"}  // toString converts to "[object Object]"
+// if myVar = [1,2,3,4]       // toString converts to "1,2,3,4"
+// if myVar = new Date()      // toString converts to "Fri Jul 18 2014 09:08:55 GMT+0200"
+</pre>
+
+Numbers and booleans are also converted, but this is not very visible:
+
+숫자나 논리형 또한 변환됩니다, 하지만 이것은 보이지 않을 것 입니다.
+
+<pre class="prettyprint">
+// if myVar = 123             // toString converts to "123"
+// if myVar = true            // toString converts to "true"
+// if myVar = false           // toString converts to "false"
+</pre>
+
+---
+
+### JavaScript Type Conversion Table
+
+### 자바스크립트 형변환 표
+
+This table shows the result of converting different JavaScript values to Number, String, and Boolean:
+
+이 테이블은 숫자, 문자열 및 논리형 자바스크립트 값을 변환한 결과 값 입니다.
+
+<pre class="prettyprint">
+Original		Converted		Converted 		Converted
+Value 			to Number 		to String 		to Boolean
+
+false			0			"false"			false	
+true			1			"true"			true	
+0			0			"0"			false	
+1			1			"1"			true	
+"0"			0			"0"			true	
+"1"			1			"1"			true	
+NaN			NaN			"NaN"			false	
+Infinity		Infinity			"Infinity"		true	
+-Infinity 		-Infinity		"-Infinity"		true	
+""			<mark>0</mark>			""			<mark>false</mark>	
+"20"			20			"20"			true	
+"twenty"		NaN			"twenty"		true	
+[ ]			<mark>0</mark>			""			true	
+[20]			<mark>20</mark>			"20"			true	
+[10,20]			NaN			"10,20"			true	
+["twenty"]		NaN			"twenty"	 	true	
+["ten","twenty"]		NaN			"ten,twenty"		true	
+function(){}		NaN			"function(){}"		true	
+{ }			NaN			"[object Object]"	true	
+null			<mark>0</mark>			"null"			false	
+undefined		NaN			"undefined"		false	
+
+</pre>
+
+Values in quotes indicate string values.   
+Yellow zones values indicate values (some) programmers might not expect.
+
+따옴표 값은 문자열을 나타냅니다.   
+노란색 영역의 값들은 프로그래머의 예상과 다를 수 있다는 것을 나타냅니다.
+
+---
+
+---
+
+# JavaScript Regular Expressions
+
+# 자바스크립트 정규 표현식
+
+---
+
+A regular expression is a sequence of characters that forms a search pattern.  
+The search pattern can be used for text search and text replace operations.
+
+정규 표현식은 문자의 순서나 패턴 형태에 대해서 형성 됩니다.  
+검색 패턴을 사용해서 문자 검색이나 문자 순서를 변경할 수 있습니다.
+
+---
+
+### What Is a Regular Expression?
+
+### 정규 표현식이란 무엇인가?
+
+A regular expression is a sequence of characters that forms a search pattern.   
+When you search for data in a text, you can use this search pattern to describe what you are searching for.  
+A regular expression can be a single character, or a more complicated pattern.  
+Regular expressions can be used to perform all types of text search and text replace operations.
+
+정규 표현식은 문자의 순서나 패턴 형식에 대해서 형성 됩니다.  
+데이터 안의 문자를 검색할 때, 당신은 당신이 찾는것을 위하여 검색 패턴을 사용할 수 있습니다.  
+정규 표현식은 단일 문자나, 복잡한 패턴도 가능합니다.  
+정규 표현식은 모든 형식의 문자 검색이나 문자 순서를 변경할 수 있습니다.
+
+<pre class="prettyprint">
+Syntax
+/pattern/modifiers;
+Example
+var patt = /w3schools/i;
+</pre>
+
+Example explained:
+/w3schools/i  is a regular expression.
+w3schools  is a pattern (to be used in a search).
+i  is a modifier (modifies the search to be case-insensitive).
+
+예제 설명:
+/w3schools/i는 정규 표현식 입니다.  
+w3schools는 (검색할때 사용하는)패턴입니다.
+i수식어는 (대소문자를 구별 하지 않도록 하는 수식어) 입니다.
+
+---
+
+### Using String Methods
+
+### String메소드 사용
+
+In JavaScript, regular expressions are often used with the two string methods: search() and replace().  
+The search() method uses an expression to search for a match, and returns the position of the match.  
+The replace() method returns a modified string where the pattern is replaced.
+
+자바스크립트 에서 정규 표현식은 보통 2개의 string메소드: search()와 replace()를 같이 사용합니다.  
+search()메소드는 표현식 검색의 일치나, 일치된 위치를 반환합니다.
+replace()메소드는 문자열에 패턴을 대신해서 수정합니다.
+
+---
+
+### Using String search() With a Regular Expression
+
+### 문자열 search()와 정규 표현식 사용
+
+<pre class="prettyprint">
+Example
+Use a regular expression to do a case-insensitive search for "w3schools" in a string:
+
+var str = "Visit W3Schools";
+var n = str.search(/w3schools/i);
+The result in n will be:
+
+6
+</pre>
+
+### Using String search() With String
+
+### 문자열 search()와 문자열 사용
+
+The search method will also accept a string as search argument. The string argument will be converted to a regular expression:
+
+search메소드는 검색인자로 문자열을 받아들입니다. 문자열 인수는 정규 표현식으로 변환됩니다.
+
+<pre class="prettyprint">
+Example
+Use a string to do a search for "W3schools" in a string:
+
+var str = "Visit W3Schools!";
+var n = str.search("W3Schools");
+</pre>
+
+---
+
+### Use String replace() With a Regular Expression
+
+### 정규 표현식으로 문자열 replace() 대체 사용
+
+<pre class="prettyprint">
+Example
+Use a case insensitive regular expression to replace Microsoft with W3Schools in a string:
+
+var	str = "Visit Microsoft!";
+var res = str.replace(/microsoft/i, "W3Schools");
+The result in res will be:
+
+Visit W3Schools!
+</pre>
+
+### Using String replace() With a String
+
+### 문자열로 문자열 replace() 대체 사용
+
+The replace() method will also accept a string as search argument:
+
+replace()메소드는 검색인자로 문자열을 받아들입니다.
+
+<pre class="prettyprint">
+var str = "Visit Microsoft!";
+var res = str.replace("Microsoft", "W3Schools");
+</pre>
+
+---
+
+### Did You Notice?
+
+### 알아채셨나요?
+
+Regular expression arguments (instead of string arguments) can be used in the methods above.
+Regular expressions can make your search much more powerful (case insensitive for example).
+   
+(문자열 인수 대신)정규 표현식 인수는 위의 방법으로 사용할 수 있습니다.  
+정규 표현식은 (예를 들어 대소문자를) 당신이 더 정확하게 검색할 수 있도록 만들어 줍니다.
+
+---
+
+### Regular Expression Modifiers
+
+### 정규 표현식 수식어
+
+Modifiers can be used to perform case-insensitive more global searches:
+
+수식어는 전역에서 대소문자를 구별해서 검색을 실핼할 수 있습니다.
+
+<pre class="prettyprint">
+Modifier	Description
+i		Perform case-insensitive matching
+g		Perform a global match (find all matches rather than stopping after the first match)
+m		Perform multiline matching
+
+i		대소문자를 구별하여 맞는 지를 수행합니다.
+g		전역에서 맞는지를 수행합니다.(오히려 모두 일치 했을때 보다 첫번째 일치 되는 것에서 정지 합니다.)
+m		여러 매칭을 수행합니다.
+</pre>
+
+### Regular Expression Patterns
+
+### 정규 표현식 패턴들
+
+Brackets are used to find a range of characters:
+
+괄호는 범위로 문자를 찾는데 사용됩니다.
+
+<pre class="prettyprint">
+Expression	Description
+[abc]		Find any of the characters between the brackets
+[0-9]		Find any of the digits between the brackets
+(x|y)		Find any of the alternatives separated with |
+
+[abc]		괄호 사이의 문자를 찾습니다.
+[0-9]		괄호 사이의 숫자를 찾습니다. 
+(x|y)		|로 구분하여 맞는 값을 찾아냅니다.
+</pre>
+
+Metacharacters are characters with a special meaning:
+
+메타문자는 특별한 의미를 가진 문자 입니다.
+
+<pre class="prettyprint">
+Metacharacter	Description
+\d		Find a digit
+\s		Find a whitespace character
+\b		Find a match at the beginning or at the end of a word
+\uxxxx		Find the Unicode character specified by the hexadecimal number xxxx
+
+\d		숫자를 찾습니다.
+\s		여백 문자를 찾습니다.
+\b		시작 또는 끝에서 일치하는 단어를 찾습니다.
+\uxxxx		16진수 xxxx에 의한 특정유니코드 문자를 찾습니다. 
+</pre>
+
+Quantifiers define quantities:
+
+<pre class="prettyprint">
+Quantifier	Description
+n+		Matches any string that contains at least one n
+n*		Matches any string that contains zero or more occurrences of n
+n?		Matches any string that contains zero or one occurrences of n
+
+n+		적어도 하나의n을 포함한 모든 문자열의 일치
+n*		n은 0개 이상의 항목을 포함하는 모든 문자열 일치
+n?		n개의 0또는 1개 항목을 포함하는 모든 문자열이 일치
+</pre>
+
+### Using the RegExp Object
+
+### 정규식 객체 사용
+
+In JavaScript, the RegExp object is a regular expression object with predefined properties and methods.
+
+자바스크립트의 정규 표현식 객체는 미리정해진 속성과 방법의 정규식 객체입니다.
+
+---
+
+### Using test()
+
+### test()사용
+
+The test() method is a RegExp expression method.  
+It searches a string for a pattern, and returns true or false, depending on the result.  
+The following example searches a string for the character "e":
+
+test()메소드는 정규식 표현 방법입니다.  
+문자열의 패턴 검색 결과에 따라 true 또는 false를 반환합니다.  
+다음은 문자열의 문자"e"를 검색하는 예제 입니다.
+
+<pre class="prettyprint">
+Example
+var patt = /e/;
+patt.test("The best things in life are free!");
+
+Since there is an "e" in the string, the output of the code above will be:
+true
+
+You don't have to put the regular expression in a variable first. The two lines above can be shortened to one:
+
+/e/.test("The best things in life are free!");
+</pre>
+
+### Using exec()
+
+### exec()사용
+
+The exec() method is a RegExp expression method.  
+It searches a string for a specified pattern, and returns the found text.  
+If no match is found, it returns null.  
+The following example searches a string for the character "e":
+
+exec()메소드는 정규식 표현 방법입니다.  
+문자열의 명시된 패턴을 검색해서, 찾은 문자를 반환합니다.  
+만약 일치하는 부분이 없다면, null을 반환합니다.  
+다음은 문자열의 문자"e"를 검색하는 예제입니다.
+
+<pre class="prettyprint">
+Example 1
+/e/.exec("The best things in life are free!");
+Since there is an "e" in the string, the output of the code above will be:
+
+e
+</pre>
+
+### Complete RegExp Reference
+
+### 완벽한 정규식 참조
+
+For a complete reference, go to our [Complete JavaScript RegExp Reference](http://www.w3schools.com/jsref/jsref_obj_regexp.asp).  
+The reference contains descriptions and examples of all RegExp properties and methods.
+
+필요한 모든 것이 갖춰진 우리의 자바스크립트 정규식 Reference 참조  
+reference에는 모든 정규식의 속성과 메소드에 대한 설명과 예제가 들어 있습니다.
