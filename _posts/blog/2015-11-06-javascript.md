@@ -8033,3 +8033,436 @@ The reference contains descriptions and examples of all RegExp properties and me
 
 필요한 모든 것이 갖춰진 우리의 자바스크립트 정규식 Reference 참조  
 reference에는 모든 정규식의 속성과 메소드에 대한 설명과 예제가 들어 있습니다.
+
+---
+
+---
+
+# JavaScript Errors - Throw and Try to Catch
+
+# 자바스크립트 오류 - Throw와 Try to Catch
+
+---
+
+The try statement lets you test a block of code for errors.  
+The catch statement lets you handle the error.  
+The throw statement lets you create custom errors.  
+The finally statement lets you execute code, after try and catch, regardless of the result.  
+
+try구문으로 당신은 코드블록의 오류를 테스트 할 수 있습니다.  
+catch 구문으로 당신은 오류를 처리 할 수 있습니다.  
+throw구문으로 당신은 오류를 지정하여 만들 수 있습니다.
+finally구문으로 당신의 try와 catch의 결과가 어떻든 간에 코드를 실행 합니다.
+
+---
+
+### Errors Will Happen!
+
+### 무슨 오류가 일어날 것인가!
+
+When executing JavaScript code, different errors can occur.  
+Errors can be coding errors made by the programmer, errors due to wrong input, and other unforeseeable things:
+
+자바스크립트 코드를 실행할때, 또다른 오류가발생 할 수 있습니다.  
+오류는 프로그래머에 의해 만들어진 오류로 인하여 잘못된 입력 오류 및 예상불가능한 일을 할 수 있습니다.
+
+<pre class="prettyprint">
+Example
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p id="demo"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+try {
+    adddlert("Welcome guest!");
+}
+catch(err) {
+    document.getElementById("demo").innerHTML = err.message;
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+In the example above we have made a typo in the code (in the try block).  
+The catch block catches the error, and executes code to handle it.
+
+위의 예제에서 우리는 오타를 만들어 냈습니다. (try블록안에) 
+catch블록이 이러한 오류를 찾아내기 위하여 실행합니다.
+
+---
+
+### JavaScript try and catch
+
+### 자바스크립트 try와 catch
+
+The try statement allows you to define a block of code to be tested for errors while it is being executed.  
+The catch statement allows you to define a block of code to be executed, if an error occurs in the try block.  
+The JavaScript statements try and catch come in pairs:
+
+try구문 당신이 그것이 실행되는 동안 오류를 테스크할 코드 블록을 정의 할 수 있습니다.
+try블록에서 오류가 발생 하였을 경우 catch구문은 당신은 코드블록이 실행 될 수 있도록 정의 할 수 있습니다.  
+자바스크립트 구문의 try와 catch는 한쌍 입니다. 
+
+<pre class="prettyprint">
+try {
+    Block of code to try
+}
+catch(err) {
+    Block of code to handle errors
+}
+</pre>
+
+---
+
+### JavaScript can Raise Errors
+
+### 자바스크립트는 오류를 발생 시킬 수 있습니다.
+
+When an error occurs, JavaScript will normally stop, and generate an error message.  
+The technical term for this is: JavaScript will  raise (or throw) an exception.
+
+자바스크립트에서 오류가 발생했을때, 정상적으로 멈추고 오류 메시지를 발생 시킵니다.  
+기술적 용어 입니다: 자바스크립트는 예외를 발생 시킵니다.(또는 throw)
+
+---
+
+### The throw Statement
+
+### throw 구문
+
+The throw statement allows you to create a custom error.  
+Technically you can raise (throw) an exception.  
+The exception can be a JavaScript String, a Number, a Boolean or an Object:
+
+throw구문을 사용하면 사용자 지정 오류를 만들어 낼 수 있습니다.  
+당신은 기술적으로 예외를 발생 시킬 수 있습니다.  
+자바스크립트 문자열과 숫자, 논리, 객체는 예외가 가능합니다.
+
+<pre class="prettyprint">
+throw "Too big";    // throw a text
+throw 500;          // throw a number
+</pre>
+
+If you use throw together with try and catch, you can control program flow and generate custom error messages.
+
+만약 당신이 throw와 try와 catch를 같이 사용 한다면 당신은 프로그램의 흐름을 제어하고 사용자 지정 오류 메시지를 생성 할 수 있습니다. 
+
+---
+
+### Input Validation Example
+
+### 입력 유효성 검사 예제
+ 
+This example examines input. If the value is wrong, an exception (err) is thrown.  
+The exception (err) is caught by the catch statement and a custom error message is displayed:
+
+이 예제는 예외를 검사 합니다. 예외가 있을 시 throw됩니다.
+예외는 catch문에 의해서 사용자 지정 오류 메시지를 표시합니다.
+<pre class="prettyprint">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;Please input a number between 5 and 10:&lt;/p&gt;vvvvvvvvvvvvvvvvv
+
+&lt;input id="demo" type="text"&gt;
+&lt;button type="button" onclick="myFunction()">Test Input&lt;/button&gt;
+&lt;p id="message"&gt;v&lt;/p&gt;
+
+&lt;script&gt;
+function myFunction() {
+    var message, x;
+    message = document.getElementById("message");
+    message.innerHTML = "";
+    x = document.getElementById("demo").value;
+    try { 
+        if(x == "") throw "empty";
+        if(isNaN(x)) throw "not a number";
+        x = Number(x);
+        if(x &lt; 5) throw "too low";
+        if(x &gt; 10) throw "too high";
+    }
+    catch(err) {
+        message.innerHTML = "Input is " + err;
+    }
+}
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+
+---
+
+### HTML Validation
+
+### HTML유효성 검사
+
+The code above is just an example.  
+Modern browsers will often use a combination of JavaScript and built-in HTML validation, using predefined validation rules defined in HTML attributes:
+
+위의 코드 예입니다. 
+현대의 브라우저들은 HTML속성 정의 사전 검증 규칙을 이용하여 자바스크립트의 조합을 사용하여 내장 HTML 검증합니다.
+
+<pre class="prettyprint">
+&lt;input id="demo" type="number" min="5" max="10" step="1"
+</pre>
+
+You can read more about forms validation in a later chapter of this tutorial.
+
+이 튜토리얼 이후 chapter에서 양식 유효성 검사에 대한 자세한 내용을 보실 수 있습니다.
+
+---
+
+### The finally Statement
+
+### finally구문을 사용하면 결과와 관계없이 try와catch후 코스를 실행 할 수 있습니다.
+
+The finally statement lets you execute code, after try and catch, regardless of the result:
+<pre class="preetyprit">
+try {
+    Block of code to try
+}
+catch(err) {
+    Block of code to handle errors
+} 
+finally {
+    Block of code to be executed regardless of the try / catch result
+}
+
+Example
+function myFunction() {
+    var message, x;
+    message = document.getElementById("message");
+    message.innerHTML = "";
+    x = document.getElementById("demo").value;
+    try { 
+        if(x == "") throw "is empty";
+        if(isNaN(x)) throw "is not a number";
+        x = Number(x);
+        if(x > 10) throw "is too high";
+        if(x < 5) throw "is too low";
+    }
+    catch(err) {
+        message.innerHTML = "Error: " + err + ".";
+    }
+    finally {
+        document.getElementById("demo").value = "";
+    }
+}
+</pre>
+
+---
+
+---
+
+# JavaScript Debugging
+
+# 자바스크립트 Debugging
+
+---
+
+You will soon get lost, writing JavaScript code without a debugger.
+
+당신은 곧 debugger 없이 자바스크립트 코드를 써내려 가다가 길을 잃을 것 입니다.
+
+---
+
+### JavaScript Debugging
+
+### 자바스크립트 Debugging
+
+It is difficult to write JavaScript code without a debugger.  
+Your code might contain syntax errors, or logical errors, that are difficult to diagnose.  
+Often, when JavaScript code contains errors, nothing will happen. There are no error messages, and you will get no indications where to search for errors.  
+Normally, errors will happen, every time you try to write some new JavaScript code.
+
+이 debugger없이 자바스크립트 코스를 작성하기 어려울 것 입니다.  
+당신은 코드를 구별할 수 없는 문법 오류나, 논리적인 오류를 포함하고 있습니다.  
+종종 자바스크립트에서 오류가 있을 때, 아무일도 일어하지 않습니다. 오류메시지가 없습니다. 당신은 오류를 검색하는 방법에 는 표시를 얻을 수 없습니다.  
+일반적으로, 오류는 새로운 자바스크립트 코드를 사용하려할때 발생할 것 입니다.
+
+---
+
+### JavaScript Debuggers
+
+### 자바스크립트 Debuggers
+
+Searching for errors in programming code is called code debugging.  
+Debugging is not easy. But fortunately, all modern browsers have a built-in debugger.  
+Built-in debuggers can be turned on and off, forcing errors to be reported to the user.  
+With a debugger, you can also set breakpoints (places where code execution can be stopped), and examine variables while the code is executing.  
+Normally, otherwise follow the steps at the bottom of this page, you activate debugging in your browser with the F12 key, and select "Console" in the debugger menu.
+
+프로그램 코드에서 오류를 검색하는 것을 코드 debugging 이라고 합니다.  
+debugging은 쉽지 않습니다. 하지만 다행스럽게도 현재 모든 브라우저에 debuggers가 탑제되어 있습니다.  
+내장 debuggers는 사용자에게 보고하는 오류를 강제로 켜거나 끌 수 있습니다.  
+코드가 실행되는 동안 debuggers와 함께, 당신은 중단지점(코드 실행이 중지 될 수 있는 지점)을 설정하고 검사할 수 있습니다.   
+일반적으로, 당신의 debuggers는 당신의 브라우저의 F12키와 "Console"안에 debuggers거 메뉴가 있을 것 입니다.
+
+---
+
+### The console.log() Method
+
+### console.log() 메소드
+
+If your browser supports debugging, you can use console.log() to display JavaScript values in the debugger window:
+
+만약 당신의 브라우저가 debugging,을 지원한다면 당신은 console.log()으로 자바스크립트 값을 윈도우 debugger 안에서 볼 수 있을 것 입니다.
+
+<pre class="prettyprint">
+Example
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Web Page</h1>
+
+<script>
+a = 5;
+b = 6;
+c = a + b;
+console.log(c);
+</script>
+
+</body>
+</html>
+</pre>
+
+---
+
+### Setting Breakpoints
+
+### 정지지점 설정
+
+In the debugger window, you can set breakpoints in the JavaScript code.  
+At each breakpoint, JavaScript will stop executing, and let you examine JavaScript values.  
+After examining values, you can resume the execution of code (typically with a play button).
+
+윈도우의 debugger 안에서, 당신은 자바스크립트 코드안에 정지지점을 설정할 수 있습니다.  
+각가의 정지지점은, 자바스크립트가 중지되고 당신은 자바스크립트 값을 검사해야 합니다.  
+값을 검사한 후에는 (일반적으로는 재생버튼) 코드를 다시 시작할 수 있습니다.
+
+---
+
+### The debugger Keyword
+
+### debugger 키워드
+
+The debugger keyword stops the execution of JavaScript, and calls (if available) the debugging function.   
+This has the same function as setting a breakpoint in the debugger.  
+If no debugging is available, the debugger statement has no effect.  
+With the debugger turned on, this code will stop executing before it executes the third line.
+
+debugger 키워드는 자바스크립트 실행을 중지 시키고 debugger 함수를 반환합니다.  
+이는 debugger에 중단점을 설정하는 것과 같은 기능을 가집니다.  
+어떤 debugging을 사용할 수없는 경우에는 debugger거 문은 효과가 없습니다.  
+debugger가 켜져 있는 코드는 세번째 줄을 실행하기 전에 중지 됩니다.
+
+<pre class="prettyprint">
+Example
+var x = 15 * 5;
+debugger;
+document.getElementbyId("demo").innerHTML = x;
+</pre>
+
+---
+
+### Major Browsers' Debugging Tools
+
+### 주된 브라우저 Debugging 도구들
+
+Normally, you activate debugging in your browser with F12, and select "Console" in the debugger menu.  
+Otherwise follow these steps:
+
+일반적으로, 당신은 브라우저에서 F12나 콜손의 디버그 메뉴에서 디버깅을 활성화 시킬 것 입니다.  
+그렇지 않다면 다음과 같이 진행합니다.
+
+### Chrome
+
+* Open the browser.
+* From the menu, select tools.
+* From tools, choose developer tools.
+* Finally, select Console.
+
+* 브라우저를 엽니다.
+* 메뉴에서 도구를 선택합니다.
+* 도구에서 개발자 도구를 선택합니다.
+* 마지막으로, 콘솔을 선택합니다.
+
+### Firefox Firebug
+
+* Open the browser.
+* Go to the web page:
+	http://www.getfirebug.com
+* Follow the instructions how to:
+	install Firebug
+
+* 브라우저를 엽니다.
+* 웹페이지로 이동합니다.
+* 파이어버그 설치 방법에 대한 지침을 따릅니다.
+
+### Internet Explorer
+
+* Open the browser.
+* From the menu, select tools.
+* From tools, choose developer tools.
+* Finally, select Console.
+
+* 브라우저를 엽니다.
+* 메뉴에서 도구를 선택합니다.
+* 도구에서 개발자 도구를 선택합니다.
+* 마지막으로 콘솔을 선택합니다.
+
+### Opera
+
+* Open the browser.
+* Go to the webpage:
+	http://dev.opera.com
+* Follow the instructions how to:
+	add a Developer Console button to your toolbar.
+
+* 브라우저를 엽니다.
+* 웹페이지로 이동합니다.
+* 어떻게 하는지 지시를 따릅니다.
+   도구 모음에 개발자 콘솔 버튼을 추가합니다.
+
+### Safari Firebug
+
+* Open the browser.
+* Go to the webpage:
+	http://extensions.apple.com
+* Follow the instructions how to:
+	install Firebug Lite.
+
+* 브라우저를 엽니다.
+* 웹페이지로 이동합니다.
+* 어떻게 하는지 지시를 따릅니다.
+   Firebug Lite설치
+
+### Safari Develop Menu
+
+* Go to Safari, Preferences, Advanced in the main menu.
+* Check "Enable Show Develop menu in menu bar".
+* When the new option "Develop" appears in the menu:
+	Choose "Show Error Console".
+
+* 주 메뉴에서 사라피 환경 설정 고급으로 이동합니다.
+* 확인 메뉴표시 줄에서 메뉴를 개발 표시 사용
+* 새로운 옵션 개발이 메뉴에 표시 할때
+  "Show Error Console" 를 선택합니다.
+
+---
+
+### Did You Know?
+
+### 당신은 알고 계십니까?
+
+Debugging is the process of testing, finding, and reducing bugs (errors) in computer programs.  
+The first known computer bug was a real bug (an insect), stuck in the electronics.
+
+디버깅은 발견하고 컴퓨터 프로그램의 버그를 감소 시키는 테스트하는 과정입니다. 
+첫번째로 알려진 컴퓨터에 실제 벌래가 갇혀 있었습니다.
