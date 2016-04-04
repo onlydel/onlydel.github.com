@@ -3,6 +3,14 @@ layout: page
 title: Programming log
 permalink: /plog/
 ---
+
+### Apr 1, 2016
+* 안치환, 그 새벽같은 목소리의 노래를 들으면 기운이 난다.
+
+### Mar 31, 2016
+* 말수가 적어진다는 것은 할 말이 없는 것이 아니라 말 할 필요가 없거나 말 해도 소용이 없는 경우 일 수 있다.
+* 기계식 키보드 소리 너무 거슬린다. 열심히 일하는 애들한테 머라 할 수도 없고... 에효~ :( 
+
 ### Jan 25, 2016
 * animation test day 1 [http://javascript.info/tutorial/animation](http://javascript.info/tutorial/animation)
 
