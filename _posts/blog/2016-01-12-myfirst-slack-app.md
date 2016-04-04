@@ -3,7 +3,7 @@ layout: post
 title: 슬랙앱 만들기
 date:   2016-01-12 22:24:23 +9:00 GMT
 categories: 
-  - Drafts
+  - Another Code
 tags: 
   - slack
   - api
