@@ -4,6 +4,15 @@ title: Link Tech
 permalink: /linktech/
 ---
 
+### Meteor
+* [www.meteor.com](https://github.com/meteor/meteor)
+    - [GitHub](https://github.com/meteor/meteor)
+* Tutorials
+    - [https://github.com/AdamBrodzinski/react-ive-meteor](https://github.com/AdamBrodzinski/react-ive-meteor)
+    - [http://javascriptissexy.com/learn-meteor-js-properly/](http://javascriptissexy.com/learn-meteor-js-properly/)
+* [http://mobicon.tistory.com/466](http://mobicon.tistory.com/466)
+* [http://react-in-meteor.readthedocs.io/en/latest/](http://react-in-meteor.readthedocs.io/en/latest/)
+
 ### ATOM
 * [code snippet customizing](https://atom.io/docs/latest/using-atom-basic-customization#cson): 메뉴에서 open your snippent메뉴 클릭 또는, 환경설정 package 탭에서 open config folder 클릭, snippets.cson 파일에 추가하면 된다.
     - ${1}, ${2}..는 커서 위치로서 동일한 번호가 여러개인 경우 해당 위치에 동시에 커서가 위치한다. 
@@ -42,6 +51,8 @@ permalink: /linktech/
     - [http://react.rocks/tag/FullStack](http://react.rocks/tag/FullStack)
     - [http://helmetrex.com](http://helmetrex.com)
 * [ReactCheatSheet](http://reactcheatsheet.com) : React 주요 API들을 모아 놓은 건가?
+* React Testing
+    - [enyme](https://medium.com/airbnb-engineering/enzyme-javascript-testing-utilities-for-react-a417e5e5090f#.vohx7dn37)
 
 ### Mac Tip
 * Finder에서 hidden folder & file 보기 : defaults write com.apple.finder AppleShowAllFiles YES
