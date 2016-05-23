@@ -4,13 +4,28 @@ title: Link Tech
 permalink: /linktech/
 ---
 
-### Meteor
+### 프로토타입 디자인
+* [http://facebook.github.io/origami/](http://facebook.github.io/origami/)
+* [https://www.google.com/webdesigner/](https://www.google.com/webdesigner/)
+* [http://www.relativewave.com/form/](http://www.relativewave.com/form/)
+    - 설치
+
+### Node hosting
+* [http://www.evennode.com](http://www.evennode.com/pricing)
+* [호스팅 목록](https://github.com/nodejs/node-v0.x-archive/wiki/Node-Hosting)
+
+### Meteor & MongoDB
 * [www.meteor.com](https://github.com/meteor/meteor)
     - [GitHub](https://github.com/meteor/meteor)
 * Tutorials
+    - 이건 꼭 봐야해 - [Meteorpedia](http://meteorpedia.com/read/Main_Page)
     - [https://github.com/AdamBrodzinski/react-ive-meteor](https://github.com/AdamBrodzinski/react-ive-meteor)
     - [http://javascriptissexy.com/learn-meteor-js-properly/](http://javascriptissexy.com/learn-meteor-js-properly/)
-* [http://mobicon.tistory.com/466](http://mobicon.tistory.com/466)
+    - [Meteor + Polymer](http://blog.differential.com/meteor-polymer/)
+* Blog
+    - [http://mobicon.tistory.com/466](http://mobicon.tistory.com/466)
+    - [왜 몽고디비를 쓰면 안되는가?](http://www.sarahmei.com/blog/2013/11/11/why-you-should-never-use-mongodb/)
+
 * [http://react-in-meteor.readthedocs.io/en/latest/](http://react-in-meteor.readthedocs.io/en/latest/)
 
 ### ATOM
@@ -103,6 +118,10 @@ permalink: /linktech/
 ### Javascript
 * 튜토리얼
     - [http://javascript.info](http://javascript.info): 볼만한 내용이 많다. 메모리릭
+* ECMA6
+    - [ECMA Compatibility table](http://kangax.github.io/compat-table/es6/)
+    - [BOOK: Exploring ES6](http://exploringjs.com/)
+    - [ES6 CheatSheet](https://github.com/DrkSephy/es6-cheatsheet/blob/master/README_ko.md)
 * Front-End(프론트앤드)개발
     - [http://www.slideshare.net/jinkwonlee52?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideview](http://www.slideshare.net/jinkwonlee52?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideview)
 * [Javascript Library design tutorial](http://code.tutsplus.com/tutorials/build-your-first-javascript-library--net-26796)
