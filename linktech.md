@@ -25,12 +25,15 @@ permalink: /linktech/
 * Blog
     - [http://mobicon.tistory.com/466](http://mobicon.tistory.com/466)
     - [왜 몽고디비를 쓰면 안되는가?](http://www.sarahmei.com/blog/2013/11/11/why-you-should-never-use-mongodb/)
+* Deploy
+    - [MUP로 AWS에 배포하기](http://www.curtismlarson.com/blog/2015/11/03/deploy-meteor-to-aws/)
+
 
 * [http://react-in-meteor.readthedocs.io/en/latest/](http://react-in-meteor.readthedocs.io/en/latest/)
 
 ### ATOM
 * [code snippet customizing](https://atom.io/docs/latest/using-atom-basic-customization#cson): 메뉴에서 open your snippent메뉴 클릭 또는, 환경설정 package 탭에서 open config folder 클릭, snippets.cson 파일에 추가하면 된다.
-    - ${1}, ${2}..는 커서 위치로서 동일한 번호가 여러개인 경우 해당 위치에 동시에 커서가 위치한다. 
+    - ${1}, ${2}..는 커서 위치로서 동일한 번호가 여러개인 경우 해당 위치에 동시에 커서가 위치한다.
 
 ### AWS
 * Nov 01 15: 윈도우 애저는 1년넘게 아직도 계정 가입도 못하고 있는데(결제정보 입력 화면에서 다음으로 넘어가지 않아...), AWS는 약 15분 만에 뚝딱 가입하고 Windows Server 2012인스턴스까지 만들어 로그인까지 성공했다.
@@ -218,14 +221,14 @@ permalink: /linktech/
 * [도커](http://navercast.naver.com/contents.nhn?rid=122&rid=&contents_id=66402)
 * [OCP - Open Container Project](http://www.opencontainers.org/)
 
-    
+
 ### IoT
 * [ms-iot GitHub](https://github.com/ms-iot)
 * 비콘 (Beacon)
     * [ETRI 비콘 연구실](http://beacon.smartcontent.kr/introduce)
     * [대박 Dron Apps Gall.](http://flyver.co/drone-apps/)
 * 인텔
-    * [인텔 IoT 홈](https://software.intel.com/en-us/iot/home) 
+    * [인텔 IoT 홈](https://software.intel.com/en-us/iot/home)
 * Arduino
     * [http://www.arduino.cc/en/Guide/HomePage](http://www.arduino.cc/en/Guide/HomePage)
     * [아두이노 콥터](http://copter.ardupilot.com/)
@@ -292,8 +295,8 @@ permalink: /linktech/
 * [http://mirwebma.tistory.com/27](http://mirwebma.tistory.com/27)
 * [http://devist.tistory.com/97](http://devist.tistory.com/97)
 * [맥에서 개발용 웹서버 구축 가이드](https://mallinson.ca/osx-web-development/) : 다른 어떤것 보다 이게 제일 완벽함.(virtualhost)
-    - 여기에 추가로 custom port를 쓰려면 : httpd.conf에서 
-    
+    - 여기에 추가로 custom port를 쓰려면 : httpd.conf에서
+
       <pre class="prettyprint">
       Listen 80
       <mark>Listen 8080 <-- 추가</mark>
@@ -329,14 +332,14 @@ permalink: /linktech/
 * 아주 상세한 지킬 튜토리얼: [Tutorial](https://www.andrewmunsell.com/tutorials/jekyll-by-example){:target="_blank"}
 * 리퀴드 언어에 대한 문서: [liquid Document](https://docs.shopify.com/themes/liquid-documentation/filters/array-filters){:target="_blank"}
 * 공백을 포함한 태그나 카테고리를 입력하는 방법: 아래와 같이 메타정보를 입력한다.
-        
+
         ---
         layout: post
         title: Visual Studio Code for Mac
         date:   2015-05-11 12:55:58 +9:00 GMT
-        categories: 
+        categories:
           * Visual Studio
-        tags: 
+        tags:
           * Visual Studio Code
           * VS
           * VisualStudio
@@ -344,7 +347,7 @@ permalink: /linktech/
 * 지킬에서 사이드메뉴 나 포스팅 내에 `ul` tag내에 있는 문자열로 목록을 필터링 하는 방법: [관련포스팅](/another code/2015/05/09/깃허브-지킬에서-사이드메뉴-필터링.html)
 * `post_url` <mark>사용시 오류 발생.(이것 때문에 엄청 고생했다.)</mark>
 * 목록에서 `pre` tag를 사용하는 방법: `pre` tag를 문단의 맨 앞 컬럼에서 시작할 경우 목록을 벗어나게 된다. 이 경우 `pre` tag 부분을 모두 선택한 다음 `tab`키를 눌러 앞쪽에 `tab`문자 하나를 넣어 주면 된다.
-    
+
     <pre class="prettyprint">
     1. 하나
     2. 둘
