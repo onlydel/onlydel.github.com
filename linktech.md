@@ -22,14 +22,16 @@ permalink: /linktech/
     - [https://github.com/AdamBrodzinski/react-ive-meteor](https://github.com/AdamBrodzinski/react-ive-meteor)
     - [http://javascriptissexy.com/learn-meteor-js-properly/](http://javascriptissexy.com/learn-meteor-js-properly/)
     - [Meteor + Polymer](http://blog.differential.com/meteor-polymer/)
+* 국제화(internationalize)
+    - [i18n](https://atmospherejs.com/tap/i18n)
 * Blog
     - [http://mobicon.tistory.com/466](http://mobicon.tistory.com/466)
     - [왜 몽고디비를 쓰면 안되는가?](http://www.sarahmei.com/blog/2013/11/11/why-you-should-never-use-mongodb/)
 * Deploy
     - [MUP로 AWS에 배포하기](http://www.curtismlarson.com/blog/2015/11/03/deploy-meteor-to-aws/)
-
-
-* [http://react-in-meteor.readthedocs.io/en/latest/](http://react-in-meteor.readthedocs.io/en/latest/)
+    - [NginX로 멀티 호스팅하기]()
+* React for Meteor
+    - [http://react-in-meteor.readthedocs.io/en/latest/](http://react-in-meteor.readthedocs.io/en/latest/)
 
 ### ATOM
 * [code snippet customizing](https://atom.io/docs/latest/using-atom-basic-customization#cson): 메뉴에서 open your snippent메뉴 클릭 또는, 환경설정 package 탭에서 open config folder 클릭, snippets.cson 파일에 추가하면 된다.
@@ -119,6 +121,8 @@ permalink: /linktech/
             ....  </pre>
 
 ### Javascript
+* OpenSource Libraries
+    - [PDF Make](https://github.com/bpampuch/pdfmake)
 * 튜토리얼
     - [http://javascript.info](http://javascript.info): 볼만한 내용이 많다. 메모리릭
 * ECMA6

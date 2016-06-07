@@ -4,6 +4,12 @@ title: Programming log
 permalink: /plog/
 ---
 
+### May 30, 2016
+* 여러 Meteor 서비스를 한 서버에 배포하는 방법 
+    - Nginx vhost를 이용해 도메인 재분배: [https://github.com/arunoda/meteor-up/wiki/Using-Meteor-Up-with-NginX-vhosts#dynamic-vhost-is-it-possible](https://github.com/arunoda/meteor-up/wiki/Using-Meteor-Up-with-NginX-vhosts#dynamic-vhost-is-it-possible)
+    - Nginx configuration: [https://www.linode.com/docs/websites/nginx/how-to-configure-nginx](https://www.linode.com/docs/websites/nginx/how-to-configure-nginx)
+* Meteor Up 기존 배포 삭제 - [http://docs.meteor.com/commandline.html#meteordeploy](http://docs.meteor.com/commandline.html#meteordeploy), [http://stackoverflow.com/questions/10686320/how-do-i-undeploy-a-meteor-application](http://stackoverflow.com/questions/10686320/how-do-i-undeploy-a-meteor-application)
+
 ### Apr 1, 2016
 * 안치환, 그 새벽같은 목소리의 노래를 들으면 기운이 난다.
 
