@@ -4,11 +4,26 @@ title: Link Tech
 permalink: /linktech/
 ---
 
+### Node.js기반의 간단한 HTTP server
+* [http-server](https://github.com/indexzero/http-server)
+
+### HTML, Markdown, PDF Conversions
+* [HTML, Markdown을 PDF로 변환하는 방법](http://peterlu.github.io/2014/08/03/markdown_latex_pdf.html)
+    - [pandoc](http://pandoc.org) - LaTex가 발목 잡는다.
+        + [mactex](https://tug.org/mactex/) - 이걸 다 설치하면 용량이 크고 대신 [BasicTex](http://www.tug.org/mactex/morepackages.html)설치
+        + [pdftex - windows](http://tex.stackexchange.com)
+    - [wkhtmltopdf](http://wkhtmltopdf.org) - 이걸로 한방에 해결
+
 ### 프로토타입 디자인
 * [http://facebook.github.io/origami/](http://facebook.github.io/origami/)
 * [https://www.google.com/webdesigner/](https://www.google.com/webdesigner/)
 * [http://www.relativewave.com/form/](http://www.relativewave.com/form/)
     - 설치
+
+### Blog Framework
+* [Hexo](https://hexo.io): Node.js
+    - [Tutorial](https://www.sitepoint.com/project-documentation-hexo/)
+* [Jekyll](https://jekyllrb.com): Ruby on Rails
 
 ### Node hosting
 * [http://www.evennode.com](http://www.evennode.com/pricing)
@@ -22,6 +37,7 @@ permalink: /linktech/
     - [https://github.com/AdamBrodzinski/react-ive-meteor](https://github.com/AdamBrodzinski/react-ive-meteor)
     - [http://javascriptissexy.com/learn-meteor-js-properly/](http://javascriptissexy.com/learn-meteor-js-properly/)
     - [Meteor + Polymer](http://blog.differential.com/meteor-polymer/)
+    - [MeteorTips](http://meteortips.com)
 * 국제화(internationalize)
     - [i18n](https://atmospherejs.com/tap/i18n)
 * Blog
@@ -125,10 +141,11 @@ permalink: /linktech/
     - [PDF Make](https://github.com/bpampuch/pdfmake)
 * 튜토리얼
     - [http://javascript.info](http://javascript.info): 볼만한 내용이 많다. 메모리릭
-* ECMA6
+* ECMAScript2015(ES6)
     - [ECMA Compatibility table](http://kangax.github.io/compat-table/es6/)
     - [BOOK: Exploring ES6](http://exploringjs.com/)
     - [ES6 CheatSheet](https://github.com/DrkSephy/es6-cheatsheet/blob/master/README_ko.md)
+    - [Three dots 관련 상세 설명](http://rainsoft.io/how-three-dots-changed-javascript/)
 * Front-End(프론트앤드)개발
     - [http://www.slideshare.net/jinkwonlee52?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideview](http://www.slideshare.net/jinkwonlee52?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideview)
 * [Javascript Library design tutorial](http://code.tutsplus.com/tutorials/build-your-first-javascript-library--net-26796)
