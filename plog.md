@@ -4,6 +4,16 @@ title: Programming log
 permalink: /plog/
 ---
 
+### Jun 28, 2016
+* 스스로 성과를 평가할 수 있는 방법
+  - 과연 어떤 방법이 좋을까?
+  - 깃허브의 커밋갯수를 활용하는건 어떻까? 일한 만큼 커밋의 갯수가 늘어난다. 물론 갯수보다는 일의 가중이 중요하겠지만... 당장 손쉽게 할 수 있는 방법이 아닐까?
+
+### Jun 26, 2016
+* [Meteor Night Jun 23](http://livestream.meteor.com)에서 [GraphQL](http://graphql.org/)과 [Apollo](http://www.apollostack.com/)를 만났다.
+    - GraphQL은 페이스북에서 만든 데이타쿼리언어다. 이제 SQL은 가고 GQL이 오는 건가? 아직 먼 얘기일 수도 있겠지만 트렌드의 흐름이 어떻게 바뀌지 직접 사용해 보고 느껴볼 필요가 있겠다.
+    - Apollo는 Meteor그룹에서 만든(아마도??) GraphQL 기반의 data stack이다. 미티어 자체가 client-side data stack을 가지고 있는 구조였는데 아마도 그 subscription 부분과 server-side 의 publication부분을 하나의 독립된 패키지로 분리하려는 시도가 아닌가 생각된다. 물론 오늘 하루 잠깐본 사이에 모든걸 다 알 수는 없지만, 앞으로 좀더 공부해 보고 실습해 보기로 한다.
+
 ### May 30, 2016
 * 여러 Meteor 서비스를 한 서버에 배포하는 방법 
     - Nginx vhost를 이용해 도메인 재분배: [https://github.com/arunoda/meteor-up/wiki/Using-Meteor-Up-with-NginX-vhosts#dynamic-vhost-is-it-possible](https://github.com/arunoda/meteor-up/wiki/Using-Meteor-Up-with-NginX-vhosts#dynamic-vhost-is-it-possible)
