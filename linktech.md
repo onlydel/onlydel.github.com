@@ -4,6 +4,29 @@ title: Link Tech
 permalink: /linktech/
 ---
 
+### 맥북 초기설치 프로그램
+* [iTerm2](https://www.iterm2.com) 다운로드
+* [Git](http://git-scm.com/download/mac) 다운로드 후 설치
+* [Xcode dev tools, MAC SDK] `$ git` 명령으로 설치 실행
+* [node.js](https://nodejs.org) 다운로드 후 설치
+* [Meteor](https://meteor.com) `$ curl https://install.meteor.com/ | sh`
+* [Sublime Text](https://www.sublimetext.com)
+* [Atom](https://atom.io) 다운로드 후 설치
+    - minimap, minimap-find. , minimap-git-diff package
+* [Chrome](https://www.google.com/chrome/) 다운로드 후 설치
+* [Google Drive](https://tools.google.com/dlpage/drive/index.html) 다운로드 후 설치
+* App Store에서 설치
+    - Keynote
+    - Numbers
+    - Pages
+    - iBooks Author
+    - Xcode
+    - KakaoTalk
+    - 한컴오피스 뷰어
+    - Monosnap
+    - Slack
+    - popCalendar
+
 ### Node.js기반의 간단한 HTTP server
 * [http-server](https://github.com/indexzero/http-server)
 
