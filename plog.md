@@ -4,6 +4,9 @@ title: Programming log
 permalink: /plog/
 ---
 
+### Jul 15, 2016
+* Hexo, 알수 없는 이상한 오류에 30분 헤매다가 `hexo clear`로 해결 본다. 결국, 원인도 모르고 뭘 고쳤는지도 모른다.
+
 ### Jul 1, 2016
 * 포럼 형식의 질문 답변 게시판 프레임웍은 https://www.discourse.org/ 가 갑인가?
 
