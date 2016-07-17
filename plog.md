@@ -4,6 +4,9 @@ title: Programming log
 permalink: /plog/
 ---
 
+### Jul 17, 2016
+* GitHub이나 BitBucket같은 도구로 이슈관리 할때 틈날때 마다 task들을 작게 쪼개서 이슈에 등록해 두고 이슈를 처리해가는 방식으로 작업하는게 지속적인 유지보수에 많은 도움이 된다.
+
 ### Jul 15, 2016
 * Hexo, 알수 없는 이상한 오류에 30분 헤매다가 `hexo clear`로 해결 본다. 결국, 원인도 모르고 뭘 고쳤는지도 모른다.
 
