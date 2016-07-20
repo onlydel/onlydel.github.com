@@ -4,6 +4,17 @@ title: Programming log
 permalink: /plog/
 ---
 
+### Jul 20, 2016
+* Meteor Tip: array로 되어 있는 property에 item을 push하거나 array의 item 객체를 수정하는 mongodb query 작성법
+
+<code class="prettyprint">
+//push item to array property
+Meteor.users.update({_id: userId}, {$push:{"emails": newEmail}});
+
+//set item value of array property
+Meteor.users.update({_id: userId}, {$set:{"emails.0.address": newEmailAddress}});
+</code>
+
 ### Jul 17, 2016
 * GitHub이나 BitBucket같은 도구로 이슈관리 할때 틈날때 마다 task들을 작게 쪼개서 이슈에 등록해 두고 이슈를 처리해가는 방식으로 작업하는게 지속적인 유지보수에 많은 도움이 된다.
 
