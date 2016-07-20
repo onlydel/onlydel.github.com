@@ -5,6 +5,7 @@ permalink: /plog/
 ---
 
 ### Jul 20, 2016
+* Slack연동을 위한 API package : [khamoud:slack-api](https://github.com/krishamoud/meteor-slack-api)
 * Meteor Tip: array로 되어 있는 property에 item을 push하거나 array의 item 객체를 수정하는 mongodb query 작성법
 
 <pre class="prettyprint">
