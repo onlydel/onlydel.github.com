@@ -4,6 +4,9 @@ title: Programming log
 permalink: /plog/
 ---
 
+### Jul 21, 2016
+* [backend timer service](http://stackoverflow.com/questions/38493081/how-to-write-a-backend-service-that-runs-on-a-timer)
+
 ### Jul 20, 2016
 * Slack연동을 위한 API package : [khamoud:slack-api](https://github.com/krishamoud/meteor-slack-api)
 * Meteor Tip: array로 되어 있는 property에 item을 push하거나 array의 item 객체를 수정하는 mongodb query 작성법
