@@ -5,7 +5,9 @@ permalink: /plog/
 ---
 
 ### Jul 21, 2016
-* [backend timer service](http://stackoverflow.com/questions/38493081/how-to-write-a-backend-service-that-runs-on-a-timer)
+* 서버에서 알람기능 구현을 위해
+  - [later.js](https://github.com/bunkat/later)
+  - [backend timer service](http://stackoverflow.com/questions/38493081/how-to-write-a-backend-service-that-runs-on-a-timer)
 
 ### Jul 20, 2016
 * Slack연동을 위한 API package : [khamoud:slack-api](https://github.com/krishamoud/meteor-slack-api)
