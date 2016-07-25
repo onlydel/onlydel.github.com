@@ -4,6 +4,9 @@ title: Programming log
 permalink: /plog/
 ---
 
+### Jun 25, 2016
+* [미티어 쿡북](https://github.com/clinical-meteor/software-development-kit) : 코드를 통해 meteor의 실전을 익힐 수 있는 교재
+
 ### Jul 21, 2016
 * 서버에서 알람기능 구현을 위해
   - [later.js](https://github.com/bunkat/later)
