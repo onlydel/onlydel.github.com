@@ -10,6 +10,7 @@ permalink: /plog/
   ```command
   echo DBQuery.prototype._prettyShell = true >> ~/.mongorc.js
   ```
+* 25일 미티어가 [1.4 릴리즈](http://info.meteor.com/blog/announcing-meteor-1.4)를 발표했다. mongoDB, node.js 버전을 업데이트 했다고 한다.
 
 ### Jun 25, 2016
 * [미티어 쿡북](https://github.com/clinical-meteor/software-development-kit) : 코드를 통해 meteor의 실전을 익힐 수 있는 교재
