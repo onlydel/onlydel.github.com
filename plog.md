@@ -4,6 +4,13 @@ title: Programming log
 permalink: /plog/
 ---
 
+### Jun 26, 2016
+* mongoDB shell에서 collection을 조회 할때 잘 정리된 형태로 데이터를 보려면 ..find().pretty()하면 된다. 그런데 매번 pretty()를 호출 하려면 힘드니 아예 find()할때 마다 pretty()가 자동으로 실행 되면 좋겠다.    
+
+  ```command
+  echo DBQuery.prototype._prettyShell = true >> ~/.mongorc.js
+  ```
+
 ### Jun 25, 2016
 * [미티어 쿡북](https://github.com/clinical-meteor/software-development-kit) : 코드를 통해 meteor의 실전을 익힐 수 있는 교재
 
