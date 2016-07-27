@@ -6,6 +6,13 @@ permalink: /plog/
 
 ### Jun 27, 2016
 * intra, www, support를 통합해서 하나의 db를 사용하기 위해 mupx deploy설정으로 같은 서버에 올라가 있는 컨테이너의 다른 인스턴스들 끼리 공유를 해보고자 MONGO_URL을 `mongodb://mondodb:27017/realgrid-support-dev`로 설정했지만 deploy할때 db에 연결 할 수 없다는 에러가 발생 한다. 반나절을 소모하고 원인을 docker container에 있다는 것은 알았는데([이슈](https://github.com/arunoda/meteor-up/issues/758)), 해결 하기위해 docker를 공부해야 하는 부담 때문에, 그리고 어차피 별도의 db서버를 가져가야 하는 것이 최종의 모습이기 때문에 mongolab에 계정을 만들고 500M짜리 무료 서비스를 설정했다. 나중에는 aws나 다른 클라우드 내에서 서비스를 구동하는 것으로 변경해야 한다.
+* 외부 db사용할때 deploy는 mupx config에 적어 주면 되지만 로컬에서 테스트 할때는 연결정보를 환경변수에 담아 주어야 한다.
+
+   ```terminal
+   $ export MONGO_URL='mongodb://user:password@paulo.mongohq.com:12345/'
+   $ echo MONGO_URL
+   $ unset MONGO_URL
+   ```
 
 ### Jun 26, 2016
 * mongoDB shell에서 collection을 조회 할때 잘 정리된 형태로 데이터를 보려면 ..find().pretty()하면 된다. 그런데 매번 pretty()를 호출 하려면 힘드니 아예 find()할때 마다 pretty()가 자동으로 실행 되면 좋겠다.    
