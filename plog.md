@@ -21,7 +21,7 @@ Add correct host key in /Users/onlydel/.ssh/known_hosts to get rid of this messa
 Offending ECDSA key in /Users/onlydel/.ssh/known_hosts:13
 ECDSA host key for ec2-52-78-25-246.ap-northeast-2.compute.amazonaws.com has changed and you have requested strict checking.
 Host key verification failed.
-</pre>
+</pre>  
   설명에 나와있는 `known_hosts:13` 라인을 삭제 하고 다시 실행 하면 된다.
 
 ### Jul 27, 2016
