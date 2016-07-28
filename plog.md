@@ -4,7 +4,25 @@ title: Programming log
 permalink: /plog/
 ---
 ### Jul 28, 2016
-* mongodb deploy와는 별개로 다른 문제가 생겼다. meteor를 1.4로 업데이트 하면서 mupx를 통해 deploy할 때 docker의 설정문제로 deploy가 동작하지 않는다. 그저께 즈음에[관련이슈](https://github.com/meteor/meteor/issues/7475)가 올라오긴 했지만 간단히 해결 할 수 있는 문제는 아닌듯 하다.
+* mongodb deploy와는 별개로 다른 문제가 생겼다. meteor를 1.4로 업데이트 하면서 mupx를 통해 deploy할 때 docker의 설정문제로 deploy가 동작하지 않는다. 그저께 즈음에[관련이슈](https://github.com/meteor/meteor/issues/7475)가 올라오긴 했지만 간단히 해결 할 수 있는 문제는 아닌듯 하다. 간신히 해결(https://github.com/realgrid/intra.realgrid.com/issues/9)
+* aws EC2에 새로운 instance를 만들고 ssh로 접속 할때 다음과 같은 메시지를 만난다면:
+   <pre class="prettypring">
+Warning: Identity file aws-wooritech.pem not accessible: No such file or directory.
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ECDSA key sent by the remote host is
+SHA256:A5Gux2Z0rglng+5PnDjqFUJV8k6j142ZsooTrLVvMeo.
+Please contact your system administrator.
+Add correct host key in /Users/onlydel/.ssh/known_hosts to get rid of this message.
+Offending ECDSA key in /Users/onlydel/.ssh/known_hosts:13
+ECDSA host key for ec2-52-78-25-246.ap-northeast-2.compute.amazonaws.com has changed and you have requested strict checking.
+Host key verification failed.
+</pre>
+  설명에 나와있는 `known_hosts:13` 라인을 삭제 하고 다시 실행 하면 된다.
 
 ### Jul 27, 2016
 * intra, www, support를 통합해서 하나의 db를 사용하기 위해 mupx deploy설정으로 같은 서버에 올라가 있는 컨테이너의 다른 인스턴스들 끼리 공유를 해보고자 MONGO_URL을 `mongodb://mondodb:27017/realgrid-support-dev`로 설정했지만 deploy할때 db에 연결 할 수 없다는 에러가 발생 한다. 반나절을 소모하고 원인을 docker container에 있다는 것은 알았는데([이슈](https://github.com/arunoda/meteor-up/issues/758)), 해결 하기위해 docker를 공부해야 하는 부담 때문에, 그리고 어차피 별도의 db서버를 가져가야 하는 것이 최종의 모습이기 때문에 mongolab에 계정을 만들고 500M짜리 무료 서비스를 설정했다. 나중에는 aws나 다른 클라우드 내에서 서비스를 구동하는 것으로 변경해야 한다.
