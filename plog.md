@@ -17,38 +17,35 @@ permalink: /plog/
   * setUserRoles ( users  roles  [group] )
   * userIsInRole ( user  roles  [group] ) Boolean
   * examples:    
-  <pre class="prettypring">
+  <pre class="prettyprint">
 Roles.addUsersToRoles(userId, 'admin')
 Roles.addUsersToRoles(userId, ['view-secrets'], 'example.com')
 Roles.addUsersToRoles([user1, user2], ['user','editor'])
 Roles.addUsersToRoles([user1, user2], ['glorious-admin', 'perform-action'], 'example.org')
 Roles.addUsersToRoles(userId, 'admin', Roles.GLOBAL_GROUP)
-
 // non-group usage
 Roles.userIsInRole(user, 'admin')
 Roles.userIsInRole(user, ['admin','editor'])
 Roles.userIsInRole(userId, 'admin')
 Roles.userIsInRole(userId, ['admin','editor'])
-
+//
 Roles.removeUsersFromRoles(users.bob, 'admin')
 Roles.removeUsersFromRoles([users.bob, users.joe], ['editor'])
 Roles.removeUsersFromRoles([users.bob, users.joe], ['editor', 'user'])
 Roles.removeUsersFromRoles(users.eve, ['user'], 'group1')
-
 // per-group usage
 Roles.setUserRoles(userId, 'admin')
 Roles.setUserRoles(userId, ['view-secrets'], 'example.com')
 Roles.setUserRoles([user1, user2], ['user','editor'])
 Roles.setUserRoles([user1, user2], ['glorious-admin', 'perform-action'], 'example.org')
 Roles.setUserRoles(userId, 'admin', Roles.GLOBAL_GROUP)
-
+//
 Roles.userIsInRole(user,   ['admin','editor'], 'group1')
 Roles.userIsInRole(userId, ['admin','editor'], 'group1')
 Roles.userIsInRole(userId, ['admin','editor'], Roles.GLOBAL_GROUP)
-
 // this format can also be used as short-hand for Roles.GLOBAL_GROUP
 Roles.userIsInRole(user, 'admin')
-  </pre>
+</pre>
 
 ### Jul 28, 2016
 * mongodb deploy와는 별개로 다른 문제가 생겼다. meteor를 1.4로 업데이트 하면서 mupx를 통해 deploy할 때 docker의 설정문제로 deploy가 동작하지 않는다. 그저께 즈음에[관련이슈](https://github.com/meteor/meteor/issues/7475)가 올라오긴 했지만 간단히 해결 할 수 있는 문제는 아닌듯 하다. 간신히 해결(https://github.com/realgrid/intra.realgrid.com/issues/9)
