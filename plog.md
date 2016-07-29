@@ -3,6 +3,23 @@ layout: page
 title: Programming log
 permalink: /plog/
 ---
+
+### Jul 29, 2016
+* meteor-roles package 주요 API
+  * addUsersToRoles ( users  roles  [group] )
+  * createRole ( role ) String
+  * deleteRole ( role )
+  * getAllRoles () Cursor
+  * getGroupsForUser ( user  [role] ) Array
+  * getRolesForUser ( user  [group] ) Array
+  * getUsersInRole ( role  [group]  [options] ) Cursor
+  * removeUsersFromRoles ( users  roles  [group] )
+  * setUserRoles ( users  roles  [group] )
+  * userIsInRole ( user  roles  [group] ) Boolean
+  
+  <pre class="prettypring">
+  </pre>
+
 ### Jul 28, 2016
 * mongodb deploy와는 별개로 다른 문제가 생겼다. meteor를 1.4로 업데이트 하면서 mupx를 통해 deploy할 때 docker의 설정문제로 deploy가 동작하지 않는다. 그저께 즈음에[관련이슈](https://github.com/meteor/meteor/issues/7475)가 올라오긴 했지만 간단히 해결 할 수 있는 문제는 아닌듯 하다. 간신히 해결(https://github.com/realgrid/intra.realgrid.com/issues/9)
 * aws EC2에 새로운 instance를 만들고 ssh로 접속 할때 다음과 같은 메시지를 만난다면:
