@@ -16,8 +16,38 @@ permalink: /plog/
   * removeUsersFromRoles ( users  roles  [group] )
   * setUserRoles ( users  roles  [group] )
   * userIsInRole ( user  roles  [group] ) Boolean
-  
+  * examples:    
   <pre class="prettypring">
+Roles.addUsersToRoles(userId, 'admin')
+Roles.addUsersToRoles(userId, ['view-secrets'], 'example.com')
+Roles.addUsersToRoles([user1, user2], ['user','editor'])
+Roles.addUsersToRoles([user1, user2], ['glorious-admin', 'perform-action'], 'example.org')
+Roles.addUsersToRoles(userId, 'admin', Roles.GLOBAL_GROUP)
+
+// non-group usage
+Roles.userIsInRole(user, 'admin')
+Roles.userIsInRole(user, ['admin','editor'])
+Roles.userIsInRole(userId, 'admin')
+Roles.userIsInRole(userId, ['admin','editor'])
+
+Roles.removeUsersFromRoles(users.bob, 'admin')
+Roles.removeUsersFromRoles([users.bob, users.joe], ['editor'])
+Roles.removeUsersFromRoles([users.bob, users.joe], ['editor', 'user'])
+Roles.removeUsersFromRoles(users.eve, ['user'], 'group1')
+
+// per-group usage
+Roles.setUserRoles(userId, 'admin')
+Roles.setUserRoles(userId, ['view-secrets'], 'example.com')
+Roles.setUserRoles([user1, user2], ['user','editor'])
+Roles.setUserRoles([user1, user2], ['glorious-admin', 'perform-action'], 'example.org')
+Roles.setUserRoles(userId, 'admin', Roles.GLOBAL_GROUP)
+
+Roles.userIsInRole(user,   ['admin','editor'], 'group1')
+Roles.userIsInRole(userId, ['admin','editor'], 'group1')
+Roles.userIsInRole(userId, ['admin','editor'], Roles.GLOBAL_GROUP)
+
+// this format can also be used as short-hand for Roles.GLOBAL_GROUP
+Roles.userIsInRole(user, 'admin')
   </pre>
 
 ### Jul 28, 2016
