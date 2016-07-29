@@ -5,6 +5,7 @@ permalink: /plog/
 ---
 
 ### Jul 29, 2016
+* router때문인지는 모르겠지만 크롬에서 template을 찾을수 없다는 에러가 발생하고 있다. safari에서는 잘 보이는 페이지가 크롬에서만 에러가 발생한다. [migrate from iron-router to flow-router](https://www.okgrow.com/posts/flow-router-migration-guide)
 * meteor collection에서 특정필드(specific fields)만 가져오는 방법
   * mongoDB는 `find({username: "user"}, {name: 1, phone: 1})` 과 같이 직접 가져올 필드목록을 작성해 줬지만, meteor에서는 `{fields: {name: 1, phone: 1}}` 과 같이 `{fields: ..}`를 사용해야 한다.
 * meteor-roles package 주요 API
