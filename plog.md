@@ -5,6 +5,8 @@ permalink: /plog/
 ---
 
 ### Jul 29, 2016
+* meteor collection에서 특정필드(specific fields)만 가져오는 방법
+  * mongoDB는 `find({username: "user"}, {name: 1, phone: 1})` 과 같이 직접 가져올 필드목록을 작성해 줬지만, meteor에서는 `{fields: {name: 1, phone: 1}}` 과 같이 `{fields: ..}`를 사용해야 한다.
 * meteor-roles package 주요 API
   * addUsersToRoles ( users  roles  [group] )
   * createRole ( role ) String
