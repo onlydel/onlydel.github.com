@@ -4,6 +4,10 @@ title: Programming log
 permalink: /plog/
 ---
 
+### Aug 1, 2016
+* 화면에서 버튼이나 에디터의 사용자 입력을 처리하기 위해 Session, ReactiveDic 등 Reactive Storate를 이용해 쉽게 동작을 데이터처리로 변환할 수 있다.
+  * [Reactive Dict, Reactive Vars, and Session Variables](https://themeteorchef.com/snippets/reactive-dict-reactive-vars-and-session-variables/#tmc-session-variables)
+
 ### Jul 29, 2016
 * router때문인지는 모르겠지만 크롬에서 template을 찾을수 없다는 에러가 발생하고 있다. safari에서는 잘 보이는 페이지가 크롬에서만 에러가 발생한다. [migrate from iron-router to flow-router](https://www.okgrow.com/posts/flow-router-migration-guide)
 * meteor collection에서 특정필드(specific fields)만 가져오는 방법
