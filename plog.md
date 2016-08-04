@@ -4,6 +4,55 @@ title: Programming log
 permalink: /plog/
 ---
 
+### Aug 4, 2016
+* mupx delpoy시 오류: 원인도 알수 없고 실제로 배포도 정상적으로 된것 같고, 실행에도 아무런 문제는 없는데 오류 메시지가 나타난다.
+<pre class="prettypring">
+nxlicensemanager/$ mupx logs --tail=50
+
+Meteor Up: Production Quality Meteor Deployments
+------------------------------------------------
+Configuration file : mup.json
+Settings file      : settings.json
+
+[52.78.34.170]
+> meteor-dev-bundle@0.0.0 install /bundle/bundle/programs/server
+> node npm-rebuild.js
+[52.78.34.170]
+
+> bcrypt@0.8.7 install /bundle/bundle/programs/server/npm/node_modules/meteor/npm-bcrypt/node_modules/bcrypt
+> node-gyp rebuild
+
+make: Entering directory '/bundle/bundle/programs/server/npm/node_modules/meteor/npm-bcrypt/node_modules/bcrypt/build'
+  CXX(target) Release/obj.target/bcrypt_lib/src/blowfish.o
+  CXX(target) Release/obj.target/bcrypt_lib/src/bcrypt.o
+  CXX(target) Release/obj.target/bcrypt_lib/src/bcrypt_node.o
+  SOLINK_MODULE(target) Release/obj.target/bcrypt_lib.node
+  COPY Release/bcrypt_lib.node
+make: Leaving directory '/bundle/bundle/programs/server/npm/node_modules/meteor/npm-bcrypt/node_modules/bcrypt/build'
+bcrypt@0.8.7 /bundle/bundle/programs/server/npm/node_modules/meteor/npm-bcrypt/node_modules/bcrypt
+bindings@1.2.1 /bundle/bundle/programs/server/npm/node_modules/meteor/npm-bcrypt/node_modules/bindings
+nan@2.3.5 /bundle/bundle/programs/server/npm/node_modules/meteor/npm-bcrypt/node_modules/nan
+{
+  "meteor-dev-bundle": "0.0.0",
+  "npm": "3.10.5",
+  "ares": "1.10.1-DEV",
+  "http_parser": "2.5.2",
+  "icu": "56.1",
+  "modules": "46",
+  "node": "4.4.7",
+  "openssl": "1.0.2h",
+  "uv": "1.8.0",
+  "v8": "4.5.103.36",
+  "zlib": "1.2.8"
+}
+=> Starting meteor app on port:80
+[52.78.34.170] npm WARN meteor-dev-bundle@0.0.0 No description
+npm WARN meteor-dev-bundle@0.0.0 No repository field.
+npm WARN meteor-dev-bundle@0.0.0 No license field.
+</pre>
+
+* mup.json 파일에 ` "deployCheckWaitTime": 60,` 속성 시간을 60으로 늘리고나서 오류가 나타나지 않게 되었다. 지난번에도 그러더니... 원인은 몰라
+
 ### Aug 1, 2016
 * 화면에서 버튼이나 에디터의 사용자 입력을 처리하기 위해 Session, ReactiveDic 등 Reactive Storate를 이용해 쉽게 동작을 데이터처리로 변환할 수 있다.
   * [Reactive Dict, Reactive Vars, and Session Variables](https://themeteorchef.com/snippets/reactive-dict-reactive-vars-and-session-variables/#tmc-session-variables)
