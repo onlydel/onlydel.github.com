@@ -7,7 +7,7 @@ permalink: /plog/
 ### Aug 4, 2016
 * mupx delpoy시 오류: 원인도 알수 없고 실제로 배포도 정상적으로 된것 같고, 실행에도 아무런 문제는 없는데 오류 메시지가 나타난다.
 
-<pre class="prettyprint">
+```
 nxlicensemanager/$ mupx logs --tail=50
 
 Meteor Up: Production Quality Meteor Deployments
@@ -50,7 +50,7 @@ nan@2.3.5 /bundle/bundle/programs/server/npm/node_modules/meteor/npm-bcrypt/node
 [52.78.34.170] npm WARN meteor-dev-bundle@0.0.0 No description
 npm WARN meteor-dev-bundle@0.0.0 No repository field.
 npm WARN meteor-dev-bundle@0.0.0 No license field.
-</pre>
+```
 
 * mup.json 파일에 ` "deployCheckWaitTime": 60,` 속성 시간을 60으로 늘리고나서 오류가 나타나지 않게 되었다. 지난번에도 그러더니... 원인은 몰라
 
