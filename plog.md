@@ -7,7 +7,7 @@ permalink: /plog/
 ### Aug 4, 2016
 * mupx delpoy시 오류: 원인도 알수 없고 실제로 배포도 정상적으로 된것 같고, 실행에도 아무런 문제는 없는데 오류 메시지가 나타난다.
 
-```
+<pre>
 nxlicensemanager/$ mupx logs --tail=50
 
 Meteor Up: Production Quality Meteor Deployments
@@ -50,7 +50,7 @@ nan@2.3.5 /bundle/bundle/programs/server/npm/node_modules/meteor/npm-bcrypt/node
 [52.78.34.170] npm WARN meteor-dev-bundle@0.0.0 No description
 npm WARN meteor-dev-bundle@0.0.0 No repository field.
 npm WARN meteor-dev-bundle@0.0.0 No license field.
-```
+</pre>
 
 * mup.json 파일에 ` "deployCheckWaitTime": 60,` 속성 시간을 60으로 늘리고나서 오류가 나타나지 않게 되었다. 지난번에도 그러더니... 원인은 몰라
 
@@ -106,7 +106,8 @@ Roles.userIsInRole(user, 'admin')</pre>
 ### Jul 28, 2016
 * mongodb deploy와는 별개로 다른 문제가 생겼다. meteor를 1.4로 업데이트 하면서 mupx를 통해 deploy할 때 docker의 설정문제로 deploy가 동작하지 않는다. 그저께 즈음에[관련이슈](https://github.com/meteor/meteor/issues/7475)가 올라오긴 했지만 간단히 해결 할 수 있는 문제는 아닌듯 하다. 간신히 해결(https://github.com/realgrid/intra.realgrid.com/issues/9)
 * aws EC2에 새로운 instance를 만들고 ssh로 접속 할때 다음과 같은 메시지를 만난다면:
-   <pre class="prettypring">
+
+   <pre>
 Warning: Identity file aws-wooritech.pem not accessible: No such file or directory.
 @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
 @    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
