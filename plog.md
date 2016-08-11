@@ -4,6 +4,10 @@ title: Programming log
 permalink: /plog/
 ---
 
+### Aug 11, 2016
+* hexo deploy github pages
+  * [https://hexo.io/docs/deployment.html](https://hexo.io/docs/deployment.html)
+
 ### Aug 4, 2016
 * mupx delpoy시 오류: 원인도 알수 없고 실제로 배포도 정상적으로 된것 같고, 실행에도 아무런 문제는 없는데 오류 메시지가 나타난다.
 
