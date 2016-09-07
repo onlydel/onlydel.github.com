@@ -4,6 +4,14 @@ title: Programming log
 permalink: /plog/
 ---
 
+### Sep 7, 2016
+* SSL무료 인증서
+  * [Encrypt](https://blog.elpo.net/get-wosign-multidomain-certificate/)
+* Meteor - React - Material UI Framework - [출처](https://www.facebook.com/groups/meteorschool/permalink/598472800317159/)
+  * [React Material UI](http://www.material-ui.com/#/)
+  * [React Grid](http://roylee0704.github.io/react-flexbox-grid/)
+  * [React Responsive](https://github.com/contra/react-responsive)
+
 ### Aug 11, 2016
 * hexo deploy github pages
   * [https://hexo.io/docs/deployment.html](https://hexo.io/docs/deployment.html)
