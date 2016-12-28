@@ -4,6 +4,9 @@ title: Programming log
 permalink: /plog/
 ---
 
+### Dec 28, 2016
+* [Meteor Cookbook](http://meteorgitbook.harp.io/)
+
 ### Jul 1, 2016
 * 포럼 형식의 질문 답변 게시판 프레임웍은 https://www.discourse.org/ 가 갑인가?
 
@@ -13,7 +16,7 @@ permalink: /plog/
 ### Jun 28, 2016
 * 스스로 성과를 평가(평가라기보다는 검증)할 수 있는 방법
   - 과연 어떤 방법이 좋을까?
-  - 깃허브의 커밋갯수를 활용하는건 어떨까? 일한 만큼 커밋의 갯수가 늘어난다. 물론 갯수보다는 일의 가중이 중요하겠지만... 당장 손쉽게 할 수 있는 방법이 아닐까? 역시 이 방법은 좋은것 같지 않다.. 
+  - 깃허브의 커밋갯수를 활용하는건 어떨까? 일한 만큼 커밋의 갯수가 늘어난다. 물론 갯수보다는 일의 가중이 중요하겠지만... 당장 손쉽게 할 수 있는 방법이 아닐까? 역시 이 방법은 좋은것 같지 않다..
   - 주 단위로 검증할 수 있는 방법이 뭐가 있을까? 주 단위로 깃헙을 체크한다? 깃헙을 체크 한다는 것은 참여도를 판단 하는 것이지 평가나 검증과는 거리가 좀 있다.
 * Atom에 teminal을 embed하고 싶어 패키지를 검색하다 term3를 발견했다. 내가 원한 딱 그거다. 약간의 버그는 있지만 참고 쓸만하다. 헌데, 한글이 입력이 안된다. 이런... ㅠ.ㅠ git commit 할때 전부 영문을 쓰기엔 내 영어 실력이 거시기 하다.
 
@@ -23,7 +26,7 @@ permalink: /plog/
     - Apollo는 Meteor그룹에서 만든(아마도??) GraphQL 기반의 data stack이다. 미티어 자체가 client-side data stack을 가지고 있는 구조였는데 아마도 그 subscription 부분과 server-side 의 publication부분을 하나의 독립된 패키지로 분리하려는 시도가 아닌가 생각된다. 물론 오늘 하루 잠깐본 사이에 모든걸 다 알 수는 없지만, 앞으로 좀더 공부해 보고 실습해 보기로 한다.
 
 ### May 30, 2016
-* 여러 Meteor 서비스를 한 서버에 배포하는 방법 
+* 여러 Meteor 서비스를 한 서버에 배포하는 방법
     - Nginx vhost를 이용해 도메인 재분배: [https://github.com/arunoda/meteor-up/wiki/Using-Meteor-Up-with-NginX-vhosts#dynamic-vhost-is-it-possible](https://github.com/arunoda/meteor-up/wiki/Using-Meteor-Up-with-NginX-vhosts#dynamic-vhost-is-it-possible)
     - Nginx configuration: [https://www.linode.com/docs/websites/nginx/how-to-configure-nginx](https://www.linode.com/docs/websites/nginx/how-to-configure-nginx)
 * Meteor Up 기존 배포 삭제 - [http://docs.meteor.com/commandline.html#meteordeploy](http://docs.meteor.com/commandline.html#meteordeploy), [http://stackoverflow.com/questions/10686320/how-do-i-undeploy-a-meteor-application](http://stackoverflow.com/questions/10686320/how-do-i-undeploy-a-meteor-application)
@@ -33,7 +36,7 @@ permalink: /plog/
 
 ### Mar 31, 2016
 * 말수가 적어진다는 것은 할 말이 없는 것이 아니라 말 할 필요가 없거나 말 해도 소용이 없는 경우 일 수 있다.
-* 기계식 키보드 소리 너무 거슬린다. 열심히 일하는 애들한테 머라 할 수도 없고... 에효~ :( 
+* 기계식 키보드 소리 너무 거슬린다. 열심히 일하는 애들한테 머라 할 수도 없고... 에효~ :(
 
 ### Jan 25, 2016
 * animation test day 1 [http://javascript.info/tutorial/animation](http://javascript.info/tutorial/animation)
@@ -57,7 +60,7 @@ permalink: /plog/
 
 ### Dec 11, 2015
 * React 책을 하나 구입했다. 번역된 eBook이다. 일주일 목표로 읽어본다. 알고있는 내용은 스킵하고 이틀동안 러프하게 한 번 읽으면서 간단한것만 실습하고 , 3일간 다시 한번 보면서 나머지 실습한다.
-* 
+*
 
 ### Dec 1, 2015
 * 나프다콘(10/31)이후 AWS에 계정을 만들고 이것저것 테스트를 진행 중이다. 물론 우리회사같은 구멍가게에서 클라우드는 언감생심(焉敢生心)이나 미래를 위한 준비라 생각하고 연구하고 있다. 게다가 1년간 제공되는 무료사용 서비스가 있고(물론 조금만 실수하면 과금이 되기도 하지만...) 2016년초에 한국내 리전(Region)을 개설한다는 소식때문에 약간 들떠 있는 분위기도 있다. 그렇지만, 회사내에 적용하려고 할때 동료들의 이유없는 반항에 대해 궂이 도입이유를 납득시켜야 하는 번거로움과 수고를 (또) 해야한다는 생각에 미리 지치기도 한다.
@@ -66,18 +69,18 @@ permalink: /plog/
 * Javascript는 알면 알수록 어려운 언어인것 같다. 게다가 찾으면 찾을 수록 넘쳐나는 관련 기술들은 단숨에 확인하고 정리하기엔 너무도 광범위하다. 차근 차근 연구할 필요를 다시한번 느낀다.
 
 ### Nov 17, 2015
-* ASP.NET 5에는 [common DI(Dependency Injection) 인터페이스](https://github.com/aspnet/DependencyInjection)가 만들어져 있고, 추가 라이브러리도 있는데, 
+* ASP.NET 5에는 [common DI(Dependency Injection) 인터페이스](https://github.com/aspnet/DependencyInjection)가 만들어져 있고, 추가 라이브러리도 있는데,
     - [https://github.com/structuremap/도.dnx](https://github.com/structuremap/structuremap.dnx)
     - [http://autofac.org/](http://autofac.org/) - 공장모양 로고가 깬다.
 * 토비의 스프링 3.1 에서 IoC와 DI관련 내용을 다시 읽고 있다. DI에 대해 혼자 고민하고 삽질하면서 만든 구조 덕분인지 처음 보다 훨씬 이해하기 쉬웠다. 이해하기 쉽다기 보다는 몸에 와 닫는다는 표현이 적절하다. 책은 java로 구현하고 있지만 내용은 framework에 구애를 받지 않는다. 역시 읽어보고, 해보고, 다시 읽어보고, 다시 해보고... 의 방법으로 공부하는게 좋다. 개발도 마찬가지다. 만들고, 테스트하고, 수정하고, 다시 테스트 하고.. 의 과정으로...
-* AMD기반 requery.js를 통해 동적으로 모듈을 로드할 때 
+* AMD기반 requery.js를 통해 동적으로 모듈을 로드할 때
 
 ### Nov 16, 2015
 * 3일동안 씨름하던 오류의 원인을 찾았다. 생각지도 못했던 곳에서 원인을 찾았고 이 문제를 해결하기 위해 많은 새로운 사실을 알게 되었다.
     - 아래 오류를 만났을때 처음엔 CORS설정에 문제가 있는 것으로 생각하고 Web API쪽 ICorsPolicyProvider를 상속받아 구현한 Attribute만 계속 쭈물딱 거리고 있었다. 구글링을 해도, StackOverfllow에서도 cors로 접근할때 어떤 문제가 있는건지 찾아다녔다.
         <pre>
-        XMLHttpRequest cannot load http://winlocal:49238/api/licenses. 
-        The 'Access-Control-Allow-Origin' <mark>header contains multiple values</mark> 'http://examples.onlydel.dev, http://examples.onlydel.dev', but only one is allowed. 
+        XMLHttpRequest cannot load http://winlocal:49238/api/licenses.
+        The 'Access-Control-Allow-Origin' <mark>header contains multiple values</mark> 'http://examples.onlydel.dev, http://examples.onlydel.dev', but only one is allowed.
         Origin 'http://examples.onlydel.dev' is therefore not allowed access.</pre>
     - 알고 보니 지금 서버 사이드 구성은 ASP.NET Web API + Web Sites를 붙여서 서비스 하고 있는데, Site쪽과 Web API쪽 config에 모두 cors 설정을 해두어 Response header에 Origin정보가 두개씩 붙어서 나가게 되어 사실은 Request쪽 서버에서 이를 허용해 주지 않으면 오류가 발생하는 것이었다. 마킹된 부분을 좀더 세심하게 확인했어야 하는데, 오류메시지 하나하나에 세심하게 주의를 기울여야하는데 여전히 고쳐지지 않는다.
 * 도움말이던, 메뉴얼이던, 책이던 한 번에 모든 내용을 이해하기는 어렵다. 처음볼때 이해해와 두번째 볼때 이해도가 다르다. 세번정도 보면 어느정도 이해가 되는것 같다.
