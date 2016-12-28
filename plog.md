@@ -4,8 +4,188 @@ title: Programming log
 permalink: /plog/
 ---
 
+<<<<<<< HEAD
 ### Dec 28, 2016
 * [Meteor Cookbook](http://meteorgitbook.harp.io/)
+=======
+### Sep 7, 2016
+* SSL무료 인증서
+  * [Encrypt](https://blog.elpo.net/get-wosign-multidomain-certificate/)
+* Meteor - React - Material UI Framework - [출처](https://www.facebook.com/groups/meteorschool/permalink/598472800317159/)
+  * [React Material UI](http://www.material-ui.com/#/)
+  * [React Grid](http://roylee0704.github.io/react-flexbox-grid/)
+  * [React Responsive](https://github.com/contra/react-responsive)
+
+### Aug 11, 2016
+* hexo deploy github pages
+  * [https://hexo.io/docs/deployment.html](https://hexo.io/docs/deployment.html)
+
+### Aug 4, 2016
+* mupx delpoy시 오류: 원인도 알수 없고 실제로 배포도 정상적으로 된것 같고, 실행에도 아무런 문제는 없는데 오류 메시지가 나타난다.
+
+<pre>
+nxlicensemanager/$ mupx logs --tail=50
+
+Meteor Up: Production Quality Meteor Deployments
+------------------------------------------------
+Configuration file : mup.json
+Settings file      : settings.json
+
+[52.78.34.170]
+> meteor-dev-bundle@0.0.0 install /bundle/bundle/programs/server
+> node npm-rebuild.js
+[52.78.34.170]
+
+> bcrypt@0.8.7 install /bundle/bundle/programs/server/npm/node_modules/meteor/npm-bcrypt/node_modules/bcrypt
+> node-gyp rebuild
+
+make: Entering directory '/bundle/bundle/programs/server/npm/node_modules/meteor/npm-bcrypt/node_modules/bcrypt/build'
+  CXX(target) Release/obj.target/bcrypt_lib/src/blowfish.o
+  CXX(target) Release/obj.target/bcrypt_lib/src/bcrypt.o
+  CXX(target) Release/obj.target/bcrypt_lib/src/bcrypt_node.o
+  SOLINK_MODULE(target) Release/obj.target/bcrypt_lib.node
+  COPY Release/bcrypt_lib.node
+make: Leaving directory '/bundle/bundle/programs/server/npm/node_modules/meteor/npm-bcrypt/node_modules/bcrypt/build'
+bcrypt@0.8.7 /bundle/bundle/programs/server/npm/node_modules/meteor/npm-bcrypt/node_modules/bcrypt
+bindings@1.2.1 /bundle/bundle/programs/server/npm/node_modules/meteor/npm-bcrypt/node_modules/bindings
+nan@2.3.5 /bundle/bundle/programs/server/npm/node_modules/meteor/npm-bcrypt/node_modules/nan
+{
+  "meteor-dev-bundle": "0.0.0",
+  "npm": "3.10.5",
+  "ares": "1.10.1-DEV",
+  "http_parser": "2.5.2",
+  "icu": "56.1",
+  "modules": "46",
+  "node": "4.4.7",
+  "openssl": "1.0.2h",
+  "uv": "1.8.0",
+  "v8": "4.5.103.36",
+  "zlib": "1.2.8"
+}
+=> Starting meteor app on port:80
+[52.78.34.170] npm WARN meteor-dev-bundle@0.0.0 No description
+npm WARN meteor-dev-bundle@0.0.0 No repository field.
+npm WARN meteor-dev-bundle@0.0.0 No license field.
+</pre>
+
+* mup.json 파일에 ` "deployCheckWaitTime": 60,` 속성 시간을 60으로 늘리고나서 오류가 나타나지 않게 되었다. 지난번에도 그러더니... 원인은 몰라
+
+### Aug 1, 2016
+* 화면에서 버튼이나 에디터의 사용자 입력을 처리하기 위해 Session, ReactiveDic 등 Reactive Storate를 이용해 쉽게 동작을 데이터처리로 변환할 수 있다.
+  * [Reactive Dict, Reactive Vars, and Session Variables](https://themeteorchef.com/snippets/reactive-dict-reactive-vars-and-session-variables/#tmc-session-variables)
+
+### Jul 29, 2016
+* router때문인지는 모르겠지만 크롬에서 template을 찾을수 없다는 에러가 발생하고 있다. safari에서는 잘 보이는 페이지가 크롬에서만 에러가 발생한다. [migrate from iron-router to flow-router](https://www.okgrow.com/posts/flow-router-migration-guide)
+* meteor collection에서 특정필드(specific fields)만 가져오는 방법
+  * mongoDB는 `find({username: "user"}, {name: 1, phone: 1})` 과 같이 직접 가져올 필드목록을 작성해 줬지만, meteor에서는 `{fields: {name: 1, phone: 1}}` 과 같이 `{fields: ..}`를 사용해야 한다.
+* meteor-roles package 주요 API
+  * addUsersToRoles ( users  roles  [group] )
+  * createRole ( role ) String
+  * deleteRole ( role )
+  * getAllRoles () Cursor
+  * getGroupsForUser ( user  [role] ) Array
+  * getRolesForUser ( user  [group] ) Array
+  * getUsersInRole ( role  [group]  [options] ) Cursor
+  * removeUsersFromRoles ( users  roles  [group] )
+  * setUserRoles ( users  roles  [group] )
+  * userIsInRole ( user  roles  [group] ) Boolean
+  * examples:    
+  <pre class="prettyprint">
+Roles.addUsersToRoles(userId, 'admin')
+Roles.addUsersToRoles(userId, ['view-secrets'], 'example.com')
+Roles.addUsersToRoles([user1, user2], ['user','editor'])
+Roles.addUsersToRoles([user1, user2], ['glorious-admin', 'perform-action'], 'example.org')
+Roles.addUsersToRoles(userId, 'admin', Roles.GLOBAL_GROUP)
+// non-group usage
+Roles.userIsInRole(user, 'admin')
+Roles.userIsInRole(user, ['admin','editor'])
+Roles.userIsInRole(userId, 'admin')
+Roles.userIsInRole(userId, ['admin','editor'])
+//
+Roles.removeUsersFromRoles(users.bob, 'admin')
+Roles.removeUsersFromRoles([users.bob, users.joe], ['editor'])
+Roles.removeUsersFromRoles([users.bob, users.joe], ['editor', 'user'])
+Roles.removeUsersFromRoles(users.eve, ['user'], 'group1')
+// per-group usage
+Roles.setUserRoles(userId, 'admin')
+Roles.setUserRoles(userId, ['view-secrets'], 'example.com')
+Roles.setUserRoles([user1, user2], ['user','editor'])
+Roles.setUserRoles([user1, user2], ['glorious-admin', 'perform-action'], 'example.org')
+Roles.setUserRoles(userId, 'admin', Roles.GLOBAL_GROUP)
+//
+Roles.userIsInRole(user,   ['admin','editor'], 'group1')
+Roles.userIsInRole(userId, ['admin','editor'], 'group1')
+Roles.userIsInRole(userId, ['admin','editor'], Roles.GLOBAL_GROUP)
+// this format can also be used as short-hand for Roles.GLOBAL_GROUP
+Roles.userIsInRole(user, 'admin')</pre>
+
+### Jul 28, 2016
+* mongodb deploy와는 별개로 다른 문제가 생겼다. meteor를 1.4로 업데이트 하면서 mupx를 통해 deploy할 때 docker의 설정문제로 deploy가 동작하지 않는다. 그저께 즈음에[관련이슈](https://github.com/meteor/meteor/issues/7475)가 올라오긴 했지만 간단히 해결 할 수 있는 문제는 아닌듯 하다. 간신히 해결(https://github.com/realgrid/intra.realgrid.com/issues/9)
+* aws EC2에 새로운 instance를 만들고 ssh로 접속 할때 다음과 같은 메시지를 만난다면:
+
+   <pre>
+Warning: Identity file aws-wooritech.pem not accessible: No such file or directory.
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@    WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!     @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+It is also possible that a host key has just been changed.
+The fingerprint for the ECDSA key sent by the remote host is
+SHA256:A5Gux2Z0rglng+5PnDjqFUJV8k6j142ZsooTrLVvMeo.
+Please contact your system administrator.
+Add correct host key in /Users/onlydel/.ssh/known_hosts to get rid of this message.
+Offending ECDSA key in /Users/onlydel/.ssh/known_hosts:13
+ECDSA host key for ec2-52-78-25-246.ap-northeast-2.compute.amazonaws.com has changed and you have requested strict checking.
+Host key verification failed.</pre>  
+
+  설명에 나와있는 `known_hosts:13` 라인을 삭제 하고 다시 실행 하면 된다.
+
+### Jul 27, 2016
+* intra, www, support를 통합해서 하나의 db를 사용하기 위해 mupx deploy설정으로 같은 서버에 올라가 있는 컨테이너의 다른 인스턴스들 끼리 공유를 해보고자 MONGO_URL을 `mongodb://mondodb:27017/realgrid-support-dev`로 설정했지만 deploy할때 db에 연결 할 수 없다는 에러가 발생 한다. 반나절을 소모하고 원인을 docker container에 있다는 것은 알았는데([이슈](https://github.com/arunoda/meteor-up/issues/758)), 해결 하기위해 docker를 공부해야 하는 부담 때문에, 그리고 어차피 별도의 db서버를 가져가야 하는 것이 최종의 모습이기 때문에 mongolab에 계정을 만들고 500M짜리 무료 서비스를 설정했다. 나중에는 aws나 다른 클라우드 내에서 서비스를 구동하는 것으로 변경해야 한다.
+* 외부 db사용할때 deploy는 mupx config에 적어 주면 되지만 로컬에서 테스트 할때는 연결정보를 환경변수에 담아 주어야 한다.
+
+   <pre class="prettypring">
+   $ export MONGO_URL='mongodb://user:password@paulo.mongohq.com:12345/'
+   $ echo MONGO_URL
+   $ unset MONGO_URL
+   </pre>
+
+### Jul 26, 2016
+* mongoDB shell에서 collection을 조회 할때 잘 정리된 형태로 데이터를 보려면 ..find().pretty()하면 된다. 그런데 매번 pretty()를 호출 하려면 힘드니 아예 find()할때 마다 pretty()가 자동으로 실행 되면 좋겠다.    
+
+  <pre class="prettypring">
+  echo DBQuery.prototype._prettyShell = true >> ~/.mongorc.js
+  </pre>
+* 25일 미티어가 [1.4 릴리즈](http://info.meteor.com/blog/announcing-meteor-1.4)를 발표했다. mongoDB, node.js 버전을 업데이트 했다고 한다.
+
+### Jul 25, 2016
+* [미티어 쿡북](https://github.com/clinical-meteor/software-development-kit) : 코드를 통해 meteor의 실전을 익힐 수 있는 교재
+
+### Jul 21, 2016
+* 서버에서 알람기능 구현을 위해
+  - [later.js](https://github.com/bunkat/later)
+  - [backend timer service](http://stackoverflow.com/questions/38493081/how-to-write-a-backend-service-that-runs-on-a-timer)
+  - [미티어에서는](https://atmospherejs.com/vsivsi/job-collection)
+
+### Jul 20, 2016
+* Slack연동을 위한 API package : [khamoud:slack-api](https://github.com/krishamoud/meteor-slack-api)
+* Meteor Tip: array로 되어 있는 property에 item을 push하거나 array의 item 객체를 수정하는 mongodb query 작성법
+
+<pre class="prettyprint">
+//push item to array property
+Meteor.users.update({_id: userId}, {$push:{"emails": newEmail}});
+
+//set item value of array property
+Meteor.users.update({_id: userId}, {$set:{"emails.0.address": newEmailAddress}});
+</pre>
+
+### Jul 17, 2016
+* GitHub이나 BitBucket같은 도구로 이슈관리 할때 틈날때 마다 task들을 작게 쪼개서 이슈에 등록해 두고 이슈를 처리해가는 방식으로 작업하는게 지속적인 유지보수에 많은 도움이 된다.
+
+### Jul 15, 2016
+* Hexo, 알수 없는 이상한 오류에 30분 헤매다가 `hexo clear`로 해결 본다. 결국, 원인도 모르고 뭘 고쳤는지도 모른다.
+>>>>>>> cb433c112b2f9dac6e455c6cfbdb01a34cebe4c4
 
 ### Jul 1, 2016
 * 포럼 형식의 질문 답변 게시판 프레임웍은 https://www.discourse.org/ 가 갑인가?
