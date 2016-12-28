@@ -4,10 +4,9 @@ title: Programming log
 permalink: /plog/
 ---
 
-<<<<<<< HEAD
 ### Dec 28, 2016
 * [Meteor Cookbook](http://meteorgitbook.harp.io/)
-=======
+
 ### Sep 7, 2016
 * SSL무료 인증서
   * [Encrypt](https://blog.elpo.net/get-wosign-multidomain-certificate/)
@@ -89,7 +88,7 @@ npm WARN meteor-dev-bundle@0.0.0 No license field.
   * removeUsersFromRoles ( users  roles  [group] )
   * setUserRoles ( users  roles  [group] )
   * userIsInRole ( user  roles  [group] ) Boolean
-  * examples:    
+  * examples:
   <pre class="prettyprint">
 Roles.addUsersToRoles(userId, 'admin')
 Roles.addUsersToRoles(userId, ['view-secrets'], 'example.com')
@@ -137,7 +136,7 @@ Please contact your system administrator.
 Add correct host key in /Users/onlydel/.ssh/known_hosts to get rid of this message.
 Offending ECDSA key in /Users/onlydel/.ssh/known_hosts:13
 ECDSA host key for ec2-52-78-25-246.ap-northeast-2.compute.amazonaws.com has changed and you have requested strict checking.
-Host key verification failed.</pre>  
+Host key verification failed.</pre>
 
   설명에 나와있는 `known_hosts:13` 라인을 삭제 하고 다시 실행 하면 된다.
 
@@ -152,7 +151,7 @@ Host key verification failed.</pre>
    </pre>
 
 ### Jul 26, 2016
-* mongoDB shell에서 collection을 조회 할때 잘 정리된 형태로 데이터를 보려면 ..find().pretty()하면 된다. 그런데 매번 pretty()를 호출 하려면 힘드니 아예 find()할때 마다 pretty()가 자동으로 실행 되면 좋겠다.    
+* mongoDB shell에서 collection을 조회 할때 잘 정리된 형태로 데이터를 보려면 ..find().pretty()하면 된다. 그런데 매번 pretty()를 호출 하려면 힘드니 아예 find()할때 마다 pretty()가 자동으로 실행 되면 좋겠다.
 
   <pre class="prettypring">
   echo DBQuery.prototype._prettyShell = true >> ~/.mongorc.js
