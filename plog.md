@@ -4,6 +4,11 @@ title: Programming log
 permalink: /plog/
 ---
 
+### Dec 29, 2016
+* Meteor - MongoDB를 이용해 애플리케이션에 파일을 업로드 하는 방법
+  * [S3와 CloudFront를 사용하라는 조언](http://stackoverflow.com/questions/34616596/storing-images-in-a-mongodb-using-gridfs-with-meteor)
+  * [GridFS 패키지를 사용해 MongoDB자체 저장](http://stackoverflow.com/questions/27934141/meteor-uploading-file-from-client-to-mongo-collection-vs-file-system-vs-gridfs)
+
 ### Dec 28, 2016
 * [Meteor Cookbook](http://meteorgitbook.harp.io/)
 
